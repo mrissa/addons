@@ -15,13 +15,13 @@
                                       <h2>Ministére de l’Éducation National</h2>
                                       <h1> Systéme d’Information et de Gestion de l’Education (SIGE) </h1>    
                                 </div>
-                                 <div class="twitter-div" >
+                                 <!-- <div class="twitter-div" >
                                   <div class="twitter-div-end" >
                                         <section class="twitter" data-limit="15" data-screen-name="OpenERP">
                                             <div class="twitter_timeline"/>
                                         </section>
                                      </div>   
-                                </div>   
+                                </div>    -->
                              </div>   
                             
                         </div>    
