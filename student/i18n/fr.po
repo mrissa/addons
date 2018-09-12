@@ -1,0 +1,723 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-28 14:04+0000\n"
+"PO-Revision-Date: 2018-06-28 14:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Date de naissance</b>"
+msgstr "<b>Date de naissance</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Fiche Renseignement Élève</b>"
+msgstr "<b>Fiche Renseignement Élève</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>NNI</b>"
+msgstr "<b>NNI</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Nom et prénom</b>"
+msgstr "<b>Nom et prénom</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Sexe</b>"
+msgstr "<b>Sexe</b>"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Abandonner"
+msgstr "Abandonner"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Actif"
+msgstr "Actif"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_active
+msgid "Active"
+msgstr "Actif/ve"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Admis"
+msgstr "Admis"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_address
+msgid "Adress"
+msgstr "Adresse"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Archived"
+msgstr "Archivé/s"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Base Information"
+msgstr "Information de Base"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Birth"
+msgstr "Naissance"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_boursier
+msgid "Boursier"
+msgstr "Boursier"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Brouillon"
+msgstr "Brouillon"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Choose a file to import..."
+msgstr "Choisissez un fichier à importer..."
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Choose your Excel file"
+msgstr "Choisissez le fichier Excel"
+
+#. module: student
+#: model:ir.actions.act_window,help:student.open_view_student_list_my
+msgid "Click to add a new student."
+msgstr "Cliquez pour ajouter un nouveau élève."
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_color
+msgid "Color Index"
+msgstr "couleur de l'index"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_company_id
+msgid "Company"
+msgstr "Établissement"
+
+#. module: student
+#: model:ir.ui.menu,name:student.menu_student_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Contact Information"
+msgstr "Information de contact"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_create_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_create_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_create_date
+#: model:ir.model.fields,field_description:student.field_stud_student_create_date
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_birthday
+msgid "Date of Birth"
+msgstr "Date Naissance"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_display_name
+#: model:ir.model.fields,field_description:student.field_report_student_report_student_display_name
+#: model:ir.model.fields,field_description:student.field_stud_student_display_name
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_distance
+msgid "Distance housing and educational institution"
+msgstr "La distance entre le logement et l'établissement d'enseignement"
+
+#. module: student
+#: selection:stud.student,state:0
+#: selection:stud.student.pv,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "Eleve Image"
+msgstr "Photo Élève"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "En Transfert"
+msgstr "En cours de transfert"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_establishment_id
+msgid "Etablissement"
+msgstr "Établissement"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_etab_origine_id
+msgid "Etablissement Origine"
+msgstr "Établissement Origine"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_etranger
+msgid "Etranger"
+msgstr "Étranger"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Exclu"
+msgstr "Exclu"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_leisure
+msgid "Existence leisure place"
+msgstr "Existance de lieu de loisirs"
+
+#. module: student
+#: selection:stud.student,gender:0
+msgid "Female"
+msgstr "Female"
+
+#. module: student
+#: model:ir.actions.report,name:student.action_report_student
+msgid "Fiche Eleve"
+msgstr "Fiche Élève"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_filename
+msgid "Filename"
+msgstr "Nom de fichier"
+
+#. module: student
+#: selection:stud.student.pv,type_structure:0
+msgid "First Level"
+msgstr "First Level"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Foyer"
+msgstr "Foyer"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_gender
+msgid "Gender"
+msgstr "Genre"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Group By"
+msgstr "Regroupé par"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_id
+#: model:ir.model.fields,field_description:student.field_report_student_report_student_id
+#: model:ir.model.fields,field_description:student.field_stud_student_id
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_id_4840
+msgid "ID"
+msgstr "ID"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.action_stud_pv_form
+#: model:ir.model,name:student.model_stud_student_pv
+#: model:ir.ui.menu,name:student.menu_view_student_pv_form
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "Import Student"
+msgstr "Importez Élève"
+
+#. module: student
+#: model:ir.model,name:student.model_import_student_line
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Import Student Line"
+msgstr "Importez Ligne Élève"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.action_student_import
+msgid "Import line"
+msgstr "Ligne d'importation"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_import_tree
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "Import student"
+msgstr "Importez Élève"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Inactif"
+msgstr "Inactif"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Inscrit"
+msgstr "Inscrit"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line___last_update
+#: model:ir.model.fields,field_description:student.field_report_student_report_student___last_update
+#: model:ir.model.fields,field_description:student.field_stud_student___last_update
+#: model:ir.model.fields,field_description:student.field_stud_student_pv___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_write_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_write_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_write_date
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_write_date
+#: model:ir.model.fields,field_description:student.field_stud_student_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name
+msgid "Last name and first name"
+msgstr "Nom et prénom"
+
+#. module: student
+#: selection:stud.student,gender:0
+msgid "Male"
+msgstr "Male"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Matricule"
+msgstr "Matricule"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image_medium
+msgid "Medium-sized photo"
+msgstr "Photo (taille moyenne)"
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image_medium
+msgid "Medium-sized photo of the sudent. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Photo de l’élève est de taille moyenne. Il est automatiquement redimensionné en tant qu'image 128x128px, avec un rapport d'aspect préservé. Utilisez ce champ dans les vues de formulaire ou dans certaines vues Kanban."
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Mere"
+msgstr "Mère"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_nni
+msgid "NNI"
+msgstr "NNI"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name_father
+msgid "Name father"
+msgstr "Nom de père"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name_mother
+msgid "Name mother"
+msgstr "Nom de mère"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_identification_id
+msgid "National Matricule"
+msgstr "Matricule nationale"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_country_id
+msgid "Nationality"
+msgstr "Nationalité"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_structure_id
+#: model:ir.model.fields,field_description:student.field_stud_student_structure_id
+msgid "Niveau scolaire"
+msgstr "Niveau scolaire"
+
+#. module: student
+#: selection:stud.student,state:0
+msgid "Not Affect"
+msgstr "Non affecté"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Not affect"
+msgstr "Non affecté"
+
+#. module: student
+#: selection:stud.student.pv,type_structure:0
+msgid "Not first Level"
+msgstr "Not first Level"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_comment
+#: model:ir.model.fields,field_description:student.field_stud_student_notes
+msgid "Notes"
+msgstr "Notes"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Notes..."
+msgstr "Notes..."
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "N° matricule:"
+msgstr "N° matricule:"
+
+#. module: student
+#: selection:stud.student.pv,type:0
+msgid "On demande"
+msgstr "Sur demande"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_other_father
+msgid "Other Father"
+msgstr "Autre père"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Other Information"
+msgstr "Autre information"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Other Information ..."
+msgstr "Autre information..."
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_other_mother
+msgid "Other Mother"
+msgstr "Autre mère"
+
+#. module: student
+#: selection:stud.student.pv,type:0
+msgid "PV de sortie"
+msgstr "PV de sortie"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Pere"
+msgstr "Père"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image
+msgid "Photo"
+msgstr "Photo"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_place_birth
+msgid "Place of birth"
+msgstr "Lieu de naissance"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_electricity
+msgid "Presence of electricity"
+msgstr "Présence d'électricité"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_water
+msgid "Presence of water"
+msgstr "Présence de l'eau"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_situation_pro_fadher
+msgid "Profesional situation of the father"
+msgstr "Métier Père"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_situation_pro_mother
+msgid "Profesional situation of the mother"
+msgstr "Métier Mère"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_id
+msgid "Pv de sortie"
+msgstr "Pv de sortie"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Redoublant"
+msgstr "Redoublant"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_name
+msgid "Reference"
+msgstr "Référence"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_ref_pv
+msgid "Reference PV"
+msgstr "Référence PV"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_revenue_father
+msgid "Revenue father"
+msgstr "Revenue Père"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_revenue_mother
+msgid "Revenue mother"
+msgstr "Revenue Mère"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Scolarity termineted"
+msgstr "Admis au Baccalauréat"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_section_id
+msgid "Section"
+msgstr "Section"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Situation"
+msgstr "Situation"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Situation Socio Economique"
+msgstr "Situation Socio Économique"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image_small
+msgid "Small-sized photo"
+msgstr "Photo petit format"
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image_small
+msgid "Small-sized photo of the student. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Photo de l’élève de petite taille. Il est automatiquement redimensionné en tant qu'image 64x64px, avec un rapport d'aspect préservé. Utilisez ce champ toute fois une petite image est requise."
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_state
+#: model:ir.model.fields,field_description:student.field_stud_student_state
+msgid "State"
+msgstr "Région"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_state_inscription
+msgid "State registration"
+msgstr "Etat d'enregistrement"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Status"
+msgstr "État"
+
+#. module: student
+#: model:ir.model,name:student.model_stud_student
+msgid "Stud Student"
+msgstr "Élève"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_list
+#: model:ir.ui.menu,name:student.menu_hr_main
+#: model:ir.ui.menu,name:student.menu_student
+#: model:ir.ui.menu,name:student.menu_student_root
+#: model:ir.ui.view,arch_db:student.view_student_filter
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Student"
+msgstr "Élève"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_data_file
+msgid "Student File"
+msgstr "Fichier Élève"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Student Information"
+msgstr "Information Élève"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_tree
+msgid "Student Structure"
+msgstr "Structure Élève"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_list_my
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_student_ids
+#: model:ir.ui.menu,name:student.menu_action_eleve
+#: model:ir.ui.menu,name:student.menu_open_view_student_list_my
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+#: model:ir.ui.view,arch_db:student.view_student_filter
+#: model:ir.ui.view,arch_db:student.view_student_tree
+msgid "Students"
+msgstr "Élèves"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_tel_father
+msgid "Tel father"
+msgstr "Tel Père"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_tel_mother
+msgid "Tel mother"
+msgstr "Tel Mère"
+
+#. module: student
+#: sql_constraint:stud.student:0
+msgid "The NNI must be unique."
+msgstr "Le NNI doit être unique."
+
+#. module: student
+#: sql_constraint:stud.student:0
+msgid "The Student Number must be unique across the company(s)."
+msgstr "Le Numéro Élève doit être unique dans l’établissement."
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image
+msgid "This field holds the image used as photo for the student, limited to 1024x1024px."
+msgstr "Ce champ contient l'image utilisée comme photo Élève, limitée à 1024x1024px."
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_town_birth
+msgid "Town Birth"
+msgstr "Ville de naissance"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_town_residence
+msgid "Town Residence"
+msgstr "Ville de résidence"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_type
+msgid "Type"
+msgstr "Type"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_type_structure
+msgid "Type structure"
+msgstr "Type de structure"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+#: selection:stud.student.pv,state:0
+msgid "Validate"
+msgstr "Valider"
+
+#. module: student
+#: model:ir.actions.act_window,help:student.open_view_student_list_my
+msgid "With just a quick glance on the Odoo student screen, you\n"
+"                can easily find all the information you need for each person;\n"
+"                contact data, job position, availability, etc."
+msgstr "Avec un simple coup d'œil sur l'écran Odoo dédié à Élève, vous\n"
+"                pouvez facilement trouver toutes les informations dont vous avez besoin pour chaque personne;\n"
+"                coordonnées, poste, disponibilité, etc."
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_scholarly_id
+#: model:ir.model.fields,field_description:student.field_stud_student_scholarly_id
+msgid "Year Scholarly"
+msgstr "Année scolaire"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_scholarly_insc_id
+msgid "Year Scholarly inscription"
+msgstr "Inscription Année Scolaire"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.style
+msgid "body, table, td, span, div, p {\n"
+"			    font-family: Helvetica, sans-serif;\n"
+"			    font-size:16px;\n"
+"			}\n"
+"			table.mystyle{\n"
+"                        border:0px;\n"
+"                        padding:5px;\n"
+"                        }\n"
+"            td{\n"
+"                border:0px;\n"
+"                padding:5px;\n"
+"                }"
+msgstr "body, table, td, span, div, p {\n"
+"			    font-family: Helvetica, sans-serif;\n"
+"			    font-size:16px;\n"
+"			}\n"
+"			table.mystyle{\n"
+"                        border:0px;\n"
+"                        padding:5px;\n"
+"                        }\n"
+"            td{\n"
+"                border:0px;\n"
+"                padding:5px;\n"
+"                }"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "independent"
+msgstr "indépendent"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "other"
+msgstr "Autre"
+
+#. module: student
+#: model:ir.model,name:student.model_report_student_report_student
+msgid "report.student.report_student"
+msgstr "rapport.élève.rapport_élève"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "salaried"
+msgstr "salarié"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_number
+msgid "student/foyer room"
+msgstr "élève/chambre de foyer"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "students"
+msgstr "Élèves"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "unemployed"
+msgstr "chômeur"

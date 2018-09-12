@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+     <!--External recruitment-->
+    <record id="view_hr_recruitment_exit_tree" model="ir.ui.view">
+        <field name="name">hr.recruitment.exit.tree</field>
+        <field name="model">hr.recruitment.exit</field>
+        <field name="arch" type="xml">
+            <tree string="Exit Recruitment">
+                <field name="name"/>
+                <field name="corps_id"/>
+                <field name="date"/>
+                <field name="name_arrete"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_recruitment_exit_form" model="ir.ui.view">
+        <field name="name">hr.recruitment.exit.form</field>
+        <field name="model">hr.recruitment.exit</field>
+        <field name="arch" type="xml">
+            <form string="Exit Recruitment">
+                <header>
+                    <button name="act_preparation_budget" string="Préparation budget" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="act_remetrre_en_brouillon" string="Refusé" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ('draft', 'validate'))]}"/>
+                    <button name="act_preparation_arrete" string="Préparation Arrêté" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'preparation_budget')]}"/>
+                    <button name="act_validate" string="Valider" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'preparation_arrete')]}"/>
+                    <field name="state" widget="statusbar" readonly="1"/>
+
+                </header>
+                <sheet>
+                    <group>
+                         <group>
+                            <field name="name"/>
+                            <field name="recruitment_pv_type" attrs="{'readonly': [('state', '=', 'validate')], 'invisible': [('is_records_line', '=', True)]}"/>
+                            <field name="recruitment_pv_copy_type" attrs="{'invisible': [('is_records_line', '=', False)]}"/>
+                            <field name="new_graduates" invisible="1"/>
+                            <field name="corps_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')], 'invisible': [('is_records_line', '=', True)]}"/>
+                            <field name="corps_copy_id" attrs="{'invisible': [('is_records_line', '=', False)]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="is_records_line" invisible="1"/>
+                        </group>
+                         <group>
+                            <field name="type_arrete"/>
+                             <field name="date_nomination"/>
+                            <field name="date_titularisation" attrs="{'invisible': [('recruitment_pv_type', '=', 'direct')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="line_ids" string="PV/NS">
+                            <field name="pv_check_ids" invisible="1"/>
+                            <field name="pv_treat_ids" invisible="1"/>
+                            <button name="%(action_choice_pv)d" string="Choisir PV/NS" type="action" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}" context="{'pv_check_ids': pv_check_ids, 'corps_id': corps_id, 'new_graduates': new_graduates, 'pv_treat_ids': pv_treat_ids, 'recruitment_pv_type': recruitment_pv_type, 'date': date}"/>
+                            <field name="line_ids" readonly="1">
+                                 <tree string="PV/NS" create="false">
+                                    <field name="pv_id"/>
+                                    <field name="date"/>
+                                    <field name="corps_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="employee_ids" string="Employés">
+                            <field name="employee_to_trait_ids" invisible="1"/>
+                            <field name="employee_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}" attrs="{'readonly': [('state', '!=', 'draft')]}">
+                                <tree string="Employés">
+                                    <field name="identification_id" invisible="1"/>
+                                    <field name="nni"/>
+                                    <field name="name" string="Nom et Prenom"/>
+                                    <field name="birthday"/>
+                                    <field name="place_of_birth"/>
+                                    <field name="note_graduation"/>
+                                    <field name="training_school_id"/>
+                                    <field name="number_training_school"/>
+                                    <field name="assignment_choice1" options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                                    <field name="assignment_choice2" options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                                    <field name="assignment_choice3" options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                                    <field name="discipline_ids" widget="many2many_tags" options="{'no_create_edit': True}"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Fiche budgétaire" attrs="{'invisible': [('state', '=', 'draft')]}">
+                            <group>
+                                 <group>
+                                    <field name="subject" attrs="{'readonly': [('state', '!=', 'preparation_budget')], 'required': [('state', '=', 'preparation_budget')]}"/>
+                                    <field name="section" attrs="{'readonly': [('state', '!=', 'preparation_budget')], 'required': [('state', '=', 'preparation_budget')]}"/>
+                                 </group>
+                            </group>
+                        </page>
+                         <page string="Arrêté" attrs="{'invisible': [('state', 'in', ('preparation_budget', 'draft'))]}">
+                            <group>
+                                 <group>
+                                    <field name="name_arrete" attrs="{'readonly': [('state', '=', 'validate')], 'required': [('state', '=', 'preparation_arrete')]}"/>
+                                    <field name="echelle_id" widget="selection" readonly="1" attrs="{'required': [('state', '=', 'preparation_arrete')]}"/>
+                                    <field name="corps_line_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')], 'required': [('state', '=', 'preparation_arrete')]}"/>
+                                 </group>
+                            </group>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..." attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+        </field>
+    </record>
+    
+     <!-- recrutement externe  and team pivot View -->
+        <record id="hr_recrutement_e_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.exit.pivot</field>
+            <field name="model">hr.recruitment.exit</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement externe" disable_linking="True">
+               
+                   <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_e_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.exit.graph</field>
+            <field name="model">hr.recruitment.exit</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement externe" stacked="True">
+               
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+
+    <record id="action_hr_recruitment_exit_form" model="ir.actions.act_window">
+        <field name="name">External Recruitment</field>
+        <field name="res_model">hr.recruitment.exit</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_exit_tree')}),
+                        (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_e_report_view_graph')}),
+                        (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_e_report_view_pivot')})]"/>
+    </record>
+
+    <menuitem name="Externe"
+              parent="menu_view_hr_recruitment_form"
+              sequence="1"
+              id="menu_view_hr_recruitment_exit_form"
+              action="action_hr_recruitment_exit_form"/>
+
+       <!--recruitment on demande-->
+
+    <record id="view_hr_recruitment_demande_tree" model="ir.ui.view">
+        <field name="name">hr.recruitment.on.demand.tree</field>
+        <field name="model">hr.recruitment.on.demand</field>
+        <field name="arch" type="xml">
+            <tree string="Recruitment on demande">
+                <field name="name"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                <field name="recruitment_type"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_recruitment_demande_form" model="ir.ui.view">
+        <field name="name">hr.recruitment.on.demand.form</field>
+        <field name="model">hr.recruitment.on.demand</field>
+        <field name="arch" type="xml">
+            <form string="Recruitment on demande">
+                 <header>
+                    <button name="act_pending_approved" string="En attente de validation" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="act_approved" string="Valider" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'pending_approved')]}"/>
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="recruitment_type" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="corps_id" widget="selection" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                        <group>
+                            <field name="date_start" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="date_end" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                         <page name="employee_ids" string="Employés">
+                            <button name="%(action_employee_pnp_import)d" string="Import excel" type="action" class="oe_highlight" attrs="{'invisible': ['|', ('state', '=', 'approved'), ('recruitment_type','not in',('pnp', 'detached'))]}"/>
+                            <field name="employee_ids" attrs="{'readonly': [('state', '=', 'approved')], 'invisible': [('recruitment_type','!=','contractual')]}">
+                                    <tree string="Employee" editable="bottom">
+                                    <field name="identification_id"/>
+                                    <field name="name" required="1"/>
+                                    <field name="gender"/>
+                                    <field name="birthday"/>
+                                    <field name="place_of_birth"/>
+                                    <field name="nni" required="1"/>
+                                </tree>
+                            </field>
+                            <field name="employee_new_ids" attrs="{'readonly': [('state', '=', 'approved')], 'invisible': [('recruitment_type','not in',('pnp', 'detached'))]}">
+                                <tree string="Employee" editable="bottom">
+                                    <field name="identification_id"/>
+                                    <field name="name" required="1"/>
+                                    <field name="gender"/>
+                                    <field name="birthday"/>
+                                    <field name="place_of_birth"/>
+                                    <field name="nni" required="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                </form>
+        </field>
+    </record>
+    <!-- recrutement al demande  and team pivot View -->
+        <record id="hr_recrutement_d_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.on.demand.pivot</field>
+            <field name="model">hr.recruitment.on.demand</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement sur demande" disable_linking="True">
+                    <field name="recruitment_type" type="col"/>
+                    <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_d_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.on.demand.graph</field>
+            <field name="model">hr.recruitment.on.demand</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement sur demande" stacked="True">
+                    <field name="recruitment_type" type="col"/>
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+    <record id="action_hr_recruitment_demande_form" model="ir.actions.act_window">
+        <field name="name">Recruitment on demande</field>
+        <field name="res_model">hr.recruitment.on.demand</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_demande_tree')}),
+                        (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_d_report_view_graph')}),
+                        (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_d_report_view_pivot')})]"/>
+    </record>
+
+    <menuitem name="On demande"
+              parent="menu_view_hr_recruitment_form"
+              sequence="3"
+              id="menu_view_hr_recruitment_demande_form"
+              action="action_hr_recruitment_demande_form"/>
+
+   <!--Internal recruitment-->
+      <record id="view_hr_recruitment_entry_tree" model="ir.ui.view">
+        <field name="name">hr.recruitment.entry.tree</field>
+        <field name="model">hr.recruitment.entry</field>
+        <field name="arch" type="xml">
+            <tree string="Entry Recruitment">
+                <field name="name"/>
+                <field name="corps_id"/>
+                <field name="date"/>
+                <field name="name_arrete"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_recruitment_entry_form" model="ir.ui.view">
+        <field name="name">hr.recruitment.entry.form</field>
+        <field name="model">hr.recruitment.entry</field>
+        <field name="arch" type="xml">
+            <form string="Entry Recruitment">
+                 <header>
+                    <button name="act_preparation_budget" string="Préparation budget" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="act_remetrre_en_brouillon" string="Refusé" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ('draft', 'validate'))]}"/>
+                    <button name="act_preparation_arrete" string="Préparation Arrêté" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'preparation_budget')]}"/>
+                    <button name="act_validate" string="Valider" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'preparation_arrete')]}"/>
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                         <group>
+                            <field name="name"/>
+                            <field name="recruitment_pv_type" attrs="{'readonly': [('state', '=', 'validate')], 'invisible': [('is_records_line', '=', True)]}"/>
+                            <field name="recruitment_pv_copy_type" attrs="{'invisible': [('is_records_line', '=', False)]}"/>
+                            <field name="new_graduates" invisible="1"/>
+                            <field name="corps_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')], 'invisible': [('is_records_line', '=', True)]}"/>
+                            <field name="corps_copy_id" attrs="{'invisible': [('is_records_line', '=', False)]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="is_records_line" invisible="1"/>
+                         </group>
+                         <group>
+                            <field name="type_arrete"/>
+                            <field name="date_nomination"/>
+                            <field name="date_titularisation"/>
+                         </group>
+                    </group>
+                    <notebook>
+                         <page name="line_ids" string="PV/NS">
+                            <field name="pv_check_ids" invisible="1"/>
+                            <field name="pv_treat_ids" invisible="1"/>
+                            <button name="%(action_choice_pv)d" string="Choisir PV/NS" type="action" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}" context="{'pv_check_ids': pv_check_ids, 'corps_id': corps_id, 'new_graduates': new_graduates, 'pv_treat_ids': pv_treat_ids, 'recruitment_pv_type': recruitment_pv_type, 'date': date}"/>
+                            <field name="line_ids" readonly="1">
+                                 <tree string="PV/NS" create="false">
+                                    <field name="pv_id"/>
+                                    <field name="date"/>
+                                    <field name="corps_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                         <page name="recruitment_entry_line_ids" string="Employee">
+                            <field name="recruitment_entry_line_ids">
+                                <tree string="Employee" create="false">
+                                    <field name="employee_id" required="1"/>
+                                    <field name="identification_id"/>
+                                    <field name="nni"/>
+                                    <field name="echelle_id" widget="selection"/>
+                                    <field name="corps_line_id" widget="selection"/>
+                                    <field name="new_echelle" widget="selection"/>
+                                    <field name="new_corps_line_id" widget="selection"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Fiche budgétaire" attrs="{'invisible': [('state', '=', 'draft')]}">
+                            <group>
+                                 <group>
+                                    <field name="subject" attrs="{'readonly': [('state', '=', 'validate')], 'required': [('state', '=', 'preparation_budget')]}"/>
+                                    <field name="section" attrs="{'readonly': [('state', '=', 'validate')], 'required': [('state', '=', 'preparation_budget')]}"/>
+                                 </group>
+                            </group>
+                        </page>
+                         <page string="Arrêté" attrs="{'invisible': [('state', 'in', ('preparation_budget', 'draft'))]}">
+                            <group>
+                                 <group>
+                                    <field name="name_arrete" attrs="{'readonly': [('state', '=', 'validate')], 'required': [('state', '=', 'preparation_arrete')]}"/>
+                                    <field name="echelle_id" widget="selection" readonly="1" attrs="{'required': [('state', '=', 'preparation_arrete')]}"/>
+                                 </group>
+                            </group>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..." attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </page>
+                    </notebook>
+                 </sheet>
+                </form>
+        </field>
+    </record>
+     <!-- recrutement interne  and team pivot View -->
+        <record id="hr_recrutement_i_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.entry.pivot</field>
+            <field name="model">hr.recruitment.entry</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement Interne" disable_linking="True">
+               
+                   <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_i_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.entry.graph</field>
+            <field name="model">hr.recruitment.entry</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement Interne" stacked="True">
+               
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+    <record id="hr_recruitment_entry_line_view" model="ir.ui.view">
+        <field name="name">Recruitment entry line</field>
+        <field name="model">hr.recruitment.entry.line</field>
+        <field name="arch" type="xml">
+            <form string="Recruitment Line">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="employee_id" required="1"/>
+                            <field name="identification_id"/>
+                            <field name="nni"/>
+                        </group>
+                        <group>
+                            <field name="echelle_id" widget="selection"/>
+                            <field name="new_echelle" widget="selection"/>
+                            <field name="corps_line_id" widget="selection"/>
+                            <field name="new_corps_line_id" widget="selection"/>
+                        </group>
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hr_recruitment_entry_form" model="ir.actions.act_window">
+        <field name="name">Internal Recruitment</field>
+        <field name="res_model">hr.recruitment.entry</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_entry_tree')}),
+                        (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_i_report_view_graph')}),
+                        (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_i_report_view_pivot')})]"/>
+     
+    </record>
+
+    <menuitem name="Internal"
+              parent="menu_view_hr_recruitment_form"
+              sequence="2"
+              id="menu_view_hr_recruitment_entry_form"
+              action="action_hr_recruitment_entry_form"/>
+
+
+</odoo>

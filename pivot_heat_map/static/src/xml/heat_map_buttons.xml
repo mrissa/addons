@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pivot_heat_map">
+    <t t-extend="PivotView.buttons">
+        <t t-jquery=".o_pivot_download" t-operation="after">
+           <!-- <button type="button" id="create_pdf" class="btn btn-sm o_heat_map_print">
+                
+                <span class="fa fa-print"></span>
+            </button> -->
+            <!-- <button class="btn btn-default fa fa fa-print o_heat_map_print" title="print Page" /> -->
+            <button class="btn btn-default fa fa-th o_heat_map_both" title="Heat Map Page" />
+            <button class="btn btn-default fa fa-bars fa-rotate-90 o_heat_map_col" title="Heat Map Column"/>
+            <button class="btn btn-default fa fa-bars o_heat_map_row" title="Heat Map Row"/>
+        </t>
+    </t>
+    
+    <t t-extend="GraphView.buttons">
+        <t t-jquery="button[data-mode='pie']" t-operation="after">
+            <button type="button"  id="create_pdf" class="btn btn-sm o_heat_map_print_g btn-success">
+                Print
+                <span class="fa fa-print"></span>
+            </button>
+        </t>
+    </t>
+    <t t-extend="PivotView">
+        <t t-jquery=".o_field_selection" t-operation="before">
+        <div>
+           <p class='sige_date'> </p>
+           </div>
+        </t>
+    </t>
+    
+    <t t-name="GraphView.date">
+    <div class="ssssvcdd">
+   <p> <t t-esc="datee"/> </p>
+         
+    </div>
+</t>
+</templates>

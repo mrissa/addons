@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Student Inscription -->
+        <record model='ir.ui.view' id='student_inscriptiont_form_view'>
+        <field name="name">stud.inscription.form</field>
+        <field name="model">stud.inscription</field>
+        <field name="arch" type="xml">
+            <form string="Inscription" create="false">
+                <header>
+                    <button name="act_inscrit" states="draft" type="object" string="Inscrit" class="oe_highlight" />
+                    <button name="act_transfert" states="inscrit" type="object" string="transfert" class="oe_highlight"/>
+                    <button name="act_abandonner" states="inscrit" type="object" string="Abandon" class="oe_highlight"/>
+                    <button name="act_admis" states="inscrit" type="object" string="Admis" class="oe_highlight"/>
+                    <button name="act_exclu" states="inscrit" type="object" string="Exclu" class="oe_highlight"/>
+                    <button name="act_redoublant" states="inscrit" type="object" string="Redoublant" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,inscrit,transferer,transfer_reussie"/>
+                </header>
+                <sheet>
+                  <group>
+                    <group>
+                        <field name="name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="student_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="date_inscp" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <group>
+                        <field name="scholarly_id" attrs="{'readonly':[('state','!=','draft')]}"  widget="selection"/>
+                        <field name="establishment_id" attrs="{'readonly':[('state','!=','draft')]}"  widget="selection"/>
+                        <field name="year_line_id"  attrs="{'readonly':[('state','!=','draft')]}" widget="selection"/>
+                        <field name="etabli_origine" attrs="{'readonly':[('state','!=','draft')]}"  />
+                         <field name="note" attrs="{'readonly':[('state','!=','inscrit')]}"  />
+                    </group>
+                  </group>
+                  <notebook>
+                        <page name="scolarity" string="Note supplémentaire">
+                             <group>
+                                <field name="notes"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record model='ir.ui.view' id='student_inscription_list_tree_view'>
+        <field name="name">stud.inscription.tree</field>
+        <field name="model">stud.inscription</field>
+        <field name="arch" type="xml">
+            <tree create="false" decoration-success="state=='admis'" decoration-info="state=='draft'" decoration-danger="state=='redoublant'" decoration-muted="state=='exclu'" decoration-warning="state=='abandonner'">
+                <field name="name"/>
+                <field name="scholarly_id" readonly="1"/>
+                <field name="student_id" readonly="1"/>
+                <field name="etabli_origine" readonly="1"/>
+                <field name="structure" readonly="1"/>
+                <field name="year_line_id" readonly="1"/>
+                <field name="establishment_id" readonly="1"/>
+                <field name="type" readonly="1"/>
+                <field name="note" attrs="{'invisible':[('state','=','draft')]}"/>
+                <field name="notes" attrs="{'invisible':[('state','=','draft')]}"/>
+                <field name="state" readonly="1" string="Etat"/>
+            </tree>
+        </field>
+    </record>
+
+        <record id="view_einscription_filter_view" model="ir.ui.view">
+            <field name="name">stud.inscription.search</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <search string="Inscription Search">
+                    <field name="name" string="Code inscription" filter_domain="[('name','ilike',self)]"/>
+                    <field name="scholarly_id" string="Année scolaire" filter_domain="[('scholarly_id','ilike',self)]"/>
+                </search>
+             </field>
+         </record>
+    
+    <!-- stud.inscription -->
+     <!-- stud.inscription   by user and team pivot View -->
+        <record id="stud_inscription_report_view_pivot" model="ir.ui.view">
+            <field name="name">stud.inscription.pivot</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <pivot string="Inscripion Scolaire" >
+                <field name="state" type="col"/>
+                <field name="establishment_id" type="row"/>
+                
+
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="stud_inscription_report_view_graph" model="ir.ui.view">
+            <field name="name">stud.inscription.graph</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <graph string="Inscripion Scolaire" stacked="False">
+                <field name="state" type="col"/>
+                <field name="establishment_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+        
+    <record id="action_student_inscription" model="ir.actions.act_window">
+        <field name="name">Inscripion Scolaire</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stud.inscription</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('student_inscription_list_tree_view')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('stud_inscription_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('stud_inscription_report_view_pivot')})]"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a New Student Inscription
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="menu_action_student_inscription"
+        name="Inscripion Scolaire"
+        action="action_student_inscription"
+        parent="student.menu_student_root"
+        sequence="2"/>
+
+    <!-- Inherit Student-->
+    <record id="student_inherit_form_view" model="ir.ui.view">
+        <field name="name">stud.student.form.inherit</field>
+        <field name="model">stud.student</field>
+        <field name="inherit_id" ref="student.view_student_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" name="inscription_view" type="object" icon="fa-pencil-square-o" context="{'default_student_id': active_id}">
+                    <field string="scholarly" name="inscriptions_count" widget="statinfo"/>
+                </button>
+            </div>
+             <notebook position="inside">
+                <page name="scolarity" string="Liste des inscriptions">
+                    <field name="inscription_ids"/>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    </data>
+</odoo>

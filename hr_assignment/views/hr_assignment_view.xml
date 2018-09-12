@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+      <menuitem name="Affectation Centrale"
+              parent="hr.menu_hr_root"
+              sequence="4"
+              id="menu_assignment_centrale_root"/>
+
+       <menuitem name="Affectation Régionale"
+              parent="hr.menu_hr_root"
+              sequence="5"
+              id="menu_assignment_regionale_root"/>
+
+       <menuitem name="Nomination"
+              parent="hr.menu_hr_root"
+              sequence="6"
+              id="menu_nomination_root"/>
+
+       <menuitem name="Demande"
+              parent="hr.menu_hr_root"
+              sequence="7"
+              id="menu_demande_root"/>
+
+
+       <!-- Request Assignment -->
+       <record id="view_hr_request_assignment_tree" model="ir.ui.view">
+        <field name="name">hr.request.assignment.tree</field>
+        <field name="model">hr.assignment.request</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment Request">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_request_assignment_form" model="ir.ui.view">
+        <field name="name">hr.assignment.request.form</field>
+        <field name="model">hr.assignment.request</field>
+        <field name="arch" type="xml">
+            <form string="Assignment Request">
+                <header>
+                    <button name="act_establishment_validate" string="Establishment validate" type="object" states="draft"/>
+                    <button name="act_regional_validate" string="Regional validate" type="object" states="establishment_validate"/>
+                    <button name="act_central_validate" string="Central validate" type="object" states="regional_validate"/>
+                    <button name="act_refused" string="Refused" type="object" states="establishment_validate,regional_validate"/>
+                    <button name="act_objection" string="Objection" type="object" states="refused"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,establishment_validate,regional_validate,central_validate,refused,objection"/>
+                </header>
+                <sheet>
+                    <div>
+                        <label for="name" class="oe_edit_only"/>
+                        <h3>
+                            <field name="name"/>
+                        </h3>
+                         <label for="date" class="oe_edit_only"/>
+                        <h3>
+                            <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="employee_id" options="{'no_create_edit': True}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="corps_id"/>
+                            <field name="discipline_enseig_id"/>
+                            <field name="discipline_ids" widget="many2many_tags"/>
+                            <field name="tel" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="marital"/>
+                            <field name="children"/>
+                            <field name="function_id"/>
+                        </group>
+                        <group>
+                            <field name="ref_budget" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="anciente_generale" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="anciente_state" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="anciente_city" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="affectation_ids" invisible="1"/>
+                            <field name="note_admin" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <h1><strong><label string="Notes des trois dérniére années"/></strong></h1>
+                            <div>
+                                <field name="note_ann1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="note_ann2" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="note_ann3" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="assignment_choice1" widget="selection" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="assignment_choice2" widget="selection" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="assignment_choice3" widget="selection" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                    </group>
+                    <group string="Notes">
+                        <field name="notes" attrs="{'readonly': [('state', '=', 'central_validate')]}"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_assignment_request_form" model="ir.actions.act_window">
+        <field name="name">Assignment request</field>
+        <field name="res_model">hr.assignment.request</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Réaffectation"
+              parent="menu_demande_root"
+              sequence="1"
+              id="menu_assignment_request"
+              action="action_hr_assignment_request_form"/>
+
+      <!-- Assignment -->
+       <record id="view_hr_assignment_tree" model="ir.ui.view">
+        <field name="name">hr.assignment.tree</field>
+        <field name="model">hr.assignment</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment">
+                <field name="name"/>
+                <field name="type" invisible="1"/>
+                <field name="type_affect" invisible="1"/>
+                <field name="type_id"/>
+                <field name="date"/>
+                <field name="start_date_affect"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_assignment_form" model="ir.ui.view">
+        <field name="name">hr.assignment.form</field>
+        <field name="model">hr.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Affectation">
+                <header>
+                    <button name="act_attend_approved" string="Préparation Affectation" type="object" states="draft"/>
+                    <button name="act_remetrre_en_brouillon" string="Refuser" type="object" states="pending_approved"/>
+                    <button name="act_approved" string="Approuver" type="object" states="pending_approved"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pending_approved,approved"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type" invisible="1"/>
+                            <field name="type_affect" invisible="1"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="type_id" domain="[('type','=', type_affect)]" options="{'no_create_edit': True}" required="1" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                        <group>
+                            <field name="start_date_affect" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="lien" widget="many2many_binary" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                         <page name="employee" string="Sélectionner Employés">
+                             <field name="employees_en_cours_affect" invisible="1"/>
+                            <field name="employee_ids" options="{'no_create':1,'no_create_edit':1}" attrs="{'readonly': [('state', '!=', 'draft')]}">
+                                    <tree>
+                                        <field name="identification_id"/>
+                                        <field name="nni"/>
+                                        <field name="name"/>
+                                        <field name="corps_id"/>
+                                    </tree>
+                            </field>
+                        </page>
+                        <page name="assignment_request_ids" string="Demande de réaffectation" >
+                            <field name="assignment_request_ids" options="{'no_create':1,'no_create_edit':1}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </page>
+                         <page name="employee" string="Liste des Employés" attrs="{'invisible': [('state', '!=', 'draft')]}">
+                            <field name="liste_employee_ids">
+                                    <tree>
+                                    <field name="identification_id" string="Matricule"/>
+                                    <field name="nni" required="1" string="NNI"/>
+                                    <field name="name" required="1" string="Nom et Prénom"/>
+                                    <field name="birthday" string="Date naissance"/>
+                                    <field name="place_of_birth" string="Lieu naissance"/>
+                                    <field name="note_graduation" string="Moyenne"/>
+                                    <field name="number_training_school" string="Rang"/>
+                                    <field name="assignment_choice1"/>
+                                    <field name="assignment_choice2"/>
+                                    <field name="assignment_choice3"/>
+                                    <field name="assignment_choice4"/>
+                                    <field name="assignment_choice5"/>
+                                    <field name="discipline_ids" widget="many2many_tags" string="Disciplines"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="employees" string="Affectation" attrs="{'invisible': [('state', '=', 'draft')]}">
+                            <field name="is_records_line" invisible="1"/>
+                            <button name="%(action_affectation_import_xcel)d" string="Import excel" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'approved')]}"/>
+                            <field name="line_ids" delete="false" attrs="{'readonly': [('state', '=', 'approved')]}">
+                                <tree string="Affectation" editable="bottom" create="false" delete="false">
+                                    <field name="type" invisible="1"/>
+                                    <field name="type_id" invisible="1"/>
+                                    <field name="type_affect" invisible="1"/>
+                                    <field name="nni"/>
+                                    <field name="employee_id" readonly="1"/>
+                                    <field name="note_graduation" string="Moyenne"/>
+                                    <field name="number_training_school" string="Rang"/>
+                                    <field name="assignment_choice1"/>
+                                    <field name="assignment_choice2"/>
+                                    <field name="assignment_choice3"/>
+                                    <field name="assignment_choice4"/>
+                                    <field name="assignment_choice5"/>
+                                    <field name="discipline_ids" widget="many2many_tags" string="Spécialités"/>
+                                    <field name="fonction_new_id" options="{'no_create_edit': True}"/>
+                                    <field name="establishment_new_id" options="{'no_create_edit': True}" domain="[('type_etablissement','=', 'dren')]"/>
+                                     <field name="discipline_enseig_new_id" options="{'no_create_edit': True}" string="Discipline"/>
+                                    <field name="remarque"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="statistique" string="Statistique" invisible="1">
+                            <field name="line_statistique_ids">
+                                 <tree string="Statistique Affectation" create="false" delete="false">
+                                    <field name="state_id"/>
+                                    <field name="count_discipline_ar"/>
+                                    <field name="count_discipline_fr"/>
+                                    <field name="count_discipline_bi"/>
+                                     <field name="count_total"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+       <record id="view_hr_assignment_administratif_form" model="ir.ui.view">
+        <field name="name">hr.assignment.form</field>
+        <field name="model">hr.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Affectation Administratif">
+                <header>
+                    <button name="act_attend_approved" string="Préparation Affectation" type="object" states="draft"/>
+                    <button name="act_remetrre_en_brouillon" string="Refuser" type="object" states="pending_approved"/>
+                    <button name="act_approved" string="Approuver" type="object" states="pending_approved"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pending_approved,approved"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type" invisible="1"/>
+                            <field name="type_affect" invisible="1"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="type_id" domain="[('type','=', type_affect)]" options="{'no_create_edit': True}" required="1" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                        <group>
+                            <field name="start_date_affect" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="lien" widget="many2many_binary" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                         <page name="employee" string="Sélectionner Employés">
+                             <field name="employees_en_cours_affect" invisible="1"/>
+                            <field name="employee_ids" options="{'no_create':1,'no_create_edit':1}" attrs="{'readonly': [('state', '!=', 'draft')]}">
+                                    <tree>
+                                        <field name="identification_id"/>
+                                        <field name="nni"/>
+                                        <field name="name"/>
+                                        <field name="corps_id"/>
+                                    </tree>
+                            </field>
+                        </page>
+                        <page name="assignment_request_ids" string="Demande de réaffectation" >
+                            <field name="assignment_request_ids" options="{'no_create':1,'no_create_edit':1}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </page>
+                         <page name="employee" string="Liste des Employés" attrs="{'invisible': [('state', '!=', 'draft')]}">
+                            <field name="liste_employee_ids">
+                                    <tree>
+                                    <field name="identification_id" string="Matricule"/>
+                                    <field name="nni" required="1" string="NNI"/>
+                                    <field name="name" required="1" string="Nom et Prénom"/>
+                                    <field name="birthday" string="Date naissance"/>
+                                    <field name="place_of_birth" string="Lieu naissance"/>
+                                    <field name="corps_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="employees" string="Affectation" attrs="{'invisible': [('state', '=', 'draft')]}">
+                            <field name="is_records_line" invisible="1"/>
+                            <button name="%(action_affectation_import_xcel)d" string="Import excel" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'approved')]}"/>
+                            <button name="xls_export_affectation" string="Export Affectation" type="object" class="oe_highlight" context="{'xls_export':1}" colspan="2" attrs="{'invisible':[('state', '!=', 'approved')]}"/>
+                            <field name="line_ids" delete="false" attrs="{'readonly': [('state', '=', 'approved')]}">
+                                <tree string="Affectation" editable="bottom" create="false" delete="false">
+                                    <field name="type" invisible="1"/>
+                                    <field name="type_id" invisible="1"/>
+                                    <field name="type_affect" invisible="1"/>
+                                    <field name="nni"/>
+                                    <field name="employee_id" readonly="1"/>
+                                    <field name="corps_id"/>
+                                    <field name="fonction_new_id" options="{'no_create_edit': True}"/>
+                                    <field name="establishment_new_id" options="{'no_create_edit': True}" domain="[('type_etablissement','=', 'dren')]"/>
+                                    <field name="lieu" options="{'no_create_edit': True}"/>
+                                    <field name="remarque"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="statistique" string="Statistique" invisible="1">
+                            <field name="line_statistique_ids">
+                                 <tree string="Statistique Affectation" create="false" delete="false">
+                                    <field name="state_id"/>
+                                    <field name="count_discipline_ar"/>
+                                    <field name="count_discipline_fr"/>
+                                    <field name="count_discipline_bi"/>
+                                     <field name="count_total"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+   <record id="view_hr_assignment_positionnement_form" model="ir.ui.view">
+        <field name="name">hr.assignment.form</field>
+        <field name="model">hr.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Positionnement">
+                <header>
+                    <button name="act_attend_approved" string="A approuver" type="object" states="draft"/>
+                    <button name="act_remetrre_en_brouillon" string="Refuser" type="object" states="pending_approved"/>
+                    <button name="act_approved" string="Approuver" type="object" states="pending_approved"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pending_approved,approved"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type" invisible="1"/>
+                            <field name="type_affect" invisible="1"/>
+                            <field name="type_id" invisible="1"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                             <field name="position_id" required="1" widget="selection" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="motif_id" required="1" widget="selection" attrs="{'readonly': [('state', '=', 'approved')]}" string="Sous position"/>
+                        </group>
+                        <group>
+                            <field name="start_date_affect" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="lien" widget="many2many_binary" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                         <page name="employees" string="Employés">
+                            <field name="employee_check_ids" invisible="1"/>
+                            <field name="is_records_line" invisible="1"/>
+                            <button name="%(action_choice_assignment_employee)d" string="Choisir Employés" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'approved')]}" context="{'employee_check_ids': employee_check_ids}"/>
+                            <field name="line_ids" attrs="{'readonly': [('state', '=', 'approved')]}">
+                                <tree string="Positionnement" editable="bottom" create="false">
+                                    <field name="type" invisible="1"/>
+                                     <field name="type_id" invisible="1"/>
+                                    <field name="identification_id"/>
+                                    <field name="nni"/>
+                                    <field name="employee_id"/>
+                                    <field name="corps_id"/>
+                                    <field name="fonction_id"/>
+                                    <field name="place_job_id"/>
+                                    <field name="position_id"/>
+                                    <field name="motif_id" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+       <record id="view_hr_assignment_nomination_form" model="ir.ui.view">
+        <field name="name">hr.assignment.form</field>
+        <field name="model">hr.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Nomination">
+                <header>
+                    <button name="act_attend_approved" string="A approuver" type="object" states="draft"/>
+                    <button name="act_remetrre_en_brouillon" string="Refuser" type="object" states="pending_approved"/>
+                    <button name="act_approved" string="Approuver" type="object" states="pending_approved"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pending_approved,approved"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type" invisible="1"/>
+                            <field name="type_affect" invisible="1"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="type_id" domain="[('type','=', type_affect)]" options="{'no_create_edit': True}" required="1" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                        <group>
+                            <field name="start_date_affect" required="1" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                            <field name="lien" widget="many2many_binary" attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                         <page name="employees" string="Employés">
+                            <field name="employee_check_ids" invisible="1"/>
+                            <field name="is_records_line" invisible="1"/>
+                            <button name="%(action_choice_assignment_employee)d" string="Choisir Employés" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'validate')]}" context="{'employee_check_ids': employee_check_ids}"/>
+                            <field name="line_ids" >
+                            <tree string="Nomination" editable="bottom" create="false">
+                                <field name="type" invisible="1"/>
+                                 <field name="type_id" invisible="1"/>
+                                <field name="identification_id"/>
+                                <field name="nni"/>
+                                <field name="employee_id"/>
+                                <field name="corps_id"/>
+                                <field name="fonction_id"/>
+                                <field name="place_job_id"/>
+                                <field name="fonction_new_id" options="{'no_create_edit': True}"/>
+                                <field name="place_job_new_id" options="{'no_create_edit': True}"/>
+                                <field name="start_date_affect"/>
+                            </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+    
+     <!-- hr_ affectation  by user and team pivot View -->
+        <record id="hr_affectation_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.affectation.pivot</field>
+            <field name="model">hr.assignment</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation" disable_linking="True">
+                <field name="state" type="row"/>
+                     <field name="type_affect" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_affectation_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.affectation.graph</field>
+            <field name="model">hr.assignment</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="type_affect" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+
+    <record id="action_hr_assignment_prof_form" model="ir.actions.act_window">
+        <field name="name">Affectation Centrale (Professeur)</field>
+        <field name="res_model">hr.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type','=','affectation'), ('type_affect','=','prof')]</field>
+        <field name="context">{'default_type': 'affectation', 'default_type_affect': 'prof'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                         (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+    </record>
+
+ <record model="ir.actions.act_window.view" id="action_affect_prof_tree">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_assignment_tree"/>
+        <field name="act_window_id" ref="action_hr_assignment_prof_form"/>
+    </record>
+ 
+
+
+    <record model="ir.actions.act_window.view" id="action_affect_prof_form">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_assignment_form"/>
+        <field name="act_window_id" ref="action_hr_assignment_prof_form"/>
+    </record>
+
+    <menuitem name="Professeur"
+              parent="menu_assignment_centrale_root"
+              sequence="1"
+              id="menu_assignment_prof"
+              action="action_hr_assignment_prof_form"/>
+
+    <record id="action_hr_assignment_inst_form" model="ir.actions.act_window">
+        <field name="name">Affectation Centrale (Institeur)</field>
+        <field name="res_model">hr.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type','=','affectation'), ('type_affect','=','inst')]</field>
+        <field name="context">{'default_type': 'affectation', 'default_type_affect': 'inst'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                         (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+    </record>
+
+  <record model="ir.actions.act_window.view" id="action_affect_inst_tree">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_assignment_tree"/>
+        <field name="act_window_id" ref="action_hr_assignment_inst_form"/>
+    </record>
+
+
+    <record model="ir.actions.act_window.view" id="action_affect_inst_form">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_assignment_form"/>
+        <field name="act_window_id" ref="action_hr_assignment_inst_form"/>
+    </record>
+
+      <menuitem name="Institeur"
+              parent="menu_assignment_centrale_root"
+              sequence="2"
+              id="menu_assignment_inst"
+              action="action_hr_assignment_inst_form"/>
+
+    <record id="action_hr_assignment_admin_form" model="ir.actions.act_window">
+        <field name="name">Affectation Centrale (Administratif)</field>
+        <field name="res_model">hr.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type','=','affectation'), ('type_affect','=','administratif')]</field>
+        <field name="context">{'default_type': 'affectation', 'default_type_affect': 'administratif'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                         (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                         (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+    </record>
+
+  <record model="ir.actions.act_window.view" id="action_affect_admin_tree">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_assignment_tree"/>
+        <field name="act_window_id" ref="action_hr_assignment_admin_form"/>
+    </record>
+
+
+    <record model="ir.actions.act_window.view" id="action_affect_admin_form">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_assignment_administratif_form"/>
+        <field name="act_window_id" ref="action_hr_assignment_admin_form"/>
+    </record>
+
+      <menuitem name="Administratif"
+              parent="menu_assignment_centrale_root"
+              sequence="3"
+              id="menu_assignment_admin"
+              action="action_hr_assignment_admin_form"/>
+
+
+    <menuitem name="Assignment"
+              parent="hr.menu_human_resources_configuration"
+              sequence="5"
+              id="menu_assignment_config"/>
+
+    <record id="action_hr_change_position_form" model="ir.actions.act_window">
+        <field name="name">Positionnement</field>
+        <field name="res_model">hr.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type','=','positionnement')]</field>
+        <field name="context">{'default_type': 'positionnement'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                         (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+        
+    </record>
+
+       <record model="ir.actions.act_window.view" id="action_hr_change_position_t">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_assignment_tree"/>
+        <field name="act_window_id" ref="action_hr_change_position_form"/>
+    </record>
+
+
+    <record model="ir.actions.act_window.view" id="action_hr_change_position_f">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_assignment_positionnement_form"/>
+        <field name="act_window_id" ref="action_hr_change_position_form"/>
+    </record>
+
+    <menuitem name="Position Statuaire"
+              parent="menu_nomination_root"
+              sequence="2"
+              id="menu_hr_change_position"
+              action="action_hr_change_position_form"/>
+
+    <record id="action_hr_nomination_form" model="ir.actions.act_window">
+        <field name="name">Nomination</field>
+        <field name="res_model">hr.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type','=','nomination'), ('type_affect','=','nomination')]</field>
+        <field name="context">{'default_type': 'nomination', 'default_type_affect': 'nomination'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                         (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_hr_nomination_t">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_assignment_tree"/>
+        <field name="act_window_id" ref="action_hr_nomination_form"/>
+    </record>
+
+
+    <record model="ir.actions.act_window.view" id="action_hr_nomination_f">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_assignment_nomination_form"/>
+        <field name="act_window_id" ref="action_hr_nomination_form"/>
+    </record>
+
+    <menuitem name="Nomination"
+              parent="menu_nomination_root"
+              sequence="1"
+              id="menu_hr_nomination"
+              action="action_hr_nomination_form"/>
+
+        <!-- Function -->
+       <record id="view_hr_function_tree" model="ir.ui.view">
+        <field name="name">hr.function.tree</field>
+        <field name="model">hr.function</field>
+        <field name="arch" type="xml">
+            <tree string="Function">
+                <field name="name"/>
+                <field name="type_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_function_form" model="ir.ui.view">
+        <field name="name">hr.function.form</field>
+        <field name="model">hr.function</field>
+        <field name="arch" type="xml">
+            <form string="Function">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="type_id"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_function_form" model="ir.actions.act_window">
+        <field name="name">Function</field>
+        <field name="res_model">hr.function</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Fonction"
+              parent="menu_assignment_config"
+              sequence="1"
+              id="menu_assignment_function"
+              action="action_hr_function_form"/>
+
+              <!-- Type Function -->
+       <record id="view_hr_type_function_tree" model="ir.ui.view">
+        <field name="name">hr.type.function.tree</field>
+        <field name="model">hr.type.function</field>
+        <field name="arch" type="xml">
+            <tree string="Type Fonction">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="secondaire"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_type_function_form" model="ir.ui.view">
+        <field name="name">hr.type.function.form</field>
+        <field name="model">hr.type.function</field>
+        <field name="arch" type="xml">
+            <form string="Type Fonction">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="secondaire"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_type_function_form" model="ir.actions.act_window">
+        <field name="name">Type Function</field>
+        <field name="res_model">hr.type.function</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Type Fonction"
+              parent="menu_assignment_config"
+              sequence="2"
+              id="menu_assignment_type_function"
+              action="action_hr_type_function_form"/>
+
+                      <!-- Département -->
+       <record id="view_hr_departement_tree" model="ir.ui.view">
+        <field name="name">hr.departement.tree</field>
+        <field name="model">hr.departement</field>
+        <field name="arch" type="xml">
+            <tree string="Département">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_departement_form" model="ir.ui.view">
+        <field name="name">hr.departement.form</field>
+        <field name="model">hr.departement</field>
+        <field name="arch" type="xml">
+            <form string="Département">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_departement_form" model="ir.actions.act_window">
+        <field name="name">Département</field>
+        <field name="res_model">hr.departement</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Département"
+              parent="menu_assignment_config"
+              sequence="4"
+              id="menu_hr_departement"
+              action="action_hr_departement_form"/>
+
+                  <!-- Lieu de travail -->
+       <record id="view_hr_place_job_tree" model="ir.ui.view">
+        <field name="name">hr.place.job.tree</field>
+        <field name="model">hr.place.job</field>
+        <field name="arch" type="xml">
+            <tree string="Lieu de travail">
+                <field name="name"/>
+                <field name="type_id"/>
+                <field name="dep_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_job_place_form" model="ir.ui.view">
+        <field name="name">hr.place.job.form</field>
+        <field name="model">hr.place.job</field>
+        <field name="arch" type="xml">
+            <form string="Lieu de travail">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="type_id"/>
+                            <field name="dep_id"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_job_place_form" model="ir.actions.act_window">
+        <field name="name">Lieu de travail</field>
+        <field name="res_model">hr.place.job</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Lieu de travail"
+              parent="menu_assignment_config"
+              sequence="3"
+              id="menu_hr_job_place"
+              action="action_hr_job_place_form"/>
+
+      <!-- Assignment Type -->
+       <record id="view_hr_assignment_type_tree" model="ir.ui.view">
+        <field name="name">hr.assignment.type.tree</field>
+        <field name="model">hr.assignment.type</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment Type">
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_assignment_type_form" model="ir.ui.view">
+        <field name="name">hr.assignment.type.form</field>
+        <field name="model">hr.assignment.type</field>
+        <field name="arch" type="xml">
+            <form string="Assignment Type">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                     </group>
+                     <notebook>
+                        <page name="motif_ids" string="Motif">
+                            <field name="motif_ids">
+                              <tree>
+                                <field name="code"/>
+                                <field name="name"/>
+                              </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_assignment_type_form" model="ir.actions.act_window">
+        <field name="name">Assignment Type</field>
+        <field name="res_model">hr.assignment.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Position"
+              parent="menu_assignment_config"
+              sequence="4"
+              id="menu_assignment_type"
+              action="action_hr_assignment_type_form"/>
+
+         <!-- Assignment Motif -->
+       <record id="view_hr_assignment_motif_tree" model="ir.ui.view">
+        <field name="name">hr.assignment.type..motif.tree</field>
+        <field name="model">hr.assignment.type.motif</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment Motif">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="assignmen_type_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_assignment_motif_form" model="ir.ui.view">
+        <field name="name">hr.assignment.type.motif.form</field>
+        <field name="model">hr.assignment.type.motif</field>
+        <field name="arch" type="xml">
+            <form string="Assignment Motif">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="assignmen_type_id"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_hr_assignment_motif_form" model="ir.actions.act_window">
+        <field name="name">Assignment Motif</field>
+        <field name="res_model">hr.assignment.type.motif</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Sous position"
+              parent="menu_assignment_config"
+              sequence="5"
+              id="menu_assignment_motif"
+              action="action_hr_assignment_motif_form"/>
+
+    <!--inherit employee-->
+    <record id="hr_employee_view_assignment_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.assignment</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_recrutement.view_employee_grh_detail_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page name="assignement_ids" string="Assignment">
+                    <group>
+                        <field name="position_id" readonly="1"/>
+                        <field name="motif_id" readonly="1"/>
+                    </group>
+                    <field name="assignment_line_ids" readonly="1">
+                         <tree string="Assignment">
+                            <field name="assignment_id"/>
+                            <field name="type"/>
+                            <field name="establishment_new_id"/>
+                            <field name="lieu"/>
+                            <field name="place_job_new_id"/>
+                            <field name="fonction_new_id"/>
+                            <field name="discipline_enseig_new_id" string="Discipline"/>
+                            <field name="position_new_id" string="Position"/>
+                            <field name="motif_new_id" string="Sous Position"/>
+                            <field name="start_date_affect"/>
+                            <field name="end_date_affect"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+      <record id="hr_employee_grh_view_assignment_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.grh.assignment</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_recrutement.view_employee_grh_form"/>
+        <field name="arch" type="xml">
+            <field name="corps_id" position="after">
+                <field name="fonction_id" readonly="1"/>
+            </field>
+            <group name="corps" position="after">
+                <group>
+                    <field name="position_id" readonly="1"/>
+                    <field name="motif_id" readonly="1"/>
+                </group>
+                 <group>
+                    <field name="place_job_id" readonly="1"/>
+                    <field name="lieu_id" readonly="1" string="Lieu affectation"/>
+                    <field name="establishment_id" readonly="1"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+       <!--inherit employee-->
+    <record id="hr_employee_view_tree" model="ir.ui.view">
+        <field name="name">hr.employee.view.tree.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <field name="department_id" position="after">
+                <field name="fonction_id"/>
+                <field name="place_job_id"/>
+                <field name="lieu_id"/>
+                <field name="establishment_id"/>
+                <field name="position_id"/>
+                <field name="motif_id"/>
+            </field>
+        </field>
+    </record>
+
+      <record id="view_employee_assignment_filter" model="ir.ui.view">
+        <field name="name">Employees</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+            <group position="inside">
+                <filter name="group_corps" string="Corps" domain="[]" context="{'group_by':'corps_id'}"/>
+                <filter name="group_position" string="Position" domain="[]" context="{'group_by':'position_id'}"/>
+                <filter name="group_sous_position" string="Sous position" domain="[]" context="{'group_by':'motif_id'}"/>
+            </group>
+        </field>
+    </record>
+
+        <!--inherit company-->
+    <record id="company_view_assignment_form" model="ir.ui.view">
+        <field name="name">company.view.form.inherit.assignment</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="assignment_type"/>
+            </field>
+        </field>
+    </record>
+
+         <!-- Affectation régionale-->
+       <record id="view_hr_assignment_reg_tree" model="ir.ui.view">
+        <field name="name">hr.assignment.regional.tree</field>
+        <field name="model">hr.assignment.regional</field>
+        <field name="arch" type="xml">
+            <tree string="Affectation régionale" create="false">
+                <field name="name"/>
+                <field name="type_affect" invisible="1"/>
+                <field name="type_id"/>
+                <field name="establishment_id"/>
+                <field name="date"/>
+                <field name="start_date_affect"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_assignment_reg_form" model="ir.ui.view">
+        <field name="name">hr.assignment.regional.form</field>
+        <field name="model">hr.assignment.regional</field>
+        <field name="arch" type="xml">
+            <form string="Affectation Régional" create="false">
+                 <header>
+                    <button name="act_en_cours" string="En cours" type="object" states="affect"/>
+                     <button name="act_remetrre_en_brouillon" string="Refuser" type="object" states="en_cours"/>
+                    <button name="act_valide" string="valider" type="object" states="en_cours"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type_affect" invisible="1"/>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'valide')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'valide')]}"/>
+                            <field name="type_id" options="{'no_create_edit': True}" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="assignment_id" readonly="1"/>
+                            <field name="establishment_id" readonly="1"/>
+                            <field name="start_date_affect" attrs="{'readonly': [('state', '=', 'valide')]}"/>
+                            <field name="lien" widget="many2many_binary"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="employees" string="Employés">
+                          <button name="%(action_affectation_import_xcel)d" string="Import excel" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'approved')]}"/>
+                            <field name="line_ids" delete="false" attrs="{'readonly': [('state', '=', 'valide')]}">
+                                <tree string="Affectation" editable="bottom" create="false" delete="false">
+                                    <field name="type" invisible="1"/>
+                                    <field name="type_id" invisible="1"/>
+                                    <field name="type_affect" invisible="1"/>
+                                    <field name="nni"/>
+                                    <field name="employee_id" readonly="1"/>
+                                    <field name="corps_id"/>
+                                    <field name="discipline_ids" widget="many2many_tags" string="Spécialités"/>
+                                    <field name="establishment_new_id" invisible="1"/>
+                                    <field name="fonction_new_id" options="{'no_create_edit': True}" readonly="1"/>
+                                    <field name="discipline_enseig_new_id" string="Discipline" readonly="1"/>
+                                    <field name="lieu" options="{'no_create_edit': True}"/>
+                                    <field name="remarque" readonly="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+     <!-- hr_ affectation  regional by user and team pivot View -->
+        <record id="hr_affectation_regional_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.affectation.regional.pivot</field>
+            <field name="model">hr.assignment.regional</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation regional" disable_linking="True">
+                <field name="state" type="row"/>
+                     <field name="type_affect" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_affectation_regional_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.affectation.regional.graph</field>
+            <field name="model">hr.assignment.regional</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation regional" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="type_affect" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+    <record id="action_hr_assignment_reg_prof_form" model="ir.actions.act_window">
+        <field name="name">Affectation Régionale (Professeur)</field>
+        <field name="res_model">hr.assignment.regional</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type_affect','=','prof')]</field>
+        <field name="context">{'default_type_affect': 'prof'}</field> 
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_assignment_reg_tree')}),
+                           (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_regional_report_view_pivot')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_regional_report_view_graph')})]"/>
+    </record>
+
+    <record id="action_hr_assignment_reg_inst_form" model="ir.actions.act_window">
+        <field name="name">Affectation Régionale (Institeur)</field>
+        <field name="res_model">hr.assignment.regional</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type_affect','=','inst')]</field>
+        <field name="context">{'default_type_affect': 'inst'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_assignment_reg_tree')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_regional_report_view_pivot')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_regional_report_view_graph')})]"/>
+    </record>
+
+    <record id="action_hr_assignment_reg_admin_form" model="ir.actions.act_window">
+        <field name="name">Affectation Régionale (Administratif)</field>
+        <field name="res_model">hr.assignment.regional</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('type_affect','=','administratif')]</field>
+        <field name="context">{'default_type_affect': 'administratif'}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_assignment_reg_tree')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_regional_report_view_pivot')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_regional_report_view_graph')})]"/>
+    </record>
+
+      <menuitem name="Professeur"
+              parent="menu_assignment_regionale_root"
+              sequence="1"
+              id="menu_assignment_prof_reg"
+              action="action_hr_assignment_reg_prof_form"/>
+
+      <menuitem name="Institeur"
+              parent="menu_assignment_regionale_root"
+              sequence="2"
+              id="menu_assignment_inst_reg"
+              action="action_hr_assignment_reg_inst_form"/>
+
+      <menuitem name="Administratif"
+              parent="menu_assignment_regionale_root"
+              sequence="3"
+              id="menu_assignment_admin_reg"
+              action="action_hr_assignment_reg_admin_form"/>
+
+      <!--inherit etablissement-->
+    <record id="educa_etab_view_assignment_form" model="ir.ui.view">
+        <field name="name">educa.establishment.form.inherit.assignment</field>
+        <field name="model">educa.establishment</field>
+        <field name="inherit_id" ref="etablissement.view_etablissement_form_view"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page name="assignement_ids" string="Employés">
+                    <field name="assignment_line_ids">
+                         <tree string="Affectation">
+                            <field name="employee_id"/>
+                            <field name="assignment_id"/>
+                            <field name="type"/>
+                            <field name="establishment_new_id"/>
+                            <field name="lieu"/>
+                            <field name="fonction_new_id"/>
+                            <field name="discipline_enseig_new_id" string="Discipline"/>
+                            <field name="start_date_affect"/>
+                            <field name="end_date_affect"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="educa_etab_other_view_assignment_form" model="ir.ui.view">
+        <field name="name">educa.establishment.other.form.inherit.assignment</field>
+        <field name="model">educa.establishment</field>
+        <field name="inherit_id" ref="etablissement.view_autre_etablissement_form_view"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page name="assignement_ids" string="Employés">
+                    <field name="assignment_line_ids">
+                         <tree string="Affectation">
+                            <field name="employee_id"/>
+                            <field name="assignment_id"/>
+                            <field name="type"/>
+                            <field name="establishment_new_id"/>
+                            <field name="lieu"/>
+                            <field name="fonction_new_id"/>
+                            <field name="discipline_enseig_new_id" string="Discipline"/>
+                            <field name="start_date_affect"/>
+                            <field name="end_date_affect"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+ 
+</odoo>

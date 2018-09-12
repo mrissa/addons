@@ -1,0 +1,736 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-17 14:59+0000\n"
+"PO-Revision-Date: 2018-08-17 14:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Date de naissance</b>"
+msgstr "<b>تاريخ الميلاد</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Fiche Renseignement Élève</b>"
+msgstr "<b>بطاقة معلومات التلميذ</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>NNI</b>"
+msgstr "<b>الرقم الوطني</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Nom et prénom</b>"
+msgstr "<b>الإسم واللقب</b>"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "<b>Sexe</b>"
+msgstr "<b>الجنس</b>"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Abandonner"
+msgstr "متخلي"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Actif"
+msgstr "حالة عادية"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_active
+msgid "Active"
+msgstr "نشط"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Admis"
+msgstr "مقبول"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_address
+msgid "Adress"
+msgstr "العنوان"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_succes_year
+msgid "Année de réussite"
+msgstr "سنة النجاح"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Base Information"
+msgstr "المعلومات الأساسية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Birth"
+msgstr "الميلاد"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_boursier
+msgid "Boursier"
+msgstr "يتلقى منحة"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Choose a file to import..."
+msgstr " ...اختر ملفًا لاستيراده"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Choose your Excel file"
+msgstr "...اختر ملف"
+
+#. module: student
+#: model:ir.actions.act_window,help:student.open_view_student_list_my
+msgid "Click to add a new student."
+msgstr "انقر لإضافة تلميذ جديد"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_color
+msgid "Color Index"
+msgstr "لون الرقم التسلسلى"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: student
+#: model:ir.ui.menu,name:student.menu_student_configuration
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Contact Information"
+msgstr "معلومات التواصل"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_create_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_create_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_create_date
+#: model:ir.model.fields,field_description:student.field_stud_student_create_date
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_birthday
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_display_name
+#: model:ir.model.fields,field_description:student.field_report_student_report_student_display_name
+#: model:ir.model.fields,field_description:student.field_stud_student_display_name
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_distance
+msgid "Distance housing and educational institution"
+msgstr "المسافة السكن/المؤسسة"
+
+#. module: student
+#: selection:stud.student,state:0
+#: selection:stud.student.pv,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "Eleve Image"
+msgstr "صورة التلميذ"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "En Transfert"
+msgstr "في طور التحويل"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_establishment_id
+msgid "Etablissement"
+msgstr "المؤسسة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_etab_origine_id
+msgid "Etablissement Origine"
+msgstr "المؤسسة الأصلية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_tree
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_tree
+msgid "Etat inscription"
+msgstr "حالة التسجيل"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_etranger
+msgid "Etranger"
+msgstr "أجنبي"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Exclu"
+msgstr "مفصول"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_leisure
+msgid "Existence leisure place"
+msgstr "مكان للترفيه "
+
+#. module: student
+#: selection:stud.student,gender:0
+msgid "Female"
+msgstr "أنثى"
+
+#. module: student
+#: model:ir.actions.report,name:student.action_report_student
+msgid "Fiche Eleve"
+msgstr "بطاقة التلميذ"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_filename
+msgid "Filename"
+msgstr "اسم الملف"
+
+#. module: student
+#: selection:stud.student.pv,type_structure:0
+msgid "First Level"
+msgstr "أول سنة دراسية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Foyer"
+msgstr "مبيت"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_id
+#: model:ir.model.fields,field_description:student.field_report_student_report_student_id
+#: model:ir.model.fields,field_description:student.field_stud_student_id
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_id_3400
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.action_stud_pv_form
+#: model:ir.model,name:student.model_stud_student_pv
+#: model:ir.ui.menu,name:student.menu_view_student_pv_form
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "Import Student"
+msgstr "إستيراد تلميذ"
+
+#. module: student
+#: model:ir.model,name:student.model_import_student_line
+#: model:ir.ui.view,arch_db:student.student_import_view
+msgid "Import Student Line"
+msgstr "استيراد التلميذ"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.action_student_import
+msgid "Import line"
+msgstr "الإستيراد"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_import_tree
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "Import student"
+msgstr "استيراد التلميذ"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Inactif"
+msgstr "غير فعال"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Inscrit"
+msgstr "مسجل"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line___last_update
+#: model:ir.model.fields,field_description:student.field_report_student_report_student___last_update
+#: model:ir.model.fields,field_description:student.field_stud_student___last_update
+#: model:ir.model.fields,field_description:student.field_stud_student_pv___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_write_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_write_uid
+#: model:ir.model.fields,field_description:student.field_stud_student_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_write_date
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_write_date
+#: model:ir.model.fields,field_description:student.field_stud_student_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name
+msgid "Last name and first name"
+msgstr "الإسم و اللقب"
+
+#. module: student
+#: selection:stud.student,gender:0
+msgid "Male"
+msgstr "ذكر"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_filter
+msgid "Matricule"
+msgstr "الرقم الإستدلالي"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image_medium
+msgid "Medium-sized photo"
+msgstr "صورة متوسطة الحجم"
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image_medium
+msgid "Medium-sized photo of the sudent. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "صورة التلميذ متوسطة الحجم. يمكن تغيير الحجم تلقائياً مع الحفاض على الشكل العام"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Mere"
+msgstr "الأم"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_nni
+msgid "NNI"
+msgstr "الرقم الوطني للتعريف"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name_father
+msgid "Name father"
+msgstr "اسم الأب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_name_mother
+msgid "Name mother"
+msgstr "اسم الأم"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_identification_id
+msgid "National Matricule"
+msgstr "الرقم الإستدلالي"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_country_id
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_structure_line_id
+#: model:ir.model.fields,field_description:student.field_stud_student_structure_line_id
+msgid "Niveau scolaire"
+msgstr "المستوى الدراسي"
+
+#. module: student
+#: selection:stud.student,state:0
+msgid "Not Affect"
+msgstr "غير موجه"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Not affect"
+msgstr "غير موجه"
+
+#. module: student
+#: selection:stud.student.pv,type_structure:0
+msgid "Not first Level"
+msgstr "Not first Level"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_comment
+#: model:ir.model.fields,field_description:student.field_stud_student_notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Notes..."
+msgstr "...ملاحظات"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.report_student
+msgid "N° matricule:"
+msgstr "الرقم الإستدلالي"
+
+#. module: student
+#: selection:stud.student.pv,type:0
+msgid "On demande"
+msgstr "تحت الطلب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_other_father
+msgid "Other Father"
+msgstr "أب اخر"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Other Information"
+msgstr "معلومات أخرى"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Other Information ..."
+msgstr "...معلومات أخرى"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_other_mother
+msgid "Other Mother"
+msgstr "أم أخرى"
+
+#. module: student
+#: selection:stud.student.pv,type:0
+msgid "PV de sortie"
+msgstr "محضر التخرج"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Pere"
+msgstr "الأب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image
+msgid "Photo"
+msgstr "الصورة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_place_birth
+msgid "Place of birth"
+msgstr "مكان الولادة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_electricity
+msgid "Presence of electricity"
+msgstr "وجود الكهرباء"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_water
+msgid "Presence of water"
+msgstr "وجود الماء"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_situation_pro_fadher
+msgid "Profesional situation of the father"
+msgstr "مهنة الأب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_situation_pro_mother
+msgid "Profesional situation of the mother"
+msgstr "مهنة الأم"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_id
+msgid "Pv de sortie"
+msgstr "محضر التخرج"
+
+#. module: student
+#: selection:stud.student,state_inscription:0
+msgid "Redoublant"
+msgstr "راسب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_name
+msgid "Reference PV"
+msgstr "مرجع المحضر"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_revenue_father
+msgid "Revenue father"
+msgstr "دخل الأب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_revenue_mother
+msgid "Revenue mother"
+msgstr "دخل الأم"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+#: selection:stud.student,state:0
+msgid "Scolarity termineted"
+msgstr "النجاح في مناظرة الباكالوريا"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_section_id
+msgid "Section"
+msgstr "الفقرة"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Situation"
+msgstr "الوضعية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Situation Socio Economique"
+msgstr "الوضع الاجتماعي الاقتصادي"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_image_small
+msgid "Small-sized photo"
+msgstr "صور صغيرة الحجم"
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image_small
+msgid "Small-sized photo of the student. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "صورة التلميذ صغيرة الحجم. يمكن تغيير الحجم تلقائياً مع الحفاض على الشكل العام"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_state
+#: model:ir.model.fields,field_description:student.field_stud_student_state
+msgid "State"
+msgstr "الحالة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_state_inscription
+msgid "State registration"
+msgstr "حالة الترسيم"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Status"
+msgstr "الحالة "
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_structure
+msgid "Structure"
+msgstr "البنية"
+
+#. module: student
+#: model:ir.model,name:student.model_stud_student
+msgid "Stud Student"
+msgstr "التلميذ"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_list
+#: model:ir.ui.menu,name:student.menu_hr_main
+#: model:ir.ui.menu,name:student.menu_student
+#: model:ir.ui.menu,name:student.menu_student_root
+#: model:ir.ui.view,arch_db:student.view_student_filter
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Student"
+msgstr " التلميذ"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_import_student_line_data_file
+msgid "Student File"
+msgstr "ملف التلميذ"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_student_form
+msgid "Student Information"
+msgstr "معلومات التلميذ"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_tree
+msgid "Student Structure"
+msgstr "البنية التربوية"
+
+#. module: student
+#: model:ir.actions.act_window,name:student.open_view_student_list_my
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_student_ids
+#: model:ir.ui.menu,name:student.menu_action_eleve
+#: model:ir.ui.menu,name:student.menu_open_view_student_list_my
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+#: model:ir.ui.view,arch_db:student.view_student_filter
+#: model:ir.ui.view,arch_db:student.view_student_tree
+msgid "Students"
+msgstr "التلاميذ"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_tel_father
+msgid "Tel father"
+msgstr "رقم الأب"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_tel_mother
+msgid "Tel mother"
+msgstr "رقم الأم"
+
+#. module: student
+#: sql_constraint:stud.student:0
+msgid "The NNI must be unique."
+msgstr ".الرقم الوطني يجب أن يكون فريداً"
+
+#. module: student
+#: sql_constraint:stud.student:0
+msgid "The Student Number must be unique across the company(s)."
+msgstr ".يجب أن يكون رقم التلميذ فريدًا في المؤسسة"
+
+#. module: student
+#: model:ir.model.fields,help:student.field_stud_student_image
+msgid "This field holds the image used as photo for the student, limited to 1024x1024px."
+msgstr ".هذا الملف يحمل الصورة المستخدمة كصورة للتلميذ"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_town_birth
+msgid "Town Birth"
+msgstr "بلدية الولادة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_town_residence
+msgid "Town Residence"
+msgstr "بلدية الإقامة"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_type_structure
+msgid "Type structure"
+msgstr "نوع البنية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+#: selection:stud.student.pv,state:0
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: student
+#: model:ir.actions.act_window,help:student.open_view_student_list_my
+msgid "With just a quick glance on the Odoo student screen, you\n"
+"                can easily find all the information you need for each person;\n"
+"                contact data, job position, availability, etc."
+msgstr "من خلال تصفح سريع على شاشة اودو الخاصة بالتلميذ ، يمكنك أن تجد بسهولة بيانات الاتصال، وموقع الوظيفة، وتوافر، وما إلى ذلك"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_scholarly_id
+msgid "Year Scholarly"
+msgstr "السنة الدراسية"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_pv_scholarly_insc_id
+msgid "Year Scholarly inscription"
+msgstr " السنة الدراسية"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.style
+msgid "body, table, td, span, div, p {\n"
+"			    font-family: Helvetica, sans-serif;\n"
+"			    font-size:16px;\n"
+"			}\n"
+"			table.mystyle{\n"
+"                        border:0px;\n"
+"                        padding:5px;\n"
+"                        }\n"
+"            td{\n"
+"                border:0px;\n"
+"                padding:5px;\n"
+"                }"
+msgstr "body, table, td, span, div, p {\n"
+"			    font-family: Helvetica, sans-serif;\n"
+"			    font-size:16px;\n"
+"			}\n"
+"			table.mystyle{\n"
+"                        border:0px;\n"
+"                        padding:5px;\n"
+"                        }\n"
+"            td{\n"
+"                border:0px;\n"
+"                padding:5px;\n"
+"                }"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "independent"
+msgstr "مستقل"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "other"
+msgstr "آخر"
+
+#. module: student
+#: model:ir.model,name:student.model_report_student_report_student
+msgid "report.student.report_student"
+msgstr "تقرير.تلميذ.تقرير_ تلميذ"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "salaried"
+msgstr "الموظف"
+
+#. module: student
+#: model:ir.model.fields,field_description:student.field_stud_student_number
+msgid "student/foyer room"
+msgstr "تلميذ/غرفة المبيت"
+
+#. module: student
+#: model:ir.ui.view,arch_db:student.view_stud_pv_form
+msgid "students"
+msgstr "التلاميذ"
+
+#. module: student
+#: selection:stud.student,situation_pro_fadher:0
+#: selection:stud.student,situation_pro_mother:0
+msgid "unemployed"
+msgstr "عاطل عن العمل"
+

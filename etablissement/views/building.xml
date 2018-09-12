@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Building -->
+
+        <record id="view_building_form" model="ir.ui.view">
+            <field name="name">educa.building.form</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <form string="Building">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                                <button class="oe_stat_button" name="salle_view" type="object" icon="fa-puzzle-piece" context="{'default_building_id': active_id}">
+                                <field string="Salles" name="salle_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                         <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'operational')]}">Operational</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'not_operational')]}">Not operational</div>
+                         <div class="label label-danger pull-right" attrs="{'invisible': [('state', '!=', 'under_construction')]}">Under construction</div>
+                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image":"image_medium"}'/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                            <label for="designation" class="oe_edit_only"/>
+                            <h1>
+                                <field name="designation"/>
+                            </h1>
+                            <label for="establishment_id" string="Establishment"/>
+                            <h1>
+                                <field name="establishment_id" />
+                            </h1>
+                        </div>
+                        <notebook>
+                            <page name="base" string="Base Information">
+                                <group string="Etat operationnel">
+                                    <field name="state" class="oe_inline"/>
+                                    <field name="note_state" class="oe_inline" attrs="{'invisible': [('state', '!=', 'not_operational')]}"/>
+                                </group>
+                                <group>
+                                    <group string=" Other Information">
+                                        <field name="sanitary"/>
+                                        <field name="length" />
+                                        <field name="width"/>
+                                        <field name="height"/>
+                                        <field name="eets" invisible="1"/>
+                                    </group>
+                                    <group string=" EETS">
+                                        <field name="water"/>
+                                        <field name="tel" />
+                                        <field name="electricity"/>
+                                        <field name="sanitary"/>
+                                        <field name="internet"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="internal_notes" string="Internal Notes">
+                                <field name="notes" placeholder="Internal note..."/>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="view_building_tree" model="ir.ui.view">
+            <field name="name">educa.building.tree</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <tree string="Building" >
+                    <field name="name"/>
+                    <field name="designation"/>
+                    <field name="establishment_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_building_filter" model="ir.ui.view">
+            <field name="name">educa.building.search</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <search string="building">
+                    <field name="name" string="building" filter_domain="[('name','ilike',self)]"/>
+                    <group string="Group by..." expand="1">
+                        <filter name="establishment_id"   string="Establishment" context="{'group_by': 'establishment_id'}" />
+                    </group>
+                </search>
+             </field>
+         </record>
+
+        <!-- educa.building  by user and team pivot View -->
+        <record id="educa_building_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.building.pivot</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <pivot string="Bâtiment" >
+                <field name="state" type="row"/>
+                <field name="designation" type="col"/>
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_building_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.building.graph</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <graph string="Bâtiment" stacked="False">
+                    <field name="state" type="row"/>
+                    <field name="designation" type="col"/>
+                     
+                     
+                </graph>
+            </field>
+        </record>
+
+
+         <record id="action_building_tree1" model="ir.actions.act_window">
+            <field name="name">Building</field>
+            <field name="res_model">educa.building</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field eval="False" name="view_id"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_building_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_building_report_view_pivot')})]"/>
+            <field name="search_view_id" ref="view_building_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a building.
+              </p>
+            </field>
+        </record>
+
+
+        <record id="action_building_tree1_view1" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_building_tree"/>
+            <field name="act_window_id" ref="action_building_tree1"/>
+        </record>
+
+        <record id="action_building_tree1_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_building_form"/>
+            <field name="act_window_id" ref="action_building_tree1"/>
+        </record>
+
+
+
+    </data>
+</odoo>

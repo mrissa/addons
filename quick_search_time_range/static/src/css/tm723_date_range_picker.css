@@ -1,0 +1,7 @@
+.daterangepicker select.monthselect {
+    float: left;
+}
+
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+    display: inline;
+}

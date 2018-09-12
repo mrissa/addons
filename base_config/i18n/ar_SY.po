@@ -1,0 +1,1237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* base_config
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-31 08:27+0000\n"
+"PO-Revision-Date: 2018-08-31 08:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1900"
+msgstr "1900"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1901"
+msgstr "1901"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1902"
+msgstr "1902"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1903"
+msgstr "1903"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1904"
+msgstr "1904"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1905"
+msgstr "1905"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1906"
+msgstr "1906"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1907"
+msgstr "1907"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1908"
+msgstr "1908"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1909"
+msgstr "1909"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1910"
+msgstr "1910"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1911"
+msgstr "1911"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1912"
+msgstr "1912"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1913"
+msgstr "1913"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1914"
+msgstr "1914"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1915"
+msgstr "1915"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1916"
+msgstr "1916"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1917"
+msgstr "1917"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1918"
+msgstr "1918"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1919"
+msgstr "1919"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1920"
+msgstr "1920"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1921"
+msgstr "1921"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1922"
+msgstr "1922"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1923"
+msgstr "1923"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1924"
+msgstr "1924"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1925"
+msgstr "1925"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1926"
+msgstr "1926"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1927"
+msgstr "1927"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1928"
+msgstr "1928"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1929"
+msgstr "1929"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1930"
+msgstr "1930"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1931"
+msgstr "1931"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1932"
+msgstr "1932"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1933"
+msgstr "1933"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1934"
+msgstr "1934"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1935"
+msgstr "1935"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1936"
+msgstr "1936"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1937"
+msgstr "1937"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1938"
+msgstr "1938"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1939"
+msgstr "1939"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1940"
+msgstr "1940"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1941"
+msgstr "1941"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1942"
+msgstr "1942"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1943"
+msgstr "1943"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1944"
+msgstr "1944"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1945"
+msgstr "1945"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1946"
+msgstr "1946"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1947"
+msgstr "1947"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1948"
+msgstr "1948"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1949"
+msgstr "1949"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1950"
+msgstr "1950"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1951"
+msgstr "1951"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1952"
+msgstr "1952"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1953"
+msgstr "1953"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1954"
+msgstr "1954"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1955"
+msgstr "1955"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1956"
+msgstr "1956"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1957"
+msgstr "1957"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1958"
+msgstr "1958"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1959"
+msgstr "1959"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1960"
+msgstr "1960"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1961"
+msgstr "1961"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1962"
+msgstr "1962"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1963"
+msgstr "1963"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1964"
+msgstr "1964"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1965"
+msgstr "1965"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1966"
+msgstr "1966"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1967"
+msgstr "1967"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1968"
+msgstr "1968"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1969"
+msgstr "1969"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1970"
+msgstr "1970"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1971"
+msgstr "1971"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1972"
+msgstr "1972"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1973"
+msgstr "1973"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1974"
+msgstr "1974"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1975"
+msgstr "1975"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1976"
+msgstr "1976"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1977"
+msgstr "1977"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1978"
+msgstr "1978"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1979"
+msgstr "1979"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1980"
+msgstr "1980"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1981"
+msgstr "1981"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1982"
+msgstr "1982"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1983"
+msgstr "1983"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1984"
+msgstr "1984"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1985"
+msgstr "1985"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1986"
+msgstr "1986"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1987"
+msgstr "1987"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1988"
+msgstr "1988"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1989"
+msgstr "1989"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1990"
+msgstr "1990"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1991"
+msgstr "1991"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1992"
+msgstr "1992"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1993"
+msgstr "1993"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1994"
+msgstr "1994"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1995"
+msgstr "1995"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1996"
+msgstr "1996"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1997"
+msgstr "1997"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1998"
+msgstr "1998"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "1999"
+msgstr "1999"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2000"
+msgstr "2000"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2001"
+msgstr "2001"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2002"
+msgstr "2002"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2003"
+msgstr "2003"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2004"
+msgstr "2004"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2005"
+msgstr "2005"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2006"
+msgstr "2006"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2007"
+msgstr "2007"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2008"
+msgstr "2008"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2009"
+msgstr "2009"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2010"
+msgstr "2010"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2011"
+msgstr "2011"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2012"
+msgstr "2012"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2013"
+msgstr "2013"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2014"
+msgstr "2014"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2015"
+msgstr "2015"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2016"
+msgstr "2016"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2017"
+msgstr "2017"
+
+#. module: base_config
+#: selection:year.scholarly,year_end:0
+#: selection:year.scholarly,year_start:0
+msgid "2018"
+msgstr "2018"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_abandonner_count
+msgid "Abondonnées"
+msgstr "متخلي"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_year_end
+msgid "Année Fin"
+msgstr "اخر السنة "
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_parent_id
+msgid "Année Scolaire"
+msgstr "السنة الدراسية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_year_start
+msgid "Année début"
+msgstr "بداية السنة "
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_next_scolarity_id
+msgid "Année prochaine"
+msgstr "السنة القادمة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_previous_scolarity_id
+msgid "Année précédente"
+msgstr "السنة السابقة"
+
+#. module: base_config
+#: model:ir.actions.act_window,name:base_config.action_year
+msgid "Année scolaire"
+msgstr "السنة الدراسية"
+
+#. module: base_config
+#: sql_constraint:year.scholarly:0
+msgid "Année scolaire doit etre unique."
+msgstr "يجب أن تكون السنة الدراسية فريدة من نوعها"
+
+#. module: base_config
+#: selection:year.scholarly,niveau:0
+#: selection:year.scholarly,type:0
+msgid "Central"
+msgstr "مركزية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_chaine
+msgid "Chaine"
+msgstr "سلسلة"
+
+#. module: base_config
+#: model:ir.actions.act_window,name:base_config.open_view_city_action
+#: model:ir.model,name:base_config.model_nmcl_city
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_city_id
+#: model:ir.ui.menu,name:base_config.menu_open_view_city_list
+#: model:ir.ui.view,arch_db:base_config.view_city_form
+#: model:ir.ui.view,arch_db:base_config.view_city_tree
+msgid "City"
+msgstr "المقاطعة"
+
+#. module: base_config
+#: model:ir.actions.act_window,help:base_config.open_view_city_action
+msgid "Click to create a New City"
+msgstr "انقر لإنشاء مقاطعة جديدة"
+
+#. module: base_config
+#: model:ir.actions.act_window,help:base_config.open_view_dren_action
+msgid "Click to create a New DREN"
+msgstr "انقر لإنشاء إدارة جهوية جديدة"
+
+#. module: base_config
+#: model:ir.actions.act_window,help:base_config.open_view_state_action
+msgid "Click to create a New State"
+msgstr "انقر لإنشاء ولاية جديدة"
+
+#. module: base_config
+#: model:ir.actions.act_window,help:base_config.open_view_town_action
+msgid "Click to create a New Town"
+msgstr "انقر لإنشاء بلدية جديدة"
+
+#. module: base_config
+#: model:ir.actions.act_window,help:base_config.action_year
+msgid "Click to create a New Year scholarly"
+msgstr "انقر لإنشاء سنة دراسية جديدة"
+
+#. module: base_config
+#: model:ir.ui.view,arch_db:base_config.view_year_form
+msgid "Close"
+msgstr "إقفال"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_code
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_code
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_code
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_create_uid
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_create_uid
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_create_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_create_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_create_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_create_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_create_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_create_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_create_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_create_date
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_create_date
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_create_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_create_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_create_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_create_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_create_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_create_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_create_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: base_config
+#: model:ir.actions.act_window,name:base_config.open_view_dren_action
+#: model:ir.ui.menu,name:base_config.menu_action_dren
+#: model:ir.ui.view,arch_db:base_config.view_dren_form
+#: model:ir.ui.view,arch_db:base_config.view_dren_tree
+#: selection:year.scholarly,niveau:0
+msgid "DREN"
+msgstr "الإدارة الجهوية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_date
+msgid "Date Echéance"
+msgstr "تاريخ الإنتهاء"
+
+#. module: base_config
+#: code:addons/base_config/models/base.py:216
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_discipline_id
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_ids
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_line_ids
+#, python-format
+msgid "Discipline"
+msgstr "التخصص"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_display_name
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_display_name
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_display_name
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_display_name
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_display_name
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_display_name
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_display_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_display_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_display_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_year_scholarly_echeance
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_name
+msgid "Echéance"
+msgstr "مَوْعِدُ الِانْتِهَاء"
+
+#. module: base_config
+#: model:ir.ui.view,arch_db:base_config.view_year_form
+msgid "Echéances"
+msgstr "مَوْعِدُ الِانْتِهَاء"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_educa_structure
+msgid "Educational Structure"
+msgstr "البنية التربوية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_inscriptions_count
+msgid "Elève"
+msgstr "التلميذ"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_employee_ids
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_employee_id
+msgid "Employé"
+msgstr "الموظف"
+
+#. module: base_config
+#: selection:year.scholarly,state:0
+msgid "En cours d'ouverture"
+msgstr "الفتح"
+
+#. module: base_config
+#: selection:year.scholarly,state:0
+msgid "En cours de fermeture"
+msgstr "الإغلاق"
+
+#. module: base_config
+#: selection:year.scholarly,niveau:0
+msgid "Etablissement"
+msgstr "المؤسسة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_state
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_exclu_count
+msgid "Exlus"
+msgstr "إقصاء"
+
+#. module: base_config
+#: selection:year.scholarly,state:0
+msgid "Fermé"
+msgstr "مغلق"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_inscriptions_female
+msgid "Filles"
+msgstr "فتيات"
+
+#. module: base_config
+#: selection:educa.structure,type:0
+#: selection:educa.structure,type_enseig:0
+#: selection:year.scholarly,type:0
+#: selection:year.scholarly.line,type:0
+msgid "Fondamentale"
+msgstr "أساسية"
+
+#. module: base_config
+#: model:res.groups,name:base_config.hide
+msgid "Hide"
+msgstr "إخفاء"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_id
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_id
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_id
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_id
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_id
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_id
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_id
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_id
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_id
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_inscription_ids
+msgid "Inscription"
+msgstr "التسجيل"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section___last_update
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line___last_update
+#: model:ir.model.fields,field_description:base_config.field_educa_structure___last_update
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city___last_update
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren___last_update
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state___last_update
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town___last_update
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly___last_update
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance___last_update
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_write_uid
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_write_uid
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_write_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_write_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_write_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_write_uid
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_write_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_write_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_write_uid
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_write_date
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_write_date
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_write_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_write_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_write_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_write_date
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_write_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_write_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_write_date
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_educa_etab_section_line
+msgid "Ligne section"
+msgstr "الفقرة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_name
+msgid "Name Of DREN"
+msgstr "إسم الإدارة الجهوية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_name
+msgid "Name of City"
+msgstr "إسم المقاطعة"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_nmcl_state_name
+msgid "Name of State"
+msgstr "إسم الولاية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_nmcl_town_name
+msgid "Name of Town"
+msgstr "إسم البلدية"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_niveau
+msgid "Niveau"
+msgstr "المستوى"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_name
+msgid "Nom"
+msgstr "الإسم"
+
+#. module: base_config
+#: model:ir.ui.menu,name:base_config.menu_base_config
+msgid "Nomenclature"
+msgstr "المصطلحات"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: base_config
+#: model:ir.ui.view,arch_db:base_config.view_year_form
+msgid "Open"
+msgstr "افتح"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_redoubles_count
+msgid "Redoublants"
+msgstr "الراسبون"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_redouble_fille_count
+msgid "Redoublants filles"
+msgstr "الفتيات الراسبات"
+
+#. module: base_config
+#: model:res.groups,name:base_config.group_nml_manager
+msgid "Referentiel"
+msgstr "المرجع"
+
+#. module: base_config
+#: model:ir.ui.menu,name:base_config.menu_base_config_root
+msgid "Repository"
+msgstr "المراجع"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_scholarly_id
+msgid "Scholarly"
+msgstr "إداري"
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_echeance_scholarly_id
+msgid "Scolarité"
+msgstr "الإدارة"
+
+#. module: base_config
+#: selection:educa.structure,type:0
+#: selection:educa.structure,type_enseig:0
+#: selection:year.scholarly,type:0
+#: selection:year.scholarly.line,type:0
+msgid "Secondaire"
+msgstr "الثانوية"
+
+#. module: base_config
+#: code:addons/base_config/models/base.py:425
+#: model:ir.model,name:base_config.model_educa_etab_section
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_ids
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_line_section_id
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_name
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_section_ids
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_section_number
+#, python-format
+msgid "Section"
+msgstr "الفقرة"
+
+#. module: base_config
+#: model:ir.actions.act_window,name:base_config.open_view_state_action
+#: model:ir.actions.act_window,name:base_config.open_view_state_list_action
+#: model:ir.model,name:base_config.model_nmcl_state
+#: model:ir.model.fields,field_description:base_config.field_nmcl_city_state_id
+#: model:ir.model.fields,field_description:base_config.field_nmcl_dren_state_id
+#: model:ir.ui.menu,name:base_config.menu_open_view_state_list
+#: model:ir.ui.view,arch_db:base_config.view_state_form
+#: model:ir.ui.view,arch_db:base_config.view_state_tree
+msgid "State"
+msgstr "الحالة"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_educa_etab_structure_line
+#: model:ir.model,name:base_config.model_year_scholarly_line
+#: model:ir.model.fields,field_description:base_config.field_educa_etab_section_year_ligne_id
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_structure_id
+msgid "Structure Pédagogique"
+msgstr "البنية التربوية"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_educa_etab_structure
+msgid "Structure pedagogique etablissement"
+msgstr "البنية التربوية للمؤسسة"
+
+#. module: base_config
+#: sql_constraint:nmcl.town:0
+msgid "The Code must be unique per city."
+msgstr ".يجب أن يكون الرمز فريدا لكل مقاطعة"
+
+#. module: base_config
+#: sql_constraint:nmcl.city:0
+msgid "The Code must be unique per state."
+msgstr ".يجب أن يكون الرمز فريدا لكل ولاية"
+
+#. module: base_config
+#: sql_constraint:nmcl.state:0
+msgid "The Code must be unique."
+msgstr ".يجب أن يكون الرمز فريدا "
+
+#. module: base_config
+#: sql_constraint:year.scholarly:0
+msgid "The name must be unique."
+msgstr ".يجب أن يكون الرمز فريدا"
+
+#. module: base_config
+#: sql_constraint:year.scholarly:0
+msgid "The year end must be unique."
+msgstr ".يجب أن تكون السنة فريدةً"
+
+#. module: base_config
+#: model:ir.actions.act_window,name:base_config.open_view_town_action
+#: model:ir.model,name:base_config.model_nmcl_town
+#: model:ir.ui.menu,name:base_config.menu_open_view_town_list
+#: model:ir.ui.view,arch_db:base_config.view_town_form
+#: model:ir.ui.view,arch_db:base_config.view_town_tree
+msgid "Town"
+msgstr "البلدية "
+
+#. module: base_config
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_type
+#: model:ir.model.fields,field_description:base_config.field_educa_structure_type_enseig
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_line_type
+#: model:ir.model.fields,field_description:base_config.field_year_scholarly_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_year_scholarly
+#: model:ir.ui.view,arch_db:base_config.view_year_form
+msgid "Year Scholarly"
+msgstr "السنة الدراسية"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_nmcl_dren
+msgid "dren"
+msgstr "الإدارة الجهوية"
+
+#. module: base_config
+#: selection:year.scholarly,state:0
+msgid "ouvert"
+msgstr "مفتوح"
+
+#. module: base_config
+#: model:ir.model,name:base_config.model_structure_line
+msgid "structure.line"
+msgstr "البنية"
+
+#. module: base_config
+#: code:addons/base_config/models/base.py:146
+#, python-format
+msgid "the end year must not be less than the start year!"
+msgstr ".يجب أن لا تكون نهاية السنة قبل بداية السنة"
+
+#. module: base_config
+#: code:addons/base_config/models/base.py:144
+#, python-format
+msgid "the number of years between the two dates is greater than 1!"
+msgstr "! عدد السنوات بين التاريخين أكبر من 1"
+

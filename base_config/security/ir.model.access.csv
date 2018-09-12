@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nmcl_state,nmcl.state,model_nmcl_state,group_nml_manager,1,1,1,1
+access_nmcl_city",nmcl.city,model_nmcl_city,group_nml_manager,1,1,1,1
+access_nmcl_town,nmcl.town,model_nmcl_town,group_nml_manager,1,1,1,1
+access_nmcl_dren,nmcl.dren,model_nmcl_dren,group_nml_manager,1,1,1,1
+access_year_scholarly,year.scholarly,model_year_scholarly,group_nml_manager,1,1,1,1

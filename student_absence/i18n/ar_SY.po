@@ -1,0 +1,228 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student_absence
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-17 15:35+0000\n"
+"PO-Revision-Date: 2018-08-17 15:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student_absence
+#: code:addons/student_absence/models/student_absence.py:100
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                                   Click to Create\n"
+"                                </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                                   انقر لإنشاء\n"
+"                                </p>"
+
+#. module: student_absence
+#: model:ir.ui.view,arch_db:student_absence.student_absence_form_view
+#: model:ir.ui.view,arch_db:student_absence.view_stud_absence_type_form
+#: model:ir.ui.view,arch_db:student_absence.view_stud_absence_type_tree
+msgid "Absence"
+msgstr "الغياب"
+
+#. module: student_absence
+#: model:ir.actions.act_window,name:student_absence.action_stud_absence_category_form
+#: model:ir.ui.menu,name:student_absence.menu_category_absence
+#: model:ir.ui.view,arch_db:student_absence.view_stud_absence_category_tree
+msgid "Absence Category"
+msgstr "سبب الغياب"
+
+#. module: student_absence
+#: model:ir.actions.act_window,name:student_absence.action_stud_absence_type_form
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_absence_types
+msgid "Absence Type"
+msgstr "نوع الغياب"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_categ_id
+msgid "Absence category"
+msgstr "سبب الغياب"
+
+#. module: student_absence
+#: code:addons/student_absence/models/student_absence.py:93
+#: model:ir.actions.act_window,name:student_absence.action_student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_student_absence_count
+#: model:ir.model.fields,field_description:student_absence.field_stud_student_absence_ids
+#: model:ir.ui.menu,name:student_absence.menu_action_student_absence
+#: model:ir.ui.menu,name:student_absence.menu_config_absence
+#: model:ir.ui.view,arch_db:student_absence.student_absence_inherit_form_view
+#, python-format
+msgid "Absences"
+msgstr "الغياب"
+
+#. module: student_absence
+#: model:ir.ui.view,arch_db:student_absence.student_absence_form_view
+#: selection:stud.absence,state:0
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_categ_id
+#: model:ir.ui.view,arch_db:student_absence.view_stud_absence_category_form
+msgid "Category Absence"
+msgstr "سبب الغياب"
+
+#. module: student_absence
+#: model:ir.actions.act_window,help:student_absence.action_student_absence
+msgid "Click to create a New Absence"
+msgstr "انقر لإنشاء غياب جديد"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_create_uid
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_create_uid
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_create_date
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_create_date
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_date
+msgid "Date Debut"
+msgstr "تاريخ البدء"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_date_end
+msgid "Date End"
+msgstr "تاريخ الانتهاء"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_display_name
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_display_name
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: student_absence
+#: selection:stud.absence,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_id
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_id
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_id_4083
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence___last_update
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category___last_update
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_write_uid
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_write_uid
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_write_date
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_write_date
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: student_absence
+#: model:ir.ui.view,arch_db:student_absence.student_absence_inherit_form_view
+msgid "Liste des abscences"
+msgstr "قائمة الغيابات"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_category_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_nbr_day
+msgid "Number of day"
+msgstr "عدد الأيام"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_state
+msgid "State"
+msgstr "الحالة"
+
+#. module: student_absence
+#: model:ir.model,name:student_absence.model_stud_student
+msgid "Stud Student"
+msgstr "التلميذ"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_student_id
+msgid "Student"
+msgstr "التلميذ"
+
+#. module: student_absence
+#: model:ir.model,name:student_absence.model_stud_absence
+msgid "Student Absence"
+msgstr "غياب التلميذ"
+
+#. module: student_absence
+#: model:ir.model,name:student_absence.model_stud_absence_category
+msgid "Student Absence Category"
+msgstr "سبب الغياب"
+
+#. module: student_absence
+#: model:ir.model,name:student_absence.model_stud_absence_type
+msgid "Student Type Absence"
+msgstr "نوع الغياب"
+
+#. module: student_absence
+#: sql_constraint:stud.absence:0
+msgid "The start date must be anterior to the end date."
+msgstr ".يجب أن يكون تاريخ البدء قبل تاريخ الانتهاء"
+
+#. module: student_absence
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_id
+#: model:ir.model.fields,field_description:student_absence.field_stud_absence_type_name
+msgid "Type"
+msgstr "النوع"
+
+#. module: student_absence
+#: model:ir.ui.menu,name:student_absence.menu_type_absence
+msgid "Type Absence"
+msgstr "نوع الغياب"
+
+#. module: student_absence
+#: model:ir.ui.view,arch_db:student_absence.student_absence_form_view
+#: selection:stud.absence,state:0
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: student_absence
+#: code:addons/student_absence/models/student_absence.py:61
+#, python-format
+msgid "You can not have 2 absences that overlaps on same day!"
+msgstr " !لا يمكن الحصول على 2 غيابات متداخلة في نفس اليوم "
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+ 
+    <menuitem id="scola_menu_report"
+            name="Reporting"
+            parent="scolarity.menu_base_report_root"
+            sequence="99"/>
+
+        
+         <menuitem id="scola_scolarity_report_menu" name="scolarité"
+            parent="scola_menu_report"   sequence="6"/>
+            <menuitem id="scola_secondaire_report_menu" name="Secondaire"
+            parent="scola_menu_report"   sequence="6"/>
+</odoo>

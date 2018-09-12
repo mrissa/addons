@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+ 
+    
+
+        <menuitem id="elve_menu_report"
+             name="Reporting"
+            parent="student.menu_student_root"
+            sequence="99"/>
+           
+         <menuitem id="stud_student_report_menu" name="éleves"
+            parent="elve_menu_report"   sequence="6"/>
+            
+        <menuitem id="educa_inscription_report_menu" name="Inscriptions"
+            parent="elve_menu_report"   sequence="6"/>
+</odoo>

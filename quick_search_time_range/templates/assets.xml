@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="assets_backend" name="quick_search_time_range" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/quick_search_time_range/static/src/css/daterangepicker.css" />
+            <link rel="stylesheet" href="/quick_search_time_range/static/src/css/tm723_date_range_picker.css" />
+            <script type="text/javascript" src="/quick_search_time_range/static/src/js/daterangepicker.js"></script>
+            <script type="text/javascript" src="/quick_search_time_range/static/src/js/quick_search_time_range.js"></script>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,32 @@
+
+a[data-menu="328"] {
+    display: none !important;
+}
+
+#menu_more_container
+{
+	display: none !important;	
+}
+.odoo_support_contact
+{
+	display: none !important;	
+}
+a[data-menu="account"],
+a[data-menu="help"],
+a[data-menu="odoo_support"],
+a[data-menu="about"]{
+	display: none !important;	
+}
+p[attrs="{'invisible': [('analytic_account_id','=',False)]}"]
+{
+	display: none !important;	
+}
+div[class="oe_single_form_footer"]
+{
+	display: none !important;	
+}
+.openerp .oe_kanban_status{
+	    height: 25px !important;
+    width: 25px !important;
+        border-radius: 50% !important;
+}

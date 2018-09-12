@@ -1,0 +1,328 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* employee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-15 09:01+0000\n"
+"PO-Revision-Date: 2018-08-15 09:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_adress_birth
+msgid "Adresse birth"
+msgstr "مكان الولادة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_adress
+msgid "Adresse postal"
+msgstr "العنوان البريدي"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+msgid "Aucun"
+msgstr "لايوجد"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_cnam
+msgid "CNAM"
+msgstr "تأمين صحي"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_city_birth
+msgid "City of birth"
+msgstr "مقاطعة الولادة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_city_residence
+msgid "City of residence"
+msgstr "مقاطعة الإقامة"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_classifying_form
+#: model:ir.model,name:employee.model_hr_classifying
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_name
+#: model:ir.model.fields,field_description:employee.field_hr_employee_classifying
+#: model:ir.ui.menu,name:employee.menu_view_classifying_form
+#: model:ir.ui.view,arch_db:employee.view_classifying_form
+#: model:ir.ui.view,arch_db:employee.view_classifying_tree
+msgid "Classifying"
+msgstr "الإطار الوظيفي"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+msgid "Contractual"
+msgstr "المتعاقدين"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_grade_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_indice_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_state_create_uid
+#: model:ir.model.fields,field_description:employee.field_hr_status_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_grade_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_indice_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_state_create_date
+#: model:ir.model.fields,field_description:employee.field_hr_status_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_date_autorisation
+msgid "Date Autorisation"
+msgstr "تاريخ الترخيص"
+
+#. module: employee
+#: model:ir.ui.view,arch_db:employee.view_grade_tree
+msgid "Discipline"
+msgstr "التخصص"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_grade_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_indice_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_state_display_name
+#: model:ir.model.fields,field_description:employee.field_hr_status_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+msgid "Détaché"
+msgstr "ملحق"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_echelle_form
+#: model:ir.ui.menu,name:employee.menu_view_echelle_form
+#: model:ir.ui.view,arch_db:employee.view_echelle_form
+msgid "Echelle"
+msgstr "السلم"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_echelon_form
+#: model:ir.ui.menu,name:employee.menu_view_echelon_form
+#: model:ir.ui.view,arch_db:employee.view_echelon_form
+msgid "Echelon"
+msgstr "الدرجة"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+#: model:ir.model,name:employee.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_echelle
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_name
+msgid "Employee Echelle"
+msgstr "السلم الوظيفي"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_echelon
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_name
+msgid "Employee Echelon"
+msgstr "الدرجة الوظيفية"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_grade
+#: model:ir.model.fields,field_description:employee.field_hr_grade_name
+msgid "Employee Grade"
+msgstr "الرتبة الوظيفية"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_indice
+#: model:ir.model.fields,field_description:employee.field_hr_indice_name
+msgid "Employee Indice"
+msgstr "العلامة القياسية"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_status
+msgid "Employee Status"
+msgstr "الحالة الوظيفية"
+
+#. module: employee
+#: model:ir.model,name:employee.model_hr_state
+msgid "Employee state"
+msgstr "الحالة الوظيفية"
+
+#. module: employee
+#: model:ir.ui.menu,name:employee.menu_action_employee
+msgid "Employees"
+msgstr "الوظيفة العمومية"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_grade_form
+#: model:ir.ui.menu,name:employee.menu_view_grade_form
+#: model:ir.ui.view,arch_db:employee.view_grade_form
+msgid "Grade"
+msgstr "الرتبة"
+
+#. module: employee
+#: model:res.groups,name:employee.group_hr_manager
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_id
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_id
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_id
+#: model:ir.model.fields,field_description:employee.field_hr_grade_id
+#: model:ir.model.fields,field_description:employee.field_hr_indice_id
+#: model:ir.model.fields,field_description:employee.field_hr_state_id
+#: model:ir.model.fields,field_description:employee.field_hr_status_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_indice_form
+#: model:ir.ui.menu,name:employee.menu_view_indice_form
+#: model:ir.ui.view,arch_db:employee.view_indice_form
+msgid "Indice"
+msgstr "العلامة القياسية"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_is_employee
+msgid "Is Employee"
+msgstr "موظف"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_echelle___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_echelon___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_grade___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_indice___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_state___last_update
+#: model:ir.model.fields,field_description:employee.field_hr_status___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_grade_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_indice_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_state_write_uid
+#: model:ir.model.fields,field_description:employee.field_hr_status_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_classifying_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_echelle_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_echelon_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_grade_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_indice_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_state_write_date
+#: model:ir.model.fields,field_description:employee.field_hr_status_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_nni
+msgid "NNI"
+msgstr "الرقم الوطني للتعريف"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_nationality_id
+msgid "Nationality 2"
+msgstr "الجنسية 2"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+msgid "PNP"
+msgstr "عمال الدعم"
+
+#. module: employee
+#: model:ir.ui.menu,name:employee.menu_view_employee_form
+msgid "Personnel"
+msgstr "الموظفون"
+
+#. module: employee
+#: selection:hr.employee,recruitment_type:0
+msgid "Prived employee"
+msgstr "في التعليم الخاص"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_ref_autorisation
+msgid "REF Autorisation"
+msgstr "رقم التخويل"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_recruitment_type
+msgid "Recruitment Type"
+msgstr "أنواع الإكتتاب"
+
+#. module: employee
+#: model:ir.ui.view,arch_db:employee.hr_employee_view_info_form
+msgid "Residence"
+msgstr "السكن"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_state_form
+#: model:ir.model.fields,field_description:employee.field_hr_employee_state
+#: model:ir.model.fields,field_description:employee.field_hr_state_name
+#: model:ir.ui.menu,name:employee.menu_view_state_form
+#: model:ir.ui.view,arch_db:employee.view_state_form
+#: model:ir.ui.view,arch_db:employee.view_state_tree
+msgid "State"
+msgstr "الولاية"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_state_birth
+msgid "State of birth"
+msgstr "ولاية الولادة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_state_residence
+msgid "State of residence"
+msgstr "ولاية السكن"
+
+#. module: employee
+#: model:ir.actions.act_window,name:employee.action_status_form
+#: model:ir.model.fields,field_description:employee.field_hr_employee_status
+#: model:ir.model.fields,field_description:employee.field_hr_status_name
+#: model:ir.ui.menu,name:employee.menu_view_status_form
+#: model:ir.ui.view,arch_db:employee.view_status_form
+#: model:ir.ui.view,arch_db:employee.view_status_tree
+msgid "Status"
+msgstr "الحالة "
+
+#. module: employee
+#: sql_constraint:hr.employee:0
+msgid "The NNI must be unique."
+msgstr "الرقم الوطني يجب أن يكون فريدا"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_town_birth
+msgid "Town of birth"
+msgstr "بلدية الولادة"
+
+#. module: employee
+#: model:ir.model.fields,field_description:employee.field_hr_employee_town_residence
+msgid "Town of residence"
+msgstr "بلدية الإقامة"
+
+#. module: employee
+#: model:ir.ui.view,arch_db:employee.hr_employee_view_info_form
+msgid "prived information"
+msgstr "معلومات خاصة"
+

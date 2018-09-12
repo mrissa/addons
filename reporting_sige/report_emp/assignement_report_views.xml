@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+   
+         <!-- hr_pv  by user and team pivot View -->
+        <record id="hr_pv_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.pv</field>
+            <field name="model">hr.recruitment.pv</field>
+            <field name="arch" type="xml">
+                <pivot string="PV/Nouvelles Promotions" disable_linking="True">
+                <field name="state" type="row"/>
+                    <field name="recruitment_pv_type" type="col"/>
+                    <field name="new_graduates" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_pv_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.pv.graph</field>
+            <field name="model">hr.recruitment.pv</field>
+            <field name="arch" type="xml">
+                <graph string="PV/Nouvelles Promotions" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="recruitment_pv_type" type="col"/>
+                    <field name="new_graduates" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_pv_report_action_graph" model="ir.actions.act_window">
+             <field name="name">PV/Nouvelles Promotions Analyse</field>
+             <field name="res_model">hr.recruitment.pv</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_pv_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_pv_report_view_pivot')})]"/>
+             <field name="help">PV/Nouvelles Promotions Analyse .</field>
+        </record>
+
+       <menuitem id="hr_pvns_report_menu" name="PV Nouvelles Promotions"
+            parent="hr_pv_report_menu" action="hr_pv_report_action_graph" sequence="6"/>
+            
+            
+         <!-- recrutement externe  and team pivot View -->
+        <record id="hr_recrutement_e_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.exit.pivot</field>
+            <field name="model">hr.recruitment.exit</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement externe" disable_linking="True">
+               
+                   <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_e_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.exit.graph</field>
+            <field name="model">hr.recruitment.exit</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement externe" stacked="True">
+               
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_recrutement_e_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Recrutement externe Analyse</field>
+             <field name="res_model">hr.recruitment.exit</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_e_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_e_report_view_pivot')})]"/>
+             <field name="help">Recrutement externe Analyse.</field>
+        </record>
+
+       <menuitem id="hr_recrutement_externe_report_menu" name="Recrutement externe"
+            parent="hr_recrutement_report_menu" action="hr_recrutement_e_report_action_graph" sequence="6"/>
+            
+         <!-- recrutement interne  and team pivot View -->
+        <record id="hr_recrutement_i_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.entry.pivot</field>
+            <field name="model">hr.recruitment.entry</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement Interne" disable_linking="True">
+               
+                   <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_i_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.entry.graph</field>
+            <field name="model">hr.recruitment.entry</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement Interne" stacked="True">
+               
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_recrutement_i_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Recrutement Interne Analyse</field>
+             <field name="res_model">hr.recruitment.entry</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_i_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_i_report_view_pivot')})]"/>
+             <field name="help">Recrutement Interne Analyse.</field>
+        </record>
+
+       <menuitem id="hr_recrutement_interne_report_menu" name="Recrutement Interne"
+            parent="hr_recrutement_report_menu" action="hr_recrutement_e_report_action_graph" sequence="6"/>
+            
+        <!-- recrutement al demande  and team pivot View -->
+        <record id="hr_recrutement_d_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.on.demand.pivot</field>
+            <field name="model">hr.recruitment.on.demand</field>
+            <field name="arch" type="xml">
+                <pivot string="Recrutement sur demande" disable_linking="True">
+                    <field name="recruitment_type" type="col"/>
+                    <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_recrutement_d_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.on.demand.graph</field>
+            <field name="model">hr.recruitment.on.demand</field>
+            <field name="arch" type="xml">
+                <graph string="Recrutement sur demande" stacked="True">
+                    <field name="recruitment_type" type="col"/>
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_recrutement_d_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Recrutement Sur Demande Analyse</field>
+             <field name="res_model">hr.recruitment.on.demand</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_recrutement_d_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_recrutement_d_report_view_pivot')})]"/>
+             <field name="help">Recrutement Sur Demande Analyse.</field>
+        </record>
+
+       <menuitem id="hr_recrutement_sur_d_report_menu" name="Recrutement sur demande"
+            parent="hr_recrutement_report_menu" action="hr_recrutement_d_report_action_graph" sequence="6"/>
+            
+            
+            
+         <!-- hr_ affectation  central by user and team pivot View -->
+        <record id="hr_affectation_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.affectation.pivot</field>
+            <field name="model">hr.assignment</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation Central" disable_linking="True">
+                <field name="state" type="row"/>
+                     <field name="type_affect" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_affectation_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.affectation.graph</field>
+            <field name="model">hr.assignment</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation Central" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="type_affect" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_affectation_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse: Affectation Central</field>
+             <field name="res_model">hr.assignment</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_report_view_pivot')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_report_view_graph')})]"/>
+             <field name="help">PV/Nouvelles Promotions Analyse .</field>
+        </record>
+
+       <menuitem id="hr_affectation_central_report_menu" name="Affectation Central"
+            parent="hr_affectation_report_menu" action="hr_affectation_report_action_graph" sequence="6"/>
+            
+    
+        
+         <!-- hr_ affectation  regional by user and team pivot View -->
+        <record id="hr_affectation_regional_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.affectation.regional.pivot</field>
+            <field name="model">hr.assignment.regional</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation regional" disable_linking="True">
+                <field name="state" type="row"/>
+                     <field name="type_affect" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_affectation_regional_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.affectation.regional.graph</field>
+            <field name="model">hr.assignment.regional</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation regional" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="type_affect" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_affectation_regional_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse: Affectation Central</field>
+             <field name="res_model">hr.assignment.regional</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_regional_report_view_pivot')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_regional_report_view_graph')})]"/>
+             <field name="help">PV/Nouvelles Promotions Analyse .</field>
+        </record>
+
+       <menuitem id="hr_affectation_regional_report_menu" name="Affectation regional"
+            parent="hr_affectation_report_menu" action="hr_affectation_regional_report_action_graph" sequence="6"/>
+
+</odoo>

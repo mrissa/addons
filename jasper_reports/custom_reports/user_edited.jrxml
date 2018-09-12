@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c6f412a1-9efd-404c-9666-54aa5a727063">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="17cfd39a-aa2f-4743-935c-3a0fafc9915c"/>
+	<subDataset name="Table Dataset 2" uuid="b0a2fc27-a7ab-486e-9a7f-72dc374be79c"/>
+	<queryString>
+		<![CDATA[select p.name, u.login from res_partner p, res_users u where p.id= u.partner_id]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="login" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="1f7d245c-d7f2-4d52-ba1e-7e6b8c6ab999"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Report edited by me]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="372" height="41" uuid="8fcf533a-4736-4740-8997-3000b1827a59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="0" width="183" height="41" uuid="443eb6ba-6571-4a22-8b2d-c72cfae7d563"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Login]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="0" width="100" height="20" uuid="f4277dd2-cde2-4762-96c6-4c9fa640582e"/>
+				<text><![CDATA[login]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="372" height="25" uuid="b7434fb4-471c-4088-9f2a-9ebfb9d919ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="7" width="170" height="20" uuid="84f25a4c-50f1-4031-811b-68eb0553de4a"/>
+				<textFieldExpression><![CDATA[$F{login}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

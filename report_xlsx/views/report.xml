@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <report
+        id="year_scholarly_fermeture_repot_xls"
+        model="year.scholarly"
+        string="rapport fermeture année scolaire xls"
+        report_type="xlsx"
+        name="report_xlsx.establishment_xlsx"
+        file="establishment_rapport"
+        attachment_use="True"
+        menu="False"
+    />
+    <report
+        id="year_scholarly_ouverture_repot_xls"
+        model="year.scholarly"
+        string="rapport ouverture année scolaire xls"
+        report_type="xlsx"
+        name="report_xlsx.establishment_xlsx"
+        file="establishment_rapport"
+        attachment_use="True"
+        menu="False"
+    />  
+
+      
+</odoo>

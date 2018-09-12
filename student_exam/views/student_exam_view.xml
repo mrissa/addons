@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Exam -->
+        <record model='ir.ui.view' id='examen_form_view'>
+        <field name="name">exam.form</field>
+        <field name="model">stud.exam</field>
+        <field name="arch" type="xml">
+          <form string="Examens">
+            <header>
+                <button name="act_validate" states="draft" type="object" string="Valider" class="oe_highlight"/>
+                <field name="state" widget="statusbar"/>
+            </header>
+            <sheet>
+              <group>
+                <group>
+                    <field name="name"/>
+                </group>
+                <group>
+                    <field name="establishment_id"/>
+                    <field name="section_id" widget="selection"/>
+                </group>
+              </group>
+              <notebook>
+                <page name="resultat" string="Resultat">
+                  <field name="line_ids">
+                    <tree editable="buttom">
+                        <field name="inscription_id" widget="selection"/>
+                        <field name="student_id"/>
+                        <field name="note"/>
+                        <field name="appreciation"/>
+                    </tree>
+                  </field>
+                </page>
+                 <page name="note" string="Notes">
+                    <group>
+                        <group>
+                            <field name="note"/>
+                        </group>
+                    </group>
+                 </page>
+              </notebook>
+            </sheet>
+          </form>
+        </field>
+        </record>
+
+     <record model='ir.ui.view' id='examen_list_tree_view'>
+        <field name="name">stud.exam.tree</field>
+        <field name="model">stud.exam</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="establishment_id"/>
+                <field name="section_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_examen" model="ir.actions.act_window">
+        <field name="name">Examens</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stud.exam</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a New Examens
+            </p>
+        </field>
+    </record>
+
+    <!-- Exam Results(Line Exam) -->
+     <record model='ir.ui.view' id='line_examen_list_tree_view'>
+        <field name="name">line.exam.tree</field>
+        <field name="model">exam.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="exam_id"/>
+                <field name="inscription_id"/>
+                <field name="student_id"/>
+                <field name="note"/>
+                <field name="appreciation"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_line_examen" model="ir.actions.act_window">
+        <field name="name">Result Exam</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">exam.line</field>
+        <field name="view_type">tree</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a New Exam Results
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Exam -->
+    <menuitem
+        id="menu_examen_student_root"
+        name="Examens"
+        parent="student.menu_student_root"
+        sequence="5"/>
+
+    <menuitem
+        id="menu_action_examen"
+        name="Examens"
+        action="action_examen"
+        parent="menu_examen_student_root"
+        sequence="1"/>
+
+    <menuitem
+        id="menu_action_line_examen"
+        name="Resultat Examens"
+        action="action_line_examen"
+        parent="menu_examen_student_root"
+        sequence="2"/>
+
+    <!-- Inherit Student -->
+    <record id="student_exam_inherit_form_view" model="ir.ui.view">
+        <field name="name">stud.student.exam.form.inherit</field>
+        <field name="model">stud.student</field>
+        <field name="inherit_id" ref="student.view_student_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" name="examen_view" type="object" icon="fa-pencil">
+                    <field string="Exams" name="exam_count" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+    </record>
+
+
+
+    </data>
+</odoo>

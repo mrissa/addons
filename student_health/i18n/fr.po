@@ -1,0 +1,261 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student_health
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 15:36+0000\n"
+"PO-Revision-Date: 2018-06-29 15:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "A+ve"
+msgstr "A+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "A-ve"
+msgstr "A-ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "AB+ve"
+msgstr "AB+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "AB-ve"
+msgstr "AB-ve"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_regular_checkup
+msgid "Any Regular Checkup Required?"
+msgstr "Toute vérification régulière requise?"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "B+ve"
+msgstr "B+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "B-ve"
+msgstr "B-ve"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_blood_group
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Blood Group"
+msgstr "Groupe sanguin"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_name
+msgid "Checkup Detail"
+msgstr "Détail Contrôle"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Checkup Details"
+msgstr "Détails Contrôle"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Checkup Line"
+msgstr "Contrôle"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_health_line
+msgid "Checkup Lines"
+msgstr "Contrôle"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_recommendation
+msgid "Checkup Recommendation"
+msgstr "Recommandation de contrôle"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_create_uid
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_create_date
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_date
+msgid "Date"
+msgstr "Date "
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_display_name
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: student_health
+#: code:addons/student_health/models/health.py:54
+#, python-format
+msgid "Enter proper height and weight!"
+msgstr "Entrez la taille et le poids appropriés!"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_eyeglasses_no
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Eye Glasses"
+msgstr "Lunette médicale"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_eyeglasses
+msgid "Eye Glasses?"
+msgstr "Lunette médicale ?"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Group By..."
+msgstr "Regrouper par..."
+
+#. module: student_health
+#: model:ir.actions.act_window,name:student_health.act_open_op_health_view
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_health_id
+#: model:ir.ui.menu,name:student_health.menu_op_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+#: model:ir.ui.view,arch_db:student_health.view_op_health_tree
+msgid "Health"
+msgstr "Santé"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_student_health_lines
+#: model:ir.ui.view,arch_db:student_health.health_student_form_view
+msgid "Health Detail"
+msgstr "Détail Santé"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_op_health
+#: model:ir.model,name:student_health.model_stud_health
+msgid "Health Detail for Students and Faculties"
+msgstr "Détail de la santé pour les étudiants et les élèves"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_height
+msgid "Height(C.M.)"
+msgstr "Hauteur (C.M.)"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_id
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health___last_update
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_write_uid
+#: model:ir.model.fields,field_description:student_health.field_stud_health_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_write_date
+#: model:ir.model.fields,field_description:student_health.field_stud_health_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Major Disease"
+msgstr "Maladie majeure"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_major_diseases_note
+msgid "Major Diseases"
+msgstr "Maladie majeure"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_major_diseases
+msgid "Major Diseases?"
+msgstr "Maladie majeure?"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "O+ve"
+msgstr "O+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "O-ve"
+msgstr "O-ve"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Other Details"
+msgstr "Autres détails"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_physical_challenges_note
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Physical Challenge"
+msgstr "Défi physique"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_physical_challenges
+msgid "Physical Challenge?"
+msgstr "Défi physique?"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Regular Checkup"
+msgstr "Bilan régulier"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_stud_student
+msgid "Stud Student"
+msgstr "Élève"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_student_id
+#: selection:stud.health,type:0
+msgid "Student"
+msgstr "Élève"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Student Name"
+msgstr "Nom Élève"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_type
+msgid "Type"
+msgstr "Type"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_weight
+msgid "Weight"
+msgstr "Poids"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_op_health_line
+msgid "op.health.line"
+msgstr "op.health.line"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_stud_health_line
+msgid "stud.health.line"
+msgstr "stud.health.line"
+

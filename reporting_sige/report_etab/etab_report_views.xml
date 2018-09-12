@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+   
+         <!-- educa_establishment  by user and team pivot View -->
+        <record id="educa_establishment_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.establishment.pivot</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <pivot string="Etablissement" >
+                <field name="state_id" type="col"/>
+                     <field name="type" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_establishment_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.establishment.graph</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <graph string="Etablissement" stacked="False">
+                    <field name="state_id" type="col"/>
+                    <field name="type" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="educa_establishment_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Etablissement </field>
+             <field name="res_model">educa.establishment</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_establishment_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_establishment_report_view_pivot')})]"/>
+             <field name="help">Analyse des Etablissements .</field>
+        </record>
+
+       <menuitem id="educa_establishment_report_menu" name="Etablissements"
+            parent="educa_etablissement_report_menu" action="educa_establishment_report_action_graph" sequence="6"/>
+            
+     <!-- educa.building  by user and team pivot View -->
+        <record id="educa_building_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.building.pivot</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <pivot string="Bâtiment" >
+                <field name="state" type="row"/>
+                <field name="designation" type="col"/>
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_building_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.building.graph</field>
+            <field name="model">educa.building</field>
+            <field name="arch" type="xml">
+                <graph string="Bâtiment" stacked="False">
+                    <field name="state" type="row"/>
+                    <field name="designation" type="col"/>
+                     
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="educa_building_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Bâtiments </field>
+             <field name="res_model">educa.building</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_building_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_building_report_view_pivot')})]"/>
+             <field name="help">Analyse des Bâtiments .</field>
+        </record>
+
+       <menuitem id="educa_building_report_menu" name="Bâtiments"
+            parent="educa_infrastructure_report_menu" action="educa_building_report_action_graph" sequence="6"/>
+    
+    
+        <!-- educa.classroom  by user and team pivot View -->
+        <record id="educa_classroom_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.classroom.pivot</field>
+            <field name="model">educa.classroom</field>
+            <field name="arch" type="xml">
+                <pivot string="Salles" >
+                <field name="classification" type="row"/>
+                <field name="nb_eleve" type="mesure" />
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_classroom_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.classroom.graph</field>
+            <field name="model">educa.classroom</field>
+            <field name="arch" type="xml">
+                <graph string="Salles" stacked="False">
+                    <field name="classification" type="row"/>
+                    <field name="nb_eleve" type="mesure" />
+                     
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="educa_classroom_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des salles </field>
+             <field name="res_model">educa.classroom</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_classroom_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_classroom_report_view_pivot')})]"/>
+             <field name="help">Analyse des Salles .</field>
+        </record>
+
+       <menuitem id="educa_classroom_report_menu" name="Salles"
+            parent="educa_infrastructure_report_menu" action="educa_classroom_report_action_graph" sequence="6"/> 
+          
+        <!-- instruction.line by user and team pivot View -->    
+        <record id="instruction_line_report_view_pivot" model="ir.ui.view">
+            <field name="name">instruction.line.pivot</field>
+            <field name="model">instruction.line</field>
+            <field name="arch" type="xml">
+                <pivot string="Matériel Instruction" >
+                     <field name="quantity" type="mesure" />
+                    <field name="product_id" type="row"/>
+                    <field name="etat" type="col"/>
+                   
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="instruction_line_report_view_graph" model="ir.ui.view">
+            <field name="name">instruction.line.graph</field>
+            <field name="model">instruction.line</field>
+            <field name="arch" type="xml">
+                <graph string="Matériel Instruction" stacked="False">
+                    <field name="quantity" type="mesure" />
+                    <field name="product_id" type="row"/>
+                    <field name="etat" type="col"/>
+                    
+                     
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="instruction_line_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Matériels Instruction </field>
+             <field name="res_model">instruction.line</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('instruction_line_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('instruction_line_report_view_pivot')})]"/>
+             <field name="help">Analyse des Matériels Instruction .</field>
+        </record>
+
+       <menuitem id="instruction_line_report_menu" name="Matériel Instruction"
+            parent="educa_infrastructure_report_menu" action="instruction_line_report_action_graph" sequence="6"/>
+            
+       
+        <!--  affectation.instruction by user and team pivot View -->    
+        <record id="affectation_instruction_report_view_pivot" model="ir.ui.view">
+            <field name="name">affectation.instruction.pivot</field>
+            <field name="model">affectation.instruction</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation Matériel" >
+                     <field name="establishment_id" type="row"/>
+                    
+                   
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="affectation_instruction_report_view_graph" model="ir.ui.view">
+            <field name="name">affectation.instruction.graph</field>
+            <field name="model">affectation.instruction</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation Matériel" stacked="False">
+                     
+                    <field name="establishment_id" type="row"/>
+                  
+                    
+                     
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="affectation_instruction_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Affectations Matériel </field>
+             <field name="res_model">affectation.instruction</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('affectation_instruction_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('affectation_instruction_report_view_pivot')})]"/>
+             <field name="help">Analyse des Affectations Matériel .</field>
+        </record>
+
+       <menuitem id="affectation_instruction_report_menu" name="Affectation Matériel"
+            parent="educa_infrastructure_report_menu" action="affectation_instruction_report_action_graph" sequence="6"/>
+
+
+</odoo>

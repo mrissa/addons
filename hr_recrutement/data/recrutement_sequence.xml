@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="seq_rec_externe_ref" model="ir.sequence">
+        <field name="name">Default Rec externe ID Seq</field>
+        <field name="code">rec.exit.default.seq</field>
+        <field name="prefix">RE/%(y)s/</field>
+        <field name="padding">5</field>
+    </record>
+
+    <record id="seq_rec_entry_ref" model="ir.sequence">
+        <field name="name">Default Rec entry ID Seq</field>
+        <field name="code">rec.entry.default.seq</field>
+        <field name="prefix">RI/%(y)s/</field>
+        <field name="padding">5</field>
+    </record>
+
+</odoo>

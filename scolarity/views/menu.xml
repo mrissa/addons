@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Top menu item -->
+        <menuitem
+            id="menu_base_report_root"
+            name="Scolarité"
+            web_icon="scolarity,static/description/icon.png"
+            sequence="90"/>
+
+        <!--Scolarity-->
+        <menuitem
+            id="menu_scolarity"
+            name="Scolarité"
+            parent="menu_base_report_root"
+            sequence="0"/>
+
+        <menuitem
+            id="menu_scolarity_centrale"
+            name="Année scolaire"
+            action="base_config.action_year"
+            parent="menu_scolarity"
+            sequence="0"/>
+        <!--Scolarity fondamentale-->
+        <menuitem
+            id="menu_scolarity_report_fond"
+            name="Fondamentale"
+            parent="menu_base_report_root"
+            sequence="1"/>
+
+        <menuitem
+            id="menu_year_scholarly"
+            name="Central"
+            action="action_year_scholarly_fondamentale"
+            parent="menu_scolarity_report_fond"
+            sequence="1"/>
+
+        <menuitem
+            id="menu_year_scholarly_dren"
+            name="DREN"
+            action="action_year_scholarly_fondamentale_dren"
+            parent="menu_scolarity_report_fond"
+            sequence="2"/>
+        <menuitem
+            id="menu_year_scholarly_etab"
+            name="Etablissement"
+            action="action_year_scholarly_fondamentale_etab"
+            parent="menu_scolarity_report_fond"
+            sequence="3"/>
+
+ <!--Scolarity secondaire-->
+        <menuitem
+            id="menu_scolarity_secondaire"
+            name="Secondaire"
+            parent="menu_base_report_root"
+            sequence="2"/>
+
+        <menuitem
+            id="menu_year_scholarly_sec"
+            name="Central"
+            action="action_year_scholarly_sec"
+            parent="menu_scolarity_secondaire"
+            sequence="1"/>
+
+        <menuitem
+            id="menu_year_scholarly_sec_dren"
+            name="DREN"
+            action="action_year_scholarly_sec_dren"
+            parent="menu_scolarity_secondaire"
+            sequence="2"/>
+
+
+        <menuitem
+            id="menu_year_scholarly_sec_etab"
+            name="Etablissement"
+            action="action_year_scholarly_sec_etab"
+            parent="menu_scolarity_secondaire"
+            sequence="3"/>
+
+        <menuitem
+            id="menu_wilaya_main"
+            name="Wilaya"
+            parent="menu_scolarity_report_fond"
+            sequence="2"/>
+
+
+        <!--Reporting-->
+        <menuitem
+            id="menu_reporting"
+            name="Reporting"
+            parent="menu_base_report_root"
+            sequence="2"/>
+
+        <!--Configuration-->
+        <menuitem
+            id="menu_config"
+            name="Configuration"
+            parent="menu_base_report_root"
+            sequence="3"/>
+
+          <menuitem
+            name="Structure Pédagogique"
+            id="menu_view_educational_structure"
+            parent="menu_config"
+            sequence="1"/>
+
+        <menuitem
+            name="Globale Structure"
+            id="menu_open_view_educational_structure_list"
+            action="etablissement.open_view_educational_structure_list_action"
+            parent="menu_view_educational_structure"
+            sequence="0"/>
+
+        <menuitem
+            name="Level"
+            id="menu_open_view_educational_level"
+            action="etablissement.open_view_level_form"
+            parent="menu_view_educational_structure"
+            sequence="1"/>
+
+        <menuitem
+            name="Feliere"
+            id="menu_open_view_educational_feliere"
+            action="etablissement.open_view_feliere_form"
+            parent="menu_view_educational_structure"
+            sequence="2"/>
+
+        <menuitem id="project_task_menu_scolarity"
+            name="Tâches"
+            parent="menu_scolarity"
+            action="project.action_view_task"
+            sequence="2"/>
+
+    </data>
+</odoo>

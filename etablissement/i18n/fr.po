@@ -1,0 +1,1230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* etablissement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-31 09:56+0000\n"
+"PO-Revision-Date: 2018-08-31 09:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_active
+msgid " Active"
+msgstr " Active"
+
+#. module: etablissement
+#: code:addons/etablissement/models/building.py:45
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                                       Click to Create New Building\n"
+"                                    </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                                       Click to Create New Building\n"
+"                                    </p>"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.menu_secondary_inherit
+msgid "<span>IP-TECH</span>"
+msgstr "<span>IP-TECH</span>"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Administratif"
+msgstr "Administratif"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_street
+msgid "Adress"
+msgstr "Adresse"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_affectation_ins_id
+msgid "Affectation"
+msgstr "Affectation"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_instruction
+msgid "Affectation Equipements"
+msgstr "Affectation Équipements"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_affectation_instruction_list_action
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_tree
+msgid "Affectation Instruction"
+msgstr "Affectation Instruction"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Affectation Materiel Instruction"
+msgstr "Affectation Matériel Instruction"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_list_action
+#: model:ir.ui.menu,name:etablissement.menu_action_etablissement
+#: model:ir.ui.menu,name:etablissement.menu_autre_etablissement_main
+msgid "Autre Etablissement"
+msgstr "Autre Etablissement"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Base Information"
+msgstr "Information de Base"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_building_id
+msgid "Batiment"
+msgstr "Bloc"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_building_ids
+msgid "Blocs"
+msgstr "Blocs"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Bon"
+msgstr "Bon"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.action_building_tree1
+#: model:ir.actions.act_window,name:etablissement.list_building
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_building_count
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_tree
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Building"
+msgstr "Bâtiment"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_categorie
+msgid "Categorie"
+msgstr "Catégorie"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_categ_equipement_form
+#: model:ir.model,name:etablissement.model_categ_equipement
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_name
+#: model:ir.model.fields,field_description:etablissement.field_product_product_categ_product
+#: model:ir.model.fields,field_description:etablissement.field_product_template_categ_product
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_categ_id
+#: model:ir.ui.menu,name:etablissement.menu_open_view_categ_product
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_form
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_tree
+msgid "Categorie equipement"
+msgstr "Catégorie Équipement"
+
+#. module: etablissement
+#: selection:educa.establishment,ecological_situation:0
+msgid "Citadin"
+msgstr "Citadin"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_city
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_city_id
+msgid "City"
+msgstr "Ville"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Class"
+msgstr "Classe"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_classification
+msgid "Classification"
+msgstr "Classification"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_classification_classroom
+msgid "Classification Classroom"
+msgstr "Classification Salle"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_classification_classroom_form
+#: model:ir.ui.menu,name:etablissement.menu_view_classification_salle_form
+#: model:ir.ui.view,arch_db:etablissement.view_classification_classroom_form
+#: model:ir.ui.view,arch_db:etablissement.view_classification_classroom_tree
+msgid "Classification classroom"
+msgstr "Classification Salle"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_salle_count
+msgid "Classroms"
+msgstr "Salles"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_salle
+#: model:ir.ui.menu,name:etablissement.menu_open_view_classroom_form
+msgid "Classroom"
+msgstr "Salle"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_classroom_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_salle_ids
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_tree
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Classrooms"
+msgstr "Salles"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_educational_structure_list_action
+msgid "Click to add a new eductaion structure."
+msgstr "Cliquer pour ajouter une nouvelle structure d'éducation."
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_Fundamental_list_action
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_list_action
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_list_secondary_action
+msgid "Click to add a new etablissement."
+msgstr "Cliquer pour ajouter un nouvel établissement."
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_affectation_instruction_list_action
+msgid "Click to add a new instruction."
+msgstr "Cliquer pour ajouter une nouvelle instruction."
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.action_building_tree1
+msgid "Click to create a building."
+msgstr "Cliquer pour créer un bâtiment."
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Close"
+msgstr "Fermer"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_number_id
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Code"
+msgstr "Code"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_product_ids
+msgid "Code Materiel"
+msgstr "Code Matériel"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_name
+msgid "Code Of building"
+msgstr "Code Bâtiment"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_color
+msgid "Color Index"
+msgstr "Index de la couleur"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_note
+msgid "Commentaires"
+msgstr "Commentaires"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_common_place
+msgid "Common Place"
+msgstr "Éspace commun"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_company_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_company_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_company_id
+msgid "Company"
+msgstr "Établissement"
+
+#. module: etablissement
+#: selection:educa.classroom,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Compliant"
+msgstr "Conforme"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_country_id
+msgid "Country"
+msgstr "Pays"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_create_date
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_create_date
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_create_date
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_create_date
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_cycle
+msgid "Cycle"
+msgstr "Cycle"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_cycle_ids
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_form
+msgid "Cycles"
+msgstr "Cycles"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_dren_id
+msgid "DREN"
+msgstr "DREN"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_date
+msgid "Date"
+msgstr "Date "
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_date_agrement
+msgid "Date Agrement"
+msgstr "Date Agrément"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_send_date
+msgid "Date Envoi"
+msgstr "Date Envoi"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_product_date
+msgid "Date Production"
+msgstr "Date Production"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_designation
+msgid "Designation"
+msgstr "Désignation"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_line_ids
+msgid "Discipline"
+msgstr "Discipline"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_display_name
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_display_name
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_display_name
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_display_name
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_distance_km_state
+msgid "Distance Km State"
+msgstr "Distance en Km "
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_eets
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "EETS"
+msgstr "EETS"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_ecological_situation
+msgid "Ecological situation"
+msgstr "Situation écologique"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_classroom
+msgid "Educa Classroom"
+msgstr "Salle"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_education
+msgid "Educa Education"
+msgstr "Éduca Éducation"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_feliere
+msgid "Educa Education Feliere"
+msgstr "Filière"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_level
+msgid "Educa Education level"
+msgstr "Niveau"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_category
+msgid "Educa Establishment Category"
+msgstr "Catégorie"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_building
+msgid "Educational Building"
+msgstr "Bâtiment éducatif"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_educational_structure_list_action
+#: model:ir.model,name:etablissement.model_educa_structure
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+#: model:ir.ui.view,arch_db:etablissement.view_educational_structure_filter
+#: model:ir.ui.view,arch_db:etablissement.view_educational_structure_tree
+msgid "Educational Structure"
+msgstr "Structure éducative"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_electricity
+msgid "Electricity"
+msgstr "Électricité"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_email
+msgid "Email"
+msgstr "Courriel"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Enseignement"
+msgstr "Enseignement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_equipement
+#: model:ir.model,name:etablissement.model_affectation_equipement
+#: model:ir.model,name:etablissement.model_equipement_line
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_product_id
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_equipement_line_tree
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Equipement"
+msgstr "Équipement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_equipement_classroom
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_equipement_count
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_equipement_ids
+#: model:ir.ui.menu,name:etablissement.menu_open_view_equipement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_product
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Equipements"
+msgstr "Équipements"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_establishment_ids
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_establishment_id
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_filter
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Establishment"
+msgstr "Établissement d'affectation"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_cycle
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_cycle_form
+msgid "Establishment Cycle"
+msgstr "Cycle d'établissement"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_type
+msgid "Establishment Type"
+msgstr "Type d'établissement"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_root
+#: model:ir.ui.menu,name:etablissement.menu_open_view_etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_tree_view
+msgid "Etablissement"
+msgstr "Établissement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_cycle_form
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_cycle_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_cycle_list
+msgid "Etablissement Cycle"
+msgstr "Cycle d'établissement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_parent_id
+msgid "Etablissement Mére"
+msgstr "Etablissement Mére"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Etablissement Search"
+msgstr "Recherche d'établissement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_categ_form
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_category_form
+msgid "Etablissement Tags"
+msgstr "Tags Établissement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_Fundamental_list_action
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main_fundamental
+msgid "Etablissements Fondamentales"
+msgstr "Etablissements fondamentales"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_list_secondary_action
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main_secondary
+msgid "Etablissements Secondaires"
+msgstr "Etablissements secondaires"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_etat
+msgid "Etat"
+msgstr "État"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Etat operationnel"
+msgstr "État opérationnel"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Excellence"
+msgstr "Éxcellence"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_fax
+msgid "Fax"
+msgstr "Fax"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_feliere_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_feliere_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_level_form
+msgid "Feliere"
+msgstr "filière"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_feliere_id
+msgid "Fliere"
+msgstr "filière"
+
+#. module: etablissement
+#: selection:educa.establishment,type:0
+#: selection:educa.establishment.cycle,type:0
+#: selection:educa.establishment.type,type:0
+msgid "Fondamentale"
+msgstr "Fondamentale"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Fundamental"
+msgstr "Fondamental"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+msgid "Group by..."
+msgstr "Regrouper par..."
+
+#. module: etablissement
+#: model:res.groups,name:etablissement.group_educa_manager
+msgid "HR Manager"
+msgstr "RH Manager"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Hors Ministère"
+msgstr "Hors Ministère"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_id
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_id
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_id
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_id
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_id
+msgid "ID"
+msgstr "ID"
+
+#. module: etablissement
+#. openerp-web
+#: code:addons/etablissement/static/src/xml/hide_menu.xml:41
+#, python-format
+msgid "IP-TECH"
+msgstr "IP-TECH"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "In progress to approve"
+msgstr "En cours d'approbation"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_infrastructure_menu_main
+msgid "Infrastructure"
+msgstr "Infrastructure"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_affectation_instruction
+#: model:ir.model,name:etablissement.model_instruction_line
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_filter
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Instruction"
+msgstr "Instruction"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_internal_hosting
+msgid "Internal Hosting"
+msgstr "Hébergement interne"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+msgid "Internal Notes"
+msgstr "Notes internes"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+msgid "Internal note..."
+msgstr "Note interne..."
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_internet
+msgid "Internet"
+msgstr "Internet"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_largeur
+msgid "Largeur"
+msgstr "Largeur"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_last_date
+msgid "Last Date"
+msgstr "dernière date"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction___last_update
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement___last_update
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_building___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_education___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_section___last_update
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line___last_update
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_write_date
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_write_date
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_write_date
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_write_date
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_legal_form
+msgid "Legal Form"
+msgstr "Forme juridique"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_level_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_level_id
+msgid "Level"
+msgstr "Niveau"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_lieu_agrement
+msgid "Lieu Agrement"
+msgstr "Lieu d'agrément"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_form
+msgid "Liste des types"
+msgstr "Liste des types"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_longueur
+msgid "Longueur"
+msgstr "Longueur"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_manager
+msgid "Manager"
+msgstr "Gestionnaire"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Mauvais"
+msgstr "Mauvais"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image_medium
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image_medium
+msgid "Medium-sized photo"
+msgstr "Photo (taille moyenne)"
+
+#. module: etablissement
+#: selection:educa.establishment,school_plan:0
+msgid "Mixte"
+msgstr "Mixte"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_school_plan
+msgid "Mixte/Non mixte"
+msgstr "Mixte/Non mixte"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Moyen"
+msgstr "Moyen"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_name
+msgid "Name Of Education"
+msgstr "Nom d'éducation"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_designation
+msgid "Name Of building"
+msgstr "Nom d'établissement "
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_section
+msgid "Name Section"
+msgstr "Nom Section"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_nature_of_the_service
+msgid "Nature Of The Sevice"
+msgstr "Nature de service"
+
+#. module: etablissement
+#: selection:educa.establishment,school_plan:0
+msgid "No Mixte"
+msgstr "Non Mixte"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_name
+msgid "Nom"
+msgstr "Nom"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_nb_eleve
+msgid "Nombre maximum Eleve"
+msgstr "Nombre maximum d'élèves"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Non Utilisable"
+msgstr "Non utilisable"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+msgid "Not Operational"
+msgstr "Non opérationnel"
+
+#. module: etablissement
+#: selection:educa.classroom,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Not compliant"
+msgstr "Non conforme"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Not operational"
+msgstr "Non opérationnel"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_notes
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_notes
+msgid "Notes"
+msgstr "Notes"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_count
+msgid "Number of pieces"
+msgstr "Nombre de pièces"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Open"
+msgstr "Ouvrir"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Operational"
+msgstr "Opérationnel"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Other"
+msgstr "Autre"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Other Information"
+msgstr "Autres informations"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_pedagogical_section
+msgid "Pedagogical Section"
+msgstr "Section pédagogique"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_phone
+msgid "Phone"
+msgstr "Téléphone"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image
+msgid "Photo"
+msgstr "Photo"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Pilote"
+msgstr "Pilote"
+
+#. module: etablissement
+#. openerp-web
+#: code:addons/etablissement/static/src/xml/hide_menu.xml:40
+#: model:ir.ui.view,arch_db:etablissement.menu_secondary_inherit
+#, python-format
+msgid "Powered by"
+msgstr "Fourni par"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_school_state
+msgid "Prive/Public"
+msgstr "Privé/Public"
+
+#. module: etablissement
+#: selection:educa.establishment,school_state:0
+msgid "Prived"
+msgstr "Privé"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Prived School"
+msgstr "École privée"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_product_template
+msgid "Product"
+msgstr "Article"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_user_id
+msgid "Property"
+msgstr "Propriété"
+
+#. module: etablissement
+#: selection:educa.establishment,school_state:0
+msgid "Public"
+msgstr "Public"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_quantity
+msgid "Quantite"
+msgstr "Quantité"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_remaining_surface
+msgid "Remaining surface"
+msgstr "Surface restante"
+
+#. module: etablissement
+#: selection:educa.establishment,ecological_situation:0
+msgid "Rural"
+msgstr "Rural"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Salles"
+msgstr "Salles"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_sanitary
+msgid "Sanitary"
+msgstr "Sanitaire"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_name
+msgid "School type"
+msgstr "Type d'école"
+
+#. module: etablissement
+#: selection:educa.establishment,type:0
+#: selection:educa.establishment.cycle,type:0
+#: selection:educa.establishment.type,type:0
+msgid "Secondaire"
+msgstr "Secondaire"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Secondary"
+msgstr "Secondaire"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Sections pedagogiques"
+msgstr "Sections pédagogiques"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image_small
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image_small
+msgid "Small-sized photo"
+msgstr "Photo petit format"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Standby"
+msgstr "Standby"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_state_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_state_id
+msgid "State"
+msgstr "Région"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Statistical"
+msgstr "Statistique"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_street
+msgid "Street"
+msgstr "Rue"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_etab_structure_line
+msgid "Structure Pédagogique"
+msgstr "Structure Pédagogique"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_etab_structure
+msgid "Structure pedagogique etablissement"
+msgstr "Structure pédagogique d'établissement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_surface
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_surface
+msgid "Surface"
+msgstr "Surface"
+
+#. module: etablissement
+#: sql_constraint:educa.establishment.category:0
+msgid "Tag name already exists !"
+msgstr "Taper un nom existant !"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_tel
+msgid "Tel"
+msgstr "Tél"
+
+#. module: etablissement
+#: sql_constraint:educa.building:0
+msgid "The code must be unique per Building!"
+msgstr "Le code doit être unique par bâtiment!"
+
+#. module: etablissement
+#: sql_constraint:educa.establishment:0
+msgid "The code must be unique per establishment!"
+msgstr "Le code doit être unique par établissement!"
+
+#. module: etablissement
+#: sql_constraint:educa.classroom:0
+msgid "The code must be unique!"
+msgstr "Le code doit être unique!"
+
+#. module: etablissement
+#: model:ir.model.fields,help:etablissement.field_educa_building_image
+msgid "This field holds the image used as photo for the building, limited to 1024x1024px."
+msgstr "Ce champ contient l'image utilisée comme photo pour le bâtiment, limitée à 1024x1024 px."
+
+#. module: etablissement
+#: model:ir.model.fields,help:etablissement.field_educa_establishment_image
+msgid "This field holds the image used as photo for the employee, limited to 1024x1024px."
+msgstr "Ce champ contient l'image originale utilisée comme photo pour l'employé, limitée à 1024x1024 px."
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_conform_count
+msgid "Total classroom conform"
+msgstr "Total des classes conforme"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_not_conform_count
+msgid "Total classroom not conform"
+msgstr "Total des classes non conforme"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_town_id
+msgid "Town"
+msgstr "Département"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_type
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_type
+msgid "Type"
+msgstr "Type"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_type_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_school
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_type_id
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_type_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_form
+msgid "Type Enseignement"
+msgstr "Type d'enseignement"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_type_equipement
+msgid "Type Equipement"
+msgstr "Type d'équipement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_etablissement
+msgid "Type Etablissement"
+msgstr "Type d'établissement"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_type_equipement_form
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_type_ids
+#: model:ir.model.fields,field_description:etablissement.field_product_product_type_id
+#: model:ir.model.fields,field_description:etablissement.field_product_template_type_id
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_name
+#: model:ir.ui.menu,name:etablissement.menu_open_view_type_product
+#: model:ir.ui.view,arch_db:etablissement.view_type_equipement_form
+#: model:ir.ui.view,arch_db:etablissement.view_type_equipement_tree
+msgid "Type equipement"
+msgstr "Type d'équipement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_type_building
+msgid "Type of Building"
+msgstr "Type de Bâtiment"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Under construction"
+msgstr "En construction"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Warehouse"
+msgstr "Référentiel"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_water
+msgid "Water"
+msgstr "Eau"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_note_state
+msgid "Why"
+msgstr "Pourquoi"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_educational_structure_list_action
+msgid "With just a quick glance on the screen, you\n"
+"                can easily find all the information you need for each person;\n"
+"                contact data, job position, availability, etc."
+msgstr "Avec un coup d'oeil rapide sur l'écran, vous\n"
+"                pouvez facilement trouver toutes les informations dont vous avez besoin pour chaque personne;\n"
+"                coordonnées, poste, disponibilité, etc."
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_building
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+msgid "building"
+msgstr "Bâtiment"
+
+#. module: etablissement
+#: code:addons/etablissement/models/building.py:38
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_salle_count
+#, python-format
+msgid "classroom"
+msgstr "Salle"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment
+msgid "education establishment"
+msgstr "Établissement d'enseignement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_name
+msgid "establishment Tag"
+msgstr "Tag Établissement"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_structure
+msgid "establishment_structure"
+msgstr "Structure d'établissement"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_category_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_category_list
+msgid "etablissement Tags"
+msgstr "Tags Établissements"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_list
+msgid "etablissement Type"
+msgstr "Type d'établissement"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_height
+msgid "height"
+msgstr "Hauteur"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_length
+msgid "length"
+msgstr "Longueur"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_structure_line
+msgid "structure.line"
+msgstr "structure.line"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_width
+msgid "width"
+msgstr "Largeur"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "workshop"
+msgstr "Workshop"
+

@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem name="Recruitment"
+          parent="hr.menu_hr_root" sequence="4"
+          id="menu_view_hr_recruitment_form"/>
+
+    <menuitem name="Recruitment"
+          parent="hr.menu_human_resources_configuration" sequence="90"
+          id="menu_view_recrutement_form"/>
+
+    <menuitem name="Grade"
+              parent="menu_view_recrutement_form" sequence="4"
+              id="employee.menu_view_grade_form"
+              action="employee.action_grade_form"/>
+
+    <menuitem name="Echelle"
+              parent="menu_view_recrutement_form" sequence="5"
+              id="employee.menu_view_echelle_form"
+              action="employee.action_echelle_form"/>
+
+     <menuitem name="Echelon"
+              parent="menu_view_recrutement_form" sequence="6"
+              id="employee.menu_view_echelon_form"
+              action="employee.action_echelon_form"/>
+
+     <menuitem name="Indice"
+              parent="menu_view_recrutement_form" sequence="7"
+              id="employee.menu_view_indice_form"
+              action="employee.action_indice_form"/>
+
+    <!--Training School-->
+    <record id="view_training_school_tree" model="ir.ui.view">
+        <field name="name">training.school.tree</field>
+        <field name="model">training.school</field>
+        <field name="arch" type="xml">
+            <tree string="Training School">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_training_school_form" model="ir.ui.view">
+        <field name="name">training.school.form</field>
+        <field name="model">training.school</field>
+        <field name="arch" type="xml">
+            <form string="Training School">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_training_school_form" model="ir.actions.act_window">
+        <field name="name">Training School</field>
+        <field name="res_model">training.school</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Training School"
+              parent="menu_view_recrutement_form" sequence="1"
+              id="menu_view_training_school_form"
+              action="action_training_school_form"/>
+
+      <!--Employee speciality-->
+    <record id="view_employee_speciality_tree" model="ir.ui.view">
+        <field name="name">hr.employee.specialty.tree</field>
+        <field name="model">hr.employee.specialty</field>
+        <field name="arch" type="xml">
+            <tree string="Speciality">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_speciality_form" model="ir.ui.view">
+        <field name="name">hr.employee.specialty.form</field>
+        <field name="model">hr.employee.specialty</field>
+        <field name="arch" type="xml">
+            <form string="Speciality">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_employee_speciality_form" model="ir.actions.act_window">
+        <field name="name">Employee Speciality</field>
+        <field name="res_model">hr.employee.specialty</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Speciality"
+              parent="employee.menu_view_employee_form" sequence="7"
+              id="menu_view_employee_speciality_form"
+              action="action_employee_speciality_form"/>
+
+       <!--type recrutement interne-->
+    <record id="view_type_rec_direct_tree" model="ir.ui.view">
+        <field name="name">recruitment.direct.type.tree</field>
+        <field name="model">recruitment.direct.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_type_rec_direct_form" model="ir.ui.view">
+        <field name="name">recruitment.direct.type.form</field>
+        <field name="model">recruitment.direct.type</field>
+        <field name="arch" type="xml">
+            <form string="Type">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_recruitment_direct_type_form" model="ir.actions.act_window">
+        <field name="name">Type recrutement directe</field>
+        <field name="res_model">recruitment.direct.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Type de recrutement directe"
+              parent="menu_view_recrutement_form" sequence="2"
+              id="menu_view_type_recrutement_direct_form"
+              action="action_recruitment_direct_type_form"/>
+
+    <!--inherit employee-->
+     <record id="hr_employee_view_recrutement_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.recrutement</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page name="info_recrutement" string="Recruitment Informations">
+                         <group>
+                            <field name="date_nomination" readonly="1"/>
+                            <field name="date_titularisation" readonly="1"/>
+                         </group>
+                        <group string="Recrutement externe">
+                            <group>
+                                <field name="recruitment_exit_id" invisible="1"/>
+                                <field name="ref_exit_recrutement" readonly="1" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="corps_id" string="Corps" readonly="1"/>
+                                <field name="echelle" string="Echelle" readonly="1"/>
+                                <field name="corps_line_id" string="Rémuniration" readonly="1"/>
+                            </group>
+                        </group>
+                        <group string="Recrutement interne">
+                            <field name="recruitment_entry_ids" readonly="1">
+                                <tree string="Recrutement interne" create="false">
+                                    <field name="date"/>
+                                    <field name="new_corps_id"/>
+                                    <field name="new_echelle"/>
+                                    <field name="new_corps_line_id"/>
+                                    <field name="date_nomination"/>
+                                    <field name="date_titularisation"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+     <!--employee-->
+    <record id="hr_employee_view_inherit_form" model="ir.ui.view">
+        <field name="name">hr.employee.inherit.info</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr='//form' position='attributes'>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_employee_view_inherit_tree" model="ir.ui.view">
+        <field name="name">hr.employee.inherit.info</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr='//tree' position='attributes'>
+                <attribute name="create">false</attribute>
+            </xpath>
+            <field name="company_id" position="after">
+               <field name="corps_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="hr_employee_view_inherit_search" model="ir.ui.view">
+        <field name="name">hr.employee.search.inherit.rec</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+            <field name="department_id" position="replace"/>
+            <field name="category_ids" position="replace"/>
+            <field name="job_id" position="replace"/>
+            <filter name="group_manager" position="replace"/>
+            <filter name="group_coach" position="replace"/>
+            <filter name="group_department" position="replace"/>
+            <filter name="group_job" position="replace"/>
+            <filter name="group_company" position="replace"/>
+            <filter name="message_needaction" position="replace"/>
+            <filter name="inactive" position="replace"/>
+            <filter name="newly_hired_employee" position="replace"/>
+       </field>
+    </record>
+
+      <!--changer vue form -->
+    <record id="view_employee_grh_form" model="ir.ui.view">
+            <field name="name">hr.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="priority" eval="0"/>
+            <field name="arch" type="xml">
+                <form string="Personnel" create="false">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h2>
+                                <field name="name" readonly="1"/>
+                             </h2>
+                        </div>
+                         <group>
+                                <group>
+                                    <field name="nni" readonly="1"/>
+                                    <field name="identification_id" readonly="1"/>
+                                </group>
+                                <group>
+                                   <field name="birthday" readonly="1"/>
+                                    <field name="place_of_birth" readonly="1"/>
+                                </group>
+                                <group name="corps">
+                                    <field name="corps_id" readonly="1"/>
+                                </group>
+                         </group>
+                        <button name="action_detail_employee_form_view" string="Voir plus de détail" type="object" class="oe_link"/>
+                    </sheet>
+                    <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+    <record id="view_employee_grh_detail_form" model="ir.ui.view">
+            <field name="name">hr.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <form string="Personnel" create="false">
+                    <sheet>
+                        <notebook>
+                             <page name="donnees_personnelles" string="Données personnelles">
+                                 <group>
+                                    <field name="cnam"/>
+                                    <field name="bank_account_id"/>
+                                    <field name="gender"/>
+                                    <field name="marital"/>
+                                    <field name="children"/>
+                                    <field name="address_home_id" invisible="1"/>
+                                 </group>
+                             </page>
+                             <page name="info_recrutement" string="Recructement">
+                                 <group>
+                                    <field name="date_nomination" readonly="1"/>
+                                    <field name="date_titularisation" readonly="1"/>
+                                 </group>
+                                <group string="Recrutement externe">
+                                    <group>
+                                        <field name="corps_id" string="Corps" readonly="1"/>
+                                        <field name="echelle" string="Echelle" readonly="1"/>
+                                        <field name="corps_line_id" string="Rémuniration" readonly="1"/>
+                                    </group>
+                                </group>
+                                <group string="Recrutement interne">
+                                    <field name="recruitment_entry_ids" readonly="1">
+                                        <tree string="Recrutement interne" create="false">
+                                            <field name="date"/>
+                                            <field name="new_corps_id"/>
+                                            <field name="new_echelle"/>
+                                            <field name="new_corps_line_id"/>
+                                            <field name="date_nomination"/>
+                                            <field name="date_titularisation"/>
+                                            <field name="state"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                             </page>
+                    </notebook>
+                    </sheet>
+                    <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+    <record id="view_employee_grh_prived_form" model="ir.ui.view">
+            <field name="name">hr.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <form string="Personnel">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h2>
+                                <field name="name"/>
+                             </h2>
+                        </div>
+                         <group>
+                                <group>
+                                    <field name="nni"/>
+                                    <field name="identification_id"/>
+                                </group>
+                                <group>
+                                   <field name="birthday"/>
+                                    <field name="place_of_birth"/>
+                                </group>
+                         </group>
+                    </sheet>
+                    <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="hr_personel_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.employee</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <pivot string="Personel"  display_quantity ="True">
+                 <field name="corps_id" type="col"/>
+                     <field name="recruitment_type" type="row"/>
+                 </pivot>
+            
+            </field>
+        </record>
+
+        
+
+        <!-- Opportunities by user and team Graph View -->
+        <record id="hr_personel_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.employee.report.graph</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <graph string="Personel" stacked="True">
+                    <field name="corps_id" type="col"/>
+                    <field name="recruitment_type" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+
+    <record id="hr.open_view_employee_list_my" model="ir.actions.act_window">
+        <field name="name">Fonctionnaires</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">[('recruitment_type','=','employee')]</field>
+        <field name="context">{}</field>
+         <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p><p>
+            With just a quick glance on the Odoo employee screen, you
+            can easily find all the information you need for each person;
+            contact data, job position, availability, etc.
+          </p>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_employee_emp_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="hr.view_employee_tree"/>
+            <field name="act_window_id" ref="hr.open_view_employee_list_my"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_emp_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_form"/>
+            <field name="act_window_id" ref="hr.open_view_employee_list_my"/>
+        </record>
+
+    <record id="open_view_employee_contractual_list" model="ir.actions.act_window">
+        <field name="name">Contractual</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">[('recruitment_type','=','contractual')]</field>
+        <field name="context">{}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_employee_contractual_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="hr.view_employee_tree"/>
+            <field name="act_window_id" ref="open_view_employee_contractual_list"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_contractual_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_form"/>
+            <field name="act_window_id" ref="open_view_employee_contractual_list"/>
+        </record>
+
+    <record id="open_view_employee_pnp_list" model="ir.actions.act_window">
+        <field name="name">Not permanent</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">[('recruitment_type','=','pnp')]</field>
+        <field name="context">{}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_employee_pnp_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="hr.view_employee_tree"/>
+            <field name="act_window_id" ref="open_view_employee_pnp_list"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_pnp_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_form"/>
+            <field name="act_window_id" ref="open_view_employee_pnp_list"/>
+        </record>
+
+    <record id="open_view_employee_detached_list" model="ir.actions.act_window">
+        <field name="name">Détaché</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">[('recruitment_type','=','detached')]</field>
+        <field name="context">{}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="action_employee_detache_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="hr.view_employee_tree"/>
+            <field name="act_window_id" ref="open_view_employee_detached_list"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_contractual_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_form"/>
+            <field name="act_window_id" ref="open_view_employee_detached_list"/>
+        </record>
+
+
+     <record id="open_view_employee_other_list" model="ir.actions.act_window">
+        <field name="name">Afficher tout</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">['|', '|', '|', ('recruitment_type','=','employee'), ('recruitment_type','=','detached'), ('recruitment_type','=','pnp'), ('recruitment_type','=','contractual')]</field>
+        <field name="context">{}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p><p>
+            With just a quick glance on the Odoo employee screen, you
+            can easily find all the information you need for each person;
+            contact data, job position, availability, etc.
+          </p>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_employee_emp_other_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="hr.view_employee_tree"/>
+            <field name="act_window_id" ref="open_view_employee_other_list"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_emp_other_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_form"/>
+            <field name="act_window_id" ref="open_view_employee_other_list"/>
+        </record>
+
+     <!--PRIVED EMPLOYEE-->
+    <record id="view_prived_employee_tree" model="ir.ui.view">
+        <field name="name">hr.prived.employee.tree</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="nni"/>
+                <field name="identification_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_prived_form" model="ir.ui.view">
+        <field name="name">hr.employee.prived.form</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <form string="Type">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="open_view_employee_prived_list" model="ir.actions.act_window">
+        <field name="name">Prived</field>
+        <field name="res_model">hr.employee</field>
+        <field name="limit">20</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="domain">[('recruitment_type','=','prived')]</field>
+        <field name="context">{'default_recruitment_type':'prived'}</field>
+        <field name="view_id" eval="view_prived_employee_tree"/>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0,{'view_mode': 'pivot', 'view_id': ref('hr_personel_report_view_pivot')}),
+                          (0, 0,{'view_mode': 'graph', 'view_id': ref('hr_personel_report_view_graph')} )]"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new employee.
+          </p>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window.view" id="action_employee_emp_prived_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_prived_employee_tree"/>
+            <field name="act_window_id" ref="open_view_employee_prived_list"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_employee_emp_prived_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_employee_grh_prived_form"/>
+            <field name="act_window_id" ref="open_view_employee_prived_list"/>
+        </record>
+
+    <menuitem
+            id="menu_open_view_employee"
+            name="Personnel"
+            parent="hr.menu_hr_root"
+            sequence="3"/>
+
+    <menuitem
+            id="hr.menu_open_view_employee_list_my"
+            action="hr.open_view_employee_list_my"
+            parent="menu_open_view_employee"
+            sequence="1"/>
+
+    <menuitem
+            id="menu_open_view_employee_list_contractual"
+            action="open_view_employee_contractual_list"
+            parent="menu_open_view_employee"
+            sequence="2"/>
+
+
+    <menuitem
+            id="menu_open_view_employee_list_pnp"
+            action="open_view_employee_pnp_list"
+            parent="menu_open_view_employee"
+            sequence="3"/>
+
+    <menuitem
+            id="menu_open_view_employee_list_prived"
+            action="open_view_employee_prived_list"
+            parent="menu_open_view_employee"
+            sequence="4"/>
+
+    <menuitem
+            id="menu_open_view_employee_list_detached"
+            action="open_view_employee_detached_list"
+            parent="menu_open_view_employee"
+            sequence="5"/>
+
+    <menuitem
+            id="menu_open_view_employee_other_list"
+            action="open_view_employee_other_list"
+            parent="menu_open_view_employee"
+            sequence="6"/>
+
+     <!--inherit hr_contract-->
+    <record id="hr_employee_view_contract_form" model="ir.ui.view">
+        <field name="name">hr.contract.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" placeholder="Contract Reference" required="0"/>
+            </field>
+            <field name="date_end" position="after">
+                <field name="wage" required="0" invisible="1"/>
+            </field>
+            <field name="type_id" position="replace"/>
+            <field name="trial_date_end" position="replace"/>
+            <field name="resource_calendar_id" position="replace"/>
+            <page name="information" position="replace"/>
+        </field>
+    </record>
+
+       <!--Employee corps-->
+    <record id="view_employee_corps_tree" model="ir.ui.view">
+        <field name="name">hr.employee.corps.tree</field>
+        <field name="model">hr.employee.corps</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Corps">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_corps_form" model="ir.ui.view">
+        <field name="name">hr.employee.corps.form</field>
+        <field name="model">hr.employee.corps</field>
+        <field name="arch" type="xml">
+            <form string="Employee Corps">
+                <sheet>
+                    <group>
+                        <group>
+                           <field name="name"/>
+                           <field name="echelle_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="line_ids" string="Ligne corps">
+                            <field name="line_ids">
+                                <tree editable="bottom">
+                                    <field name="grade_id"/>
+                                    <field name="echelon_id"/>
+                                    <field name="indice_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_employee_corps_form" model="ir.actions.act_window">
+        <field name="name">Employee Corps</field>
+        <field name="res_model">hr.employee.corps</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Corps"
+              parent="menu_view_recrutement_form" sequence="3"
+              id="menu_view_employee_corps_form"
+              action="action_employee_corps_form"/>
+</odoo>

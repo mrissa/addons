@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="seq_etablissementid_ref" model="ir.sequence">
+        <field name="name">Default Etablissement ID Seq</field>
+        <field name="code">etablissementid.default.seq</field>
+        <field name="prefix">%(y)s</field>
+        <field name="padding">5</field>
+    </record>
+
+     <record id="seq_etablissement" model="ir.sequence">
+            <field name="name">Etablissement Code</field>
+            <field name="code">code.etablissement</field>
+            <field name="prefix">E</field>
+            <field name="padding">5</field>
+	   </record>
+
+      <record id="seq_building" model="ir.sequence">
+            <field name="name">Building Code</field>
+            <field name="code">code.building</field>
+            <field name="prefix">B</field>
+            <field name="padding">5</field>
+	   </record>
+
+        <record id="seq_structure" model="ir.sequence">
+            <field name="name">Structure Code</field>
+            <field name="code">code.structurep</field>
+            <field name="prefix">S</field>
+            <field name="padding">5</field>
+	   </record>
+
+</odoo>

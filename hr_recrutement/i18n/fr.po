@@ -1,0 +1,1442 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_recrutement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-31 14:05+0000\n"
+"PO-Revision-Date: 2018-08-31 14:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1940"
+msgstr "1940"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1941"
+msgstr "1941"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1942"
+msgstr "1942"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1943"
+msgstr "1943"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1944"
+msgstr "1944"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1945"
+msgstr "1945"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1946"
+msgstr "1946"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1947"
+msgstr "1947"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1948"
+msgstr "1948"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1949"
+msgstr "1949"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1950"
+msgstr "1950"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1951"
+msgstr "1951"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1952"
+msgstr "1952"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1953"
+msgstr "1953"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1954"
+msgstr "1954"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1955"
+msgstr "1955"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1956"
+msgstr "1956"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1957"
+msgstr "1957"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1958"
+msgstr "1958"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1959"
+msgstr "1959"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1960"
+msgstr "1960"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1961"
+msgstr "1961"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1962"
+msgstr "1962"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1963"
+msgstr "1963"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1964"
+msgstr "1964"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1965"
+msgstr "1965"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1966"
+msgstr "1966"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1967"
+msgstr "1967"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1968"
+msgstr "1968"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1969"
+msgstr "1969"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1970"
+msgstr "1970"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1971"
+msgstr "1971"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1972"
+msgstr "1972"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1973"
+msgstr "1973"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1974"
+msgstr "1974"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1975"
+msgstr "1975"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1976"
+msgstr "1976"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1977"
+msgstr "1977"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1978"
+msgstr "1978"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1979"
+msgstr "1979"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1980"
+msgstr "1980"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1981"
+msgstr "1981"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1982"
+msgstr "1982"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1983"
+msgstr "1983"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1984"
+msgstr "1984"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1985"
+msgstr "1985"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1986"
+msgstr "1986"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1987"
+msgstr "1987"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1988"
+msgstr "1988"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1989"
+msgstr "1989"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1990"
+msgstr "1990"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1991"
+msgstr "1991"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1992"
+msgstr "1992"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1993"
+msgstr "1993"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1994"
+msgstr "1994"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1995"
+msgstr "1995"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1996"
+msgstr "1996"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1997"
+msgstr "1997"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1998"
+msgstr "1998"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "1999"
+msgstr "1999"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2000"
+msgstr "2000"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2001"
+msgstr "2001"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2002"
+msgstr "2002"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2003"
+msgstr "2003"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2004"
+msgstr "2004"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2005"
+msgstr "2005"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2006"
+msgstr "2006"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2007"
+msgstr "2007"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2008"
+msgstr "2008"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2009"
+msgstr "2009"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2010"
+msgstr "2010"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2011"
+msgstr "2011"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2012"
+msgstr "2012"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2013"
+msgstr "2013"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2014"
+msgstr "2014"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2015"
+msgstr "2015"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2016"
+msgstr "2016"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2017"
+msgstr "2017"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,year_success:0
+msgid "2018"
+msgstr "2018"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_affectation_ids
+msgid "Affectation"
+msgstr "Affectation"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_affectation_ids
+msgid "Affections"
+msgstr "Affections"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_year_success
+msgid "Année de réussite"
+msgstr "Année de réussite"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.on.demand,state:0
+msgid "Approuver"
+msgstr "Approuver"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_name_arrete
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_name_arrete
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "Arrêté"
+msgstr "Arrêté"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,type_arrete:0
+#: selection:hr.recruitment.exit,type_arrete:0
+msgid "Arrêté de Nomination"
+msgstr "Arrêté de Nomination"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,type_arrete:0
+#: selection:hr.recruitment.exit,type_arrete:0
+msgid "Arrêté de Nomination et Titularisation"
+msgstr "Arrêté de Nomination et Titularisation"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,type_arrete:0
+#: selection:hr.recruitment.exit,type_arrete:0
+msgid "Arrêté de Titularisation"
+msgstr "Arrêté de Titularisation"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,state:0
+#: selection:hr.recruitment.exit,state:0
+#: selection:hr.recruitment.on.demand,state:0
+msgid "Brouillon"
+msgstr "Brouillon"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_choice_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_pnp_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.pv_choice_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_choice_employee
+msgid "Choice Employee"
+msgstr "Choix d'employé"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_choice_pv
+msgid "Choice PV"
+msgstr "Choix de PV"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_choice_employee
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_choice_view
+msgid "Choice employee"
+msgstr "Choix de l'employé"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_choice_pv
+#: model:ir.ui.view,arch_db:hr_recrutement.pv_choice_view
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "Choisir PV/NS"
+msgstr "Choisir PV/NS"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_assignment_choice1
+msgid "Choix 1"
+msgstr "Choix 1"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_assignment_choice2
+msgid "Choix 2"
+msgstr "Choix 2"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_assignment_choice3
+msgid "Choix 3"
+msgstr "Choix 3"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_pnp_import_view
+msgid "Choose a file to import..."
+msgstr "Choisir un fichier à importer..."
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_choice_view
+msgid "Choose your Employee"
+msgstr "Choisir l'employé"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_pnp_import_view
+msgid "Choose your Excel file"
+msgstr "Choisir le fichier Excel"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,help:hr_recrutement.open_view_employee_contractual_list
+#: model:ir.actions.act_window,help:hr_recrutement.open_view_employee_detached_list
+#: model:ir.actions.act_window,help:hr_recrutement.open_view_employee_pnp_list
+#: model:ir.actions.act_window,help:hr_recrutement.open_view_employee_prived_list
+msgid "Click to add a new employee."
+msgstr "Cliquer pour ajouter un nouvel employé."
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_choice_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_pnp_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.pv_choice_view
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_contract_form
+msgid "Contract Reference"
+msgstr "Référence du contrat"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.on.demand,recruitment_type:0
+#: model:ir.actions.act_window,name:hr_recrutement.open_view_employee_contractual_list
+#: model:ir.ui.menu,name:hr_recrutement.menu_open_view_employee_list_contractual
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_inherit_search
+msgid "Contractual"
+msgstr "Contractuel"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_corps_copy_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_new_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_corps_copy_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_corps_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_corps_copy_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_corps_id
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_employee_corps_form
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Corps"
+msgstr "Corps"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_create_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_create_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_date
+msgid "Date"
+msgstr "Date "
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_date_nomination
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_date_nomination
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_date_nomination
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_date_nomination
+msgid "Date Nomination"
+msgstr "Date de nomination"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_date_titularisation
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_date_titularisation
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_date_titularisation
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_date_titularisation
+msgid "Date Titularisation"
+msgstr "Date de titularisation"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Date naissance"
+msgstr "Date de naissance"
+
+#. module: hr_recrutement
+#: selection:choice.pv,recruitment_pv_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_type:0
+#: selection:hr.recruitment.exit,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.exit,recruitment_pv_type:0
+msgid "Direct"
+msgstr "Direct"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_discipline_ids
+msgid "Discipline Employee"
+msgstr "Discipline de l'employé"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Disciplines"
+msgstr "Disciplines"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_display_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.on.demand,recruitment_type:0
+#: model:ir.actions.act_window,name:hr_recrutement.open_view_employee_detached_list
+#: model:ir.ui.menu,name:hr_recrutement.menu_open_view_employee_list_detached
+msgid "Détaché"
+msgstr "Détaché"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_echelle_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_echelle
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_echelle_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_echelle_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_echelle_id
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Echelle"
+msgstr "Échelle"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_echelle_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_echelon_id
+msgid "Echelon"
+msgstr "Échelon"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_training_school_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_training_school_id
+msgid "Ecole de formation"
+msgstr "École de formation"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_employee
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_employee_check_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_employee_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_employee_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_employee_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_employee_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_employee_new_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_employee_ids
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_choice_view
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_inherit_search
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Employee"
+msgstr "Employé"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_employee_corps_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_corps_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_corps_tree
+msgid "Employee Corps"
+msgstr "Corps"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_data_file
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_data_file
+msgid "Employee File"
+msgstr "Fichier de l'employé"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_employee_speciality_form
+msgid "Employee Speciality"
+msgstr "Spécialité"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_is_records_line
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Employés"
+msgstr "Employés"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+msgid "En attente de validation"
+msgstr "En attente de validation"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_date_end
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_entry
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_recruitment_entry_ids
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_tree
+msgid "Entry Recruitment"
+msgstr "Entrée Recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_entry_line
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_recruitment_entry_line_ids
+msgid "Entry Recruitment Line"
+msgstr "Entrée Recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_exit
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_recruitment_exit_id
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_tree
+msgid "Exit Recruitment"
+msgstr "Sortie Recrutement"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_exit_form
+msgid "External Recruitment"
+msgstr "Recrutement externe"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_exit_form
+msgid "Externe"
+msgstr "Externe"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "Fiche budgétaire"
+msgstr "Fiche budgétaire"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_filename
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_filename
+msgid "Filename"
+msgstr "Nom de fichier"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_grade_id
+msgid "Grade"
+msgstr "Grade"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_id_3943
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_id_3935
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_import_employee_line
+#: model:ir.model,name:hr_recrutement.model_import_employee_pnp_line
+msgid "Import Employee Line"
+msgstr "Importer une ligne d'employé"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_import_view
+#: model:ir.ui.view,arch_db:hr_recrutement.employee_pnp_import_view
+msgid "Import Product Line"
+msgstr "Importer une ligne de production"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+msgid "Import excel"
+msgstr "Importer EXCEL"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_employee_import
+#: model:ir.actions.act_window,name:hr_recrutement.action_employee_pnp_import
+msgid "Import line"
+msgstr "Ligne d'importation"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Importer EXCEL"
+msgstr "Importer EXCEL"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_indice
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_indice_id
+msgid "Indice"
+msgstr "Indice"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_entry_form
+msgid "Internal"
+msgstr "Interne"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_entry_form
+msgid "Internal Recruitment"
+msgstr "Recrutement interne"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_invisible
+msgid "Invisible"
+msgstr "Invisible"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type___last_update
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_write_uid
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_employee_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_import_employee_pnp_line_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_write_date
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_lien
+msgid "Lien PV"
+msgstr "Lien de PV"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Lieu naissance"
+msgstr "Lieu de naissance"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_ids
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_corps_form
+msgid "Ligne corps"
+msgstr "Corps"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_identification_id
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Matricule"
+msgstr "Matricule"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Moyenne"
+msgstr "Moyenne"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_note_graduation
+msgid "Moyenne réussite"
+msgstr "Moyenne de réussite"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_nni
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "NNI"
+msgstr "NNI"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Nom et Prenom"
+msgstr "Nom et Prénom"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.open_view_employee_pnp_list
+#: model:ir.ui.menu,name:hr_recrutement.menu_open_view_employee_list_pnp
+msgid "Not permanent"
+msgstr "Non permanent"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_notes
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_notes
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_notes
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_notes
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Notes"
+msgstr "Notes"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_pv_ns_form
+msgid "Notes Services"
+msgstr "Notes de Services"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_pv_ns_form
+msgid "Notes de services"
+msgstr "Notes de services"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Notes..."
+msgstr "Notes..."
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_new_echelle
+msgid "Nouveau Echelle"
+msgstr "Nouvelle échelle"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_new_corps_line_id
+msgid "Nouveau rémuniration"
+msgstr "Nouveaux Grade/Echelle/Indice"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_pv_form
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_pv_sortant_form
+msgid "Nouveaux Sortants"
+msgstr "Nouveaux Sortants"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_new_graduates
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_new_graduates
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_new_graduates
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_new_graduates
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_new_graduates_copy
+msgid "Nouveaux diplômés"
+msgstr "Nouveaux diplômés"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_pv_promotion_form
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_pv_promotion_form
+msgid "Nouvelles Promotions"
+msgstr "Nouvelles promotions"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_name
+msgid "Num PV/NS"
+msgstr "Num PV/NS"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_number_training_school
+msgid "Number Training School"
+msgstr "N° École"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_demande_form
+msgid "On demande"
+msgstr "Sur demande"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.on.demand,recruitment_type:0
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_inherit_search
+msgid "PNP"
+msgstr "PNP"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_pv_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_employee_interne_ids
+msgid "PV"
+msgstr "PV"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_pv
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_recruitment_pv_id
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_tree
+msgid "PV Recruitment"
+msgstr "PV de recruitment"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_is_records_line
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_is_records_line
+msgid "PV existe"
+msgstr "PV existe"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_pv_check_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_pv_treat_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_pv_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_treat_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_pv_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_pv_treat_ids
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_pv_form
+#: model:ir.ui.view,arch_db:hr_recrutement.pv_choice_view
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "PV/NS"
+msgstr "PV/NS"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.on.demand,state:0
+msgid "Pending approval"
+msgstr "Validation en attente"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_open_view_employee
+msgid "Personnel"
+msgstr "Personnel"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.open_view_employee_prived_list
+#: model:ir.ui.menu,name:hr_recrutement.menu_open_view_employee_list_prived
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_inherit_search
+msgid "Prived"
+msgstr "Privé"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,state:0
+#: selection:hr.recruitment.exit,state:0
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "Préparation Arrêté"
+msgstr "Préparation d'arrêté"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,state:0
+#: selection:hr.recruitment.exit,state:0
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+msgid "Préparation budget"
+msgstr "Préparation du budget"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_check_ids
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_pv_check_ids
+msgid "Pv Check"
+msgstr "Vérifier PV"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_hr_recruitment_form
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_recrutement_form
+msgid "Recruitment"
+msgstr "Recrutement"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Recruitment Informations"
+msgstr "Informations de recrutement"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_recruitment_entry_line_view
+msgid "Recruitment Line"
+msgstr "Recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_on_demand
+msgid "Recruitment On Demande"
+msgstr "Recrutement sur demande"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_recruitment_type
+msgid "Recruitment Type"
+msgstr "Type de recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_recruitment_direct_type_name
+msgid "Recruitment direct Type"
+msgstr "Recrutement direct"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_hr_recruitment_demande_form
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_recruitment_demande_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_recruitment_demande_ids
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_tree
+msgid "Recruitment on demande"
+msgstr "Recrutment sur demande"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_line_recruitment_exit_id
+msgid "Recrutement Externe"
+msgstr "Recrutement externe"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_pv_line_recruitment_entry_id
+msgid "Recrutement Interne"
+msgstr "Recrutement interne"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.pv,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_type_ns:0
+msgid "Recrutement direct"
+msgstr "Recrutement direct"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Recrutement externe"
+msgstr "Recrutement externe"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_recruitment_entry_id
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Recrutement interne"
+msgstr "Recrutement interne"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_ref_exit_recrutement
+msgid "Reference PV/NS"
+msgstr "Référence PV/NS"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_name
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_name
+msgid "Référence"
+msgstr "Référence"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_name
+msgid "Référence PV/NS"
+msgstr "Référence PV/NS"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_id_4376
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_corps_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_corps_line_id
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_corps_line_id
+#: model:ir.ui.view,arch_db:hr_recrutement.hr_employee_view_recrutement_form
+msgid "Rémuniration"
+msgstr "Grade/Echelle/Indice"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_corps_line_name
+msgid "Rémunération"
+msgstr "Grade/Echelle/Indice"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_section
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_section
+msgid "Section"
+msgstr "Section"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_employee_speciality_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_speciality_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_speciality_tree
+msgid "Speciality"
+msgstr "Spécialité"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_name
+msgid "Specialty"
+msgstr "Spécialité"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_id1
+msgid "Specialté 1"
+msgstr "Specialté 1"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_employee_specialty_id2
+msgid "Specialté 2"
+msgstr "Specialté 2"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_exit_stage
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_internal_stage
+msgid "Stage of Recruitment"
+msgstr "Étape de recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_demand_stage
+msgid "Stage of Recruitment on demand"
+msgstr "Étapes de recrutement sur demande"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_line_state
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_state
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_state
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_state
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_state
+msgid "State"
+msgstr "Etat"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_on_demand_date_start
+msgid "Strat Date"
+msgstr "Date de début"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_subject
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_subject
+msgid "Subject"
+msgstr "Objet"
+
+#. module: hr_recrutement
+#: model:ir.ui.view,arch_db:hr_recrutement.pv_choice_view
+msgid "Séléctionner les PV/NS"
+msgstr "Séléctionner les PV/NS"
+
+#. module: hr_recrutement
+#: sql_constraint:hr.recruitment.on.demand:0
+msgid "The start date must be anterior to the end date."
+msgstr "La date de début doit être antérieure à la date de fin."
+
+#. module: hr_recrutement
+#: selection:choice.pv,recruitment_pv_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_type_ns:0
+msgid "Titularisation"
+msgstr "Titularisation"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_training_school_form
+#: model:ir.model.fields,field_description:hr_recrutement.field_training_school_name
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_training_school_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_training_school_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_training_school_tree
+msgid "Training School"
+msgstr "École de formation"
+
+#. module: hr_recrutement
+#: selection:choice.pv,recruitment_pv_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.entry,recruitment_pv_type:0
+#: selection:hr.recruitment.exit,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.exit,recruitment_pv_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_copy_type:0
+#: selection:hr.recruitment.pv,recruitment_pv_type:0
+msgid "Training school"
+msgstr "École de formation"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_recruitment_direct_type
+#: model:ir.ui.view,arch_db:hr_recrutement.view_employee_prived_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_type_rec_direct_form
+msgid "Type"
+msgstr "Type"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_recruitment_pv_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_recruitment_pv_copy_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_recruitment_pv_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_pv_recruitment_pv_type_ns
+msgid "Type PV/NS"
+msgstr "Type de PV/NS"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_choice_pv_recruitment_pv_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_recruitment_pv_copy_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_recruitment_pv_copy_type
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_recruitment_pv_type
+msgid "Type Recrutement"
+msgstr "Type de recrutement"
+
+#. module: hr_recrutement
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_entry_type_arrete
+#: model:ir.model.fields,field_description:hr_recrutement.field_hr_recruitment_exit_type_arrete
+msgid "Type arrêté"
+msgstr "Type d'arrêté"
+
+#. module: hr_recrutement
+#: model:ir.ui.menu,name:hr_recrutement.menu_view_type_recrutement_direct_form
+msgid "Type de recrutement directe"
+msgstr "Type de recrutement direct"
+
+#. module: hr_recrutement
+#: model:ir.actions.act_window,name:hr_recrutement.action_recruitment_direct_type_form
+msgid "Type recrutement directe"
+msgstr "Type de recrutement direct"
+
+#. module: hr_recrutement
+#: selection:hr.recruitment.entry,state:0
+#: selection:hr.recruitment.exit,state:0
+#: selection:hr.recruitment.pv,state:0
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_demande_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_entry_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_exit_form
+#: model:ir.ui.view,arch_db:hr_recrutement.view_hr_recruitment_pv_form
+msgid "Valider"
+msgstr "Valider"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_employee_corps
+msgid "hr.employee.corps"
+msgstr "rh.employé.corps"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_employee_corps_line
+msgid "hr.employee.corps.line"
+msgstr "hr.employee.corps.line"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_employee_specialty
+msgid "hr.employee.specialty"
+msgstr "rh.employé.spécialité"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_entry_pv_line
+msgid "hr.recruitment.entry.pv.line"
+msgstr "hr.recruitment.entry.pv.line"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_hr_recruitment_exit_line
+msgid "hr.recruitment.exit.line"
+msgstr "hr.recruitment.exit.line"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_recruitment_direct_type
+msgid "recruitment.direct.type"
+msgstr "recrutement.direct.type"
+
+#. module: hr_recrutement
+#: model:ir.model,name:hr_recrutement.model_training_school
+msgid "training.school"
+msgstr "formation.école"
+

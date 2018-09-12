@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+   
+         <!-- educa_establishment  by user and team pivot View -->
+        <record id="stud_student_report_view_pivot" model="ir.ui.view">
+            <field name="name">stud.student.pivot</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <pivot string="Élèves" >
+                <field name="state" type="col"/>
+                     <field name="establishment_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="stud_student_report_view_graph" model="ir.ui.view">
+            <field name="name">stud.student.graph</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <graph string="Élèves" stacked="False">
+                    <field name="state" type="col"/>
+                    <field name="establishment_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="stud_student_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Élèves </field>
+             <field name="res_model">stud.student</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('stud_student_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('stud_student_report_view_pivot')})]"/>
+             <field name="help">Analyse des Élèves .</field>
+        </record>
+
+       <menuitem id="stud_studentt_report_menu" name="Élèves"
+            parent="stud_student_report_menu" action="stud_student_report_action_graph" sequence="6"/>
+            
+    <!-- stud.inscription -->
+     <!-- stud.inscription   by user and team pivot View -->
+        <record id="stud_inscription_report_view_pivot" model="ir.ui.view">
+            <field name="name">stud.inscription.pivot</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <pivot string="Inscripion Scolaire" >
+                <field name="state" type="col"/>
+                <field name="establishment_id" type="row"/>
+                
+
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="stud_inscription_report_view_graph" model="ir.ui.view">
+            <field name="name">stud.inscription.graph</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <graph string="Inscripion Scolaire" stacked="False">
+                <field name="state" type="col"/>
+                <field name="establishment_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="stud_inscription_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Inscripion Scolaire </field>
+             <field name="res_model">stud.inscription</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('stud_inscription_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('stud_inscription_report_view_pivot')})]"/>
+             <field name="help">Analyse des Equipement .</field>
+        </record>
+
+       <menuitem id="stud_inscription_reportt_menu" name="Inscripion Scolaire"
+            parent="educa_inscription_report_menu" action="stud_inscription_report_action_graph" sequence="6"/>
+         
+         <!-- stud.inscription -->
+     <!-- stud.inscription   by user and team pivot View -->
+        <record id="stud_inscription2_report_view_pivot" model="ir.ui.view">
+            <field name="name">stud.inscription.pivot</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <pivot string="Inscripion Scolaire" >
+                <field name="state" type="col"/>
+                 <field name="establishment_id" type="row"/>
+                 <field name="scholarly_id" type="row"/>
+                <field name="year_line_id" type="row"/>
+                
+
+                      
+                 </pivot>
+            </field>
+        </record>
+        <record id="stud_inscription2_report_view_graph" model="ir.ui.view">
+            <field name="name">stud.inscription.graph</field>
+            <field name="model">stud.inscription</field>
+            <field name="arch" type="xml">
+                <graph string="Inscripion Scolaire" stacked="False">
+                <field name="state" type="col"/>
+                <field name="year_line_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="stud_inscription2_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Inscripion Scolaire </field>
+             <field name="res_model">stud.inscription</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('stud_inscription2_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('stud_inscription2_report_view_pivot')})]"/>
+             <field name="help">Analyse des Equipement .</field>
+        </record>
+
+       <menuitem id="stud_inscription_reportt_menu2" name="Inscripion par structure"
+            parent="educa_inscription_report_menu" action="stud_inscription2_report_action_graph" sequence="6"/>
+         
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+
+    <record id="view_employee_skill_form" model="ir.ui.view">
+        <field name="name">hr.employee.skill.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" name="employee_view" type="object" icon="fa-star-half-empty" context="{'default_employee_id': active_id}">
+                    <field string="Qualifications" name="skill_count" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>

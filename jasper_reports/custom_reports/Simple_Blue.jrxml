@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="49e2c821-52b1-47d0-872c-87af364ab3be">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (6)"/>
+	<queryString language="xPath">
+		<![CDATA[/data/record]]>
+	</queryString>
+	<field name="Name-name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Name-name"/>
+		<fieldDescription><![CDATA[Name-name]]></fieldDescription>
+	</field>
+	<field name="Email-email" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Email-email"/>
+		<fieldDescription><![CDATA[Email-email]]></fieldDescription>
+	</field>
+	<field name="Date-date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Date-date"/>
+		<fieldDescription><![CDATA[Date-date]]></fieldDescription>
+	</field>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{Name-name}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="a868487c-a079-4660-876f-2f233f9e9f26"/>
+					<textElement>
+						<font size="22" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Name-name}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="1f944df1-919d-45da-9d82-f1b2aae9f5f8"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Name-name]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{Email-email}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="4ad37f1d-1b58-471b-aff4-6a9ec1938c71"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Email-email}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="f73bf0eb-902b-4816-b5e4-7f32065467b8"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Email-email]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group4">
+		<groupExpression><![CDATA[$F{Date-date}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="ebdd8916-221f-4b76-a313-f2c3f960f98f"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Date-date}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="b63cc4ad-1958-469a-a0da-95b83fc532e3"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Date-date]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="b4db8dc9-3a67-4027-9aca-c462d37fd6d4"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="184185dd-b4c3-41df-979e-6fa1c48dd5c8"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="224c1b5d-edb2-482d-b76c-ad9f4743dde6"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Add a description here]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="59b570d7-795a-4da1-a669-b90567dfc487"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="af4d434f-a03e-40bd-95b3-3e25742b702a"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="7ab671da-8353-48b6-8141-5ca55d29d613"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="f4be70a3-07e0-419b-9c01-fe5ef94b3964"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="431a2fb7-28dc-4ce6-b28b-0eb26c2f7a1d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

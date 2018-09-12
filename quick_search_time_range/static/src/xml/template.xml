@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+     <t t-name="tm723.SearchTimeRange">
+        <div class="tm723-search btn-group btn-group-sm">
+            <span style="float: left; margin-left: 2px">
+                <select class="tm723_select_field form-control" style="height: 30px; padding: 0px 2px;" >
+                    <option t-foreach="tm723_fields" t-as="field" t-att-value="field[0]">
+                        <t t-esc="field[1]"/>
+                    </option> 
+                </select>
+            </span>
+            <span style="float: left; margin-left: 2px;">
+                <input style="height: 30px; padding: 0px 2px; width: 225px;" class="tm723_time_field" size="10" placeholder="Choose time range..." type="text" />
+            </span>
+        </div>
+    </t>
+
+</templates>

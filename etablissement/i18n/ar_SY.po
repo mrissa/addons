@@ -1,0 +1,1230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* etablissement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-31 09:31+0000\n"
+"PO-Revision-Date: 2018-08-31 09:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_active
+msgid " Active"
+msgstr " نشط"
+
+#. module: etablissement
+#: code:addons/etablissement/models/building.py:45
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                                       Click to Create New Building\n"
+"                                    </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                                       Click to Create New Building\n"
+"                                    </p>"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.menu_secondary_inherit
+msgid "<span>IP-TECH</span>"
+msgstr "<span>IP-TECH</span>"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Administratif"
+msgstr "إداري"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_street
+msgid "Adress"
+msgstr "العنوان"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_affectation_ins_id
+msgid "Affectation"
+msgstr "التحويل"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_instruction
+msgid "Affectation Equipements"
+msgstr "تحويل التجهيزات"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_affectation_instruction_list_action
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_tree
+msgid "Affectation Instruction"
+msgstr "تحويل التعليمات"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Affectation Materiel Instruction"
+msgstr "تحويل معدات التعليمات"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_list_action
+#: model:ir.ui.menu,name:etablissement.menu_action_etablissement
+#: model:ir.ui.menu,name:etablissement.menu_autre_etablissement_main
+msgid "Autre Etablissement"
+msgstr "تجهيزات أخرى"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Base Information"
+msgstr "المعلومات الأساسية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_building_id
+msgid "Batiment"
+msgstr "المبنى"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_building_ids
+msgid "Blocs"
+msgstr "الأقسام البنائية"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Bon"
+msgstr "جيد"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.action_building_tree1
+#: model:ir.actions.act_window,name:etablissement.list_building
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_building_count
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_tree
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Building"
+msgstr "المبنى"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_categorie
+msgid "Categorie"
+msgstr "الفئة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_categ_equipement_form
+#: model:ir.model,name:etablissement.model_categ_equipement
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_name
+#: model:ir.model.fields,field_description:etablissement.field_product_product_categ_product
+#: model:ir.model.fields,field_description:etablissement.field_product_template_categ_product
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_categ_id
+#: model:ir.ui.menu,name:etablissement.menu_open_view_categ_product
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_form
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_tree
+msgid "Categorie equipement"
+msgstr "فئة التجهيز"
+
+#. module: etablissement
+#: selection:educa.establishment,ecological_situation:0
+msgid "Citadin"
+msgstr "حضري"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_city
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_city_id
+msgid "City"
+msgstr "المقاطعة"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Class"
+msgstr "القسم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_classification
+msgid "Classification"
+msgstr "التصنيف"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_classification_classroom
+msgid "Classification Classroom"
+msgstr "تصنيف الحجرات"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_classification_classroom_form
+#: model:ir.ui.menu,name:etablissement.menu_view_classification_salle_form
+#: model:ir.ui.view,arch_db:etablissement.view_classification_classroom_form
+#: model:ir.ui.view,arch_db:etablissement.view_classification_classroom_tree
+msgid "Classification classroom"
+msgstr "تصنيف الحجرات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_salle_count
+msgid "Classroms"
+msgstr "الحجرات"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_salle
+#: model:ir.ui.menu,name:etablissement.menu_open_view_classroom_form
+msgid "Classroom"
+msgstr "الحجرة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_classroom_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_salle_ids
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_tree
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Classrooms"
+msgstr "الحجرات"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_educational_structure_list_action
+msgid "Click to add a new eductaion structure."
+msgstr "انقر لإضافة بنية تربوية جديدة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_Fundamental_list_action
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_list_action
+#: model:ir.actions.act_window,help:etablissement.open_view_etablissement_list_secondary_action
+msgid "Click to add a new etablissement."
+msgstr "انقر لإضافة مؤسسة جديدة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_affectation_instruction_list_action
+msgid "Click to add a new instruction."
+msgstr "انقر لإضافة تعليمة جديدة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.action_building_tree1
+msgid "Click to create a building."
+msgstr "انقر لإنشاء مبنى"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Close"
+msgstr "إقفال"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_number_id
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Code"
+msgstr "الرمز"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_product_ids
+msgid "Code Materiel"
+msgstr "رمز المعدات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_name
+msgid "Code Of building"
+msgstr "قانون البناء"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_color
+msgid "Color Index"
+msgstr "لون الرقم التسلسلى"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_note
+msgid "Commentaires"
+msgstr "تعليقات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_common_place
+msgid "Common Place"
+msgstr "فضاء مشترك"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_company_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_company_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: etablissement
+#: selection:educa.classroom,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Compliant"
+msgstr "متوافقة"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_configuration
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_country_id
+msgid "Country"
+msgstr "البلد"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_create_uid
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_create_date
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_create_date
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_create_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_create_date
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_create_date
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_cycle
+msgid "Cycle"
+msgstr "الدورة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_cycle_ids
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_form
+msgid "Cycles"
+msgstr "الدورات"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_dren_id
+msgid "DREN"
+msgstr "الإدارة الجهوية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_date_agrement
+msgid "Date Agrement"
+msgstr "تاريخ الموافقة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_send_date
+msgid "Date Envoi"
+msgstr "تاريخ الإرسال"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_product_date
+msgid "Date Production"
+msgstr "تاريخ الإنتاج"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_designation
+msgid "Designation"
+msgstr "التعيين"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_line_ids
+msgid "Discipline"
+msgstr "التخصص"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_display_name
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_display_name
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_display_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_display_name
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_display_name
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_distance_km_state
+msgid "Distance Km State"
+msgstr "المسافة بالكيلومتر"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_eets
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "EETS"
+msgstr "المرافق"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_ecological_situation
+msgid "Ecological situation"
+msgstr "الوضع البيئي"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_classroom
+msgid "Educa Classroom"
+msgstr "حجرة الدرس"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_education
+msgid "Educa Education"
+msgstr "التعليم"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_feliere
+msgid "Educa Education Feliere"
+msgstr "الشعبة التعليمية"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_level
+msgid "Educa Education level"
+msgstr "المستوى التعليمي"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_category
+msgid "Educa Establishment Category"
+msgstr "نوع المؤسسة"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_building
+msgid "Educational Building"
+msgstr "المبنى"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_educational_structure_list_action
+#: model:ir.model,name:etablissement.model_educa_structure
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+#: model:ir.ui.view,arch_db:etablissement.view_educational_structure_filter
+#: model:ir.ui.view,arch_db:etablissement.view_educational_structure_tree
+msgid "Educational Structure"
+msgstr "البنية التربوية"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_electricity
+msgid "Electricity"
+msgstr "الكهرباء"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Enseignement"
+msgstr "التعليم"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_equipement
+#: model:ir.model,name:etablissement.model_affectation_equipement
+#: model:ir.model,name:etablissement.model_equipement_line
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_product_id
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_equipement_line_tree
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Equipement"
+msgstr "التجهيز"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.list_equipement_classroom
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_equipement_count
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_equipement_ids
+#: model:ir.ui.menu,name:etablissement.menu_open_view_equipement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_product
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Equipements"
+msgstr "التجهيزات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_establishment_ids
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_establishment_id
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_filter
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Establishment"
+msgstr "مؤسسة الإحالة"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_cycle
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_cycle_form
+msgid "Establishment Cycle"
+msgstr "دورة التأسيس"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_type
+msgid "Establishment Type"
+msgstr "نوع المؤسسة"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_root
+#: model:ir.ui.menu,name:etablissement.menu_open_view_etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_tree_view
+msgid "Etablissement"
+msgstr "المؤسسة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_cycle_form
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_cycle_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_cycle_list
+msgid "Etablissement Cycle"
+msgstr "دورة التأسيس"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_parent_id
+msgid "Etablissement Mére"
+msgstr "المؤسسة الأم"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Etablissement Search"
+msgstr "البحث عن المؤسسة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_categ_form
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_category_form
+msgid "Etablissement Tags"
+msgstr "علامات المؤسسة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_Fundamental_list_action
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main_fundamental
+msgid "Etablissements Fondamentales"
+msgstr "المؤسسات الأساسية"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_etablissement_list_secondary_action
+#: model:ir.ui.menu,name:etablissement.menu_etablissement_main_secondary
+msgid "Etablissements Secondaires"
+msgstr "المؤسسات الثانوية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_etat
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Etat operationnel"
+msgstr "حالة التشغيل"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Excellence"
+msgstr "امتياز"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_fax
+msgid "Fax"
+msgstr "الفاكس"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_feliere_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_feliere_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_level_form
+msgid "Feliere"
+msgstr "الشعبة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_feliere_id
+msgid "Fliere"
+msgstr "الشعبة"
+
+#. module: etablissement
+#: selection:educa.establishment,type:0
+#: selection:educa.establishment.cycle,type:0
+#: selection:educa.establishment.type,type:0
+msgid "Fondamentale"
+msgstr "الأساسية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Fundamental"
+msgstr "الأساسية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+msgid "Group by..."
+msgstr "...تجميع حسب"
+
+#. module: etablissement
+#: model:res.groups,name:etablissement.group_educa_manager
+msgid "HR Manager"
+msgstr "مدير المصادر البشرية"
+
+#. module: etablissement
+#: selection:educa.establishment,type_etablissement:0
+msgid "Hors Ministère"
+msgstr "خارج الوزارة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_id
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_id
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_id
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_id
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: etablissement
+#. openerp-web
+#: code:addons/etablissement/static/src/xml/hide_menu.xml:41
+#, python-format
+msgid "IP-TECH"
+msgstr "IP-TECH"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "In progress to approve"
+msgstr "في طور الموافقة"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_infrastructure_menu_main
+msgid "Infrastructure"
+msgstr "البنية التحتية"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_affectation_instruction
+#: model:ir.model,name:etablissement.model_instruction_line
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_filter
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+msgid "Instruction"
+msgstr "التعليمة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_internal_hosting
+msgid "Internal Hosting"
+msgstr "الاستضافة الداخلية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+msgid "Internal Notes"
+msgstr "ملاحظات داخلية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_affectation_instruction_form
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+#: model:ir.ui.view,arch_db:etablissement.view_education_stucture_form
+msgid "Internal note..."
+msgstr "ملاحظة داخلية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_internet
+msgid "Internet"
+msgstr "الإنترنت"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_largeur
+msgid "Largeur"
+msgstr "العرض"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_last_date
+msgid "Last Date"
+msgstr "اخر تاريخ"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction___last_update
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement___last_update
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_building___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_education___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type___last_update
+#: model:ir.model.fields,field_description:etablissement.field_educa_section___last_update
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line___last_update
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_write_uid
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_write_date
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_write_date
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_write_date
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_write_date
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_write_date
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_legal_form
+msgid "Legal Form"
+msgstr "الإستمارة القانونية"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_level_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_level_id
+msgid "Level"
+msgstr "المستوى"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_lieu_agrement
+msgid "Lieu Agrement"
+msgstr "مكان الإتفاقية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_categ_equipement_form
+msgid "Liste des types"
+msgstr "قائمة الأنواع"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_longueur
+msgid "Longueur"
+msgstr "الطول"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Mauvais"
+msgstr "سيء"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image_medium
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image_medium
+msgid "Medium-sized photo"
+msgstr "صورة متوسطة الحجم"
+
+#. module: etablissement
+#: selection:educa.establishment,school_plan:0
+msgid "Mixte"
+msgstr "مختلط"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_school_plan
+msgid "Mixte/Non mixte"
+msgstr "مختلط/غير مختلط"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Moyen"
+msgstr "متوسط"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_feliere_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_level_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_name
+#: model:ir.model.fields,field_description:etablissement.field_educa_section_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_education_name
+msgid "Name Of Education"
+msgstr "اسم التعليم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_designation
+msgid "Name Of building"
+msgstr "اسم المبنى"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_section
+msgid "Name Section"
+msgstr "إسم القسم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_nature_of_the_service
+msgid "Nature Of The Sevice"
+msgstr "طبيعة الخدمة"
+
+#. module: etablissement
+#: selection:educa.establishment,school_plan:0
+msgid "No Mixte"
+msgstr "غير مختلط"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_classification_classroom_name
+msgid "Nom"
+msgstr "الإسم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_nb_eleve
+msgid "Nombre maximum Eleve"
+msgstr "العدد الأقصى للتلاميذ"
+
+#. module: etablissement
+#: selection:instruction.line,etat:0
+msgid "Non Utilisable"
+msgstr "غير مستعمل"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Normal"
+msgstr "عادي"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+msgid "Not Operational"
+msgstr "غير مشغل"
+
+#. module: etablissement
+#: selection:educa.classroom,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Not compliant"
+msgstr "غير متوافق"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Not operational"
+msgstr "غير مشغل"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_affectation_instruction_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_notes
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_notes
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_count
+msgid "Number of pieces"
+msgstr "عدد الحجرات"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Open"
+msgstr "افتح"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Operational"
+msgstr "مشغل"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Other"
+msgstr "أخرى"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Other Information"
+msgstr "معلومات أخرى"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_pedagogical_section
+msgid "Pedagogical Section"
+msgstr "الفقرة التربوية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_phone
+msgid "Phone"
+msgstr "رقم الهاتف"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image
+msgid "Photo"
+msgstr "الصورة"
+
+#. module: etablissement
+#: selection:educa.establishment,categorie:0
+msgid "Pilote"
+msgstr "الدليل"
+
+#. module: etablissement
+#. openerp-web
+#: code:addons/etablissement/static/src/xml/hide_menu.xml:40
+#: model:ir.ui.view,arch_db:etablissement.menu_secondary_inherit
+#, python-format
+msgid "Powered by"
+msgstr "مدعوم بواسطة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_school_state
+msgid "Prive/Public"
+msgstr "خاص/عام"
+
+#. module: etablissement
+#: selection:educa.establishment,school_state:0
+msgid "Prived"
+msgstr "خاص"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Prived School"
+msgstr "مدرسة خاصة"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_product_template
+msgid "Product"
+msgstr "المنتج"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_user_id
+msgid "Property"
+msgstr "الخاصية"
+
+#. module: etablissement
+#: selection:educa.establishment,school_state:0
+msgid "Public"
+msgstr "عام"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_instruction_line_quantity
+msgid "Quantite"
+msgstr "الكمية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_remaining_surface
+msgid "Remaining surface"
+msgstr "المساحة المتبقية"
+
+#. module: etablissement
+#: selection:educa.establishment,ecological_situation:0
+msgid "Rural"
+msgstr "ريفي"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Salles"
+msgstr "الحجرات"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_sanitary
+msgid "Sanitary"
+msgstr "صحي"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_name
+msgid "School type"
+msgstr "نوع المدرسة"
+
+#. module: etablissement
+#: selection:educa.establishment,type:0
+#: selection:educa.establishment.cycle,type:0
+#: selection:educa.establishment.type,type:0
+msgid "Secondaire"
+msgstr "ثانوية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_filter_view
+msgid "Secondary"
+msgstr "ثانوية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_classroom_form
+msgid "Sections pedagogiques"
+msgstr "الفقرات التربوية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_image_small
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_image_small
+msgid "Small-sized photo"
+msgstr "صور صغيرة الحجم"
+
+#. module: etablissement
+#: selection:educa.establishment,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Standby"
+msgstr "تعليق"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_state_id
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_state
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_state_id
+msgid "State"
+msgstr "الولاية"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+msgid "Statistical"
+msgstr "إحصائي"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_etab_structure_line
+msgid "Structure Pédagogique"
+msgstr "البنية التربوية"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_etab_structure
+msgid "Structure pedagogique etablissement"
+msgstr "البنية التربوية للمؤسسة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_classroom_surface
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_surface
+msgid "Surface"
+msgstr "المساحة"
+
+#. module: etablissement
+#: sql_constraint:educa.establishment.category:0
+msgid "Tag name already exists !"
+msgstr "إضغط إسماً موجوداً مسبقاً !"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_tel
+msgid "Tel"
+msgstr "رقم الهاتف"
+
+#. module: etablissement
+#: sql_constraint:educa.building:0
+msgid "The code must be unique per Building!"
+msgstr " يجب أن يكون الرمز فريداً لكل مبنى !"
+
+#. module: etablissement
+#: sql_constraint:educa.establishment:0
+msgid "The code must be unique per establishment!"
+msgstr " يجب أن يكون الرمز فريداً لكل مؤسسة !"
+
+#. module: etablissement
+#: sql_constraint:educa.classroom:0
+msgid "The code must be unique!"
+msgstr " يجب أن يكون الرمز فريداً !"
+
+#. module: etablissement
+#: model:ir.model.fields,help:etablissement.field_educa_building_image
+msgid "This field holds the image used as photo for the building, limited to 1024x1024px."
+msgstr "يحتفظ هذا الحقل بالصورة المستخدمة كصورة للمبنى"
+
+#. module: etablissement
+#: model:ir.model.fields,help:etablissement.field_educa_establishment_image
+msgid "This field holds the image used as photo for the employee, limited to 1024x1024px."
+msgstr "هذه الخانة تستخدم لصورة الموظف"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_conform_count
+msgid "Total classroom conform"
+msgstr "مجموع الحجرات مطابق"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_classroom_not_conform_count
+msgid "Total classroom not conform"
+msgstr "مجموع الحجرات غير مطابق"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_town_id
+msgid "Town"
+msgstr "البلدية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_cycle_type
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_type_form
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_school
+#: model:ir.model.fields,field_description:etablissement.field_educa_structure_type_id
+#: model:ir.ui.menu,name:etablissement.menu_view_etablissement_type_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_form_view
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_form
+msgid "Type Enseignement"
+msgstr "نوع التدريس"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_type_equipement
+msgid "Type Equipement"
+msgstr "نوع التجهيز"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_type_etablissement
+msgid "Type Etablissement"
+msgstr "نوع المؤسسة"
+
+#. module: etablissement
+#: model:ir.actions.act_window,name:etablissement.open_view_type_equipement_form
+#: model:ir.model.fields,field_description:etablissement.field_categ_equipement_type_ids
+#: model:ir.model.fields,field_description:etablissement.field_product_product_type_id
+#: model:ir.model.fields,field_description:etablissement.field_product_template_type_id
+#: model:ir.model.fields,field_description:etablissement.field_type_equipement_name
+#: model:ir.ui.menu,name:etablissement.menu_open_view_type_product
+#: model:ir.ui.view,arch_db:etablissement.view_type_equipement_form
+#: model:ir.ui.view,arch_db:etablissement.view_type_equipement_tree
+msgid "Type equipement"
+msgstr "نوع التجهيز"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_type_building
+msgid "Type of Building"
+msgstr "نوع المبنى"
+
+#. module: etablissement
+#: selection:educa.building,state:0
+#: model:ir.ui.view,arch_db:etablissement.view_building_form
+msgid "Under construction"
+msgstr "في طور البناء"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "Warehouse"
+msgstr "المراجع"
+
+#. module: etablissement
+#: selection:educa.building,eets:0
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_water
+msgid "Water"
+msgstr "الماء"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_note_state
+msgid "Why"
+msgstr "لماذا"
+
+#. module: etablissement
+#: model:ir.actions.act_window,help:etablissement.open_view_educational_structure_list_action
+msgid "With just a quick glance on the screen, you\n"
+"                can easily find all the information you need for each person;\n"
+"                contact data, job position, availability, etc."
+msgstr "،بنظرة سريعة على الشاشة، يمكنك \n"
+"                ;بسهولة العثور على المعلومات التي تحتاجها لكل شخص \n"
+"                .بيانات الاتصال ، وموقع الوظيفة ، والتوافر ، وما إلى ذلك"
+
+#. module: etablissement
+#: model:ir.ui.menu,name:etablissement.menu_open_view_building
+#: model:ir.ui.view,arch_db:etablissement.view_building_filter
+msgid "building"
+msgstr "المبنى"
+
+#. module: etablissement
+#: code:addons/etablissement/models/building.py:38
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_salle_count
+#, python-format
+msgid "classroom"
+msgstr "الحجرة"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment
+msgid "education establishment"
+msgstr "مؤسسة التعليم"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_establishment_category_name
+msgid "establishment Tag"
+msgstr "علامات المؤسسة"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_educa_establishment_structure
+msgid "establishment_structure"
+msgstr "بنية _ المؤسسة"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_category_form
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_category_list
+msgid "etablissement Tags"
+msgstr "علامات المؤسسة"
+
+#. module: etablissement
+#: model:ir.ui.view,arch_db:etablissement.view_etablissement_type_list
+msgid "etablissement Type"
+msgstr "نوع المؤسسة"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_height
+msgid "height"
+msgstr "الإرتفاع"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_length
+msgid "length"
+msgstr "الطول"
+
+#. module: etablissement
+#: model:ir.model,name:etablissement.model_structure_line
+msgid "structure.line"
+msgstr "البنية"
+
+#. module: etablissement
+#: model:ir.model.fields,field_description:etablissement.field_educa_building_width
+msgid "width"
+msgstr "العرض"
+
+#. module: etablissement
+#: selection:educa.building,type_building:0
+msgid "workshop"
+msgstr "ورشة عمل"
+

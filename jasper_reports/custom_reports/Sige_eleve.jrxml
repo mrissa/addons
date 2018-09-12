@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Sige_eleve" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b1c4dd09-77eb-401f-b896-786d67cc6c4a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="eleve Data Adapter"/>
+	<queryString language="xPath">
+		<![CDATA[/data/record]]>
+	</queryString>
+	<field name="Last_name_and_first_name-name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Last_name_and_first_name-name"/>
+		<fieldDescription><![CDATA[Last_name_and_first_name-name]]></fieldDescription>
+	</field>
+	<field name="NNI-nni" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NNI-nni"/>
+		<fieldDescription><![CDATA[NNI-nni]]></fieldDescription>
+	</field>
+	<field name="National_Matricule-identification_id" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="National_Matricule-identification_id"/>
+		<fieldDescription><![CDATA[National_Matricule-identification_id]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#FFFFFF" uuid="5ffca593-7d3d-487c-963a-678aa1e3a1fd"/>
+				<staticText>
+					<reportElement x="158" y="75" width="271" height="30" forecolor="#000000" uuid="30d5cfe9-75c2-43cd-9fd2-078f83211205"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Arabic" size="20" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE DE DOCUMENT - عنوان ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="380" y="10" width="193" height="30" forecolor="#030303" uuid="dc7e8a8f-503d-4009-8818-77d8f2cb7a70"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial Arabic" size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[الجمهورية الاسلامية الموريتانية]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="429" y="37" width="116" height="20" forecolor="#030303" uuid="17a2af01-f8cb-499a-b15b-6a2047732f0c"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial Arabic" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[وزارة التهذيب الوطني]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="13" y="12" width="227" height="30" forecolor="#030303" uuid="ef6f9658-b4af-48d9-b3dc-aa92de937db1"/>
+					<textElement textAlignment="Left">
+						<font fontName="Arial Arabic" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[REPUBLIQUE ISLAMIQUE DE MAURITANIE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="22" y="39" width="218" height="20" forecolor="#030303" uuid="bc5ec14b-6d1e-4858-b63f-b4859b0def09"/>
+					<textElement textAlignment="Left">
+						<font fontName="Arial Arabic" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[MINISTERE DE L'EDUCATION NATIONAL]]></text>
+				</staticText>
+				<image>
+					<reportElement x="274" y="13" width="50" height="50" uuid="99e2bb48-64d6-4a55-8ebd-c45a8da364ed"/>
+					<imageExpression><![CDATA["http://localhost:8069/jasper_reports/static/src/img/logo_sige.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" forecolor="#010003" uuid="18cc7f5a-ceef-4341-8969-d12201fc6379">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="259c3ac2-8d12-4753-bd1f-607270e07afd"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last_name_and_first_name-name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="20" forecolor="#010003" uuid="5d7a12c6-a250-4d10-befa-e4dea2793b10">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a89f373-275e-4816-b44c-b3bb97e5ecb3"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NNI-nni]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="20" forecolor="#010003" uuid="f3572ddd-8e23-4d81-b622-c1d828ec2305">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0bcb9e0a-9009-4ead-870e-d50a59bd0894"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#400040"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National_Matricule-identification_id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" forecolor="#000000" uuid="eeff380d-761a-410e-b5cc-237ae998eff4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="259c3ac2-8d12-4753-bd1f-607270e07afd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Last_name_and_first_name-name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" forecolor="#000000" uuid="797ce7e3-3955-4020-88e7-9a2f89142fcf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a89f373-275e-4816-b44c-b3bb97e5ecb3"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NNI-nni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" forecolor="#000000" uuid="799c6e4c-9006-42be-84a8-2ad8d3f48855">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0bcb9e0a-9009-4ead-870e-d50a59bd0894"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{National_Matricule-identification_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="554" height="1" uuid="dd715d4c-d289-4a48-bd81-d1723a3061b3">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="-10" y="4" width="566" height="13" backcolor="#E6E6E6" uuid="8015e1e4-1057-4ace-9042-532bec95ca48"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Arabic"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SIGE "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="180" y="4" width="150" height="13" backcolor="#E6E6E6" uuid="4804de73-0005-4d50-8eee-3f906f3d9261"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Arabic"/>
+				</textElement>
+				<textFieldExpression><![CDATA["صفحة "+$V{PAGE_NUMBER}+" من"+" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="94656a0c-84ae-44ff-b275-ef20aaf8edea"/>
+				<textElement>
+					<font fontName="Arial Arabic"/>
+				</textElement>
+				<textFieldExpression><![CDATA["تاريخ : " + new SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

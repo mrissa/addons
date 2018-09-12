@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem
+        name="Recruitment"
+        id="hr_recruitment.menu_hr_recruitment_root"
+        web_icon="hr_recruitment,static/description/icon.png"
+        groups="base_config.hide"
+        sequence="80"/>
+
+    <menuitem name="Personnel"
+              parent="hr.menu_human_resources_configuration" sequence="96"
+              id="menu_view_employee_form"/>
+
+    <menuitem
+            action="hr.open_module_tree_department"
+            id="hr.menu_hr_department_tree"
+            parent="hr.menu_human_resources_configuration"
+            sequence="4"/>
+
+    <record id="hr_employee_view_info_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.info</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <group name="work_permit" position="replace">
+                <group name="adress" string="Residence">
+                    <field name="state_residence" widget="selection"/>
+                    <field name="city_residence" widget="selection"/>
+                    <field name="town_residence" widget="selection"/>
+                </group>
+                <group string="prived information" attrs="{'invisible': [('recruitment_type', '!=', 'prived')]}">
+                 <!--   <field name="prived"/>-->
+                    <field name="ref_autorisation"/>
+                    <field name="date_autorisation"/>
+                </group>
+            </group>
+
+            <field name="address_id" position="replace">
+                <field name="recruitment_type"/>
+                <field name="status"/>
+                <field name="state"/>
+                <!--<field name="classifying"/>-->
+                <field name="is_employee" invisible="1"/>
+            </field>
+            <field name="address_home_id" position="after">
+                <field name="adress"/>
+                <field name="mobile_phone"/>
+            </field>
+
+            <field name="address_home_id" position="replace">
+                <field name="address_home_id" invisible="1"/>
+            </field>
+
+            <field name="birthday" position="after">
+                    <field name="state_birth" widget="selection"/>
+                    <field name="city_birth" widget="selection"/>
+                    <field name="town_birth" widget="selection"/>
+            </field>
+            <field name="passport_id" position="replace">
+                <field name="nationality_id"/>
+                <field name="nni"/>
+                <field name="cnam"/>
+            </field>
+            <field name="category_ids" position="replace"/>
+            <field name="resource_calendar_id" position="replace"/>
+        </field>
+    </record>
+
+    <record id="hr_employee_view_info_tree" model="ir.ui.view">
+        <field name="name">hr.employee.view.tree.inherit.info</field>
+        <field name="model">hr.employee</field>
+        <field name="priority" eval="15"/>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <field name="work_phone" position="replace"/>
+            <field name="work_email" position="replace"/>
+            <field name="department_id" position="replace">
+                <field name="department_id" invisible="1"/>
+            </field>
+            <field name="job_id" position="replace">
+                <field name="job_id" invisible="1"/>
+            </field>
+            <field name="company_id" position="replace">
+                <field name="company_id" invisible="1"/>
+            </field>
+            <field name="parent_id" position="replace"/>
+            <field name="name" position="after">
+                    <field name="nni"/>
+                    <field name="is_employee" invisible="1"/>
+            </field>
+        </field>
+    </record>
+
+
+     <!--Grade employee-->
+    <record id="view_grade_tree" model="ir.ui.view">
+        <field name="name">hr.grade.tree</field>
+        <field name="model">hr.grade</field>
+        <field name="arch" type="xml">
+            <tree string="Discipline">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_grade_form" model="ir.ui.view">
+        <field name="name">hr.grade.form</field>
+        <field name="model">hr.grade</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_grade_form" model="ir.actions.act_window">
+        <field name="name">Grade</field>
+        <field name="res_model">hr.grade</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!--echelle employee-->
+    <record id="view_echelle_tree" model="ir.ui.view">
+        <field name="name">hr.echelle.tree</field>
+        <field name="model">hr.echelle</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_echelle_form" model="ir.ui.view">
+        <field name="name">hr.echelle.form</field>
+        <field name="model">hr.echelle</field>
+        <field name="arch" type="xml">
+            <form string="Echelle">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_echelle_form" model="ir.actions.act_window">
+        <field name="name">Echelle</field>
+        <field name="res_model">hr.echelle</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!--echelon employee-->
+    <record id="view_echelon_tree" model="ir.ui.view">
+        <field name="name">hr.echelon.tree</field>
+        <field name="model">hr.echelon</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_echelon_form" model="ir.ui.view">
+        <field name="name">hr.echelon.form</field>
+        <field name="model">hr.echelon</field>
+        <field name="arch" type="xml">
+            <form string="Echelon">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_echelon_form" model="ir.actions.act_window">
+        <field name="name">Echelon</field>
+        <field name="res_model">hr.echelon</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+      <!--Indice employee-->
+    <record id="view_indice_tree" model="ir.ui.view">
+        <field name="name">hr.indice.tree</field>
+        <field name="model">hr.indice</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_indice_form" model="ir.ui.view">
+        <field name="name">hr.indice.form</field>
+        <field name="model">hr.indice</field>
+        <field name="arch" type="xml">
+            <form string="Indice">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_indice_form" model="ir.actions.act_window">
+        <field name="name">Indice</field>
+        <field name="res_model">hr.indice</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!--Statut employe-->
+     <record id="view_status_tree" model="ir.ui.view">
+        <field name="name">hr.status.tree</field>
+        <field name="model">hr.status</field>
+        <field name="arch" type="xml">
+            <tree string="Status">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_status_form" model="ir.ui.view">
+        <field name="name">hr.status.form</field>
+        <field name="model">hr.status</field>
+        <field name="arch" type="xml">
+            <form string="Status">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_status_form" model="ir.actions.act_window">
+        <field name="name">Status</field>
+        <field name="res_model">hr.status</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Status"
+              parent="menu_view_employee_form" sequence="5"
+              id="menu_view_status_form"
+              action="action_status_form"/>
+
+    <!--State employe-->
+     <record id="view_state_tree" model="ir.ui.view">
+        <field name="name">hr.state.tree</field>
+        <field name="model">hr.state</field>
+        <field name="arch" type="xml">
+            <tree string="State">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_state_form" model="ir.ui.view">
+        <field name="name">hr.state.form</field>
+        <field name="model">hr.state</field>
+        <field name="arch" type="xml">
+            <form string="State">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_state_form" model="ir.actions.act_window">
+        <field name="name">State</field>
+        <field name="res_model">hr.state</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="State"
+              parent="menu_view_employee_form" sequence="6"
+              id="menu_view_state_form"
+              action="action_state_form"/>
+
+    <!--classifying employe-->
+    <record id="view_classifying_tree" model="ir.ui.view">
+        <field name="name">hr.classifying.tree</field>
+        <field name="model">hr.classifying</field>
+        <field name="arch" type="xml">
+            <tree string="Classifying">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_classifying_form" model="ir.ui.view">
+        <field name="name">hr.classifying.form</field>
+        <field name="model">hr.classifying</field>
+        <field name="arch" type="xml">
+            <form string="Classifying">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_classifying_form" model="ir.actions.act_window">
+        <field name="name">Classifying</field>
+        <field name="res_model">hr.classifying</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="open_view_traduction" model="ir.actions.act_window">
+        <field name="name">Traduction</field>
+        <field name="res_model">ir.translation</field>
+        <field name="view_type">tree</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+
+    <menuitem name="Classifying"
+              parent="menu_view_employee_form" sequence="7"
+              id="menu_view_classifying_form"
+              action="action_classifying_form"/>
+
+    <!--Employee-->
+        <menuitem
+            id="menu_action_employee"
+            action="hr.open_view_employee_list_my"
+            parent="base_config.menu_base_config_root"
+            sequence="3"/>
+
+     <menuitem
+            id="menu_action_traduction"
+            name="Traduction"
+            action="open_view_traduction"
+            parent="menu_view_employee_form"
+            sequence="10"/>
+
+   <menuitem
+           id="hr_contract.hr_menu_contract"
+            name="Contracts"
+            action="hr_contract.action_hr_contract"
+            parent="hr.menu_hr_root"
+            sequence="4"
+            groups="base_config.hide"/>
+
+</odoo>

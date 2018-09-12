@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="style">
+            body, table, td, span, div, p {
+			    font-family: Helvetica, sans-serif;
+			    font-size:16px;
+			}
+			table.mystyle{
+                        border:0px;
+                        padding:5px;
+                        }
+            td{
+                border:0px;
+                padding:5px;
+                }
+        </template>
+        <template id="report_student">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                         <div class="header">
+                         </div>
+                        <div class="page">
+                            <style type="text/css">
+                                 <t t-call="student.style"/>
+                           </style>
+                            <table width="100%" class="mystyle">
+                            <tr>
+                                <td width="30%"><b></b></td>
+                                <td width="40%"><b>Fiche Renseignement Élève</b></td>
+                                <td width="30%" rowspan="2"><img t-if="o.image" t-att-src="'data:image/png;base64,%s' % to_text(o.image)" style="max-height:85pt;max-width:90%" alt="Eleve Image"/>
+</td>
+                            </tr>
+                            <tr>
+                                <td><b></b></td>
+                                <td><b>N° matricule: <span t-field="o.number_id"/></b></td>
+                            </tr>
+                            </table>
+                            <br></br>
+                            <br></br>
+                            <table width="100%" class="mystyle">
+                            <tr>
+                                <td width="30%"><b>Nom et prénom</b></td>
+                                <td width="40%">: <span t-field="o.name"/> <span t-field="o.first_name"/></td>
+                                <td width="30%"><b></b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Date de naissance</b></td>
+                                <td>: <span t-field="o.birthday"/></td>
+                                <td><b></b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Sexe</b></td>
+                                <td>: <span t-field="o.gender"/></td>
+                                <td><b></b></td>
+                            </tr>
+                                <tr>
+                                <td><b>NNI</b></td>
+                                <td>: <span t-field="o.nni"/></td>
+                                <td><b></b></td>
+                            </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+ 
+    
+
+        
+         <menuitem id="hr_demande_report_menu" name="Demande"
+            parent="emp_menu_report"   sequence="6"/>
+</odoo>

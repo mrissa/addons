@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_grade,hr.grade,model_hr_grade,group_hr_manager,1,1,1,1
+access_hr_echelle,hr.echelle,model_hr_echelle,group_hr_manager,1,1,1,1
+access_hr_echelon,hr.echelon,model_hr_echelon,group_hr_manager,1,1,1,1
+access_hr_indice,hr.indice,model_hr_indice,group_hr_manager,1,1,1,1
+access_hr_status,hr.status,model_hr_status,group_hr_manager,1,1,1,1
+access_hr_state,hr.state,model_hr_state,group_hr_manager,1,1,1,1
+access_hr_classifying,hr.classifying,model_hr_classifying,group_hr_manager,1,1,1,1

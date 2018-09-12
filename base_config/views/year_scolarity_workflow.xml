@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <record model="workflow" id="wkf_year_scolarity">
+            <field name="name">YearScholarly workflow</field>
+            <field name="osv">year.scholarly</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="workflow.activity" id="draft">
+            <field name="name">En cours douverture</field>
+            <field name="code">draft</field>
+            <field name="ordre">1</field>
+             <field name="wkf_id" ref="wkf_year_scolarity"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+        </record>
+        <record model="workflow.activity" id="open">
+            <field name="name">ouvert</field>
+             <field name="code">open</field>
+            <field name="ordre">2</field>
+            <field name="wkf_id" ref="wkf_year_scolarity"/>
+            <field name="kind">function</field>
+            <field name="action">act_open()</field>
+        </record>
+        <record model="workflow.activity" id="pending_closed">
+            <field name="name">En cours de fermeture</field>
+            <field name="code">pending_closed</field>
+            <field name="ordre">3</field>
+            <field name="wkf_id" ref="wkf_year_scolarity"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+        </record>
+        <record model="workflow.activity" id="closed">
+            <field name="name">Fermé</field>
+            <field name="code">closed</field>
+            <field name="ordre">4</field>
+            <field name="wkf_id" ref="wkf_year_scolarity"/>
+            <field name="kind">function</field>
+            <field name="action">act_close()</field>
+        </record>
+
+        <record model="workflow.transition" id="year_scolarity_draft_to_open">
+            <field name="act_from" ref="draft"/>
+            <field name="act_to" ref="open"/>
+            <field name="signal">act_open</field>
+        </record>
+        <record model="workflow.transition" id="session_open_to_pending_closed">
+            <field name="act_from" ref="open"/>
+            <field name="act_to" ref="pending_closed"/>
+            <field name="signal">pending_closed</field>
+        </record>
+        <record model="workflow.transition" id="session_pending_closed_to_closed">
+            <field name="act_from" ref="pending_closed"/>
+            <field name="act_to" ref="closed"/>
+            <field name="signal">act_close</field>
+        </record>
+        <record model="workflow.transition" id="session_open_to_closed">
+            <field name="act_from" ref="open"/>
+            <field name="act_to" ref="closed"/>
+            <field name="signal">act_close</field>
+        </record>
+    </data>
+</odoo>

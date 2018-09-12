@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+   
+         <!-- year.scholarly central by user and team pivot View -->
+        <record id="year_scholarly_report_view_pivot" model="ir.ui.view">
+            <field name="name">year.scholarly.pivot</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <pivot string="Année scolaire" >
+                    <field name="state" type="col"/>
+                      <field name="name" type="row"/>
+                    
+                  </pivot>
+            </field>
+        </record>
+        <record id="year_scholarly_report_view_graph" model="ir.ui.view">
+            <field name="name">year.scholarly.graph</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <graph string="Année scolaire" stacked="False">
+                     <field name="state" type="col"/>
+                        <field name="name" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="year_scholarly_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Années scolaire </field>
+             <field name="res_model">year.scholarly</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+             <field name="domain">[('type','=','central'), ('niveau','=','central')]</field>
+            <field name="context">{'default_type': 'central', 'default_niveau': 'central'}</field>
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('year_scholarly_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('year_scholarly_report_view_pivot')})]"/>
+             <field name="help">Analyse des Année scolaire .</field>
+        </record>
+
+       <menuitem id="year_scholarly_reportt_menu" name="Année scolaire"
+            parent="scola_scolarity_report_menu" action="year_scholarly_report_action_graph" sequence="6"/>
+            
+    
+    
+      <!-- year.scholarly  scondaire central by user and team pivot View -->
+        <record id="year_scholarly_s_c_report_view_pivot" model="ir.ui.view">
+            <field name="name">year.scholarly.pivot</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <pivot string="Année  scolaire secondaire (Centrale)" >
+                    <field name="state" type="col"/>
+                    <field name="year_start" type="row"/>
+                     <field name="niveau" type="row"/>
+                      <field name="name" type="row"/>
+                    
+                  </pivot>
+            </field>
+        </record>
+        <record id="year_scholarly_s_c_report_view_graph" model="ir.ui.view">
+            <field name="name">year.scholarly.graph</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <graph string="Année  scolaire secondaire (Centrale)" stacked="False">
+                     <field name="state" type="col"/>
+                        <field name="name" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="year_scholarly_s_c_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Année  scolaire secondaire (Centrale) </field>
+             <field name="res_model">year.scholarly</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+              <field name="domain">[('type','=','secondaire'), ('niveau','=','central')]</field>
+            <field name="context">{'default_type': 'secondaire', 'default_niveau': 'central'}</field>
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('year_scholarly_s_c_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('year_scholarly_s_c_report_view_pivot')})]"/>
+             <field name="help">Analyse des Année  scolaire secondaire (Centrale).</field>
+        </record>
+
+       <menuitem id="year_scholarly_s_c_reportt_menu" name="Central"
+            parent="scola_secondaire_report_menu" action="year_scholarly_s_c_report_action_graph" sequence="6"/>
+     
+        <!-- year.scholarly  scondaire DREb by user and team pivot View -->
+        <record id="year_scholarly_s_d_report_view_pivot" model="ir.ui.view">
+            <field name="name">year.scholarly.pivot</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <pivot string="Année  scolaire secondaire (DREN)" >
+                    <field name="state" type="col"/>
+                    <field name="year_start" type="row"/>
+                     <field name="niveau" type="row"/>
+                      <field name="name" type="row"/>
+                    
+                  </pivot>
+            </field>
+        </record>
+        <record id="year_scholarly_s_d_report_view_graph" model="ir.ui.view">
+            <field name="name">year.scholarly.graph</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <graph string="Année  scolaire secondaire (DREN)" stacked="False">
+                     <field name="state" type="col"/>
+                        <field name="name" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="year_scholarly_s_d_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Année  scolaire secondaire (DREN) </field>
+             <field name="res_model">year.scholarly</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+              <field name="domain">[('type','=','secondaire'), ('niveau','=','dren')]</field>
+            <field name="context">{'default_type': 'secondaire', 'default_niveau': 'dren'}</field>
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('year_scholarly_s_d_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('year_scholarly_s_d_report_view_pivot')})]"/>
+             <field name="help">Analyse des Année  scolaire secondaire (Centrale).</field>
+        </record>
+
+       <menuitem id="year_scholarly_s_d_reportt_menu" name="DREN"
+            parent="scola_secondaire_report_menu" action="year_scholarly_s_d_report_action_graph" sequence="6"/>
+            
+        <!-- year.scholarly  scondaire Etablissement by user and team pivot View -->
+        <record id="year_scholarly_s_e_report_view_pivot" model="ir.ui.view">
+            <field name="name">year.scholarly.pivot</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <pivot string="Année  scolaire secondaire (Etablissement)" >
+                    <field name="state" type="col"/>
+                    <field name="year_start" type="row"/>
+                     <field name="niveau" type="row"/>
+                      <field name="name" type="row"/>
+                    
+                  </pivot>
+            </field>
+        </record>
+        <record id="year_scholarly_s_e_report_view_graph" model="ir.ui.view">
+            <field name="name">year.scholarly.graph</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <graph string="Année  scolaire secondaire (Etablissement)" stacked="False">
+                     <field name="state" type="col"/>
+                        <field name="name" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="year_scholarly_s_e_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Année  scolaire secondaire (Etablissement) </field>
+             <field name="res_model">year.scholarly</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+              <field name="domain">[('type','=','secondaire'), ('niveau','=','etablissement')]</field>
+            <field name="context">{'default_type': 'secondaire', 'default_niveau': 'etablissement'}</field>
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('year_scholarly_s_e_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('year_scholarly_s_e_report_view_pivot')})]"/>
+             <field name="help">Analyse des Année  scolaire secondaire (Etablissement).</field>
+        </record>
+
+       <menuitem id="year_scholarly_s_e_reportt_menu" name="Etablissement"
+            parent="scola_secondaire_report_menu" action="year_scholarly_s_e_report_action_graph" sequence="6"/>
+      
+         
+</odoo>

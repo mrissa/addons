@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="employee_choice_assignment_view" model="ir.ui.view">
+            <field name="name">Choice employee</field>
+            <field name="model">employee.assignment</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Choice employee">
+                    <field name="employee_check_ids" invisible="1"/>
+                    <h2>Choose your Employee</h2>
+                         <field name="employee_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}">
+                            <tree string="Employee">
+                                <field name="name"/>
+                                <field name="nni"/>
+                                <field name="identification_id"/>
+                                <field name="corps_id"/>
+                            </tree>
+                         </field>
+                    <footer>
+                        <button name="choice_employee" string="Confirm" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_choice_assignment_employee" model="ir.actions.act_window">
+            <field name="name">Choice employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.assignment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="context">{'default_employee_check_ids': context.get('employee_check_ids', False),}</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="employee_choice_assignment_view"/>
+        </record>
+
+        <record id="employee_affectation_xcel_view" model="ir.ui.view">
+            <field name="name">Affectation des Employés</field>
+            <field name="model">employee.xcel.affectation</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Affectation Employés">
+                    <h2>Sélectionner votre fichier Excel</h2>
+                    <field name="data_file" filename="filename" placeholder="Sélectionner votre fichier..."/>
+                    <field name="filename" invisible="1"/>
+                    <footer>
+                        <button name="import_file" string="Confirm" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_affectation_import_xcel" model="ir.actions.act_window">
+            <field name="name">Affectation des Employés</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.xcel.affectation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="employee_affectation_xcel_view"/>
+        </record>
+    </data>
+</odoo>

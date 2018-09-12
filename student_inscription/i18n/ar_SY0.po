@@ -1,0 +1,287 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student_inscription
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 13:28+0000\n"
+"PO-Revision-Date: 2018-06-29 13:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student_inscription
+#: code:addons/student_inscription/models/student_inscription.py:111
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                           Click to Create for New Inscription\n"
+"                        </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                           انقر لإنشاء التسجيل الجديد\n"
+"                        </p>"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+msgid "Abandon"
+msgstr "متخلي"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscription_list_tree_view
+#: selection:stud.inscription,state:0
+msgid "Abandonner"
+msgstr "تخلي"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscription_list_tree_view
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+#: selection:stud.inscription,state:0
+msgid "Admis"
+msgstr "مقبول"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_affectation
+msgid "Affectation"
+msgstr "التحويل"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_affectation_type
+msgid "Affectation Type"
+msgstr "نوع التحويل"
+
+#. module: student_inscription
+#: selection:stud.inscription,state:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_insc_affectation
+msgid "Choice Employee"
+msgstr "اختيار الموظف"
+
+#. module: student_inscription
+#: model:ir.actions.act_window,help:student_inscription.action_student_inscription
+msgid "Click to create a New Student Inscription"
+msgstr "انقر لإنشاء تسجيل تلميذ جديد"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_name
+msgid "Code inscription"
+msgstr "رمز التسجيل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_date_inscp
+msgid "Date inscription"
+msgstr "تاريخ التسجيل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: student_inscription
+#: selection:stud.inscription,state:0
+msgid "En Transfert"
+msgstr "في طور التحويل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_establishment_id
+msgid "Establishment"
+msgstr "مؤسسة الإحالة"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscription_list_tree_view
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+#: selection:stud.inscription,state:0
+msgid "Exclu"
+msgstr "استبعاد"
+
+#. module: student_inscription
+#: selection:stud.inscription,type:0
+msgid "First Application Registration"
+msgstr "التسجيل الأول للتطبيق"
+
+#. module: student_inscription
+#: selection:stud.inscription,type:0
+msgid "First registration after competition"
+msgstr "التسجيل الأول بعد المنافسة"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: student_inscription
+#: code:addons/student_inscription/models/student_inscription.py:75
+#: code:addons/student_inscription/models/student_inscription.py:84
+#, python-format
+msgid "Il faut remplir le champ Note"
+msgstr "يجب كتابة ملاحضة"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_import_eleve_line
+msgid "Import eleve Line"
+msgstr "إستيراد تلاميذ"
+
+#. module: student_inscription
+#: code:addons/student_inscription/models/student_inscription.py:104
+#: model:ir.actions.act_window,name:student_inscription.action_student_inscription
+#: model:ir.ui.menu,name:student_inscription.menu_action_student_inscription
+#, python-format
+msgid "Inscripion Scolaire"
+msgstr "التسجيل المدرسي"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+msgid "Inscription"
+msgstr "التسجيل"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+#: selection:stud.inscription,state:0
+msgid "Inscrit"
+msgstr "مسجل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inherit_form_view
+msgid "Liste des inscriptions"
+msgstr "قائمة الترسيم"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+msgid "Note supplémentaire"
+msgstr "ملاحظة إضافية"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscription_list_tree_view
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+#: selection:stud.inscription,state:0
+msgid "Redoublant"
+msgstr "راسب"
+
+#. module: student_inscription
+#: selection:stud.inscription,type:0
+msgid "Reinstatement"
+msgstr "رجوع للأصل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_scholarly_id
+msgid "Scolarity Year"
+msgstr "السنة الدراسية"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_sec_pedago_id
+msgid "Structure Pedagogique"
+msgstr "البنية التربوية"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_educa_establishment_inscription_ids
+#: model:ir.model.fields,field_description:student_inscription.field_stud_student_inscription_ids
+#: model:ir.model.fields,field_description:student_inscription.field_stud_student_inscriptions_count
+msgid "Stud Inscription"
+msgstr "التلميذ"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_student
+msgid "Stud Student"
+msgstr "التلميذ"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_student_id
+msgid "Student"
+msgstr "التلميذ"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_inscription
+msgid "Student Inscription"
+msgstr "ترسيم التلميذ"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_insc_history
+msgid "Student Inscription history"
+msgstr "سجل التراسم"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_stud_inscriptions
+msgid "Student Inscriptions"
+msgstr "سجل التراسم"
+
+#. module: student_inscription
+#: sql_constraint:stud.inscription:0
+msgid "The Student must be unique registration per scholarly year per establishment."
+msgstr "يجب على التلميذ أن يكون مرسماً في مؤسسة واحدة بالنسبة لكل سنة دراسية"
+
+#. module: student_inscription
+#: selection:stud.inscription,type:0
+msgid "Transfer"
+msgstr "تحويل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: student_inscription
+#: model:ir.model,name:student_inscription.model_educa_establishment
+msgid "education establishment"
+msgstr "المؤسسة التربوية"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inherit_form_view
+msgid "scholarly"
+msgstr "الإدارة"
+
+#. module: student_inscription
+#: model:ir.ui.view,arch_db:student_inscription.student_inscriptiont_form_view
+msgid "transfert"
+msgstr "تحويل"
+
+#. module: student_inscription
+#: model:ir.model.fields,field_description:student_inscription.field_stud_inscription_etabli_origine
+msgid "établissement d'origine"
+msgstr "المؤسسة الأصلية"
+

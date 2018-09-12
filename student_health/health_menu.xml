@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_op_health" name="Health"
+            parent="student.menu_student_configuration" sequence="10"
+            action="act_open_op_health_view"/>
+    </data>
+</odoo>

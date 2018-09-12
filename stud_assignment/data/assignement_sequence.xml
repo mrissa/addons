@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="seq_stud_assignement_ref" model="ir.sequence">
+        <field name="name">Default Assignement ID Seq</field>
+        <field name="code">stud.assignement.default.seq</field>
+        <field name="prefix">AF/%(y)s/</field>
+        <field name="padding">5</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,454 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vneuron_workflow_odoo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180415\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-09 14:10+0000\n"
+"PO-Revision-Date: 2018-07-09 14:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Actions"
+msgstr "الإجراءات"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_instance_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_workitem_search
+msgid "Active"
+msgstr "نشط"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.actions.act_window,name:vneuron_workflow_odoo.action_workflow_activity_form
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activities
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow_activity
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_act_id
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_tree
+msgid "Activity"
+msgstr "النشاط"
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,join_mode:0
+#: selection:workflow.activity,split_mode:0
+msgid "And"
+msgstr "And"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_condition
+msgid "Condition"
+msgstr "الشرط"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Conditions"
+msgstr "Conditions"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_create_uid
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_create_uid
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_create_date
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_create_date
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_act_to
+msgid "Destination Activity"
+msgstr "نشاط الوجهة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_instance_id
+msgid "Destination Instance"
+msgstr "Destination Instance"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_display_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_display_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_display_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_display_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_display_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,kind:0
+msgid "Dummy"
+msgstr "وهمي"
+
+#. module: vneuron_workflow_odoo
+#: code:addons/vneuron_workflow_odoo/models/workflow.py:21
+#, python-format
+msgid "Duplicating workflows is not possible, please create a new workflow"
+msgstr "تكرار سير العمل غير ممكن، يرجى إنشاء سير عمل جديد"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,help:vneuron_workflow_odoo.field_wkf_transition_condition
+msgid "Expression to be satisfied if we want the transition done."
+msgstr "Expression to be satisfied if we want the transition done."
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_flow_start
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_search
+msgid "Flow Start"
+msgstr "تدفق البداية"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_flow_stop
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_search
+msgid "Flow Stop"
+msgstr "Flow Stop"
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,kind:0
+msgid "Function"
+msgstr "وظيفة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_group_id
+msgid "Group Required"
+msgstr "المجموعة مطلوبة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_in_transitions
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Incoming Transitions"
+msgstr "الانتقالات الواردة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_inst_id
+msgid "Instance"
+msgstr "مثل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.actions.act_window,name:vneuron_workflow_odoo.action_workflow_instance_form
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow_instance
+msgid "Instances"
+msgstr "الأمثلة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_join_mode
+msgid "Join Mode"
+msgstr "Join Mode"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_kind
+msgid "Kind"
+msgstr "النوع"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf___last_update
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity___last_update
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance___last_update
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition___last_update
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers___last_update
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_write_uid
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_write_uid
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_write_date
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_write_date
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_name
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_model
+msgid "Object"
+msgstr "الكائن"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_on_create
+msgid "On Create"
+msgstr "عند الإنشاء"
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,split_mode:0
+msgid "Or"
+msgstr "Or"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_out_transitions
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Outgoing Transitions"
+msgstr "الانتقالات الصادرة"
+
+#. module: vneuron_workflow_odoo
+#: code:addons/vneuron_workflow_odoo/models/workflow.py:81
+#, python-format
+msgid "Please make sure no workitems refer to an activity before deleting it!"
+msgstr "Please make sure no workitems refer to an activity before deleting it!"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Properties"
+msgstr "خصائص"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_action
+msgid "Python Action"
+msgstr "إجراء بايثون"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_res_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_res_id
+msgid "Resource ID"
+msgstr "معرف المصدر"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_res_type
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_osv
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_instance_search
+msgid "Resource Object"
+msgstr "مصدر الكائن"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_action_id
+msgid "Server Action"
+msgstr "إجراء الخادم"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_signal
+msgid "Signal (Button Name)"
+msgstr "إشارة (اسم الزر)"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_signal_send
+msgid "Signal (subflow.*)"
+msgstr "Signal (subflow.*)"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_act_from
+msgid "Source Activity"
+msgstr "النشاط المصدر"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,help:vneuron_workflow_odoo.field_wkf_transition_act_from
+msgid "Source activity. When this activity is over, the condition is tested to determine if we can start the ACT_TO activity."
+msgstr "Source activity. When this activity is over, the condition is tested to determine if we can start the ACT_TO activity."
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_split_mode
+msgid "Split Mode"
+msgstr "وضع الانقسام"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_state
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_state
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_workitem_search
+msgid "Status"
+msgstr "الحالة "
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,kind:0
+msgid "Stop All"
+msgstr "إيقاف الكل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_subflow_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_subflow_id
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+#: selection:workflow.activity,kind:0
+msgid "Subflow"
+msgstr "Subflow"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,help:vneuron_workflow_odoo.field_wkf_transition_act_to
+msgid "The destination activity."
+msgstr "نشاط الوجهة"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,help:vneuron_workflow_odoo.field_wkf_transition_group_id
+msgid "The group that a user must have to be authorized to validate this transition."
+msgstr "The group that a user must have to be authorized to validate this transition."
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_transition_ids
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_transition_form
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_transition_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_transition_tree
+msgid "Transition"
+msgstr "انتقال"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.actions.act_window,name:vneuron_workflow_odoo.action_workflow_transition_form
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow_transition
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_form
+msgid "Transitions"
+msgstr "الانتقالات"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_trigger_expr_id
+msgid "Trigger Expression"
+msgstr "صيغة المشغل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_trigger_model
+msgid "Trigger Object"
+msgstr "Trigger Object"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_uid
+msgid "User"
+msgstr "المستخدم"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_diagram
+msgid "When customizing a workflow, be sure you do not modify an existing node or arrow, but rather add new nodes or arrows. If you absolutly need to modify a node or arrow, you can only change fields that are empty or set to the default value. If you don't do that, your customization will be overwrited at the next update or upgrade to a future version of Odoo."
+msgstr "When customizing a workflow, be sure you do not modify an existing node or arrow, but rather add new nodes or arrows. If you absolutly need to modify a node or arrow, you can only change fields that are empty or set to the default value. If you don't do that, your customization will be overwrited at the next update or upgrade to a future version of Odoo."
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,help:vneuron_workflow_odoo.field_wkf_transition_signal
+msgid "When the operation of transition comes from a button pressed in the client form, signal tests the name of the pressed button. If signal is NULL, no button is necessary to validate this transition."
+msgstr "When the operation of transition comes from a button pressed in the client form, signal tests the name of the pressed button. If signal is NULL, no button is necessary to validate this transition."
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_activity_wkf_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_instance_wkf_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_transition_wkf_id
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_workitem_wkf_id
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_form
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_tree
+msgid "Workflow"
+msgstr "سير العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_activity_search
+msgid "Workflow Activity"
+msgstr "نشاط سير العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_diagram
+msgid "Workflow Editor"
+msgstr "محرّر سير العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_instance_form
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_instance_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_instance_tree
+msgid "Workflow Instances"
+msgstr "حالات مسار العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_transition_search
+msgid "Workflow Transition"
+msgstr "انتقال مسار عمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_workitem_form
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_workitem_search
+#: model:ir.ui.view,arch_db:vneuron_workflow_odoo.view_workflow_workitem_tree
+msgid "Workflow Workitems"
+msgstr "عناصر عمل مسار العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.actions.act_window,name:vneuron_workflow_odoo.action_workflow_form
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow_root
+msgid "Workflows"
+msgstr "سير العمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model.fields,field_description:vneuron_workflow_odoo.field_wkf_triggers_workitem_id
+msgid "Workitem"
+msgstr "عنصر عمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.actions.act_window,name:vneuron_workflow_odoo.action_workflow_workitem_form
+#: model:ir.ui.menu,name:vneuron_workflow_odoo.menu_workflow_workitem
+msgid "Workitems"
+msgstr "عنصر عمل"
+
+#. module: vneuron_workflow_odoo
+#: selection:workflow.activity,join_mode:0
+#: selection:workflow.activity,split_mode:0
+msgid "Xor"
+msgstr "Xor"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow
+msgid "workflow"
+msgstr "مسار عمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow_activity
+msgid "workflow.activity"
+msgstr "نشاطات .مسار عمل"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow_instance
+msgid "workflow.instance"
+msgstr "سير العمل. مثل"
+
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow_transition
+msgid "workflow.transition"
+msgstr "سير العمل.انتقال"
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow_triggers
+msgid "workflow.triggers"
+msgstr "سير العمل.محفزات"
+
+
+#. module: vneuron_workflow_odoo
+#: model:ir.model,name:vneuron_workflow_odoo.model_workflow_workitem
+msgid "workflow.workitem"
+msgstr "سير العمل.عنصر العمل"
+

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01207dc3-9d30-4b48-8b07-a211b1410948">
+	<queryString language="xPath">
+		<![CDATA[/data/record]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="Last_Modified_on-__last_update" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Last_Modified_on-__last_update"/>
+		<fieldDescription><![CDATA[Last_Modified_on-__last_update]]></fieldDescription>
+	</field>
+	<field name="Active-active" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Active-active"/>
+		<fieldDescription><![CDATA[Active-active]]></fieldDescription>
+	</field>
+	<field name="Next_Activity_Deadline-activity_date_deadline" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Next_Activity_Deadline-activity_date_deadline"/>
+		<fieldDescription><![CDATA[Next_Activity_Deadline-activity_date_deadline]]></fieldDescription>
+	</field>
+	<field name="State-activity_state" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="State-activity_state"/>
+		<fieldDescription><![CDATA[State-activity_state]]></fieldDescription>
+	</field>
+	<field name="Next_Activity_Summary-activity_summary" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Next_Activity_Summary-activity_summary"/>
+		<fieldDescription><![CDATA[Next_Activity_Summary-activity_summary]]></fieldDescription>
+	</field>
+	<field name="Bank-bank_account_count" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Bank-bank_account_count"/>
+		<fieldDescription><![CDATA[Bank-bank_account_count]]></fieldDescription>
+	</field>
+	<field name="Barcode-barcode" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Barcode-barcode"/>
+		<fieldDescription><![CDATA[Barcode-barcode]]></fieldDescription>
+	</field>
+	<field name="City-city" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="City-city"/>
+		<fieldDescription><![CDATA[City-city]]></fieldDescription>
+	</field>
+	<field name="Color_Index-color" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Color_Index-color"/>
+		<fieldDescription><![CDATA[Color_Index-color]]></fieldDescription>
+	</field>
+	<field name="Notes-comment" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Notes-comment"/>
+		<fieldDescription><![CDATA[Notes-comment]]></fieldDescription>
+	</field>
+	<field name="Company_Name_Entity-commercial_company_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Company_Name_Entity-commercial_company_name"/>
+		<fieldDescription><![CDATA[Company_Name_Entity-commercial_company_name]]></fieldDescription>
+	</field>
+	<field name="Company_Name-company_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Company_Name-company_name"/>
+		<fieldDescription><![CDATA[Company_Name-company_name]]></fieldDescription>
+	</field>
+	<field name="Company_Type-company_type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Company_Type-company_type"/>
+		<fieldDescription><![CDATA[Company_Type-company_type]]></fieldDescription>
+	</field>
+	<field name="Complete_Address-contact_address" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Complete_Address-contact_address"/>
+		<fieldDescription><![CDATA[Complete_Address-contact_address]]></fieldDescription>
+	</field>
+	<field name="Contracts-contracts_count" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Contracts-contracts_count"/>
+		<fieldDescription><![CDATA[Contracts-contracts_count]]></fieldDescription>
+	</field>
+	<field name="Created_on-create_date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Created_on-create_date"/>
+		<fieldDescription><![CDATA[Created_on-create_date]]></fieldDescription>
+	</field>
+	<field name="Total_Receivable-credit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Total_Receivable-credit"/>
+		<fieldDescription><![CDATA[Total_Receivable-credit]]></fieldDescription>
+	</field>
+	<field name="Credit_Limit-credit_limit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Credit_Limit-credit_limit"/>
+		<fieldDescription><![CDATA[Credit_Limit-credit_limit]]></fieldDescription>
+	</field>
+	<field name="Is_a_Customer-customer" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Is_a_Customer-customer"/>
+		<fieldDescription><![CDATA[Is_a_Customer-customer]]></fieldDescription>
+	</field>
+	<field name="Date-date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Date-date"/>
+		<fieldDescription><![CDATA[Date-date]]></fieldDescription>
+	</field>
+	<field name="Total_Payable-debit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Total_Payable-debit"/>
+		<fieldDescription><![CDATA[Total_Payable-debit]]></fieldDescription>
+	</field>
+	<field name="Payable_Limit-debit_limit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Payable_Limit-debit_limit"/>
+		<fieldDescription><![CDATA[Payable_Limit-debit_limit]]></fieldDescription>
+	</field>
+	<field name="Display_Name-display_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Display_Name-display_name"/>
+		<fieldDescription><![CDATA[Display_Name-display_name]]></fieldDescription>
+	</field>
+	<field name="Email-email" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Email-email"/>
+		<fieldDescription><![CDATA[Email-email]]></fieldDescription>
+	</field>
+	<field name="Formatted_Email-email_formatted" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Formatted_Email-email_formatted"/>
+		<fieldDescription><![CDATA[Formatted_Email-email_formatted]]></fieldDescription>
+	</field>
+	<field name="Employee-employee" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Employee-employee"/>
+		<fieldDescription><![CDATA[Employee-employee]]></fieldDescription>
+	</field>
+	<field name="Job_Position-function" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Job_Position-function"/>
+		<fieldDescription><![CDATA[Job_Position-function]]></fieldDescription>
+	</field>
+	<field name="Has_Unreconciled_Entries-has_unreconciled_entries" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Has_Unreconciled_Entries-has_unreconciled_entries"/>
+		<fieldDescription><![CDATA[Has_Unreconciled_Entries-has_unreconciled_entries]]></fieldDescription>
+	</field>
+	<field name="ID-id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ID-id"/>
+		<fieldDescription><![CDATA[ID-id]]></fieldDescription>
+	</field>
+	<field name="IM_Status-im_status" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="IM_Status-im_status"/>
+		<fieldDescription><![CDATA[IM_Status-im_status]]></fieldDescription>
+	</field>
+	<field name="Image-image" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Image-image"/>
+		<fieldDescription><![CDATA[Image-image]]></fieldDescription>
+	</field>
+	<field name="Medium_sized_image-image_medium" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Medium_sized_image-image_medium"/>
+		<fieldDescription><![CDATA[Medium_sized_image-image_medium]]></fieldDescription>
+	</field>
+	<field name="Small_sized_image-image_small" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Small_sized_image-image_small"/>
+		<fieldDescription><![CDATA[Small_sized_image-image_small]]></fieldDescription>
+	</field>
+	<field name="Invoice-invoice_warn" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Invoice-invoice_warn"/>
+		<fieldDescription><![CDATA[Invoice-invoice_warn]]></fieldDescription>
+	</field>
+	<field name="Message_for_Invoice-invoice_warn_msg" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Message_for_Invoice-invoice_warn_msg"/>
+		<fieldDescription><![CDATA[Message_for_Invoice-invoice_warn_msg]]></fieldDescription>
+	</field>
+	<field name="Is_a_Company-is_company" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Is_a_Company-is_company"/>
+		<fieldDescription><![CDATA[Is_a_Company-is_company]]></fieldDescription>
+	</field>
+	<field name="Journal_Items-journal_item_count" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Journal_Items-journal_item_count"/>
+		<fieldDescription><![CDATA[Journal_Items-journal_item_count]]></fieldDescription>
+	</field>
+	<field name="Language-lang" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Language-lang"/>
+		<fieldDescription><![CDATA[Language-lang]]></fieldDescription>
+	</field>
+	<field name="Latest_Invoices___Payments_Matching_Date-last_time_entries_checked" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Latest_Invoices___Payments_Matching_Date-last_time_entries_checked"/>
+		<fieldDescription><![CDATA[Latest_Invoices___Payments_Matching_Date-last_time_entries_checked]]></fieldDescription>
+	</field>
+	<field name="Bounce-message_bounce" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Bounce-message_bounce"/>
+		<fieldDescription><![CDATA[Bounce-message_bounce]]></fieldDescription>
+	</field>
+	<field name="Is_Follower-message_is_follower" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Is_Follower-message_is_follower"/>
+		<fieldDescription><![CDATA[Is_Follower-message_is_follower]]></fieldDescription>
+	</field>
+	<field name="Last_Message_Date-message_last_post" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Last_Message_Date-message_last_post"/>
+		<fieldDescription><![CDATA[Last_Message_Date-message_last_post]]></fieldDescription>
+	</field>
+	<field name="Action_Needed-message_needaction" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Action_Needed-message_needaction"/>
+		<fieldDescription><![CDATA[Action_Needed-message_needaction]]></fieldDescription>
+	</field>
+	<field name="Number_of_Actions-message_needaction_counter" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Number_of_Actions-message_needaction_counter"/>
+		<fieldDescription><![CDATA[Number_of_Actions-message_needaction_counter]]></fieldDescription>
+	</field>
+	<field name="Unread_Messages-message_unread" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Unread_Messages-message_unread"/>
+		<fieldDescription><![CDATA[Unread_Messages-message_unread]]></fieldDescription>
+	</field>
+	<field name="Unread_Messages_Counter-message_unread_counter" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Unread_Messages_Counter-message_unread_counter"/>
+		<fieldDescription><![CDATA[Unread_Messages_Counter-message_unread_counter]]></fieldDescription>
+	</field>
+	<field name="Mobile-mobile" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Mobile-mobile"/>
+		<fieldDescription><![CDATA[Mobile-mobile]]></fieldDescription>
+	</field>
+	<field name="Name-name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Name-name"/>
+		<fieldDescription><![CDATA[Name-name]]></fieldDescription>
+	</field>
+	<field name="Opt_Out-opt_out" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Opt_Out-opt_out"/>
+		<fieldDescription><![CDATA[Opt_Out-opt_out]]></fieldDescription>
+	</field>
+	<field name="Parent_name-parent_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Parent_name-parent_name"/>
+		<fieldDescription><![CDATA[Parent_name-parent_name]]></fieldDescription>
+	</field>
+	<field name="Share_Partner-partner_share" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Share_Partner-partner_share"/>
+		<fieldDescription><![CDATA[Share_Partner-partner_share]]></fieldDescription>
+	</field>
+	<field name="Count_Payment_Token-payment_token_count" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Count_Payment_Token-payment_token_count"/>
+		<fieldDescription><![CDATA[Count_Payment_Token-payment_token_count]]></fieldDescription>
+	</field>
+	<field name="Phone-phone" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Phone-phone"/>
+		<fieldDescription><![CDATA[Phone-phone]]></fieldDescription>
+	</field>
+	<field name="Internal_Reference-ref" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Internal_Reference-ref"/>
+		<fieldDescription><![CDATA[Internal_Reference-ref]]></fieldDescription>
+	</field>
+	<field name="__of_Sales_Order-sale_order_count" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="__of_Sales_Order-sale_order_count"/>
+		<fieldDescription><![CDATA[__of_Sales_Order-sale_order_count]]></fieldDescription>
+	</field>
+	<field name="Sales_Order-sale_warn" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Sales_Order-sale_warn"/>
+		<fieldDescription><![CDATA[Sales_Order-sale_warn]]></fieldDescription>
+	</field>
+	<field name="Message_for_Sales_Order-sale_warn_msg" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Message_for_Sales_Order-sale_warn_msg"/>
+		<fieldDescription><![CDATA[Message_for_Sales_Order-sale_warn_msg]]></fieldDescription>
+	</field>
+	<field name="Signup_Expiration-signup_expiration" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Signup_Expiration-signup_expiration"/>
+		<fieldDescription><![CDATA[Signup_Expiration-signup_expiration]]></fieldDescription>
+	</field>
+	<field name="Signup_Token-signup_token" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Signup_Token-signup_token"/>
+		<fieldDescription><![CDATA[Signup_Token-signup_token]]></fieldDescription>
+	</field>
+	<field name="Signup_Token_Type-signup_type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Signup_Token_Type-signup_type"/>
+		<fieldDescription><![CDATA[Signup_Token_Type-signup_type]]></fieldDescription>
+	</field>
+	<field name="Signup_URL-signup_url" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Signup_URL-signup_url"/>
+		<fieldDescription><![CDATA[Signup_URL-signup_url]]></fieldDescription>
+	</field>
+	<field name="Signup_Token_is_Valid-signup_valid" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Signup_Token_is_Valid-signup_valid"/>
+		<fieldDescription><![CDATA[Signup_Token_is_Valid-signup_valid]]></fieldDescription>
+	</field>
+	<field name="Street-street" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Street-street"/>
+		<fieldDescription><![CDATA[Street-street]]></fieldDescription>
+	</field>
+	<field name="Street2-street2" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Street2-street2"/>
+		<fieldDescription><![CDATA[Street2-street2]]></fieldDescription>
+	</field>
+	<field name="Is_a_Vendor-supplier" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Is_a_Vendor-supplier"/>
+		<fieldDescription><![CDATA[Is_a_Vendor-supplier]]></fieldDescription>
+	</field>
+	<field name="Total_Invoiced-total_invoiced" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Total_Invoiced-total_invoiced"/>
+		<fieldDescription><![CDATA[Total_Invoiced-total_invoiced]]></fieldDescription>
+	</field>
+	<field name="Degree_of_trust_you_have_in_this_debtor-trust" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Degree_of_trust_you_have_in_this_debtor-trust"/>
+		<fieldDescription><![CDATA[Degree_of_trust_you_have_in_this_debtor-trust]]></fieldDescription>
+	</field>
+	<field name="Address_Type-type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Address_Type-type"/>
+		<fieldDescription><![CDATA[Address_Type-type]]></fieldDescription>
+	</field>
+	<field name="Timezone-tz" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Timezone-tz"/>
+		<fieldDescription><![CDATA[Timezone-tz]]></fieldDescription>
+	</field>
+	<field name="Timezone_offset-tz_offset" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Timezone_offset-tz_offset"/>
+		<fieldDescription><![CDATA[Timezone_offset-tz_offset]]></fieldDescription>
+	</field>
+	<field name="TIN-vat" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="TIN-vat"/>
+		<fieldDescription><![CDATA[TIN-vat]]></fieldDescription>
+	</field>
+	<field name="Website-website" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Website-website"/>
+		<fieldDescription><![CDATA[Website-website]]></fieldDescription>
+	</field>
+	<field name="Last_Updated_on-write_date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Last_Updated_on-write_date"/>
+		<fieldDescription><![CDATA[Last_Updated_on-write_date]]></fieldDescription>
+	</field>
+	<field name="Zip-zip" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Zip-zip"/>
+		<fieldDescription><![CDATA[Zip-zip]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="142" y="30" width="100" height="30" uuid="3baa40a9-33af-4c29-8f22-dc7378372506"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="177" y="0" width="100" height="30" uuid="2752fcee-38a8-480a-9bd2-d09e5c7050e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="94d8389c-6d7c-4c22-968a-61f488e0bab1"/>
+				</reportElement>
+				<text><![CDATA[Last_Modified_on-__last_update]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="0" width="100" height="30" uuid="efaa1ade-26f8-440a-a1e0-acca91762269">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cd1ea126-57c9-4afb-9664-e9cbfb1f385d"/>
+				</reportElement>
+				<text><![CDATA[Street-street]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="177" y="70" width="100" height="30" uuid="121ae755-567f-46a8-b5ab-282ba05e0f2c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="94d8389c-6d7c-4c22-968a-61f488e0bab1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Last_Modified_on-__last_update}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="26" width="100" height="30" uuid="973365f7-7e1c-42a9-af8f-9ed84f1ed853">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cd1ea126-57c9-4afb-9664-e9cbfb1f385d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Street-street}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="192" y="23" width="100" height="30" uuid="431408a2-7981-414b-a282-fca639067236"/>
+				<textFieldExpression><![CDATA[$F{Name-name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="63" splitType="Stretch">
+			<textField>
+				<reportElement x="332" y="33" width="100" height="30" uuid="3b837747-9866-4209-a4ab-ce2c74ca59db"/>
+				<textFieldExpression><![CDATA[$F{Active-active}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

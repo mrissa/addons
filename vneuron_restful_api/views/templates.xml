@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     
+        <!-- Error and special pages -->
+<template id="rest_info" name="Odoo Information">
+    <html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Documentation API  project SIGE - V1.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="/vneuron_restful_api/static/src/vendor/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  <link href="/vneuron_restful_api/static/src/vendor/prettify.css" rel="stylesheet" media="screen"/>
+  <link href="/vneuron_restful_api/static/src/css/style.css" rel="stylesheet" media="screen, print"/>
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+  <script src="/vneuron_restful_api/static/src/vendor/polyfill.js"></script>
+</head>
+<body>
+
+<div class="row-fluid">
+    <div id="sidenav" class="span2">
+<nav id="scrollingNav">
+  <ul class="sidenav nav nav-list">
+          <li class="nav-fixed nav-header active" data-group="_"><a href="#api-_">General</a></li>
+           <t t-foreach="modeles" t-as="model">
+                  <li class="nav-header"   t-attf-data-group="#{model.name}"><a t-attf-href="#api-#{model.name}"><span t-field="model.name"/></a></li>
+                <li t-attf-data-group="#{model.name}" t-attf-data-name="Get#{model.name}" data-version="V.1.0" class="">
+                  <a t-attf-href="#api-#{model.name}-Get#{model.name}">Obtenir les records <span t-field="model.name"/></a>
+                </li>
+                 
+                 
+                <li t-attf-data-group="#{model.name}"  t-attf-data-name="Post#{model.name}" data-version="V.1.0" class="">
+                  <a t-attf-href="#api-#{model.name}-Post#{model.name}">Création record <span t-field="model.name"/></a>
+                </li>
+                 
+                <li t-attf-data-group="#{model.name}" dt-attf-data-name="Put#{model.name}" data-version="V.1.0" class="is-new">
+                  <a t-attf-href="#api-#{model.name}-Put#{model.name}">Mise à jour record <span t-field="model.name"/></a>
+                </li>
+                <li t-attf-data-group="#{model.name}" dt-attf-data-name="Delete#{model.name}" data-version="V.1.0" class="is-new">
+                  <a t-attf-href="#api-#{model.name}-Delete#{model.name}">Supprimer record <span t-field="model.name"/></a>
+                </li>
+                 
+  
+            </t>
+  </ul>
+           
+</nav>
+</div>
+    <div id="content">
+      <div id="project">
+  <div class="pull-left">
+   <h1><t t-esc="res_company.name"/></h1>
+    <h1>API-REST-SIGE</h1>
+                 
+    <h2>Documentation API  project SIGE - V1.0</h2>
+  </div>
+  <div class="pull-right">
+    <div class="btn-group">
+      <button id="version" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+        <strong>V1.0</strong> <span class="caret"></span>
+      </button>
+      <ul id="versions" class="dropdown-menu open-left">
+          
+          <li class="disabled"><a href="#">show up to version:</a></li>
+        <li class="version"><a href="#">0.3.0</a></li>
+        <li class="version"><a href="#">0.2.0</a></li>
+        <li class="version"><a href="#">0.1.0</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+      <div id="header">
+    <div id="api-_"><h2 id="welcome-to-apidoc">Bienvenue dans la documentation de API SIGE</h2>
+ </div>
+</div>
+    <div id="sections">
+      <t t-foreach="modeles" t-as="model">
+        <section t-attf-id="api-#{model.name}">
+            <h1><span t-field="model.name"/></h1>
+            <h2>Nom technique: <span style="color:red;" t-field="model.model"/></h2>
+        
+            <div t-attf-id="api-#{model.name}-Get#{model.name}">
+                <article t-attf-id="api-#{model.name}-Get#{model.nam-V.1.0" t-attf-data-group="#{model.name}" t-attf-data-name="Get#{model.name}" data-version="V.1.0">
+                    <div class="pull-left">
+                      <h1> <span t-field="model.model"/>: Obtenir les enregistrements  <span t-field="model.name"/></h1>
+                      <div class=" opblock opblock-summary-get">
+                        <span class="opblock-summary-method">GET</span> 
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">/api/v1.0/<t t-esc ="model.model"/>?&#38;token=votre_token</span></code></pre>
+                      
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a t-attf-href="#examples-#{model.name}-Get#{model.name}">Example usage:</a>
+                          </li>
+                      </ul>
+                
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="#examples-#{model.name}-Get#{model.name}">
+                          <pre class="prettyprint language-json prettyprinted" data-type="json" style="">
+                              
+                          <code><span class="pln">curl </span><span class="pun">-</span><span class="pln">i http</span><span class="pun">://</span><span class="pln">localhost</span><span class="pun">/</span>api/v1.0/<t t-esc ="model.model"/>?&#38;token=votre_token&#38;fields=['field_1','fields_2']&#38;per_page=3&#38;page=2</code></pre>
+                        </div>
+                      </div>
+                
+                      <h2>Parameter</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 20%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                            <th style="width: 10%">Obligatoire</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">Token</td>
+                            <td>String</td>
+                            <td><p>Code d'autorisation</p> </td>
+                            <td>Oui</td>
+                          </tr>
+                           <tr>
+                            <td class="code">fields</td>
+                            <td>String</td>
+                            <td><p>Champ de retour</p> </td>
+                            <td>Non</td>
+                          </tr>
+                           <tr>
+                            <td class="code">Per_page</td>
+                            <td>Number</td>
+                            <td><p>Nombre d'enregistrements par page.</p> </td>
+                            <td>Non</td>
+                          </tr>
+                          <tr>
+                            <td class="code">Page</td>
+                            <td>Number</td>
+                            <td><p>Page actuelle.</p> </td>
+                            <td>Non</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+                
+                
+                    
+                      <h2>Success 200</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">Succès</td>
+                            <td>String</td>
+                            <td><p>Signe de succès</p></td>
+                          </tr>
+                         <tr>
+                            <td class="code">Résultat</td>
+                            <td>String</td>
+                            <td><p>Le résultats formater en json</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">Per_page</td>
+                            <td>Number</td>
+                            <td><p>Nombre d'enregistrements par page</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">Message</td>
+                            <td>String</td>
+                            <td><p>Messages ou message d'erreur</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">Total</td>
+                            <td>Number</td>
+                            <td><p>Nombre total d'enregistrements</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">Page</td>
+                            <td>Number</td>
+                            <td><p>Page actuelle</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                        
+                
+                    
+                      <h2>Error 4xx</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">result</td>
+                            <td><p>  le champs result retoune chaine vide si erreur.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">success</td>
+                            <td><p> ls champ success retoune une valeur <code>False</code> .</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">message</td>
+                            <td><p> le champ message contient l'erreur de systeme  .</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#error-examples-User-GetUser">Response (error):</a>
+                          </li>
+                           
+                      </ul>
+                
+                         
+                      
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="error-examples-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                            
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"False",</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"invalid token!"</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div>
+                      </div>
+        
+        
+                </article>
+            </div>
+            <!-- post -->
+            <div t-attf-id="api-#{model.name}-Post#{model.name}">
+                <article t-attf-id="api-#{model.name}-Get#{model.name}-V.1.0" t-attf-data-group="#{model.name}" t-attf-data-name="Post#{model.name}" data-version="V.1.0">
+                    <div class="pull-left">
+                      <h1> <span t-field="model.model"/>: Création record <span t-field="model.name"/></h1>
+                      <div class=" opblock opblock-summary-post">
+                        <span class="opblock-summary-method">POST</span> 
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">/api/v1.0/<t t-esc ="model.model"/></span></code></pre>
+                      
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examples-User-GetUser-0_3_0-0">Example usage:</a>
+                          </li>
+                      </ul>
+                
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="examples-User-GetUser-0_3_0-0">
+                          <pre class="prettyprint language-json prettyprinted" data-type="json" style="">
+                              
+                          <code><span class="pln">curl </span><span class="pun">-</span><span class="pln">X  post \ http</span><span class="pun">://</span><span class="pln">localhost</span><span class="pun">/</span>api/v1.0/<t t-esc ="model.model"/>
+  -F token=aHR0cDovLzEyNy4wLjAuMTo4MDY5LyxhcGlfZGVtbyxhZG1pbiwxLDE1MjU5NDA2NjU \
+  -F field_1=data_A \
+  -F field_2=data_B</code></pre>
+                        </div>
+                      </div>
+                        
+                         <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examplesd-User-GetUser-0_3_0-0">Resltat:</a>
+                          </li>
+                      </ul>
+                  <div class="tab-content">
+                        <div class="tab-pane active" id="examplesd-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">43,</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">true</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div></div>
+                       
+                      <h2>Parameter</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 20%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                            <th style="width: 10%">Obligatoire</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">Token</td>
+                            <td>String</td>
+                            <td><p>Code d'autorisation</p> </td>
+                            <td>Oui</td>
+                          </tr>
+                           <tr>
+                            <td class="code">fields</td>
+                            <td>String</td>
+                            <td><p>Champ de d'envoi (récupré de modéle de données) </p> </td>
+                            <td>Oui</td>
+                          </tr>
+                            
+                        </tbody>
+                      </table>
+                
+                
+                
+                    
+                      <h2>Success 200</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                            <td class="code">Message</td>
+                            <td>String</td>
+                            <td><p>Messages ou message d'erreur</p></td>
+                          </tr>
+                         <tr>
+                            <td class="code">Résultat</td>
+                            <td>String</td>
+                            <td><p>Le résultat est l'ID de record </p></td>
+                          </tr>
+                           <tr>
+                            <td class="code">Succès</td>
+                            <td>String</td>
+                            <td><p>Signe de succès <code>True</code></p></td>
+                          </tr>
+                           
+                        </tbody>
+                      </table>
+                    
+                        
+                
+                    
+                      <h2>Error 4xx</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">result</td>
+                            <td><p>  le champs result retoune chaine vide si erreur.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">success</td>
+                            <td><p> ls champ success retoune une valeur <code>False</code> .</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">message</td>
+                            <td><p> le champ message contient l'erreur de systeme  .</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#error-examples-User-GetUser">Response (error):</a>
+                          </li>
+                           
+                      </ul>
+                
+                         
+                      
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="error-examples-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"False",</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"invalid token!"</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div>
+                      </div>
+        
+        
+                </article>
+        <!-- put -->
+            <div t-attf-id="api-#{model.name}-Put#{model.name}">
+                <article t-attf-id="api-#{model.name}-Put#{model.name}-V.1.0" t-attf-data-group="#{model.name}" t-attf-data-name="Put#{model.name}" data-version="V.1.0">
+                    <div class="pull-left">
+                      <h1> <span t-field="model.model"/>: Mise à jour record <span t-field="model.name"/></h1>
+                      <div class=" opblock opblock-summary-put">
+                        <span class="opblock-summary-method">PUT</span> 
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">/api/v1.0/<t t-esc ="model.model"/>/ID</span></code></pre>
+                      
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examples-User-GetUser-0_3_0-0">Example usage:</a>
+                          </li>
+                      </ul>
+                
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="examples-User-GetUser-0_3_0-0">
+                          <pre class="prettyprint language-json prettyprinted" data-type="json" style="">
+                              
+                          <code><span class="pln">curl </span><span class="pun">-</span><span class="pln">X  PUT \ http</span><span class="pun">://</span><span class="pln">localhost</span><span class="pun">/</span>api/v1.0/<t t-esc ="model.model"/>/6
+  -F token=aHR0cDovLzEyNy4wLjAuMTo4MDY5LyxhcGlfZGVtbyxhZG1pbiwxLDE1MjU5NDA2NjU \
+  -F field_1=data_A \
+  -F field_2=data_B</code></pre>
+                        </div>
+                      </div>
+                        
+                         <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examplesd-User-GetUser-0_3_0-0">Resltat:</a>
+                          </li>
+                      </ul>
+                  <div class="tab-content">
+                        <div class="tab-pane active" id="examplesd-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">true,</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">true</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div></div>
+                       
+                      <h2>Parameter</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 20%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                            <th style="width: 10%">Obligatoire</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">Token</td>
+                            <td>String</td>
+                            <td><p>Code d'autorisation</p> </td>
+                            <td>Oui</td>
+                          </tr>
+                           <tr>
+                            <td class="code">fields</td>
+                            <td>String</td>
+                            <td><p>Champs pour la mise a jour(récupré de modéle de données) </p> </td>
+                            <td>Oui</td>
+                          </tr>
+                            
+                        </tbody>
+                      </table>
+                
+                
+                
+                    
+                      <h2>Success 200</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="code">Succès</td>
+                            <td>String</td>
+                            <td><p>Signe de succès <code>True</code></p></td>
+                          </tr>
+                          
+                           <tr>
+                            <td class="code">Résultat</td>
+                            <td>String</td>
+                            <td><p>Le résultat est <code>true/false </code> </p></td>
+                          </tr>
+                         <tr>
+                            <td class="code">Message</td>
+                            <td>String</td>
+                            <td><p>Messages ou message d'erreur</p></td>
+                          </tr>
+                        
+                           
+                           
+                        </tbody>
+                      </table>
+                    
+                        
+                
+                    
+                      <h2>Error 4xx</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">result</td>
+                            <td><p>  le champs result retoune chaine vide si erreur.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">success</td>
+                            <td><p> ls champ success retoune une valeur <code>False</code> .</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">message</td>
+                            <td><p> le champ message contient l'erreur de systeme.</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#error-examples-User-GetUser">Response (error):</a>
+                          </li>
+                           
+                      </ul>
+                
+                         
+                      
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="error-examples-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"False",</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"('Un des enregistrements que vous essayez de modifier a déjà été supprimé (type de document : <t t-esc ="model.model"/>).', None)"</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div>
+                      </div>
+        
+        
+                </article>
+            </div>
+            
+            <!-- delete -->
+            <div t-attf-id="api-#{model.name}-Delete#{model.name}">
+                <article t-attf-id="api-#{model.name}-Delete#{model.name}-V.1.0" t-attf-data-group="#{model.name}" t-attf-data-name="Delete#{model.name}" data-version="V.1.0">
+                    <div class="pull-left">
+                      <h1> <span t-field="model.model"/>: Supprimer record <span t-field="model.name"/></h1>
+                      <div class=" opblock opblock-summary-delete">
+                        <span class="opblock-summary-method">DELETE</span> 
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <pre class="prettyprint language-html prettyprinted" data-type="delete" style=""><code><span class="pln">/api/v1.0/<t t-esc ="model.model"/>/ID</span>    OR /ID1,ID2,ID3,IDx</code></pre>
+                      
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examples-User-GetUser-0_3_0-0">Example usage:</a>
+                          </li>
+                      </ul>
+                
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="examples-User-GetUser-0_3_0-0">
+                          <pre class="prettyprint language-json prettyprinted" data-type="json" style="">
+                              
+                          <code><span class="pln">curl </span><span class="pun">-</span><span class="pln">X  DELETE \ http</span><span class="pun">://</span><span class="pln">localhost</span><span class="pun">/</span>api/v1.0/<t t-esc ="model.model"/>/6
+  -F token=aHR0cDovLzEyNy4wLjAuMTo4MDY5LyxhcGlfZGVtbyxhZG1pbiwxLDE1MjU5NDA2NjU </code></pre>
+                        </div>
+                      </div>
+                        
+                         <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#examplesd-User-GetUser-0_3_0-0">Resltat:</a>
+                          </li>
+                      </ul>
+                  <div class="tab-content">
+                        <div class="tab-pane active" id="examplesd-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">true,</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">true</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div></div>
+                       
+                      <h2>Parameter</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 20%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                            <th style="width: 10%">Obligatoire</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">Token</td>
+                            <td>String</td>
+                            <td><p>Code d'autorisation</p> </td>
+                            <td>Oui</td>
+                          </tr>
+                           
+                            
+                        </tbody>
+                      </table>
+                
+                
+                
+                    
+                      <h2>Success 200</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="code">Succès</td>
+                            <td>String</td>
+                            <td><p>Signe de succès <code>True</code></p></td>
+                          </tr>
+                          
+                           <tr>
+                            <td class="code">Résultat</td>
+                            <td>String</td>
+                            <td><p>Le résultat est <code>true/false </code> </p></td>
+                          </tr>
+                         <tr>
+                            <td class="code">Message</td>
+                            <td>String</td>
+                            <td><p>Messages ou message d'erreur</p></td>
+                          </tr>
+                        
+                           
+                           
+                        </tbody>
+                      </table>
+                    
+                        
+                
+                    
+                      <h2>Error 4xx</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 30%">Field</th>
+                            
+                            <th style="width: 70%">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="code">result</td>
+                            <td><p>  le champs result retoune chaine vide si erreur.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">success</td>
+                            <td><p> ls champ success retoune une valeur <code>False</code> .</p></td>
+                          </tr>
+                          <tr>
+                            <td class="code">message</td>
+                            <td><p> le champ message contient l'erreur de systeme.</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                
+                      <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active">
+                            <a href="#error-examples-User-GetUser">Response (error):</a>
+                          </li>
+                           
+                      </ul>
+                
+                         
+                      
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="error-examples-User-GetUser-0_3_0-0">
+                        <pre class="prettyprint language-json prettyprinted" data-type="json" style=""><code>
+                        <span class="pun">{</span><span class="pln">
+                      </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"",</span><span class="pln">
+                      </span><span class="str">"success"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"False",</span><span class="pln">
+                      </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"('Un des enregistrements que vous essayez de supprimé a déjà été supprimé (type de document : <t t-esc ="model.model"/>).', None)"</span><span class="pln">
+                    </span><span class="pun">}</span></code></pre>
+                        </div>
+                      </div>
+        
+        
+                </article>
+            </div>
+        </div>
+  </section>
+  </t>
+</div>
+      
+    </div>
+  </div>
+  </body>
+</html>
+        <div id="wrap"/>
+    
+</template>
+
+ 
+    </odoo>

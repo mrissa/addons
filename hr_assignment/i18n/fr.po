@@ -1,0 +1,449 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_assignment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-13 12:47+0000\n"
+"PO-Revision-Date: 2018-07-13 12:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "A approuver"
+msgstr "À approuver"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_affect
+msgid "Affect"
+msgstr "Affecter"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+msgid "Approuved"
+msgstr "Approuvé"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Approuver"
+msgstr "Approuver"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_form
+#: model:ir.model,name:hr_assignment.model_hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_id
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_config
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_root
+#: model:ir.ui.view,arch_db:hr_assignment.hr_employee_view_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_tree
+msgid "Assignment"
+msgstr "Affectation"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_company_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_company_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_company_id
+msgid "Assignment Authority"
+msgstr "Établissement d'affectation"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_choices
+msgid "Assignment Choice"
+msgstr "Choix d'affectation"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_assignment_level
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_level
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_assignment_level
+msgid "Assignment Level"
+msgstr "Niveau d'affectation"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_line
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_ids
+msgid "Assignment Line"
+msgstr "Ligne d'affectation"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_motif_form
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_motif
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_motif_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_motif_tree
+msgid "Assignment Motif"
+msgstr "Motif d'affectation"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_tree
+msgid "Assignment Request"
+msgstr "Demande d'affectation"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_type_form
+#: model:ir.model,name:hr_assignment.model_hr_assignment_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_assignmen_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_assignment_next_type
+#: model:ir.model.fields,field_description:hr_assignment.field_res_company_assignment_type
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_type
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_tree
+msgid "Assignment Type"
+msgstr "Type d'affectation"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_request_form
+msgid "Assignment request"
+msgstr "Demande d'affectation"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_type_motif
+msgid "Assignment type motif"
+msgstr "Type motif d'affectation"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_assignment_line_ids
+msgid "Assignments"
+msgstr "Affectations"
+
+#. module: hr_assignment
+#: selection:hr.assignment.line,type_affectation:0
+msgid "By work"
+msgstr "sur demande"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: hr_assignment
+#: selection:hr.assignment,assignment_level:0
+#: selection:hr.assignment.type,assignment_level:0
+#: selection:hr.employee,assignment_next_type:0
+#: selection:res.company,assignment_type:0
+msgid "Central"
+msgstr "Central"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+msgid "Central Validate"
+msgstr "Validation centrale"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Central validate"
+msgstr "Validation centrale"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_employee_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Choice Employee"
+msgstr "Choix Employé"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_choice_assignment_employee
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Choice employee"
+msgstr "Choix Employé"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Choose your Employee"
+msgstr "Choisissez l'employé"
+
+#. module: hr_assignment
+#: selection:hr.assignment.line,state:0
+msgid "Closed"
+msgstr "Fermé"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_res_company
+msgid "Companies"
+msgstr "Établissements"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_company_id
+msgid "Company"
+msgstr "Établissement"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+#: selection:hr.assignment.request,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_employee
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_employee_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_employee_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_employee_id
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Employee"
+msgstr "Employé"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_end_date_affect
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: hr_assignment
+#: selection:hr.assignment,assignment_level:0
+#: selection:hr.assignment.type,assignment_level:0
+#: selection:hr.employee,assignment_next_type:0
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_establishment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_establishment_id
+#: selection:res.company,assignment_type:0
+msgid "Establishment"
+msgstr "Établissement"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Establishment validate"
+msgstr "Validé par l'établissement"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.hr_employee_view_assignment_form
+msgid "Etablissement d\\'affectation"
+msgstr "Etablissement d\\'affectation"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_function_form
+#: model:ir.model,name:hr_assignment.model_hr_function
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_function
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_function_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_function_tree
+msgid "Function"
+msgstr "Fonction"
+
+#. module: hr_assignment
+#: selection:hr.assignment.line,type_affectation:0
+msgid "Honoring"
+msgstr "Honneur"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_function_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_function_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_function_id
+msgid "Job"
+msgstr "Fonction"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_motif_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_ids
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_form
+msgid "Motif"
+msgstr "Motif"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_is_not_listed
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_is_not_listed
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_is_not_listed
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_is_not_listed
+msgid "Non figurant"
+msgstr "Non figurant"
+
+#. module: hr_assignment
+#: selection:hr.assignment,assignment_level:0
+#: selection:hr.assignment.type,assignment_level:0
+msgid "None"
+msgstr "Aucun"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_notes
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_notes
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Notes"
+msgstr "Notes"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Notes..."
+msgstr "Notes..."
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Objection"
+msgstr "Objection"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+msgid "Pending approval"
+msgstr "Validation en attente"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_assignment_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_type
+msgid "Position"
+msgstr "Position"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_name
+msgid "Reference"
+msgstr "Référence"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Refused"
+msgstr "Refusée"
+
+#. module: hr_assignment
+#: selection:hr.assignment,assignment_level:0
+#: selection:hr.assignment.type,assignment_level:0
+#: selection:hr.employee,assignment_next_type:0
+#: selection:res.company,assignment_type:0
+msgid "Regional"
+msgstr "Régional"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+msgid "Regional Validate"
+msgstr "Validation régionale"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Regional validate"
+msgstr "Validation régionale"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_request
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_request
+msgid "Request Assignment"
+msgstr "Demande d'affectation"
+
+#. module: hr_assignment
+#: selection:hr.assignment.line,type_affectation:0
+msgid "Requirement work"
+msgstr "Exigence de travail"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_structure_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_structure_id
+msgid "Scolarité"
+msgstr "Scolarité"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_start_date_affect
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_start_date_affect
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_start_date_affect
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_type_affectation
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_state
+msgid "State"
+msgstr "Wilaya"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_test_choice_affect
+msgid "Test choice affect"
+msgstr "Test choix affectation"
+

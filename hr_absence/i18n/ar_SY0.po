@@ -1,0 +1,291 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_absence
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 07:26+0000\n"
+"PO-Revision-Date: 2018-06-29 07:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_absence
+#: model:ir.actions.act_window,name:hr_absence.action_hr_absence_form
+#: model:ir.model,name:hr_absence.model_hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_absence_id
+#: model:ir.ui.menu,name:hr_absence.menu_request_abscence
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_form
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_tree
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_type_form
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_type_tree
+msgid "Absence"
+msgstr "الغياب"
+
+#. module: hr_absence
+#: model:ir.actions.act_window,name:hr_absence.action_absence_category_form
+#: model:ir.ui.menu,name:hr_absence.menu_category_absence
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_category_tree
+msgid "Absence Category"
+msgstr "سبب الغياب"
+
+#. module: hr_absence
+#: model:ir.actions.act_window,name:hr_absence.action_absence_type_form
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_absence_types
+msgid "Absence Type"
+msgstr "نوع الغياب"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_absence_categ_id
+msgid "Absence category"
+msgstr "سبب الغياب"
+
+#. module: hr_absence
+#: model:ir.ui.menu,name:hr_absence.menu_abscence
+#: model:ir.ui.menu,name:hr_absence.menu_absence_config
+msgid "Absences"
+msgstr "الغيابات"
+
+#. module: hr_absence
+#: selection:hr.absence,state:0
+#: selection:hr.suspension,state:0
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_form
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_absence_categ_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_name
+msgid "Category"
+msgstr "السبب"
+
+#. module: hr_absence
+#: model:ir.model,name:hr_absence.model_hr_absence_category
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_category_form
+msgid "Category Absence"
+msgstr "سبب الغياب"
+
+#. module: hr_absence
+#: selection:hr.suspension,state:0
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_form
+msgid "Close suspension"
+msgstr "إستئناف العمل"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_company_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_company_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_create_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_create_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_create_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_create_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_create_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_create_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_create_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_create_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_date_end
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_date_end
+msgid "Date End"
+msgstr "تاريخ الانتهاء"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_notes
+msgid "Description"
+msgstr "ملاحظات"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_display_name
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_display_name
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_display_name
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_display_name
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_absence
+#: selection:hr.absence,state:0
+#: selection:hr.suspension,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_employee_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_employee_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_id_4284
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: hr_absence
+#: model:ir.model,name:hr_absence.model_import_absence_line
+msgid "Import Absence Line"
+msgstr " إستيراد الغيابات"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence___last_update
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category___last_update
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line___last_update
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type___last_update
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_write_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_write_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_write_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_write_uid
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_category_write_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_write_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_write_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_write_date
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_absence
+#: selection:hr.suspension,state:0
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_form
+msgid "Lifting of suspension"
+msgstr "رفع التعليق"
+
+#. module: hr_absence
+#: model:ir.model,name:hr_absence.model_hr_absence_line
+msgid "Line Absence"
+msgstr "الغيابات"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_motif
+msgid "Motif"
+msgstr "السبب"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_name
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_notes
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_nbr_limit_day
+msgid "Number limit of day"
+msgstr "الحد الأقصى للغياب"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_line_nbr_day
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_nbr_day
+msgid "Number of day"
+msgstr "عدد الأيام"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_solde
+msgid "Solde"
+msgstr "الرصيد"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_date_start
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_date_start
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_state
+#: model:ir.model.fields,field_description:hr_absence.field_hr_suspension_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: hr_absence
+#: model:ir.actions.act_window,name:hr_absence.action_hr_suspension_form
+#: model:ir.model,name:hr_absence.model_hr_suspension
+#: model:ir.ui.menu,name:hr_absence.menu_Suspension
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_form
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_tree
+msgid "Suspension"
+msgstr "تعليق العمل"
+
+#. module: hr_absence
+#: sql_constraint:hr.absence:0
+#: sql_constraint:hr.suspension:0
+msgid "The start date must be anterior to the end date."
+msgstr ".يجب أن يكون تاريخ البدء قبل تاريخ الانتهاء"
+
+#. module: hr_absence
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_absence_type_id
+#: model:ir.model.fields,field_description:hr_absence.field_hr_absence_type_name
+msgid "Type"
+msgstr "النوع"
+
+#. module: hr_absence
+#: model:ir.model,name:hr_absence.model_hr_absence_type
+#: model:ir.ui.menu,name:hr_absence.menu_type_absence
+msgid "Type Absence"
+msgstr "نوع الغياب"
+
+#. module: hr_absence
+#: selection:hr.absence,state:0
+#: selection:hr.suspension,state:0
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_absence_form
+#: model:ir.ui.view,arch_db:hr_absence.view_hr_suspension_form
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: hr_absence
+#: code:addons/hr_absence/models/hr_absence.py:109
+#, python-format
+msgid "You can not have 2 absences that overlaps on same day!"
+msgstr "! لا يمكن أن يكون لديك 2 غيابات متداخلة في نفس اليوم "
+
+#. module: hr_absence
+#: code:addons/hr_absence/models/hr_absence.py:193
+#, python-format
+msgid "You can not have 2 suspension that overlaps on same day!"
+msgstr "! لا يمكن أن يكون لديك 2 غيابات متداخلة في نفس اليوم"
+
+#. module: hr_absence
+#: code:addons/hr_absence/models/hr_absence.py:173
+#, python-format
+msgid "You must enter an end date!"
+msgstr "!يجب إدخال تاريخ الانتهاء"
+

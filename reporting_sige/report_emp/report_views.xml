@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+ 
+    
+
+        <menuitem id="emp_menu_report"
+            name="Reporting"
+            parent="hr.menu_hr_root"
+            sequence="99"/>
+           
+         <menuitem id="hr_recrutement_report_menu" name="Recrutement"
+            parent="emp_menu_report"   sequence="6"/>
+            
+        <menuitem id="hr_affectation_report_menu" name="Affectation"
+            parent="emp_menu_report"   sequence="6"/>
+            
+            <menuitem id="hr_pv_report_menu" name="PV/NS"
+            parent="emp_menu_report"   sequence="6"/>
+
+</odoo>

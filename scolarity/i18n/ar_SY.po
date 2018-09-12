@@ -1,0 +1,487 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* scolarity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-16 10:35+0000\n"
+"PO-Revision-Date: 2018-08-16 10:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Abandonner"
+msgstr "تخلي"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Admis"
+msgstr "مقبول"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_fondamentale
+msgid "Année  scolaire fondamentale (Centrale)"
+msgstr "السنة الدراسية الأساسية (المركزية)"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_fondamentale_dren
+msgid "Année  scolaire fondamentale (DREN)"
+msgstr "السنة الدراسية الأساسية (الإدارة الجهوية)"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_fondamentale_etab
+msgid "Année  scolaire fondamentale (Etablissement)"
+msgstr "السنة الدراسية الأساسية (المؤسسة)"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_sec
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_sec_dren
+msgid "Année  scolaire secondaire (Centrale)"
+msgstr "السنة الدراسية الثانوية (المركزية)"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_year_scholarly_sec_etab
+msgid "Année  scolaire secondaire (Etablissement)"
+msgstr "السنة الدراسية الثانوية (المؤسسة)"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_scolarity
+msgid "Année scolaire"
+msgstr "السنة الدراسية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+msgid "Année scolaire fondamentale"
+msgstr "السنة الدراسية الأساسية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Batiments"
+msgstr "المباني"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_structure_building_ids
+msgid "Blocs"
+msgstr "المباني"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly_sec
+msgid "Central"
+msgstr "مركزية"
+
+#. module: scolarity
+#: model:ir.actions.act_window,help:scolarity.action_report_scolarity
+msgid "Click to create a New Report Scolarity"
+msgstr "انقر لإنشاء تقرير إداري جديد "
+
+#. module: scolarity
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_fondamentale
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_fondamentale_dren
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_fondamentale_etab
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_sec
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_sec_dren
+#: model:ir.actions.act_window,help:scolarity.action_year_scholarly_sec_etab
+msgid "Click to create a New Year scholarly"
+msgstr "انقر لإنشاء سنة دراسية جديدة"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.report_scolarity_form_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+#: selection:report.scolarity,state:0
+msgid "Close"
+msgstr "إقفال"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_config
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_create_uid
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_create_uid
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_create_date
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_create_date
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_dren_ids
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly_dren
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly_sec_dren
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+msgid "DREN"
+msgstr "الإدارة الجهوية"
+
+#. module: scolarity
+#: code:addons/scolarity/models/scolarity.py:185
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_discipline_id
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_line_ids
+#, python-format
+msgid "Discipline"
+msgstr "التخصص"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_year_scholarly_line_form
+msgid "Disciplines"
+msgstr "Disciplines"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_display_name
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_display_name
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: scolarity
+#: selection:report.scolarity,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_educa_structure
+msgid "Educational Structure"
+msgstr "البنية التربوية"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_section_line_employee_id
+msgid "Employé"
+msgstr "الموظف"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_form
+msgid "Employé/Discipline"
+msgstr "الموظف/التخصص"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_structure_employee_ids
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Employés"
+msgstr "الموظفون"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_section_line_employee_select_ids
+msgid "Employés selectionnés"
+msgstr "الموظفون المختارون"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_section_line_employee_treat_ids
+msgid "Employés traités"
+msgstr "الموظفون المدرسون"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_structure_equipement_ids
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Equipements"
+msgstr "التجهيزات"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_structure_etab
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly_etab
+#: model:ir.ui.menu,name:scolarity.menu_year_scholarly_sec_etab
+msgid "Etablissement"
+msgstr "المؤسسة"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_etablissement_ids
+msgid "Etablissements"
+msgstr "المؤسسات"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+msgid "Etablissemnt Fondamentale"
+msgstr "المؤسسة المركزية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+msgid "Etablissemnt Secondaire"
+msgstr "المؤسسة الثانوية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Exclu"
+msgstr "استبعاد"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_open_view_educational_feliere
+msgid "Feliere"
+msgstr "شعبة"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_scolarity_report_fond
+msgid "Fondamentale"
+msgstr "الأساسية"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_open_view_educational_structure_list
+msgid "Globale Structure"
+msgstr "البنية العامة"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_id
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_id
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_structure_inscription_ids
+#: model:ir.model.fields,field_description:scolarity.field_educa_etab_structure_line_inscription_ids
+msgid "Inscription"
+msgstr "التسجيل"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+msgid "Inscriptions"
+msgstr "التسجيلات"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure___last_update
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity___last_update
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_write_uid
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_write_uid
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_write_date
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_write_date
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_open_view_educational_level
+msgid "Level"
+msgstr "المستوى"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_educa_etab_section_line
+msgid "Ligne section"
+msgstr "Ligne section"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_name
+msgid "Nom"
+msgstr "الإسم"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.report_scolarity_form_view
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+#: selection:report.scolarity,state:0
+msgid "Open"
+msgstr "افتح"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.open_etab_structure_line
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_tree
+msgid "Pedagogical Structure"
+msgstr "البنية التربوية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_etab_structure_form_inherit
+msgid "Redoublant"
+msgstr "راسب"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.action_report_scolarity
+#: model:ir.model,name:scolarity.model_report_scolarity
+#: model:ir.ui.view,arch_db:scolarity.report_scolarity_form_view
+msgid "Report Scolarity"
+msgstr "تقرير إداري "
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_reporting
+msgid "Reporting"
+msgstr "اعداد التقرير "
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_educa_structure_scholarly_id
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_scholarly_id
+msgid "Scholarly"
+msgstr "إداري"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_base_report_root
+msgid "Scolarité"
+msgstr "الإدارة"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_scolarity_secondaire
+msgid "Secondaire"
+msgstr "الثانوية"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.open_etab_etab_section
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_tree
+msgid "Section"
+msgstr "القسم"
+
+#. module: scolarity
+#: model:ir.actions.act_window,name:scolarity.open_etab_etab_section_line
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_line_form
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_line_tree
+msgid "Section/Employé/Dscipline"
+msgstr "الفقرة/الموظف/التخصص"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+msgid "Sections"
+msgstr "الفقرات"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_state
+msgid "State"
+msgstr "الحالة"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_educa_etab_structure_line
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_sec_line_structure_id
+#: model:ir.ui.menu,name:scolarity.menu_view_educational_structure
+#: model:ir.ui.view,arch_db:scolarity.view_year_scholarly_line_form
+msgid "Structure Pédagogique"
+msgstr "البنية التربوية"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_year_scholarly_sec_line
+msgid "Structure Pédagogique Secondaire"
+msgstr "البنية التربوية الثانوية"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_structure_id
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_line_ids
+#: model:ir.model.fields,field_description:scolarity.field_year_scholarly_line_sec_ids
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_dren_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_etab_fond
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_view_fond
+msgid "Structure pedagogique"
+msgstr "البنية التربوية"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_educa_etab_structure
+msgid "Structure pedagogique etablissement"
+msgstr "البنية التربوية للمؤسسة"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_line_form
+msgid "Structure section"
+msgstr "بنية الأقسام"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_structure_tree
+#: model:ir.ui.view,arch_db:scolarity.view_year_scholarly_line_form
+msgid "Total"
+msgstr "المجموع"
+
+#. module: scolarity
+#: model:ir.model.fields,field_description:scolarity.field_line_structure_volume_horaire
+msgid "Volume Horraire"
+msgstr "توقيت العمل"
+
+#. module: scolarity
+#: model:ir.ui.menu,name:scolarity.menu_wilaya_main
+msgid "Wilaya"
+msgstr "الولاية"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_year_scholarly
+#: model:ir.model.fields,field_description:scolarity.field_report_scolarity_scholarly_id
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_dren_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_etab_view
+#: model:ir.ui.view,arch_db:scolarity.year_scholarly_form_sec_view
+msgid "Year Scholarly"
+msgstr "السنة الدراسية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_line_form
+msgid "employé sléctionné"
+msgstr "الموظف المختار"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_line_form
+msgid "employé traité"
+msgstr "الموظف المدروس"
+
+#. module: scolarity
+#: model:ir.model,name:scolarity.model_line_structure
+msgid "line.structure"
+msgstr "البنية"
+
+#. module: scolarity
+#: model:ir.ui.view,arch_db:scolarity.view_educa_etab_section_form
+msgid "section"
+msgstr "فقرة"
+
+#. module: scolarity
+#: code:addons/scolarity/models/scolarity.py:113
+#, python-format
+msgid "you can not have two school years open at the same time!"
+msgstr "لا يمكن أن يكون لديك عامين دراسيين مفتوحين في نفس الوقت!"
+

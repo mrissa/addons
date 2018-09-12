@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2016 Eficent Business and IT Consulting Services S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0) -->
+<odoo >
+    <record id="seq_student_inscrip" model="ir.sequence">
+        <field name="name">inscrip</field>
+        <field name="code">student.inscrip</field>
+        <field name="prefix">ins-</field>
+        <field name="padding">1</field>
+    </record>
+</odoo>

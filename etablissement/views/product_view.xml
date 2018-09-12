@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inherit_product_template_form_view" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <div name="options" position="replace">
+                    <field name="purchase_ok" invisible="1"/>
+                    <field name="sale_ok" invisible="1"/>
+                </div>
+                <field name="barcode" position="replace"/>
+                <field name="type" position="replace">
+                    <field name="type" invisible="1" required="1"/>
+                    <field name="categ_product"/>
+                    <field name="type_id" widget="selection"/>
+                </field>
+                 <field name="categ_id" position="replace">
+                    <field name="categ_id" invisible="1" required="1"/>
+                </field>
+                <field name="list_price" position="replace">
+                    <field name="list_price" invisible="1"/>
+                </field>
+                <label for="standard_price" position="replace"/>
+                <div name="standard_price_uom" />
+                <page name="sales" position="replace"/>
+                <page name="notes" position="replace"/>
+
+            </field>
+        </record>
+
+        <record id="inherit_product_template_kanban_view" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_kanban_view"/>
+            <field name="arch" type="xml">
+                <ul position="replace"/>
+            </field>
+        </record>
+
+        <record id="inherit_product_template_treee_view" model="ir.ui.view">
+            <field name="name">product.template.tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="list_price" position="replace"/>
+                <field name="standard_price" position="replace"/>
+                <field name="categ_id" position="replace">
+                    <field name="categ_product"/>
+                </field>
+                <field name="type" position="replace"/>
+            </field>
+        </record>
+
+<!-- Instruction -->
+        <record id="view_affectation_instruction_form" model="ir.ui.view">
+            <field name="name">affectation.instruction.form</field>
+            <field name="model">affectation.instruction</field>
+            <field name="arch" type="xml">
+                <form string="Instruction">
+                    <sheet>
+                        <group string="Affectation Materiel Instruction">
+                           <group>
+                               <field name="establishment_id"/>
+                            </group>
+                            <group>
+                                <field name="send_date"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="instruction" string="Equipement">
+                                <field name="product_ids"  >
+                                   <tree editable="buttom">
+                                       <field name="product_id"/>
+                                       <field name="etat"/>
+                                       <field name="quantity"/>
+                                       <field name="product_date"/>
+                                       <field name="notes"/>
+                                   </tree>
+                                </field>
+                            </page>
+                            <page name="internal_notes" string="Internal Notes">
+                                <field name="notes" placeholder="Internal note..."/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_affectation_instruction_tree" model="ir.ui.view">
+            <field name="name">affectation.instruction.tree</field>
+            <field name="model">affectation.instruction</field>
+            <field name="arch" type="xml">
+                <tree string="Affectation Instruction" >
+                     <field name="send_date"/>
+                     <field name="establishment_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_affectation_instruction_filter" model="ir.ui.view">
+            <field name="name">affectation.instruction.search</field>
+            <field name="model">affectation.instruction</field>
+            <field name="arch" type="xml">
+                <search string="Instruction">
+                    <field name="establishment_id" string="Establishment" filter_domain="[('establishment_id','ilike',self)]"/>
+                </search>
+             </field>
+         </record>
+
+
+        <record id="open_view_affectation_instruction_list_action" model="ir.actions.act_window">
+            <field name="name">Affectation Instruction</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">affectation.instruction</field>
+            <field name="domain">[]</field>
+            <field name="view_id" eval="False"/>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="filter" eval="True"/>
+            <field name="search_view_id" ref="view_affectation_instruction_filter" />
+
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new instruction.
+              </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_affectation_instruction_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_affectation_instruction_tree"/>
+            <field name="act_window_id" ref="open_view_affectation_instruction_list_action"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_affectation_instruction_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_affectation_instruction_form"/>
+            <field name="act_window_id" ref="open_view_affectation_instruction_list_action"/>
+        </record>
+
+
+        <record id="view_affectation_equipement_line_tree" model="ir.ui.view">
+            <field name="name">instruction.line.tree</field>
+            <field name="model">instruction.line</field>
+            <field name="arch" type="xml">
+                <tree string="Equipement" >
+                     <field name="establishment_id"/>
+                     <field name="product_id"/>
+                     <field name="product_date"/>
+                     <field name="etat"/>
+                     <field name="quantity"/>
+                </tree>
+            </field>
+        </record>
+
+  <record model="ir.ui.view" id="view_categ_equipement_tree">
+        <field name="name">categ.equipement.tree</field>
+        <field name="model">categ.equipement</field>
+        <field name="arch" type="xml">
+            <tree string="Categorie equipement">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_categ_equipement_form">
+        <field name="name">categ.equipement.form</field>
+        <field name="model">categ.equipement</field>
+        <field name="arch" type="xml">
+            <form string="Categorie equipement">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                     <notebook>
+                        <page name="list_type" string="Liste des types">
+                            <field name="type_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="open_view_categ_equipement_form">
+        <field name="name">Categorie equipement</field>
+        <field name="res_model">categ.equipement</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record model="ir.ui.view" id="view_type_equipement_tree">
+        <field name="name">type.equipement.tree</field>
+        <field name="model">type.equipement</field>
+        <field name="arch" type="xml">
+            <tree string="Type equipement">
+                <field name="name"/>
+                <field name="categ_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_type_equipement_form">
+        <field name="name">type.equipement.form</field>
+        <field name="model">type.equipement</field>
+        <field name="arch" type="xml">
+            <form string="Type equipement">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="categ_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="open_view_type_equipement_form">
+        <field name="name">Type equipement</field>
+        <field name="res_model">type.equipement</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+ </data>
+</odoo>

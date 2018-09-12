@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend_css" name="hide menu" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/etablissement/static/src/css/main.css"/>
+                
+                <script src="/etablissement/static/src/js/hide_odoo.js"></script>
+            </xpath>
+        </template>
+
+        <template id="custom_title_inherit" name="change title" inherit_id="web.layout">
+            <xpath expr="//title" position="replace">
+                <script src="/etablissement/static/src/js/hide_odoo.js"></script>
+                <title>SIGE</title>
+            </xpath>
+        </template>
+
+    <!--  <template id="login_layout_inherit" inherit_id="web.login_layout" name="SIGE">
+            <xpath expr="//div[@class='row']" position="replace">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 o_database_list">
+                    <div class="text-center">
+                        <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"/>
+                    </div>
+                    <t t-raw="0"/>
+                </div>
+                </div>
+            </xpath>
+        </template> -->
+
+        <template id="web.layout_inherit" inherit_id="web.layout" name="SIGE">
+            <xpath expr="//head//link" position="after">
+                <link type="image/x-icon" rel="shortcut icon" t-att-href="x_icon or '/etablissement/static/src/img/favicon.ico'"/>
+            </xpath>
+        </template>
+
+        <template id="menu_secondary_inherit" inherit_id="web.menu_secondary" name="IP-TECH">
+            <xpath expr="//div[@class='o_sub_menu_footer']" position="replace">
+                 <div class="o_sub_menu_footer">
+                     Powered by<a> <span>IP-TECH</span></a>
+                 </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>

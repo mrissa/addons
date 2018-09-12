@@ -1,0 +1,1047 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_assignment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-31 10:55+0000\n"
+"PO-Revision-Date: 2018-08-31 10:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+msgid "A approuver"
+msgstr "إنتظار التأكيد"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type_affect:0
+#: selection:hr.assignment.regional,type_affect:0
+#: selection:hr.type.function,type:0
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_admin
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_admin_reg
+msgid "Administratif"
+msgstr "الإداريون"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type:0
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_affectation_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_assignment_id
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_form
+msgid "Affectation"
+msgstr "التحويل"
+
+#. module: hr_assignment
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_centrale_root
+msgid "Affectation Centrale"
+msgstr "التحويل المركزي"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_admin_form
+msgid "Affectation Centrale (Administratif)"
+msgstr "التحويل المركزي (الإداريون)"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_inst_form
+msgid "Affectation Centrale (Institeur)"
+msgstr "التحويل المركزي (المعلمون)"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_prof_form
+msgid "Affectation Centrale (Professeur)"
+msgstr "التحويل المركزي (الاساتذة)"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_form
+msgid "Affectation Régional"
+msgstr "التحويل الجهوي"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_regional
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_regionale_root
+msgid "Affectation Régionale"
+msgstr "التحويل الجهوي"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_reg_admin_form
+msgid "Affectation Régionale (Administratif)"
+msgstr "التحويل الجهوي (إداري)"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_reg_inst_form
+msgid "Affectation Régionale (Institeur)"
+msgstr "التحويل الجهوي (المعلمون)"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_reg_prof_form
+msgid "Affectation Régionale (Professeur)"
+msgstr "التحويل الجهوي (الاساتذة)"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+msgid "Affectation en cours"
+msgstr "التحويلات الحالية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_reg_id
+msgid "Affectation régional"
+msgstr "التحويل الجهوي"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_tree
+msgid "Affectation régionale"
+msgstr "التحويل الجهوي"
+
+#. module: hr_assignment
+#: selection:hr.assignment.regional,state:0
+msgid "Affecté"
+msgstr "محول"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_anciente_city
+msgid "Ancienté Moughataa"
+msgstr "الأقدمية في المقاطعة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_anciente_generale
+msgid "Ancienté générale"
+msgstr "الأقدمية العامة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_anciente_state
+msgid "Ancienté wilaya"
+msgstr "الأقدمية في الولاية"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+msgid "Approuved"
+msgstr "موافق عليه"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+msgid "Approuver"
+msgstr "تأكيد"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_id
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_config
+#: model:ir.ui.view,arch_db:hr_assignment.hr_employee_view_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_tree
+msgid "Assignment"
+msgstr "التحويل"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_line
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_ids
+msgid "Assignment Line"
+msgstr "التحويل"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_motif_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_motif_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_motif_tree
+msgid "Assignment Motif"
+msgstr "سبب التحويل"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_tree
+msgid "Assignment Request"
+msgstr "طلب التحويل"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_type_form
+#: model:ir.model,name:hr_assignment.model_hr_assignment_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_assignmen_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_res_company_assignment_type
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_tree
+msgid "Assignment Type"
+msgstr "نوع التحويل"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_assignment_request_form
+msgid "Assignment request"
+msgstr "طلب التحويل"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_type_motif
+msgid "Assignment type motif"
+msgstr "سبب نوع التحويل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_assignment_line_ids
+msgid "Assignments"
+msgstr "التحويلات"
+
+#. module: hr_assignment
+#: selection:hr.change.position,state:0
+#: selection:hr.change.position.line,state:0
+#: selection:hr.nomination,state:0
+#: selection:hr.nomination.line,state:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_assignment
+#: selection:res.company,assignment_type:0
+msgid "Central"
+msgstr "مركزي"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+msgid "Central Validate"
+msgstr "موافقة مركزية"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Central validate"
+msgstr "موافقة مركزية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_ids
+msgid "Change Position Line"
+msgstr "تغيير الوضعية"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_employee_assignment
+msgid "Choice Employee"
+msgstr "اختيار الموظف"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_choice_assignment_employee
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Choice employee"
+msgstr "اختيار الموظف"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+msgid "Choisir Employés"
+msgstr "اختيار الموظفين"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_choice1
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_choice1
+msgid "Choix 1"
+msgstr "الإختيار 1"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_choice2
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_choice2
+msgid "Choix 2"
+msgstr "الإختيار 2"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_assignment_choice3
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_assignment_choice3
+msgid "Choix 3"
+msgstr "الإختيار 3"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Choose your Employee"
+msgstr "...اختيار الموظف"
+
+#. module: hr_assignment
+#: selection:hr.assignment.line,state:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_code
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_corps_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_corps_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_corps_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_corps_id
+msgid "Corps"
+msgstr "الإطار الوظيفي"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_create_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_create_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_state_id
+msgid "DREN"
+msgstr "الإدارة الجهوية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_date
+msgid "Date Arrêté"
+msgstr "تاريخ المقرر"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_date_effet
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_date_effet
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_date_effet
+msgid "Date d'effet"
+msgstr "تاريخ النفاذ"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_start_date_affect
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_start_date_affect
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_start_date_affect
+msgid "Date d'éffet"
+msgstr "تاريخ النفاذ"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_birthday
+msgid "Date de naissance"
+msgstr "تاريخ الولادة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_end_date_affect
+msgid "Date fin"
+msgstr "تاريخ الإنتهاء"
+
+#. module: hr_assignment
+#: model:ir.ui.menu,name:hr_assignment.menu_demande_root
+msgid "Demande"
+msgstr "طلب"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_assignment_request_ids
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Demande de réaffectation"
+msgstr "طلب إعادة التحويل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_discipline_ids
+msgid "Discipline Employee"
+msgstr "تخصص الموظف"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_discipline_enseig_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_discipline_enseig_id
+msgid "Discipline Enseigné"
+msgstr "التخصص المدرس"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_discipline_ids
+msgid "Discipline Formation"
+msgstr "التخصص المتعلم"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_discipline_enseig_id
+msgid "Discipline de travail"
+msgstr "التخصص في العمل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_display_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_assignment
+#: selection:hr.assignment,state:0
+#: selection:hr.assignment.line,state:0
+#: selection:hr.assignment.request,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_departement_form
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_dep_id
+#: model:ir.ui.menu,name:hr_assignment.menu_hr_departement
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_departement_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_departement_tree
+msgid "Département"
+msgstr "بلدية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_fonction_id
+msgid "Emploi"
+msgstr "وظيفة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_fonction_id
+msgid "Emploi actuel"
+msgstr "الوظيفة الحالية"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_employee
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_employee_check_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_employee_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_employee_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_employee_id
+#: model:ir.ui.view,arch_db:hr_assignment.employee_choice_assignment_view
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_employee_check_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_employee_check_ids
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_employee_check_ids
+msgid "Employee Check"
+msgstr "فحص الموظف"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_employee_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_employee_id
+msgid "Employé"
+msgstr "الموظف"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_is_records_line
+msgid "Employé existe"
+msgstr "الموظف موجود"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_employee_ids
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_form
+msgid "Employés"
+msgstr "المصادر البشرية"
+
+#. module: hr_assignment
+#: selection:hr.assignment.regional,state:0
+msgid "En cours"
+msgstr "الحالي"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_recruitment_entry
+msgid "Entry Recruitment"
+msgstr "الإكتتاب الداخلي"
+
+#. module: hr_assignment
+#: selection:res.company,assignment_type:0
+msgid "Establishment"
+msgstr "المؤسسة"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Establishment validate"
+msgstr "الموافقة من طرف المؤسسة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_establishment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_establishment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_establishment_id
+msgid "Etablissement"
+msgstr "المؤسسة"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_recruitment_exit
+msgid "Exit Recruitment"
+msgstr "الإكتتاب الخارجي"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_fonction_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_fonction_new_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_function_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_fonction_id
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_function
+msgid "Fonction"
+msgstr "الوظيفة"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_function_form
+#: model:ir.model,name:hr_assignment.model_hr_function
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_function_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_function_tree
+msgid "Function"
+msgstr "الوظيفة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type_affect:0
+#: selection:hr.assignment.regional,type_affect:0
+#: selection:hr.type.function,type:0
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_inst
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_inst_reg
+msgid "Institeur"
+msgstr " معلم"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job___last_update
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_write_uid
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_employee_assignment_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_departement_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_write_date
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_assignment
+#: sql_constraint:hr.assignment.type:0
+#: sql_constraint:hr.assignment.type.motif:0
+msgid "Le code doit être unique."
+msgstr "يجب أن يكون الرمز فريدًا"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_lien
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_lien
+msgid "Lien"
+msgstr "الرابط"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_place_of_birth
+msgid "Lieu de naissance"
+msgstr "مكان الولادة"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_job_place_form
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_place_job_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_place_job_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_name
+#: model:ir.ui.menu,name:hr_assignment.menu_hr_job_place
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_job_place_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_place_job_tree
+msgid "Lieu de travail"
+msgstr "مكان العمل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_place_job_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_place_job_id
+msgid "Lieu de travail actuel"
+msgstr "مكان العمل الحالي"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_line_ids
+msgid "Ligne affectation"
+msgstr "التحويل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_statistique_ids
+msgid "Line Statistique"
+msgstr "الاحصاء"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_marital
+msgid "Marital Status"
+msgstr "الحالة الاجتماعية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_identification_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_identification_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_identification_id
+msgid "Matricule"
+msgstr "الرقم الإستدلالي"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_ids
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_type_form
+msgid "Motif"
+msgstr "السبب"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_nni
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_nni
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_nni
+msgid "NNI"
+msgstr "الرقم الوطني للتعريف"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_motif_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_employee_copy
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_name
+msgid "Nom et prénom"
+msgstr "الإسم واللقب"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_children
+msgid "Nombre enfant"
+msgstr "عدد الاطفال"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type:0
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_nomination_form
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_nomination_id
+#: model:ir.ui.menu,name:hr_assignment.menu_hr_nomination
+#: model:ir.ui.menu,name:hr_assignment.menu_nomination_root
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+msgid "Nomination"
+msgstr "التعيين"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_ids
+msgid "Nomination Line"
+msgstr "التعيين"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_note_ann1
+msgid "Note Année 1"
+msgstr "ملاحظة السنة 1"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_note_ann2
+msgid "Note Année 2"
+msgstr "ملاحظة السنة 2"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_note_ann3
+msgid "Note Année 3"
+msgstr "ملاحظة السنة 3"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_note_admin
+msgid "Note administratif"
+msgstr "ملاحظة إدارية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_notes
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_notes
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_notes
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_notes
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_notes
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Notes des trois dérniére années"
+msgstr "ملاحظات السنوات الثلاث الماضية"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_nomination_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_reg_form
+msgid "Notes..."
+msgstr "...ملاحظات"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_discipline_enseig_new_id
+msgid "Nouveau Discipline"
+msgstr "تخصص جديد"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_establishment_new_id
+msgid "Nouveau Etablissement"
+msgstr "مؤسسة جديدة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_place_job_new_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_place_job_new_id
+msgid "Nouveau Lieu de travail"
+msgstr "مكان عمل جديد"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_position_new_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_position_new_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_position_id
+msgid "Nouveau Position"
+msgstr "وضعية جديدة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_fonction_new_id
+msgid "Nouveau Poste"
+msgstr "وظيفة جديدة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_motif_new_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_motif_new_id
+msgid "Nouveau Statut"
+msgstr "حالة جديدة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_motif_id
+msgid "Nouveau statut"
+msgstr "حالة جديدة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_reference
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_reference
+msgid "Numéro Arrêté"
+msgstr "رقم المقرر"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_tel
+msgid "Numéro Téléphone"
+msgstr "رقم الهاتف"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Objection"
+msgstr "اعتراض"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_position_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_position_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_change_position_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_position_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_position_id
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_type
+msgid "Position"
+msgstr "الوظيفة"
+
+#. module: hr_assignment
+#: model:ir.ui.menu,name:hr_assignment.menu_hr_change_position
+msgid "Position Statuaire"
+msgstr "الوضع القانوني"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type:0
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_change_position_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+msgid "Positionnement"
+msgstr "الوضع الوظيفي"
+
+#. module: hr_assignment
+#: selection:hr.assignment,type_affect:0
+#: selection:hr.assignment.regional,type_affect:0
+#: selection:hr.type.function,type:0
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_prof
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_prof_reg
+msgid "Professeur"
+msgstr "أستاذ"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_name
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_name
+msgid "Reference"
+msgstr "المراجع"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: hr_assignment
+#: selection:res.company,assignment_type:0
+msgid "Regional"
+msgstr "جهوي"
+
+#. module: hr_assignment
+#: selection:hr.assignment.request,state:0
+msgid "Regional Validate"
+msgstr "موافقة جهوية"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_request_assignment_form
+msgid "Regional validate"
+msgstr "موافقة جهوية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_remarque
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_remarque
+msgid "Remarque"
+msgstr "ملاحظة"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_request
+msgid "Request Assignment"
+msgstr "طلب التحويل"
+
+#. module: hr_assignment
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_request
+msgid "Réaffectation"
+msgstr "إعادة التحويل"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_name
+msgid "Référence"
+msgstr "مرجع"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_ref_budget
+msgid "Référence Budgétaire"
+msgstr "مرجع الميزانية"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_secondaire
+msgid "Secondaire"
+msgstr "ثانوي"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_motif_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_motif_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_employee_motif_id
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_motif
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_positionnement_form
+msgid "Sous position"
+msgstr "الحالة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_request_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_line_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_change_position_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_line_state
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_nomination_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Statistique"
+msgstr "إحصائيات"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_assignment_stat
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Statistique Affectation"
+msgstr "إحصائيات التحويل"
+
+#. module: hr_assignment
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_assignment_form
+msgid "Sélectionner Employés"
+msgstr "إختيار موظفين"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_stat_count_total
+msgid "Total"
+msgstr "المجموع"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_type_affect
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_affect
+msgid "Type Affectation"
+msgstr "نوع التحويل"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_type_function
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_type_function_name
+#: model:ir.ui.menu,name:hr_assignment.menu_assignment_type_function
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_type_function_form
+#: model:ir.ui.view,arch_db:hr_assignment.view_hr_type_function_tree
+msgid "Type Fonction"
+msgstr "نوع الوظيفة"
+
+#. module: hr_assignment
+#: model:ir.actions.act_window,name:hr_assignment.action_hr_type_function_form
+msgid "Type Function"
+msgstr "نوع الوظيفة"
+
+#. module: hr_assignment
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_line_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_regional_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_assignment_type_id_4889
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_function_type_id
+#: model:ir.model.fields,field_description:hr_assignment.field_hr_place_job_type_id
+msgid "Type fonction"
+msgstr "نوع الوظيفة"
+
+#. module: hr_assignment
+#: selection:hr.change.position,state:0
+#: selection:hr.change.position.line,state:0
+#: selection:hr.nomination,state:0
+#: selection:hr.nomination.line,state:0
+msgid "Valider"
+msgstr "إعتماد "
+
+#. module: hr_assignment
+#: selection:hr.assignment.regional,state:0
+msgid "Validé"
+msgstr "إعتماد"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_change_position
+msgid "hr.change.position"
+msgstr "hr.change.position"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_change_position_line
+msgid "hr.change.position.line"
+msgstr "hr.change.position.line"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_departement
+msgid "hr.departement"
+msgstr "hr.departement"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_nomination
+msgid "hr.nomination"
+msgstr "hr.nomination"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_nomination_line
+msgid "hr.nomination.line"
+msgstr "hr.nomination.line"
+
+#. module: hr_assignment
+#: model:ir.model,name:hr_assignment.model_hr_place_job
+msgid "hr.place.job"
+msgstr "hr.place.job"
+

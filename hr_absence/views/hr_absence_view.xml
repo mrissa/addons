@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+      <!-- Absence -->
+       <record id="view_hr_absence_tree" model="ir.ui.view">
+        <field name="name">hr.absence.tree</field>
+        <field name="model">hr.absence</field>
+        <field name="arch" type="xml">
+            <tree string="Absence">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="absence_type_id"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                <field name="nbr_day"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_absence_form" model="ir.ui.view">
+        <field name="name">hr.absence.form</field>
+        <field name="model">hr.absence</field>
+        <field name="arch" type="xml">
+            <form string="Absence">
+                <header>
+                    <button name="act_validate" string="Validate" type="object" states="draft"/>
+                    <button name="act_cancel" string="Cancel" type="object" states="draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validate,cancel"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="employee_id" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="absence_categ_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="absence_type_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="solde"/>
+                            <field name="notes" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                        <group>
+                            <field name="company_id" readonly="1"/>
+                            <field name="date_start" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="date_end" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="nbr_day" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                     </group>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+    
+     <!-- hr.absence by user and team pivot View -->
+        <record id="hr_absence_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.absence.pivot</field>
+            <field name="model">hr.absence</field>
+            <field name="arch" type="xml">
+                <pivot string="Absence" >
+                    <field name="state" type="col"/>
+                      <field name="absence_type_id" type="row"/>
+                    <field name="absence_categ_id" type="row"/>
+                     <field name="absence_type_id" type="row"/>
+                  </pivot>
+            </field>
+        </record>
+        <record id="hr_absence_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.absence.graph</field>
+            <field name="model">hr.absence</field>
+            <field name="arch" type="xml">
+                <graph string="Absence" stacked="False">
+                     <field name="state" type="col"/>
+                    
+                    <field name="absence_categ_id" type="row"/>
+                     <field name="absence_type_id" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+    
+    <record id="action_hr_absence_form" model="ir.actions.act_window">
+        <field name="name">Absence</field>
+        <field name="res_model">hr.absence</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                        (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_absence_tree')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_absence_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_absence_report_view_pivot')})]"/>
+    </record>
+
+    <menuitem name="Congé"
+              parent="hr_assignment.menu_demande_root"
+              sequence="1"
+              id="menu_request_abscence"
+              action="action_hr_absence_form"/>
+
+    <menuitem name="Absences"
+              parent="hr.menu_human_resources_configuration"
+              sequence="6"
+              id="menu_absence_config"/>
+
+      <!-- Category absence -->
+       <record id="view_hr_absence_category_tree" model="ir.ui.view">
+        <field name="name">hr.absence.category.tree</field>
+        <field name="model">hr.absence.category</field>
+        <field name="arch" type="xml">
+            <tree string="Absence Category">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_absence_category_form" model="ir.ui.view">
+        <field name="name">hr.absence.category.form</field>
+        <field name="model">hr.absence.category</field>
+        <field name="arch" type="xml">
+            <form string="Category Absence">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <field name="absence_types"/>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_absence_category_form" model="ir.actions.act_window">
+        <field name="name">Absence Category</field>
+        <field name="res_model">hr.absence.category</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Absence Category"
+              parent="menu_absence_config"
+              sequence="0"
+              id="menu_category_absence"
+              action="action_absence_category_form"/>
+
+      <!-- Type absence -->
+       <record id="view_hr_absence_type_tree" model="ir.ui.view">
+        <field name="name">hr.absence.type.tree</field>
+        <field name="model">hr.absence.type</field>
+        <field name="arch" type="xml">
+            <tree string="Absence">
+                <field name="name"/>
+                <field name="nbr_limit_day"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_absence_type_form" model="ir.ui.view">
+        <field name="name">hr.absence.type.form</field>
+        <field name="model">hr.absence.type</field>
+        <field name="arch" type="xml">
+            <form string="Absence">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="absence_categ_id"/>
+                            <field name="nbr_limit_day"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_absence_type_form" model="ir.actions.act_window">
+        <field name="name">Absence Type</field>
+        <field name="res_model">hr.absence.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Type Absence"
+              parent="menu_absence_config"
+              sequence="1"
+              id="menu_type_absence"
+              action="action_absence_type_form"/>
+
+       <!-- Suspension -->
+       <record id="view_hr_suspension_tree" model="ir.ui.view">
+        <field name="name">hr.suspension.tree</field>
+        <field name="model">hr.suspension</field>
+        <field name="arch" type="xml">
+            <tree string="Suspension">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                <field name="motif"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_suspension_form" model="ir.ui.view">
+        <field name="name">hr.suspension.form</field>
+        <field name="model">hr.suspension</field>
+        <field name="arch" type="xml">
+            <form string="Suspension">
+                <header>
+                    <button name="act_validate" string="Validate" type="object" states="draft"/>
+                    <button name="act_cancel" string="Cancel" type="object" states="draft"/>
+                    <button name="act_lifting_suspension" string="Lifting of suspension" type="object" states="validate"/>
+                    <button name="act_close_suspension" string="Close suspension" type="object" states="lifting_suspension"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validate,lifting_suspension,close_suspension,cancel"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="employee_id" attrs="{'readonly': [('state', 'in', ('validate','lifting_suspension','close_suspension','cancel'))]}"/>
+                            <field name="motif" attrs="{'readonly': [('state', 'in', ('validate','lifting_suspension','close_suspension','cancel'))]}"/>
+                        </group>
+                        <group>
+                            <field name="company_id" readonly="1"/>
+                            <field name="date_start" attrs="{'readonly': [('state', 'in', ('validate','lifting_suspension','close_suspension','cancel'))]}"/>
+                            <field name="date_end" attrs="{'readonly': [('state', '=', 'close_suspension')], 'invisible': [('state', 'not in', ('close_suspension','lifting_suspension'))]}"/>
+                        </group>
+                        <group>
+                            <field name="notes" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                     </group>
+                </sheet>
+                <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+             <!-- hr.suspension by user and team pivot View -->
+        <record id="hr_suspension_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.suspension.pivot</field>
+            <field name="model">hr.suspension</field>
+            <field name="arch" type="xml">
+                <pivot string="Suspension" >
+                    <field name="state" type="col"/>
+                      <field name="employee_id" type="row"/>
+                     
+                  </pivot>
+            </field>
+        </record>
+        <record id="hr_suspension_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.suspension.graph</field>
+            <field name="model">hr.suspension</field>
+            <field name="arch" type="xml">
+                <graph string="Suspension" stacked="False">
+                     <field name="state" type="col"/>
+                     <field name="employee_id" type="row"/>
+                     
+                 </graph>
+            </field>
+        </record>
+
+    <record id="action_hr_suspension_form" model="ir.actions.act_window">
+        <field name="name">Suspension</field>
+        <field name="res_model">hr.suspension</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_suspension_tree')}),
+                           (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_suspension_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_suspension_report_view_pivot')})]"/>
+    </record>
+
+    <menuitem name="Suspension"
+              parent="hr_assignment.menu_demande_root"
+              sequence="2"
+              id="menu_Suspension"
+              action="action_hr_suspension_form"/>
+
+        <!--inherit employee-->
+    <record id="hr_employee_view_absence_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.absence</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_recrutement.view_employee_grh_detail_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page name="absence_ids" string="Absences">
+                    <field name="absence_ids" readonly="1"/>
+                </page>
+                <page name="suspensions_ids" string="Suspensions">
+                    <field name="suspensions_ids" readonly="1"/>
+                </page>
+            </notebook>
+        </field>
+    </record>
+   
+</odoo>

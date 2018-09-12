@@ -1,0 +1,281 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_skill
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 10:32+0000\n"
+"PO-Revision-Date: 2018-07-05 10:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_skill
+#: code:addons/hr_skill/models/hr_employee.py:31
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                                   Click to Create New Competance\n"
+"                                </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                                   انقر لخلق المنافسة الجديدة\n"
+"                                </p>"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_note
+msgid "Commentaires"
+msgstr "تعليقات"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_create_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_create_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_create_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_create_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_create_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_create_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_create_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_create_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_date
+msgid "Date acquisition"
+msgstr "تاريخ الإستلام"
+
+#. module: hr_skill
+#: model:ir.actions.act_window,name:hr_skill.action_skill_discipline_form
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_discipline_id
+#: model:ir.ui.menu,name:hr_skill.menu_view_skill_discipline_form
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_discipline_form
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_discipline_tree
+msgid "Discipline"
+msgstr "التخصص"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_display_name
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_display_name
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_display_name
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_display_name
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_skill
+#: code:addons/hr_skill/models/hr_employee.py:24
+#: model:ir.model,name:hr_skill.model_hr_employee
+#: model:ir.model.fields,field_description:hr_skill.field_hr_employee_skill_count
+#: model:ir.model.fields,field_description:hr_skill.field_hr_employee_skill_ids
+#, python-format
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_employee_id
+msgid "Employee(s)"
+msgstr "الموظفون"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_id
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_id
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_id
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_id
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill___last_update
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline___last_update
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line___last_update
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level___last_update
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_write_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_write_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_write_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_write_uid
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_write_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_write_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_write_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_write_date
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_skill
+#: model:ir.actions.act_window,name:hr_skill.action_skill_level_form
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_level
+#: model:ir.model.fields,field_description:hr_skill.field_skill_level_name
+#: model:ir.ui.menu,name:hr_skill.menu_view_skill_level_form
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_level_form
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_level_tree
+msgid "Level"
+msgstr "المستوى"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 0"
+msgstr "المستوى 0"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 1"
+msgstr "المستوى 1"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 10"
+msgstr "المستوى 10"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 2"
+msgstr "المستوى 2"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 3"
+msgstr "المستوى 3"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 4"
+msgstr "المستوى 4"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 5"
+msgstr "المستوى 5
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 6"
+msgstr "المستوى 6"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 7"
+msgstr "المستوى 7"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 8"
+msgstr "المستوى 8"
+
+#. module: hr_skill
+#: selection:hr.skill,level:0
+msgid "Level 9"
+msgstr "المستوى 9"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_level_id
+msgid "Level Teaching"
+msgstr "المستوى التعليمي"
+
+#. module: hr_skill
+#: model:ir.ui.view,arch_db:hr_skill.view_qualification_form
+msgid "Ligne qualification"
+msgstr "المؤهلات"
+
+#. module: hr_skill
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_discipline_form
+msgid "Line descipline"
+msgstr "التخصصات"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_matricule
+msgid "Matricule"
+msgstr "الرقم الإستدلالي"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_name
+#: model:ir.ui.view,arch_db:hr_skill.view_hr_skill_tree
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_experience
+msgid "Nbre annee experience"
+msgstr "الخبرة"
+
+#. module: hr_skill
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_hr_skill_name
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_qualification_id
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_name
+#: model:ir.ui.menu,name:hr_skill.menu_view_skill_qualification_form
+#: model:ir.ui.view,arch_db:hr_skill.view_hr_skill_tree
+#: model:ir.ui.view,arch_db:hr_skill.view_qualification_form
+#: model:ir.ui.view,arch_db:hr_skill.view_qualification_tree
+#: model:ir.ui.view,arch_db:hr_skill.view_skill_form
+msgid "Qualification"
+msgstr "المؤهل"
+
+#. module: hr_skill
+#: model:ir.actions.act_window,name:hr_skill.action_view_qualification_form
+#: model:ir.actions.act_window,name:hr_skill.action_view_skill_form
+#: model:ir.ui.menu,name:hr_skill.menu_view_qualification_form
+#: model:ir.ui.menu,name:hr_skill.menu_view_skill
+#: model:ir.ui.menu,name:hr_skill.menu_view_skill_form
+#: model:ir.ui.view,arch_db:hr_skill.view_employee_skill_form
+msgid "Qualifications"
+msgstr "المؤهلات"
+
+#. module: hr_skill
+#: model:ir.model,name:hr_skill.model_hr_skill
+msgid "hr.skill"
+msgstr "المصادر البشرية . المهارة"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_skill_discipline_line_ids
+msgid "line descipline"
+msgstr "التخصصات"
+
+#. module: hr_skill
+#: model:ir.model.fields,field_description:hr_skill.field_skill_qualification_line_ids
+msgid "line qualification"
+msgstr "المؤهلات"
+
+#. module: hr_skill
+#: model:ir.model,name:hr_skill.model_skill_discipline
+msgid "skill.discipline"
+msgstr "المهارة . التخصص"
+
+#. module: hr_skill
+#: model:ir.model,name:hr_skill.model_skill_discipline_line
+msgid "skill.discipline.line"
+msgstr "المهارة . التخصصات"
+
+#. module: hr_skill
+#: model:ir.model,name:hr_skill.model_skill_level
+msgid "skill.level"
+msgstr "المهارة . المستوى"
+
+#. module: hr_skill
+#: model:ir.model,name:hr_skill.model_skill_qualification
+msgid "skill.qualification"
+msgstr "المهارة . المؤهل"
+

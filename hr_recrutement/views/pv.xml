@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <!--PV recruitment-->
+    <record id="view_hr_recruitment_pv_tree" model="ir.ui.view">
+        <field name="name">hr.recruitment.pv.tree</field>
+        <field name="model">hr.recruitment.pv</field>
+        <field name="arch" type="xml">
+            <tree string="PV Recruitment">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="corps_id"/>
+                <field name="training_school_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_recruitment_pv_form" model="ir.ui.view">
+        <field name="name">hr.recruitment.pv.form</field>
+        <field name="model">hr.recruitment.pv</field>
+        <field name="arch" type="xml">
+            <form string="PV Recruitment">
+                <header>
+                    <button name="act_validate" string="Valider" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="act_remetrre_en_brouillon" string="Réouvrir" type="object" states="validate"/>
+                    <field name="state" widget="statusbar"/>
+                    </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="corps_id" widget="selection" attrs="{'invisible': [('is_records_line', '=', True)]}"/>
+                            <field name="corps_copy_id" attrs="{'invisible': [('is_records_line', '=', False)]}"/>
+                            <field name="invisible" invisible="1"/>
+                            <field name="recruitment_pv_type_ns" attrs="{'readonly': [('state', '=', 'validate')], 'invisible': ['|', ('is_records_line', '=', True), ('invisible', '=', True)], 'required': [('recruitment_pv_type', '!=', 'training_school')]}"/>
+                            <field name="recruitment_pv_type" invisible="1"/>
+                            <field name="recruitment_pv_copy_type" attrs="{'invisible': ['|', ('is_records_line', '=', False), ('invisible', '=', True)]}"/>
+                            <field name="training_school_id" widget="selection" attrs="{'invisible': [('recruitment_pv_type', '!=', 'training_school')], 'required': [('recruitment_pv_type', '=', 'training_school')], 'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="recruitment_direct_type" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="name" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="date" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                         <group attrs="{'invisible': ['|', '|' , ('is_records_line', '=', True), ('recruitment_pv_type', '=', 'titularisation'), ('invisible', '=', True)]}">
+                            <field name="new_graduates" attrs="{'invisible': ['|', '|' , ('is_records_line', '=', True), ('recruitment_pv_type', '=', 'titularisation'), ('invisible', '=', True)]}"/>
+                            <field name="new_graduates_copy" attrs="{'invisible': ['|', ('is_records_line', '=', False), ('invisible', '=', True)]}"/>
+                            <field name="is_records_line" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="lien" widget="many2many_binary" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="employee_ids" string="Employés">
+                            <div>
+                              <button name="%(action_employee_import)d" string="Importer EXCEL" type="action" class="oe_highlight" attrs="{'invisible': ['|', ('state', '=', 'validate'), ('new_graduates', '=', False)]}"/>
+                            </div>
+                            <field name="employee_ids" attrs="{'invisible': [('new_graduates', '=', False)], 'readonly': [('state', '=', 'validate')]}">
+                                <tree string="Employee" editable="bottom">
+                                    <field name="identification_id" string="Matricule"/>
+                                    <field name="nni" required="1" string="NNI"/>
+                                    <field name="name" required="1" string="Nom et Prenom"/>
+                                    <field name="birthday" string="Date naissance"/>
+                                    <field name="place_of_birth" string="Lieu naissance"/>
+                                    <field name="note_graduation" string="Moyenne"/>
+                                    <field name="number_training_school" string="Rang"/>
+                                    <field name="discipline_ids" widget="many2many_tags" options="{'no_create_edit': True}" required="1" string="Disciplines"/>
+                                </tree>
+                            </field>
+                             <field name="employee_interne_ids" options="{'no_create': True}" attrs="{'invisible': [('new_graduates', '=', True)], 'readonly': [('state', '=', 'validate')]}">
+                                <tree string="Employee" editable="bottom">
+                                    <field name="identification_id" string="Matricule" readonly="1"/>
+                                    <field name="nni" required="1" string="NNI" readonly="1"/>
+                                    <field name="name" required="1" string="Nom et Prenom" readonly="1"/>
+                                    <field name="birthday" string="Date naissance" readonly="1"/>
+                                    <field name="place_of_birth" string="Lieu naissance" readonly="1"/>
+                                    <field name="note_graduation" string="Moyenne"/>
+                                    <field name="number_training_school"/>
+                                    <field name="assignment_choice1" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice2" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice3" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="discipline_ids" widget="many2many_tags" options="{'no_create_edit': True}" required="1" string="Disciplines"/>
+                                </tree>
+                            </field>
+                        </page>
+                         <page name="employee_copy_ids" string="Choix d'affectation">
+                            <div>
+                              <button name="%(action_choice_import)d" string="Importer les choix" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'validate')]}"/>
+                            </div>
+                            <field name="employee_copy_ids">
+                                <tree string="Employés">
+                                    <field name="nni" string="NNI"/>
+                                    <field name="assignment_choice1" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice2" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice3" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice4" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                    <field name="assignment_choice5" options="{'no_quick_create': True, 'no_create_edit' : True}" required="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..." attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                 <div class="oe_chatter" invisible="1">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                 </div>
+                </form>
+        </field>
+    </record>
+    
+      <!-- hr_pv  by user and team pivot View -->
+        <record id="hr_pv_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.recruitment.pv</field>
+            <field name="model">hr.recruitment.pv</field>
+            <field name="arch" type="xml">
+                <pivot string="PV/Nouvelles Promotions" disable_linking="True">
+                <field name="state" type="row"/>
+
+                    <field name="recruitment_pv_type" type="col"/>
+                    <field name="new_graduates" type="col"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_pv_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.recruitment.pv.graph</field>
+            <field name="model">hr.recruitment.pv</field>
+            <field name="arch" type="xml">
+                <graph string="PV/Nouvelles Promotions" stacked="True">
+                <field name="state" type="row"/>
+                    <field name="recruitment_pv_type" type="col"/>
+                    <field name="new_graduates" type="col"/>
+                     
+                </graph>
+            </field>
+        </record>
+    
+    <record id="action_hr_recruitment_pv_form" model="ir.actions.act_window">
+        <field name="name">Nouveaux Sortants</field>
+        <field name="res_model">hr.recruitment.pv</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('new_graduates','=',True), ('recruitment_pv_type','=','training_school')]</field>
+        <field name="context">{'default_new_graduates': True, 'default_recruitment_pv_type': 'training_school', 'default_invisible': True}</field>
+        <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_pv_tree')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_pv_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_pv_report_view_pivot')})]"/>
+    </record>
+
+     <record id="action_hr_recruitment_pv_promotion_form" model="ir.actions.act_window">
+        <field name="name">Nouvelles Promotions</field>
+        <field name="res_model">hr.recruitment.pv</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('new_graduates','=',False), ('recruitment_pv_type','=','training_school')]</field>
+        <field name="context">{'default_new_graduates': False, 'default_recruitment_pv_type': 'training_school', 'default_invisible': True}</field>
+         <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_pv_tree')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_pv_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_pv_report_view_pivot')})]"/>
+    </record>
+
+     <record id="action_hr_recruitment_pv_ns_form" model="ir.actions.act_window">
+        <field name="name">Notes de services</field>
+        <field name="res_model">hr.recruitment.pv</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('new_graduates','=',False), ('recruitment_pv_type','in',('titularisation', 'direct'))]</field>
+        <field name="context">{'default_new_graduates': False, 'default_invisible': False}</field>
+         <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hr_recruitment_pv_tree')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_pv_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_pv_report_view_pivot')})]"/>
+    </record>
+
+    <menuitem name="PV/NS"
+              parent="hr.menu_hr_root"
+              sequence="3"
+              id="menu_view_hr_recruitment_pv_form"/>
+
+    <menuitem name="Nouveaux Sortants"
+              parent="menu_view_hr_recruitment_pv_form"
+              sequence="1"
+              id="menu_view_pv_sortant_form"
+              action="action_hr_recruitment_pv_form"/>
+
+    <menuitem name="Nouvelles Promotions"
+              parent="menu_view_hr_recruitment_pv_form"
+              sequence="2"
+              id="menu_view_hr_recruitment_pv_promotion_form"
+              action="action_hr_recruitment_pv_promotion_form"/>
+
+    <menuitem name="Notes Services"
+              parent="menu_view_hr_recruitment_pv_form"
+              sequence="3"
+              id="menu_view_hr_recruitment_pv_ns_form"
+              action="action_hr_recruitment_pv_ns_form"/>
+
+</odoo>

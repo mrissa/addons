@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="vneuron_homepage" inherit_id="website.homepage" customize_show="False" name="SIGE home page">
+    <xpath expr="//t[@t-call='website.layout']" position="replace" >
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                <div class="-bg-image -slideshow"  >
+                    <div class="blur_noir"  >
+                        <div class="wrapper">
+                            <div class="logo-div">
+                                <div class="center-div">
+                                    <img src="/web/image/res.company/1/logo"/>
+                                 </div>
+                                <div class="center-div-text" >
+                                      <h2>Ministére de l’Éducation National</h2>
+                                      <h1> Systéme d’Information et de Gestion de l’Education (SIGE) </h1>    
+                                </div>
+                                 <div class="twitter-div" >
+                                  <div class="twitter-div-end" >
+                                        <section class="twitter" data-limit="15" data-screen-name="OpenERP">
+                                            <div class="twitter_timeline"/>
+                                        </section>
+                                     </div>   
+                                </div>   
+                             </div>   
+                            
+                        </div>    
+                        
+                    </div>
+                </div>
+                 
+
+                 
+            </t>
+                  
+    </xpath>
+ </template>
+
+</odoo>

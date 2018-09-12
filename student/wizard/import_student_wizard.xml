@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="student_import_view" model="ir.ui.view">
+            <field name="name">Import lines</field>
+            <field name="model">import.student.line</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Import Student Line">
+                    <h2>Choose your Excel file</h2>
+                    <field name="data_file" filename="filename" placeholder="Choose a file to import..."/>
+                    <field name="filename" invisible="1"/>
+                    <footer>
+                        <button name="import_file" string="Confirm" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_student_import" model="ir.actions.act_window">
+            <field name="name">Import line</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">import.student.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="student_import_view"/>
+        </record>
+
+
+    </data>
+</odoo>

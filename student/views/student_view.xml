@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Student -->
+        <record id="view_student_form" model="ir.ui.view">
+            <field name="name">stud.student.form</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <form string="Student" create="false">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="toggle_active" type="object" groups="hr.group_hr_user"
+                                    class="oe_stat_button" icon="fa-archive">
+                                <field name="active" widget="boolean_button"
+                                    options='{"terminology": "archive"}'/>
+                            </button>
+                        </div>
+                         <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'actif')]}">Actif</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'not_affect')]}">Not affect</div>
+                         <div class="label label-danger pull-right" attrs="{'invisible': [('state', '!=', 'inactif')]}">Inactif</div>
+                         <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'scolarity_terminated')]}">Scolarity termineted</div>
+                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image":"image_medium"}'/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h2>
+                                <field name="name"/>
+                             </h2>
+                            <h1 position="after">
+                                <label for="identification_id" class="oe_edit_only"/>
+                                <h3>
+                                    <field name="identification_id"/>
+                                </h3>
+                            </h1>
+                        </div>
+                        <notebook>
+                            <page name="base" string="Base Information">
+                                <group>
+                                    <group string="Student Information">
+                                        <field name="country_id" options='{"no_open": True, "no_create": True}' widget="selection"/>
+                                        <field name="nni"/>
+                                        <field name="town_birth" widget="selection"/>
+                                        <field name="town_residence" widget="selection"/>
+                                    </group>
+                                    <group string="Contact Information">
+                                        <field name="address"/>
+                                        <field name="etranger"/>
+                                    </group>
+                                    <group string="Status">
+                                        <field name="gender"/>
+                                    </group>
+                                    <group string="Birth">
+                                        <field name="birthday"/>
+                                        <field name="place_birth"/>
+                                    </group>
+                                    <group>
+                                    <field name="comment" placeholder="Notes..." colspan="4"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="economisue_situation" string="Situation Socio Economique">
+                             <group>
+                                 <group string="Pere">
+                                    <field name="name_father"/>
+                                    <field name="tel_father"/>
+                                    <field name="situation_pro_fadher"/>
+                                    <field name="other_father" attrs="{'invisible': [('situation_pro_fadher','!=','other')]}"/>
+                                    <field name="revenue_father"/>
+                                 </group>
+                                 <group string="Mere">
+                                    <field name="name_mother"/>
+                                    <field name="tel_mother"/>
+                                    <field name="situation_pro_mother"/>
+                                    <field name="other_mother" attrs="{'invisible': [('situation_pro_mother','!=','other')]}"/>
+                                    <field name="revenue_mother"/>
+                                 </group>
+                                 <group string="Situation">
+                                    <field name="electricity"/>
+                                    <field name="water"/>
+                                    <field name="leisure"/>
+                                 </group>
+                                 <group string="Foyer">
+                                    <field name="number"/>
+                                    <field name="distance"/>
+                                 </group>
+                                 <group>
+                                    <field name="notes" placeholder="Other Information ..." colspan="4"/>
+                                 </group>
+                             </group>
+                            </page>
+                            <page name="other_information" string="Other Information">
+                                <group>
+                                    <group string="Student Information">
+                                        <field name="boursier"/>
+                                        <field name="state"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter" invisible="1">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_tree" model="ir.ui.view">
+            <field name="name">stud.student.tree</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <tree string="Students" create="false">
+                    <field name="name"/>
+                    <field name="place_birth"/>
+                    <field name="birthday"/>
+                    <field name="identification_id"/>
+                    <field name="establishment_id"/>
+
+                    <field name="scholarly_id"/>
+                    <field name="state_inscription" string="Etat inscription"/>
+                    <field name="state" string="Etat"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_student_filter" model="ir.ui.view">
+            <field name="name">stud.student.search</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <search string="Students">
+                    <field name="name" string="Student" filter_domain="[('name','ilike',self)]"/>
+                    <field name="identification_id" string="Matricule" filter_domain="[('identification_id','ilike',self)]"/>
+                    <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                    <group expand="0" string="Group By">
+
+                    </group>
+                </search>
+             </field>
+         </record>
+
+    <record id="hr_kanban_view_student" model="ir.ui.view">
+        <field name="name">stud.student.kanban</field>
+        <field name="model">stud.student</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <kanban class="o_hr_employee_kanban" create="false">
+                <field name="id"/>
+                <field name="message_is_follower"/>
+                <field name="message_follower_ids"/>
+                <field name="message_ids"/>
+                <field name="message_needaction_counter"/>
+                <templates>
+                    <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click">
+                        <div class="o_kanban_image">
+                            <img t-att-src="kanban_image('stud.student', 'image_medium', record.id.raw_value)"/>
+                        </div>
+                        <div class="oe_kanban_details">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name"/>
+                                    </strong>
+                                    <ul>
+                                        <li t-if="record.identification_id.raw_value">
+                                            <field name="identification_id"/>
+                                        </li>
+                                        <li t-if="record.gender.raw_value">
+                                            <field name="gender"/>
+                                        </li>
+                                        <li t-if="record.birthday.raw_value">
+                                            <field name="birthday"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </t>
+                </templates>
+            </kanban>
+
+        </field>
+    </record>
+     <!-- educa_establishment  by user and team pivot View -->
+        <record id="stud_student_report_view_pivot" model="ir.ui.view">
+            <field name="name">stud.student.pivot</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <pivot string="Élèves" >
+                <field name="state" type="col"/>
+                     <field name="establishment_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="stud_student_report_view_graph" model="ir.ui.view">
+            <field name="name">stud.student.graph</field>
+            <field name="model">stud.student</field>
+            <field name="arch" type="xml">
+                <graph string="Élèves" stacked="False">
+                    <field name="state" type="col"/>
+                    <field name="establishment_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+
+        <record id="open_view_student_tree" model="ir.actions.act_window">
+            <field name="name">Student Structure</field>
+            <field name="res_model">stud.student</field>
+            <field name="sequence" eval="0"/>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_student_tree"/>
+            <field name="domain">[('state','!=','draft')]</field>
+            <field name="search_view_id" ref="view_student_filter"/>
+        </record>
+
+        <record id="open_view_student_list" model="ir.actions.act_window">
+            <field name="name">Student</field>
+            <field name="res_model">stud.student</field>
+            <field name="sequence" eval="1"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="view_student_filter"/>
+        </record>
+
+        <record id="open_view_student_list_my" model="ir.actions.act_window">
+            <field name="name">Students</field>
+            <field name="res_model">stud.student</field>
+            <field name="view_type">form</field>
+             <field name="limit">20</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="domain">[('state','!=','draft')]</field>
+            <field name="context">{}</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                   (0, 0, {'view_mode': 'tree', 'view_id': ref('view_student_tree')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('stud_student_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('stud_student_report_view_pivot')})]"/>
+            <field name="search_view_id" ref="view_student_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new student.
+              </p><p>
+                With just a quick glance on the Odoo student screen, you
+                can easily find all the information you need for each person;
+                contact data, job position, availability, etc.
+              </p>
+            </field>
+        </record>
+
+   <!--PV student-->
+    <record id="view_stud_import_tree" model="ir.ui.view">
+        <field name="name">stud.student.pv.exit.tree</field>
+        <field name="model">stud.student.pv</field>
+        <field name="arch" type="xml">
+            <tree string="Import student">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="succes_year"/>
+                <field name="scholarly_insc_id"/>
+                <field name="structure_line_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_stud_pv_form" model="ir.ui.view">
+        <field name="name">stud.student.pv.form</field>
+        <field name="model">stud.student.pv</field>
+        <field name="arch" type="xml">
+            <form string="Import student">
+                <header>
+                    <button name="act_validate" string="Validate" type="object" states="draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validate"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="type" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                        <group>
+                            <field name="scholarly_insc_id" widget="selection" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="type_structure" invisible="1"/>
+                            <field name="structure_line_id" widget="selection" attrs="{'readonly': ['|', ('state', '=', 'validate'), ('scholarly_insc_id', '=', False)]}"/>
+                            <field name="succes_year" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="student_ids" string="Students">
+                            <button name="%(action_student_import)d" string="Import Student" type="action" class="oe_highlight" attrs="{'invisible': [('state', '=', 'validate')]}"/>
+                            <field name="student_ids" attrs="{'readonly': [('state', '=', 'validate')]}">
+                                <tree string="students" editable="bottom">
+                                    <field name="name"/>
+                                    <field name="nni"/>
+                                    <field name="place_birth"/>
+                                    <field name="birthday"/>
+                                    <field name="identification_id"/>
+                                    <field name="etab_origine_id" widget="selection"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                </form>
+        </field>
+    </record>
+
+    <record id="action_stud_pv_form" model="ir.actions.act_window">
+        <field name="name">Import Student</field>
+        <field name="res_model">stud.student.pv</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    </data>
+</odoo>

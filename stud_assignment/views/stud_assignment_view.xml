@@ -1,0 +1,82 @@
+<openerp>
+  <data>
+
+      <!-- Assignment -->
+       <record id="view_student_assignment_tree" model="ir.ui.view">
+        <field name="name">stud.assignment.tree</field>
+        <field name="model">stud.assignment</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment">
+                <field name="name"/>
+                <field name="scholarly_id"/>
+                <field name="establishment_id"/>
+                <field name="structure_year_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+        </record>
+
+    <record id="view_student_assignment_form" model="ir.ui.view">
+        <field name="name">stud.assignment.form</field>
+        <field name="model">stud.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Assignment">
+                <header>
+                    <button name="act_validate" string="Validate" type="object" states="draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validate"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="scholarly_id" widget="selection" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="establishment_id" attrs="{'readonly':[('state','!=','draft')], 'invisible':[('scholarly_id','=',False)]}" options="{'no_create_edit':1}"/>
+                            <field name="child_id" invisible="1"/>
+                            <field name="structure_year_id" options="{'no_create_edit':1}" attrs="{'readonly':[('state','!=','draft')], 'invisible':['|', ('scholarly_id','=',False), ('establishment_id','=',False)]}"/>
+                            <field name="structure" invisible="1"/>
+                            <field name="is_records_line"/>
+                            <field name="etablissement_ids" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="assignment_line_ids" string="Inscriptions">
+                            <field name="assignment_line_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="scholarly_id"/>
+                                    <field name="student_id"/>
+                                    <field name="etabli_origine"/>
+                                    <field name="structure" invisible="1"/>
+                                    <field name="year_line_id"/>
+                                    <field name="type"/>
+                                    <field name="state" readonly="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="internal_notes" string="Notes">
+                            <field name="notes" placeholder="Notes..." attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_stud_assignment_form" model="ir.actions.act_window">
+        <field name="name">Assignment</field>
+        <field name="res_model">stud.assignment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+      <menuitem
+        id="menu_action_student_assignment"
+        name="Assignment"
+        action="action_stud_assignment_form"
+        parent="student.menu_student_root"
+        sequence="3"/>
+
+  </data>
+</openerp>

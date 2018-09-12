@@ -1,0 +1,255 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student_health
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-17 15:40+0000\n"
+"PO-Revision-Date: 2018-08-17 15:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "A+ve"
+msgstr "A+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "A-ve"
+msgstr "A-ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "AB+ve"
+msgstr "AB+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "AB-ve"
+msgstr "AB-ve"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_regular_checkup
+msgid "Any Regular Checkup Required?"
+msgstr "أي فحص منتظم مطلوب؟"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "B+ve"
+msgstr "B+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "B-ve"
+msgstr "B-ve"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_blood_group
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Blood Group"
+msgstr "فصيلة الدم"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_name
+msgid "Checkup Detail"
+msgstr "فحص التفاصيل"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Checkup Details"
+msgstr "فحص التفاصيل"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Checkup Line"
+msgstr "الفحص"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_health_line
+msgid "Checkup Lines"
+msgstr "الفحوصات"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_recommendation
+msgid "Checkup Recommendation"
+msgstr "فحص إلزامي"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_create_uid
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_create_date
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_display_name
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: student_health
+#: code:addons/student_health/models/health.py:54
+#, python-format
+msgid "Enter proper height and weight!"
+msgstr " !أدخل الطول والوزن المناسب"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_eyeglasses_no
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Eye Glasses"
+msgstr "نظارة طبية"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_eyeglasses
+msgid "Eye Glasses?"
+msgstr " نظارة طبية ؟"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Group By..."
+msgstr "..تجميع حسب"
+
+#. module: student_health
+#: model:ir.actions.act_window,name:student_health.act_open_op_health_view
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_health_id
+#: model:ir.ui.menu,name:student_health.menu_op_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+#: model:ir.ui.view,arch_db:student_health.view_op_health_tree
+msgid "Health"
+msgstr "الصحة"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_student_health_lines
+#: model:ir.ui.view,arch_db:student_health.health_student_form_view
+msgid "Health Detail"
+msgstr "التفاصيل الصحية"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_stud_health
+msgid "Health Detail for Students and Faculties"
+msgstr "التفاصيل الصحية للطلاب والتلاميذ"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_height
+msgid "Height(C.M.)"
+msgstr " (الطول (صم"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_id
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health___last_update
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_write_uid
+#: model:ir.model.fields,field_description:student_health.field_stud_health_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_line_write_date
+#: model:ir.model.fields,field_description:student_health.field_stud_health_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Major Disease"
+msgstr "الأمراض الرئيسية"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_major_diseases_note
+msgid "Major Diseases"
+msgstr "الأمراض الرئيسية"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_major_diseases
+msgid "Major Diseases?"
+msgstr " الأمراض الرئيسية ؟"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "O+ve"
+msgstr "O+ve"
+
+#. module: student_health
+#: selection:stud.health,blood_group:0
+msgid "O-ve"
+msgstr "O-ve"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_form
+msgid "Other Details"
+msgstr "تفاصيل أخرى"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_physical_challenges_note
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Physical Challenge"
+msgstr "التحدى الجسدى"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_physical_challenges
+msgid "Physical Challenge?"
+msgstr "التحدى الجسدى ؟"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Regular Checkup"
+msgstr "فحص منتظم"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_stud_student
+msgid "Stud Student"
+msgstr "التلميذ"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_student_id
+#: selection:stud.health,type:0
+msgid "Student"
+msgstr "التلميذ"
+
+#. module: student_health
+#: model:ir.ui.view,arch_db:student_health.view_op_health_search
+msgid "Student Name"
+msgstr "اسم التلميذ"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: student_health
+#: model:ir.model.fields,field_description:student_health.field_stud_health_weight
+msgid "Weight"
+msgstr "الوزن"
+
+#. module: student_health
+#: model:ir.model,name:student_health.model_stud_health_line
+msgid "stud.health.line"
+msgstr "stud.health.line"
+

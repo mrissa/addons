@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stud_assignment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 16:16+0000\n"
+"PO-Revision-Date: 2018-06-29 16:16+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stud_assignment
+#: model:ir.actions.act_window,name:stud_assignment.action_stud_assignment_form
+#: model:ir.model,name:stud_assignment.model_stud_assignment
+#: model:ir.ui.menu,name:stud_assignment.menu_action_student_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_form
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_tree
+msgid "Assignment"
+msgstr "التحويل"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.stud_choice_assignment_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: stud_assignment
+#: model:ir.actions.act_window,name:stud_assignment.action_choice_assignment_student
+#: model:ir.model,name:stud_assignment.model_student_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.stud_choice_assignment_view
+msgid "Choice registration"
+msgstr "تسجيل الاختيار"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.stud_choice_assignment_view
+msgid "Choose your registration"
+msgstr "اختر تسجيلك"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.stud_choice_assignment_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_create_uid
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_create_date
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_display_name
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: stud_assignment
+#: selection:stud.assignment,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_establishment_id
+msgid "Establishment"
+msgstr "المؤسسة"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_id
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_form
+msgid "Inscriptions"
+msgstr "التسجيلات"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment___last_update
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_write_uid
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_write_date
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_notes
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_form
+msgid "Notes..."
+msgstr "...ملاحظات"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_name
+msgid "Reference"
+msgstr "المراجع"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_assignment_line_ids
+#: model:ir.model.fields,field_description:stud_assignment.field_student_assignment_registration_ids
+msgid "Registrations"
+msgstr "التسجيلات"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_scholarly_id
+msgid "Scolarity Year"
+msgstr "السنة الدراسية"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: stud_assignment
+#: model:ir.model.fields,field_description:stud_assignment.field_stud_assignment_structure_id
+msgid "Structure Pedagogique"
+msgstr "البنية التربوية"
+
+#. module: stud_assignment
+#: model:ir.model,name:stud_assignment.model_stud_inscription
+msgid "Student Inscription"
+msgstr "تسجيل التلميذ"
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.view_student_assignment_form
+#: selection:stud.assignment,state:0
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: stud_assignment
+#: model:ir.ui.view,arch_db:stud_assignment.stud_choice_assignment_view
+msgid "registration"
+msgstr "التسجيل"
+

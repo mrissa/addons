@@ -1,0 +1,9 @@
+a.fa.fa-question-circle.btn.btn-icon.o_help_online_button   {
+    padding: 1px;
+    font-size: 17px;
+}
+
+a.o_help_online_not_found {
+     color: red !important;
+}
+ 

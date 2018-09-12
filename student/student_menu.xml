@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+    <!-- Top menu item -->
+        <menuitem
+            id="menu_student_root"
+            name="Student"
+            web_icon="student,static/description/icon.png"
+            sequence="76"/>
+
+        <menuitem
+            id="menu_hr_main"
+            name="Student"
+            parent="menu_student_root"
+            sequence="0"/>
+
+        <menuitem
+            id="menu_student_configuration"
+            name="Configuration"
+            parent="menu_student_root"
+            sequence="100"/>
+
+        <menuitem
+            id="menu_student"
+            name="Student"
+            parent="menu_student_root"
+            sequence="1"/>
+
+         <menuitem
+            id="menu_open_view_student_list_my"
+            action="open_view_student_list_my"
+            parent="menu_student"
+            sequence="1"/>
+
+        <menuitem
+            id="menu_view_student_pv_form"
+            name="Import Student"
+            action="action_stud_pv_form"
+            parent="menu_student"
+            sequence="2"/>
+
+       <!-- <menuitem
+            id="menu_view_student_category_form"
+            action="open_view_categ_form"
+            parent="menu_student_configuration"
+            sequence="1"/>-->
+
+
+        <!--Referentiel Eleve-->
+        <menuitem
+            id="menu_action_eleve"
+            action="open_view_student_list_my"
+            parent="base_config.menu_base_config_root"
+            sequence="4"/>
+
+    </data>
+</odoo>

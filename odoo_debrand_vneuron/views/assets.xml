@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2016, 2017 Openworx.
+    @author Mario Gielissen <mario@openworx.nl>
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+
+<odoo>
+    <data>
+		<template id="assets_frontend" name="Frontend Theme vneuron" inherit_id="web.assets_frontend">
+			<xpath expr=".">
+				<link rel="stylesheet" href="/odoo_debrand_vneuron/static/src/less/home.less"/>
+				 
+				<script type="application/javascript" src="/odoo_debrand_vneuron/static/src/js/home.js"/> 
+			</xpath>
+		</template>
+    </data>
+</odoo>

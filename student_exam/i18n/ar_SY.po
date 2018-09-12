@@ -1,0 +1,214 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* student_exam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-29 10:25+0000\n"
+"PO-Revision-Date: 2018-04-29 10:25+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: student_exam
+#: code:addons/student_exam/models/student_exam.py:67
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                                       Click to Create Examen\n"
+"                                    </p>"
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                                       انقر لإنشاء الاختبار\n"
+"                                    </p>"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_appreciation
+msgid "Appreciation"
+msgstr "التقدير"
+
+#. module: student_exam
+#: selection:examen,state:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: student_exam
+#: model:ir.actions.act_window,help:student_exam.action_line_examen
+msgid "Click to create a New Exam Results"
+msgstr "انقر لإنشاء نتائج اختبار جديد"
+
+#. module: student_exam
+#: model:ir.actions.act_window,help:student_exam.action_examen
+msgid "Click to create a New Examens"
+msgstr "انقر لإنشاء اختبارات جديدة"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_name
+msgid "Code"
+msgstr "الرمز"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_create_uid
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_create_date
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_note
+msgid "Description"
+msgstr "الوصف"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_display_name
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_display_name
+msgid "Display Name"
+msgstr "الإسم المعروض"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_student_id
+msgid "Eleve"
+msgstr " التلميذ"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Encouragement"
+msgstr "التشجيع"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_etablissement_id
+msgid "Etablissement"
+msgstr "المؤسسة التربوية"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_examen_id
+msgid "Examen"
+msgstr "الإختبار"
+
+#. module: student_exam
+#: code:addons/student_exam/models/student_exam.py:60
+#: model:ir.actions.act_window,name:student_exam.action_examen
+#: model:ir.model,name:student_exam.model_examen
+#: model:ir.ui.menu,name:student_exam.menu_action_examen
+#: model:ir.ui.menu,name:student_exam.menu_examen_student_root
+#: model:ir.ui.view,arch_db:student_exam.examen_form_view
+#, python-format
+msgid "Examens"
+msgstr "الإختبارات"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_hr_student_examen_count
+#: model:ir.ui.view,arch_db:student_exam.student_exam_inherit_form_view
+msgid "Exams"
+msgstr "الإختبارات"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Felicitation"
+msgstr "تهنئة"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_id
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_id
+msgid "ID"
+msgstr "ID المعرف"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_inscription_id
+msgid "Inscription"
+msgstr "التسجيل"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Insuffisant"
+msgstr "غير كاف"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen___last_update
+#: model:ir.model.fields,field_description:student_exam.field_examen_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_write_uid
+#: model:ir.model.fields,field_description:student_exam.field_examen_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_write_date
+#: model:ir.model.fields,field_description:student_exam.field_examen_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_note
+msgid "Note Examen"
+msgstr "ملاحظة الإختبار"
+
+#. module: student_exam
+#: model:ir.ui.view,arch_db:student_exam.examen_form_view
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Passable"
+msgstr "مقبول"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Renvoi"
+msgstr "طرد"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_line_ids
+#: model:ir.ui.view,arch_db:student_exam.examen_form_view
+msgid "Resultat"
+msgstr "النتائج"
+
+#. module: student_exam
+#: model:ir.actions.act_window,name:student_exam.action_line_examen
+#: model:ir.model,name:student_exam.model_examen_line
+#: model:ir.ui.menu,name:student_exam.menu_action_line_examen
+msgid "Resultat Examens"
+msgstr "نتائج الامتحان"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_section_id
+msgid "Section Pedagogique"
+msgstr "البنية التربوية"
+
+#. module: student_exam
+#: model:ir.model.fields,field_description:student_exam.field_examen_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: student_exam
+#: model:ir.model,name:student_exam.model_hr_student
+msgid "Student"
+msgstr "التلميذ"
+
+#. module: student_exam
+#: selection:examen.line,appreciation:0
+msgid "Tableau Honneur"
+msgstr "جدول الشرف"
+
+#. module: student_exam
+#: selection:examen,state:0
+msgid "Validate"
+msgstr "مثبت"
+
+#. module: student_exam
+#: model:ir.ui.view,arch_db:student_exam.examen_form_view
+msgid "Valider"
+msgstr "ثبت"
+

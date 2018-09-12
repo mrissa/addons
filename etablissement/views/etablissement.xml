@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.actions.act_window" id="list_building">
+            <field name="name">Building</field>
+            <field name="src_model">educa.establishment</field>
+            <field name="res_model">educa.building</field>
+            <field name="domain">[('establishment_id','=',active_id)]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="list_salle">
+            <field name="name">Classroom</field>
+            <field name="src_model">educa.establishment</field>
+            <field name="res_model">educa.classroom</field>
+            <field name="domain">[('establishment_id','=',active_id)]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="list_equipement">
+            <field name="name">Equipement</field>
+            <field name="src_model">educa.establishment</field>
+            <field name="res_model">instruction.line</field>
+            <field name="domain">[('establishment_id','=',active_id)]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <!-- etablissement -->
+        <record id="view_etablissement_form_view" model="ir.ui.view">
+            <field name="name">educa.establishment.form</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <form string="Etablissement">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_inline oe_stat_button" type="action"
+                                    name="%(etablissement.list_building)d" icon="fa-home" context="{'default_establishment_id': active_id}">
+                                 <field string="Building" name="building_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_inline oe_stat_button"  type="action"
+                                    name="%(etablissement.list_salle)d" icon="fa-puzzle-piece" context="{'default_establishment_id': active_id}">
+                                <field string="Classrooms" name="salle_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                         <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'open')]}">Open</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'pending_approval')]}">In progress to approve</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'standby')]}">Standby</div>
+                         <div class="label label-danger pull-right" attrs="{'invisible': [('state', '!=', 'close')]}">Close</div>
+                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image":"image_medium"}'/>
+                       <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                         <group>
+                            <group>
+                                <field name="number_id"/>
+                                <field name="parent_id"/>
+                                <field name="type_etablissement"/>
+                            </group>
+                            <group>
+                                <field name="state_id" widget="selection"/>
+                                <field name="city_id" widget="selection" />
+                                <field name="town_id" widget="selection"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="base" string="Base Information">
+                                <group>
+                                    <group>
+                                        <field name="street" class="o_address_street"/>
+                                    </group>
+                                    <group>
+                                        <field name="phone"/>
+                                        <field name="fax"/>
+                                        <field name="email" widget="email"/>
+                                    </group>
+                                    <group>
+                                        <field name="type_school" string="Type Enseignement" required="1"/>
+                                        <field name="type"/>
+                                        <field name="school_state"/>
+                                        <field name="school_plan"/>
+                                        <field name="categorie"/>
+                                        <field name="internal_hosting"/>
+                                    </group>
+                                    <group>
+                                        <field name="date"/>
+                                        <field name="user_id"/>
+                                        <field name="state" string="Etat operationnel"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="statistical" string="Statistical">
+                                <group>
+                                    <group>
+                                        <field name="classroom_count"/>
+                                        <field name="classroom_conform_count"/>
+                                        <field name="classroom_not_conform_count"/>
+                                    </group>
+                                    <group>
+                                        <field name="surface"/>
+                                        <field name="remaining_surface"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="prived_school" string="Prived School" attrs="{'invisible': [('school_state','!=','prived')]}">
+                                <group>
+                                    <group>
+                                        <field name="date_agrement"/>
+                                        <field name="lieu_agrement"/>
+                                        <field name="legal_form"/>
+                                    </group>
+                                    <group>
+                                        <field name="nature_of_the_service"/>
+                                        <field name="manager"/>
+                                        <field name="last_date"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="cycle" string="Cycles" attrs="{'invisible': [('type','!=','secondary')]}">
+                                <field name="cycle">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+         <record id="view_autre_etablissement_form_view" model="ir.ui.view">
+            <field name="name">educa.establishment.form</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <form string="Etablissement">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_inline oe_stat_button" type="action"
+                                    name="%(etablissement.list_building)d" icon="fa-home" context="{'default_establishment_id': active_id}">
+                                 <field string="Building" name="building_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_inline oe_stat_button"  type="action"
+                                    name="%(etablissement.list_salle)d" icon="fa-puzzle-piece" context="{'default_establishment_id': active_id}">
+                                <field string="Classrooms" name="salle_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                         <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'open')]}">Open</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'pending_approval')]}">In progress to approve</div>
+                         <div class="label label-warning pull-right" attrs="{'invisible': [('state', '!=', 'standby')]}">Standby</div>
+                         <div class="label label-danger pull-right" attrs="{'invisible': [('state', '!=', 'close')]}">Close</div>
+                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image":"image_medium"}'/>
+                         <field name="state" string="Etat operationnel" invisible="1"/>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                         <group>
+                            <group>
+                                <field name="number_id"/>
+                                <field name="parent_id"/>
+                                <field name="type_etablissement"/>
+                            </group>
+                            <group>
+                                <field name="state_id" widget="selection"/>
+                                <field name="city_id" widget="selection" />
+                                <field name="town_id" widget="selection"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="base" string="Base Information">
+                                <group>
+                                    <group>
+                                        <field name="street" class="o_address_street"/>
+                                    </group>
+                                    <group>
+                                        <field name="phone"/>
+                                        <field name="fax"/>
+                                        <field name="email" widget="email"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_kanban_view_etablissement" model="ir.ui.view">
+        <field name="name">educa.establishment.kanban</field>
+        <field name="model">educa.establishment</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <kanban class="o_hr_employee_kanban">
+                <field name="id"/>
+                <field name="message_is_follower"/>
+                <field name="message_follower_ids"/>
+                <field name="message_ids"/>
+                <field name="message_needaction_counter"/>
+                <templates>
+                    <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_details">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name"/>
+                                    </strong>
+                                    <span t-if="record.number_id.raw_value" class="o_kanban_record_subtitle"><field name="number_id"/></span>
+                                    <span t-if="record.dren_id.raw_value" class="o_kanban_record_subtitle"><field name="dren_id"/></span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li t-if="record.state_id.raw_value"><field name="state_id"/></li>
+                                <li t-if="record.city_id.raw_value"><field name="city_id"/></li>
+                                <li t-if="record.town_id.raw_value"><field name="town_id"/></li>
+                                <li t-if="record.phone.raw_value"><i class="fa fa-phone"></i> <field name="phone"/></li>
+                                <li t-if="record.fax.raw_value"><field name="fax"/></li>
+                                <li t-if="record.email.raw_value"><field name="email"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+        <record id="view_etablissement_tree_view" model="ir.ui.view">
+            <field name="name">educa.establishment.tree</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <tree string="Etablissement">
+                    <field name="name"/>
+                    <field name="number_id"/>
+                    <field name="state_id"/>
+                    <field name="city_id"/>
+                    <field name="town_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_etablissement_filter_view" model="ir.ui.view">
+            <field name="name">educa.establishment.search</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <search string="Etablissement Search">
+                    <field name="name" string="Establishment" filter_domain="[('name','ilike',self)]"/>
+                    <field name="number_id" string="Code" filter_domain="[('number_id','ilike',self)]"/>
+                    <separator />
+                    <filter string="Fundamental" name="fundamental" domain="[('type', '=', 'fundamental')]"/>
+                    <filter string="Secondary" name="secondary" domain="[('type', '=', 'secondary')]"/>
+                </search>
+             </field>
+         </record>
+
+         <!-- educa_establishment  by user and team pivot View -->
+        <record id="educa_establishment_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.establishment.pivot</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <pivot string="Etablissement" >
+                <field name="state_id" type="col"/>
+                     <field name="type" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_establishment_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.establishment.graph</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <graph string="Etablissement" stacked="False">
+                    <field name="state_id" type="col"/>
+                    <field name="type" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+        <record id="educa_establishment_autre_report_view_pivot" model="ir.ui.view">
+            <field name="name">educa.establishment.pivot</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <pivot string="Etablissement" >
+                <field name="state_id" type="col"/>
+                      <field name="type_etablissement" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="educa_establishment_autre_report_view_graph" model="ir.ui.view">
+            <field name="name">educa.establishment.graph</field>
+            <field name="model">educa.establishment</field>
+            <field name="arch" type="xml">
+                <graph string="Etablissement" stacked="False">
+                    <field name="state_id" type="col"/>
+                    <field name="type_etablissement" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+
+        <record id="open_view_etablissement_list_action" model="ir.actions.act_window">
+            <field name="name">Autre Etablissement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">educa.establishment</field>
+            <field name="domain">[('type_etablissement','in',('dren','administratif','hors_men'))]</field>
+            <field name="view_id" eval="False"/>
+            <field name="limit">20</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="context">{}</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_establishment_autre_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_establishment_autre_report_view_pivot')})]"/>
+            <field name="filter" eval="True"/>
+            <field name="search_view_id" ref="view_etablissement_filter_view" />
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new etablissement.
+              </p>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_kanban">
+            <field name="sequence" eval="3"/>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="hr_kanban_view_etablissement"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_action"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_etablissement_tree_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_action"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_autre_etablissement_form_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_action"/>
+        </record>
+
+        <record id="open_view_etablissement_Fundamental_list_action" model="ir.actions.act_window">
+            <field name="name">Etablissements Fondamentales</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">educa.establishment</field>
+            <field name="domain">[('type', '=', 'fondamentale'), ('type_etablissement','=','enseignement')]</field>
+            <field name="view_id" eval="False"/>
+            <field name="limit">20</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="context">{'default_type': 'fondamentale', 'default_type_etablissement': 'enseignement'}</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_establishment_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_establishment_report_view_pivot')})]"/>
+            <field name="filter" eval="True"/>
+            <field name="search_view_id" ref="view_etablissement_filter_view" />
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new etablissement.
+              </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_fond_kanban">
+            <field name="sequence" eval="3"/>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="hr_kanban_view_etablissement"/>
+            <field name="act_window_id" ref="open_view_etablissement_Fundamental_list_action"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_fond_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_etablissement_tree_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_Fundamental_list_action"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_fond_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_etablissement_form_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_Fundamental_list_action"/>
+        </record>
+
+        <record id="open_view_etablissement_list_secondary_action" model="ir.actions.act_window">
+            <field name="name">Etablissements Secondaires</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">educa.establishment</field>
+            <field name="domain">[('type','=','secondaire'), ('type_etablissement','=','enseignement')]</field>
+            <field name="view_id" eval="False"/>
+            <field name="limit">20</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="context">{'default_type': 'secondaire', 'default_type_etablissement': 'enseignement'}</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('educa_establishment_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('educa_establishment_report_view_pivot')})]"/>
+            <field name="filter" eval="True"/>
+            <field name="search_view_id" ref="view_etablissement_filter_view" />
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new etablissement.
+              </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_sec_kanban">
+            <field name="sequence" eval="3"/>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="hr_kanban_view_etablissement"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_secondary_action"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_sec_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_etablissement_tree_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_secondary_action"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_etablissement_sec_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_etablissement_form_view"/>
+            <field name="act_window_id" ref="open_view_etablissement_list_secondary_action"/>
+        </record>
+
+         <!-- etablissement Type -->
+       <record id="view_etablissement_type_form" model="ir.ui.view">
+            <field name="name">educa.establishment.type.form</field>
+            <field name="model">educa.establishment.type</field>
+            <field name="arch" type="xml">
+                <form string="Type Enseignement">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="type"/>
+                        </group>
+                        <notebook>
+                            <page name="cycle" string="Cycles">
+                                <field name="cycle_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_etablissement_type_list" model="ir.ui.view">
+            <field name="name">educa.establishment.type.list</field>
+            <field name="model">educa.establishment.type</field>
+            <field eval="8" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="etablissement Type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_view_type_form" model="ir.actions.act_window">
+            <field name="name">Type Enseignement</field>
+            <field name="res_model">educa.establishment.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <!-- etablissement cycle -->
+       <record id="view_etablissement_cycle_form" model="ir.ui.view">
+            <field name="name">educa.establishment.cycle.form</field>
+            <field name="model">educa.establishment.cycle</field>
+            <field name="arch" type="xml">
+                <form string="Establishment Cycle">
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_etablissement_cycle_list" model="ir.ui.view">
+            <field name="name">educa.establishment.cycle.list</field>
+            <field name="model">educa.establishment.cycle</field>
+            <field eval="8" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Etablissement Cycle">
+                    <field name="name"/>
+                     <field name="type"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_view_cycle_form" model="ir.actions.act_window">
+            <field name="name">Etablissement Cycle</field>
+            <field name="res_model">educa.establishment.cycle</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <!-- etablissement Category -->
+       <record id="view_etablissement_category_form" model="ir.ui.view">
+            <field name="name">educa.establishment.category.form</field>
+            <field name="model">educa.establishment.category</field>
+            <field name="arch" type="xml">
+                <form string="etablissement Tags">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_etablissement_category_list" model="ir.ui.view">
+            <field name="name">educa.establishment.category.list</field>
+            <field name="model">educa.establishment.category</field>
+            <field eval="8" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="etablissement Tags">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_view_categ_form" model="ir.actions.act_window">
+            <field name="name">Etablissement Tags</field>
+            <field name="res_model">educa.establishment.category</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!-- classrooms -->
+
+    <record model="ir.actions.act_window" id="list_equipement_classroom">
+        <field name="name">Equipements</field>
+        <field name="src_model">educa.classroom</field>
+        <field name="res_model">instruction.line</field>
+        <field name="domain">[('affectation_id.classroom_id','=',active_id)]</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.view" id="view_classroom_tree">
+        <field name="name">classroom.tree</field>
+        <field name="model">educa.classroom</field>
+        <field name="arch" type="xml">
+            <tree string="Classrooms">
+                <field name="name"/>
+                <field name="building_id"/>
+                <field name="establishment_id"/>
+                <field name="classification"/>
+                <field name="nb_eleve"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_classroom_form">
+        <field name="name">classroom.form</field>
+        <field name="model">educa.classroom</field>
+        <field name="arch" type="xml">
+            <form string="Classrooms">
+                <sheet>
+                     <div class="oe_button_box" name="button_box">
+                         <button class="oe_inline oe_stat_button"  type="action"
+                                name="%(etablissement.list_equipement_classroom)d" icon="fa-building-o">
+                            <field string="Equipements" name="equipement_count" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <div class="label label-success pull-right" attrs="{'invisible': [('state', '!=', 'compliant')]}">Compliant</div>
+                    <div class="label label-danger pull-right" attrs="{'invisible': [('state', '!=', 'not_compliant')]}">Not compliant</div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="establishment_id" widget="selection"/>
+                            <field name="building_id" widget="selection"/>
+                        </group>
+                        <group>
+                            <field name="classification" widget="selection"/>
+                            <field name="nb_eleve"/>
+                        </group>
+                        <group>
+                            <field name="longueur"/>
+                            <field name="largeur"/>
+                            <field name="surface"/>
+                            <field name="state"/>
+                        </group>
+                        <group>
+                            <field name="note"/>
+                        </group>
+                    </group>
+                     <notebook>
+                        <page name="sections_pedagogiques" string="Sections pedagogiques">
+                             <!--<field name="section_ids"/>-->
+                        </page>
+                     </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="open_view_classroom_form">
+        <field name="name">Classrooms</field>
+        <field name="res_model">educa.classroom</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+     <record model="ir.ui.view" id="view_classification_classroom_tree">
+        <field name="name">classification.classroom.tree</field>
+        <field name="model">classification.classroom</field>
+        <field name="arch" type="xml">
+            <tree string="Classification classroom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_classification_classroom_form">
+        <field name="name">classification.classroom.form</field>
+        <field name="model">classification.classroom</field>
+        <field name="arch" type="xml">
+            <form string="Classification classroom">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="open_view_classification_classroom_form">
+        <field name="name">Classification classroom</field>
+        <field name="res_model">classification.classroom</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="UserMenu">
+        <t t-jquery="ul.dropdown-menu" t-operation="replace">
+            <ul class="dropdown-menu" role="menu">
+                <li class="divider"/>
+                <li><a href="#" data-menu="settings">Preferences</a></li>
+                <li><a href="#" data-menu="logout">Log out</a></li>
+            </ul>
+        </t>
+    </t>
+    <!--<t t-extend="AppSwitcher.Content">-->
+        <!--<t t-jquery="div.o_application_switcher_footer" t-operation="replace">-->
+            <!--<img src="" width="96px" />-->
+        <!--</t>-->
+    <!--</t>-->
+    <t t-extend="DashboardShare">
+        <t t-jquery=".o_web_settings_dashboard_share" t-operation="replace">
+        <div class="text-center o_web_settings_dashboard_share">
+            <i class="fa fa-share-alt fa-4x text-muted"/>
+             
+            <t t-set="server_version" t-value="widget.data.server_version"/>
+            <t t-set="debug" t-value="widget.data.debug"/>
+             
+            <hr/>
+            <div class="row">
+                <div class="col-md-12">
+                    <a t-if="debug != true" class="oe_activate_debug_mode pull-right" href="?debug" >Activate the developer mode</a>
+                    <br t-if="debug != true"/>
+                    <a t-if="debug != 'assets'" class="oe_activate_debug_mode pull-right" href="?debug=assets" >Activate the developer mode (with assets)</a>
+                    <br t-if="debug != 'assets'"/>
+                    <a t-if="debug != false" class="oe_activate_debug_mode pull-right" href="/web" >Deactivate the developer mode</a>
+                </div>
+            </div>
+        </div>
+    </t>
+    </t>
+    <t t-extend="DashboardApps">
+         <t t-jquery=".o_web_settings_dashboard_pills" t-operation="replace">
+             
+        </t>
+         <t t-jquery=".o_web_settings_dashboard_apps > div.text-center" t-operation="replace">
+             
+        </t>
+       
+    </t>
+     <t t-extend="DashboardPlanner">
+        <t t-jquery=".o_web_settings_dashboard_compact_subtitle" t-operation="replace">
+            
+        </t>
+    </t> 
+    <t t-extend="mail.client_action">
+      <t t-jquery=".o_mail_request_permission" t-operation="inner">
+        Your permission is required to <a href="#"> enable desktop notifications</a>.
+      </t>
+    </t>
+</templates>

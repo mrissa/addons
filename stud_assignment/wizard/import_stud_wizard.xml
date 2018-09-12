@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="stud_choice_assignment_view" model="ir.ui.view">
+            <field name="name">Choice stud</field>
+            <field name="model">student.assignment</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Choice registration">
+                    <h2>Choose your registration</h2>
+                         <field name="registration_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}">
+                            <tree string="registration">
+                                <field name="name"/>
+                                <field name="student_id"/>
+                                <field name="scholarly_id"/>
+                            </tree>
+                         </field>
+                    <footer>
+                        <button name="choice_registration" string="Confirm" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_choice_assignment_student" model="ir.actions.act_window">
+            <field name="name">Choice registration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">student.assignment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="stud_choice_assignment_view"/>
+        </record>
+    </data>
+</odoo>

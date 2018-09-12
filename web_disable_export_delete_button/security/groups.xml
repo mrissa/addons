@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="group_export_button" model="res.groups">
+        <field name="name">Export Button</field>
+    </record>
+    
+    <record id="group_delete_button" model="res.groups">
+        <field name="name">Delete Button</field>
+    </record>
+
+</odoo>

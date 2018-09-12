@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Absence -->
+        <record model='ir.ui.view' id='student_absence_form_view'>
+        <field name="name">stud.absence.form</field>
+        <field name="model">stud.absence</field>
+        <field name="arch" type="xml">
+            <form string="Absence">
+                <header>
+                    <button name="act_validate" string="Validate" type="object" states="draft"/>
+                    <button name="act_cancel" string="Cancel" type="object" states="draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validate,cancel"/>
+                </header>
+                <sheet>
+                  <group>
+                    <group>
+                        <field name="student_id" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        <field name="categ_id" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        <field name="type_id" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                    </group>
+                    <group>
+                        <field name="reason" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        <field name="date" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        <field name="date_end" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        <field name="nbr_day"/>
+                    </group>
+                    <group>
+                        <field name="note" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                    </group>
+                  </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record model='ir.ui.view' id='student_absence_list_tree_view'>
+        <field name="name">stud.absence.tree</field>
+        <field name="model">stud.absence</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_id"/>
+                <field name="type_id"/>
+                <field name="date"/>
+                <field name="date_end"/>
+                <field name="nbr_day"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_student_absence" model="ir.actions.act_window">
+        <field name="name">Absences</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stud.absence</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a New Absence
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Absence -->
+    <menuitem
+        id="menu_action_student_absence"
+        name="Absences"
+        action="action_student_absence"
+        parent="student.menu_student_root"
+        sequence="4"/>
+
+     <menuitem
+        id="menu_config_absence"
+        name="Absences"
+        parent="student.menu_student_configuration"
+        sequence="2"/>
+
+       <!-- Category absence -->
+       <record id="view_stud_absence_category_tree" model="ir.ui.view">
+        <field name="name">stud.absence.category.tree</field>
+        <field name="model">stud.absence.category</field>
+        <field name="arch" type="xml">
+            <tree string="Absence Category">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_stud_absence_category_form" model="ir.ui.view">
+        <field name="name">stud.absence.category.form</field>
+        <field name="model">stud.absence.category</field>
+        <field name="arch" type="xml">
+            <form string="Category Absence">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <field name="absence_types"/>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_stud_absence_category_form" model="ir.actions.act_window">
+        <field name="name">Absence Category</field>
+        <field name="res_model">stud.absence.category</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Absence Category"
+              parent="menu_config_absence"
+              sequence="0"
+              id="menu_category_absence"
+              action="action_stud_absence_category_form"/>
+
+      <!-- Type absence -->
+       <record id="view_stud_absence_type_tree" model="ir.ui.view">
+        <field name="name">stud.absence.type.tree</field>
+        <field name="model">stud.absence.type</field>
+        <field name="arch" type="xml">
+            <tree string="Absence">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_stud_absence_type_form" model="ir.ui.view">
+        <field name="name">stud.absence.type.form</field>
+        <field name="model">stud.absence.type</field>
+        <field name="arch" type="xml">
+            <form string="Absence">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="categ_id"/>
+                        </group>
+                     </group>
+                </sheet>
+                </form>
+        </field>
+    </record>
+
+    <record id="action_stud_absence_type_form" model="ir.actions.act_window">
+        <field name="name">Absence Type</field>
+        <field name="res_model">stud.absence.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Type Absence"
+              parent="menu_config_absence"
+              sequence="1"
+              id="menu_type_absence"
+              action="action_stud_absence_type_form"/>
+
+
+    <!-- Inherit Student -->
+    <record id="student_absence_inherit_form_view" model="ir.ui.view">
+        <field name="name">stud.absence.form.inherit</field>
+        <field name="model">stud.student</field>
+        <field name="inherit_id" ref="student.view_student_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" name="absence_view" type="object" icon="fa-calendar" context="{'default_student_id': active_id}">
+                    <field string="Absences" name="absence_count" widget="statinfo"/>
+                </button>
+            </div>
+            <notebook position="inside">
+                <page name="abscences" string="Liste des abscences">
+                    <field name="absence_ids"/>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,285 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_debrand_vneuron
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20180406\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 11:31+0000\n"
+"PO-Revision-Date: 2018-07-05 11:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.footer_vneuron
+msgid "- Tous droits reservés"
+msgstr "-&amp;nbsp;\n"
+"\n"
+"<span style=\"background-color: rgb(248, 248, 248)\">جميع الحقوق محفوظة</span>&amp;nbsp;"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:26
+#, python-format
+msgid "Access Denied"
+msgstr "غير مسموح بالدخول"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:22
+#, python-format
+msgid "Access Error"
+msgstr "خطأ"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:28
+#, python-format
+msgid "Activate the developer mode"
+msgstr "قم بتنشيط وضع المطور"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:30
+#, python-format
+msgid "Activate the developer mode (with assets)"
+msgstr "تنشيط وضع المطور (مع الأصول)"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_hr_employeeid_config_settings_company_name
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_res_config_settings_company_name
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_website_company_name
+msgid "Branding Name"
+msgstr "اسم العلامة التجارية"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Check Error Dialogue"
+msgstr "تحقق من الخطأ في التواصل"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Check Warning Dialogue"
+msgstr "تحقق من التحذير في التواصل"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:180
+#, python-format
+msgid "Client Error"
+msgstr "خطأ في الحريف"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_hr_employeeid_config_settings_company_logo
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_res_config_settings_company_logo
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Company Logo"
+msgstr "شعار المؤسسة"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_hr_employeeid_config_settings_company_name
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_res_config_settings_company_name
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_website_company_name
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Company Name"
+msgstr "إسم المؤسسة"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_hr_employeeid_config_settings_company_website
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_res_config_settings_company_website
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_website_company_website
+msgid "Company URL"
+msgstr "URL عنوان المؤسسة"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.footer_vneuron
+msgid "Company name"
+msgstr "إسم المؤسسة"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:156
+#, python-format
+msgid "Copied !"
+msgstr "! نسخ"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.footer_vneuron
+msgid "Copyright &amp;copy; -"
+msgstr "حقوق النشر &amp;نسخة; -"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:32
+#, python-format
+msgid "Deactivate the developer mode"
+msgstr "قم بتعطيل وضع المطور"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Debrand"
+msgstr "العلامة التجارية"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Debranding Configurations"
+msgstr "تكوينات العلامة التجارية"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:159
+#, python-format
+msgid "Error"
+msgstr "خطأ"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "Favicon"
+msgstr "فافيكون"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:25
+#, python-format
+msgid "Global Business Error"
+msgstr "خطأ عام في الأعمال"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:8
+#, python-format
+msgid "Log out"
+msgstr "الخروج"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_website_company_logo
+msgid "Logo"
+msgstr "الشعار"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.vneuron_homepage
+msgid "Ministére de l’Éducation National"
+msgstr "وزارة التهذيب الوطني"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:23
+#, python-format
+msgid "Missing Record"
+msgstr "سجل مفقود"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:196
+#, python-format
+msgid "Ok"
+msgstr "موافق"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.login_layout
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.login_layout_secondary
+msgid "Powered by"
+msgstr "مدعوم بواسطة"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:7
+#, python-format
+msgid "Preferences"
+msgstr "التفضيلات"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:79
+#, python-format
+msgid "Session Expired"
+msgstr "انتهت الجلسة"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.login_layout_extend_11
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.vneuron_homepage
+msgid "Systéme d’Information et de Gestion de l’Education (SIGE)"
+msgstr "نظام إدارة المعلومات والتعليم&amp;nbsp;(SIGE)"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_hr_employeeid_config_settings_company_logo
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_res_config_settings_company_logo
+#: model:ir.model.fields,help:odoo_debrand_vneuron.field_website_company_logo
+msgid "This field holds the image used for the Company Logo"
+msgstr "هذا الحقل يحمل الصورة المستخدمة لشعار المؤسسة"
+
+#. module: odoo_debrand_vneuron
+#: code:addons/odoo_debrand_vneuron/models/models.py:45
+#, python-format
+msgid "This is a Warning"
+msgstr "هذا تحذير"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_website_company_logo_url
+#: model:ir.model.fields,field_description:odoo_debrand_vneuron.field_website_favicon_url
+msgid "Url"
+msgstr "الموقع المعلوماتي العالمي"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:24
+#, python-format
+msgid "Validation Error"
+msgstr "خطئ في التحقق"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:20
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:21
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:131
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:142
+#, python-format
+msgid "Warning"
+msgstr "تحذير"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model,name:odoo_debrand_vneuron.model_website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:53
+#, python-format
+msgid "Your permission is required to"
+msgstr "إذنك مطلوب ل"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/js/title.js:79
+#, python-format
+msgid "Your session expired. Please refresh the current web page."
+msgstr "انتهت جلستك. يرجى تحديث صفحة الويب الحالية"
+
+#. module: odoo_debrand_vneuron
+#. openerp-web
+#: code:addons/odoo_debrand_vneuron/static/src/xml/base.xml:54
+#, python-format
+msgid "enable desktop notifications"
+msgstr "تمكين إشعارات سطح المكتب"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "error"
+msgstr "خطأ"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.model,name:odoo_debrand_vneuron.model_res_config_settings
+msgid "res.config.settings"
+msgstr "الدقة.التكوين.إعدادات"
+
+#. module: odoo_debrand_vneuron
+#: model:ir.ui.view,arch_db:odoo_debrand_vneuron.res_config_settings_view_form
+msgid "warning"
+msgstr "تحذير"
+

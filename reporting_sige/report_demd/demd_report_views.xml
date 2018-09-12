@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+   
+         <!-- hr.absence by user and team pivot View -->
+        <record id="hr_absence_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.absence.pivot</field>
+            <field name="model">hr.absence</field>
+            <field name="arch" type="xml">
+                <pivot string="Absence" >
+                    <field name="state" type="col"/>
+                      <field name="absence_type_id" type="row"/>
+                    <field name="absence_categ_id" type="row"/>
+                     <field name="absence_type_id" type="row"/>
+                  </pivot>
+            </field>
+        </record>
+        <record id="hr_absence_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.absence.graph</field>
+            <field name="model">hr.absence</field>
+            <field name="arch" type="xml">
+                <graph string="Absence" stacked="False">
+                     <field name="state" type="col"/>
+                    
+                    <field name="absence_categ_id" type="row"/>
+                     <field name="absence_type_id" type="row"/>
+                    
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_absence_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Absence </field>
+             <field name="res_model">hr.absence</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_absence_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_absence_report_view_pivot')})]"/>
+             <field name="help">Analyse des Absence .</field>
+        </record>
+
+       <menuitem id="hr_absence_reportt_menu" name="Absence"
+            parent="hr_demande_report_menu" action="hr_absence_report_action_graph" sequence="6"/>
+     
+         
+         
+         <!-- hr.suspension by user and team pivot View -->
+        <record id="hr_suspension_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.suspension.pivot</field>
+            <field name="model">hr.suspension</field>
+            <field name="arch" type="xml">
+                <pivot string="Suspension" >
+                    <field name="state" type="col"/>
+                      <field name="employee_id" type="row"/>
+                     
+                  </pivot>
+            </field>
+        </record>
+        <record id="hr_suspension_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.suspension.graph</field>
+            <field name="model">hr.suspension</field>
+            <field name="arch" type="xml">
+                <graph string="Suspension" stacked="False">
+                     <field name="state" type="col"/>
+                     <field name="employee_id" type="row"/>
+                     
+                 </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_suspension_report_action_graph" model="ir.actions.act_window">
+             <field name="name">Analyse des Suspensions </field>
+             <field name="res_model">hr.suspension</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_suspension_report_view_graph')}),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_suspension_report_view_pivot')})]"/>
+             <field name="help">Analyse des Suspension .</field>
+        </record>
+
+       <menuitem id="hr_suspension_reportt_menu" name="Suspension"
+            parent="hr_demande_report_menu" action="hr_suspension_report_action_graph" sequence="6"/>
+</odoo>

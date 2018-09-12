@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Nomenclature-->
+         <!--state-->
+        <record model="ir.ui.view" id="view_state_tree">
+            <field name="name">nmcl.state.tree</field>
+            <field name="model">nmcl.state</field>
+            <field name="arch" type="xml">
+                <tree string="State">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_state_form">
+            <field name="name">nmcl.state.form</field>
+            <field name="model">nmcl.state</field>
+            <field name="arch" type="xml">
+                <form string="State">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_state_action">
+            <field name="name">State</field>
+            <field name="res_model">nmcl.state</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New State
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_state_list_action">
+            <field name="name">State</field>
+            <field name="res_model">nmcl.state</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--city-->
+        <record model="ir.ui.view" id="view_city_tree">
+            <field name="name">nmcl.city.tree</field>
+            <field name="model">nmcl.city</field>
+            <field name="arch" type="xml">
+                <tree string="City">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="state_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_city_form">
+            <field name="name">nmcl.city</field>
+            <field name="model">nmcl.city</field>
+            <field name="arch" type="xml">
+                <form string="City">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="state_id" widget="selection"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_city_action">
+            <field name="name">City</field>
+            <field name="res_model">nmcl.city</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New City
+                </p>
+            </field>
+        </record>
+
+     <!--commune-->
+        <record model="ir.ui.view" id="view_town_tree">
+            <field name="name">nmcl.town.tree</field>
+            <field name="model">nmcl.town</field>
+            <field name="arch" type="xml">
+                <tree string="Town">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="city_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_town_form">
+            <field name="name">nmcl.town.form</field>
+            <field name="model">nmcl.town</field>
+            <field name="arch" type="xml">
+                <form string="Town" create="false" edit="false">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="city_id" widget="selection"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_town_action">
+            <field name="name">Town</field>
+            <field name="res_model">nmcl.town</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New Town
+                </p>
+            </field>
+        </record>
+
+        <!--DREN-->
+        <record model="ir.ui.view" id="view_dren_tree">
+            <field name="name">nmcl.dren.tree</field>
+            <field name="model">nmcl.dren</field>
+            <field name="arch" type="xml">
+                <tree string="DREN">
+                    <field name="name"/>
+                    <field name="state_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_dren_form">
+            <field name="name">nmcl.dren.form</field>
+            <field name="model">nmcl.dren</field>
+            <field name="arch" type="xml">
+                <form string="DREN">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="state_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_dren_action">
+            <field name="name">DREN</field>
+            <field name="res_model">nmcl.dren</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New DREN
+                </p>
+            </field>
+        </record>
+
+        <!--Year Scolarity-->
+        <record model='ir.ui.view' id='view_year_form'>
+        <field name="name">year.scholarly.form</field>
+        <field name="model">year.scholarly</field>
+        <field name="arch" type="xml">
+            <form string="Year Scholarly">
+                <header>
+                    <button name="act_open" states="draft" type="object" string="Open" class="oe_highlight"/>
+                    <button name="act_close" states="open" type="object" string="Close" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,open,pending_closed,closed" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="type" invisible="1"/>
+                             <field name="niveau" invisible="1"/>
+                            <field name="year_start" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="year_end"/>
+                        </group>
+                        <group>
+                            <field name="previous_scolarity_id"/>
+                            <field name="next_scolarity_id"/>
+                        </group>
+                    </group>
+                     <notebook>
+
+                     </notebook>
+                </sheet>
+            </form>
+        </field>
+        </record>
+
+        <record model='ir.ui.view' id='view_year_tree'>
+            <field name="name">year.scholarly.tree</field>
+            <field name="model">year.scholarly</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                     <field name="type" invisible="1"/>
+                     <field name="niveau" invisible="1"/>
+                    <field name="year_start"/>
+                    <field name="year_end"/>
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_year" model="ir.actions.act_window">
+            <field name="name">Année scolaire</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">year.scholarly</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('type','=','central'), ('niveau','=','central')]</field>
+            <field name="context">{'default_type': 'central', 'default_niveau': 'central'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New Year scholarly
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_year_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_year_tree"/>
+            <field name="act_window_id" ref="action_year"/>
+        </record>
+
+
+        <record model="ir.actions.act_window.view" id="action_year_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_year_form"/>
+            <field name="act_window_id" ref="action_year"/>
+        </record>
+
+
+    </data>
+</odoo>

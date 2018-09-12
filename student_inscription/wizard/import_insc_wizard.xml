@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="insc_choice_affectation_view" model="ir.ui.view">
+            <field name="name">Choice inscreption</field>
+            <field name="model">insc.affectation</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Choice Insciption">
+                    <h2>Choisir les inscriptions a affectée</h2>
+                         <field name="inscription_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}">
+                            <tree string="les inscriptions">
+                                <field name="name"/>
+                                <field name="student_id"/>
+                            </tree>
+                         </field>
+                    <footer>
+                        <button name="choice_insc" string="Confirm" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_choice_affectation_insc" model="ir.actions.act_window">
+            <field name="name">Choice Inscriptions</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">insc.affectation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="insc_choice_affectation_view"/>
+        </record>
+    </data>
+</odoo>

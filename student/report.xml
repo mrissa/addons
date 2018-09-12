@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="action_report_student"
+            model="stud.student"
+            string="Fiche Eleve"
+            report_type="qweb-pdf"
+            name="student.report_student"
+            attachment_use="False"
+            file="student.report_student"
+        />
+
+    </data>
+</openerp> 
+

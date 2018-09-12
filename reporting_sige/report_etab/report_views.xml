@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+ 
+    
+
+        <menuitem id="educa_menu_report"
+             name="Reporting"
+            parent="etablissement.menu_etablissement_root"
+            sequence="99"/>
+           
+         <menuitem id="educa_etablissement_report_menu" name="Etablissement"
+            parent="educa_menu_report"   sequence="6"/>
+            
+        <menuitem id="educa_infrastructure_report_menu" name="Infrastructure"
+            parent="educa_menu_report"   sequence="6"/>
+</odoo>

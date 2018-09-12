@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+         <!-- affectation centrale  and team pivot View -->
+        <record id="hr_affectation_c_report_view_pivot" model="ir.ui.view">
+            <field name="name">hr.affectation.exit.pivot</field>
+            <field name="model">hr.affectation.exit</field>
+            <field name="arch" type="xml">
+                <pivot string="Affectation Centrale" disable_linking="True">
+               
+                   <field name="state" type="col"/>
+                     <field name="corps_id" type="row"/>
+                 </pivot>
+            </field>
+        </record>
+        <record id="hr_affectation_c_report_view_graph" model="ir.ui.view">
+            <field name="name">hr.affectation.exit.graph</field>
+            <field name="model">hr.affectation.exit</field>
+            <field name="arch" type="xml">
+                <graph string="Affectation Centrale" stacked="True">
+               
+                     <field name="state" type="col"/>
+                      <field name="corps_id" type="row"/>
+                     
+                </graph>
+            </field>
+        </record>
+         
+   
+
+        <record id="hr_affectation_c_report_action_graph" model="ir.actions.act_window">
+             <field name="name"> Analyse: Affectation Centrale</field>
+             <field name="res_model">hr.affectation.exit</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">pivot,graph</field>
+<!--              <field name="context">{'search_default_opportunity': True, 'search_default_current': True, 'active_test': True, 'search_default_my': True}</field> -->
+             <field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'pivot', 'view_id': ref('hr_affectation_c_report_view_pivot')}),
+                          (0, 0, {'view_mode': 'graph', 'view_id': ref('hr_affectation_c_report_view_graph')})]"/>
+             <field name="help">Affectation CentraleAnalyse.</field>
+        </record>
+
+       <menuitem id="hr_affectation_centrale_report_menu" name="Affectation Centrale"
+            parent="hr_affectation_report_menu" action="hr_affectation_c_report_action_graph" sequence="6"/>
+            
+</odoo>
