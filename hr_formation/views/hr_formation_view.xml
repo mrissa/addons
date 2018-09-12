@@ -131,8 +131,12 @@
         <field name="act_window_id" ref="open_view_formation_form"/>
     </record>
 
+        <menuitem name="Formation"
+              parent="hr_evaluation.menu_open_view_evaluation_form"  
+               id="menu_formation_forma"
+              />
        <menuitem name="Formation"
-              parent="hr.menu_hr_root" sequence="97"
+              parent="menu_formation_forma"
               id="menu_open_view_formation_form"
                  action="open_view_formation_form"
               />
